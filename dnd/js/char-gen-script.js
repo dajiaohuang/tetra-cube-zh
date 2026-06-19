@@ -243,7 +243,7 @@ function SetHTML() {
     $("#race, #raceheader").html(character.Race.name);
     $("#racesection").html(HTMLStrings.Get(character.Race));
 
-    $("#gender, #genderheader").html(character.Race.name == "Warforged" ? "Genderless" : character.Gender);
+    $("#gender, #genderheader").html(character.Race.name == "战俑" ? "无性别" : character.Gender);
 
     $("#class, #classheader").html(character.Class.name);
     $("#classsection").html(HTMLStrings.Get(character.Class));
@@ -336,9 +336,9 @@ var Content = {
                 return this.GetCharacteristics(specialItem);
 
             case "gendersort": // Get property according to gender
-                return character.Gender == "Male" ? specialItem.Male :
-                    character.Gender == "Female" ? specialItem.Female :
-                        Random.Array([specialItem.Male, specialItem.Female]);
+                return character.Gender == "男性" ? specialItem.男性 :
+                    character.Gender == "女性" ? specialItem.女性 :
+                        Random.Array([specialItem.男性, specialItem.女性]);
 
             case "halfethnicity": // Get human ethnicity for half-humans
                 mcEthnicity = (Random.Num(5) > 0 ? RandomEthnicity.Get() : "Unknown");
@@ -348,9 +348,9 @@ var Content = {
                 mcEthnicity = RandomEthnicity.Get();
                 return mcEthnicity;
 
-            case "subracesort": // For certain races, we need to know the subrace to determine the physical characteristics. This is less hacky than the code it replaced.
-                let SubracePropName = (splitSpecial.length > 1 ? (splitSpecial[1].split("_").join(" ")) : "Subrace"),
-                    subracesAndVariants = specialItem["Subraces and Variants"],
+            case "subracesort": // For certain races, we need to know the subrace to determine the 身体特征. This is less hacky than the code it replaced.
+                let SubracePropName = (splitSpecial.length > 1 ? (splitSpecial[1].split("_").join(" ")) : "子种族"),
+                    subracesAndVariants = specialItem["子种族与变体"],
                     newSubVar = {},
                     subraceString;
 
@@ -363,11 +363,11 @@ var Content = {
                     } else
                         newSubVar[propertyName] = subracesAndVariants[propertyName];
                 }
-                // specialItem["Subraces and Variants"] = newSubVar;
-                // specialItem["Physical Characteristics"] = specialItem["Physical Characteristics"][subraceString];
+                // specialItem["子种族与变体"] = newSubVar;
+                // specialItem["身体特征"] = specialItem["身体特征"][subraceString];
                 return {
-                    "Subraces and Variants": newSubVar,
-                    "Physical Characteristics": specialItem["Physical Characteristics"][subraceString]
+                    "子种族与变体": newSubVar,
+                    "身体特征": specialItem["身体特征"][subraceString]
                 };
 
             case "dragonbornvarianttype": // Wildemount dragonborn have weird variants
@@ -395,18 +395,18 @@ var Content = {
 
             case "backgroundtraits": // For the SCAG backgrounds where the writers were lazy and used personalities from the PHB 
                 let backgroundCopy = backgrounds[splitSpecial[1].split("_").join(" ")];
-                // specialItem["Trait"] = backgroundCopy.Trait;
-                // specialItem["Ideal"] = backgroundCopy.Ideal;
-                // specialItem["Bond"] = backgroundCopy.Bond;
-                // specialItem["Flaw"] = backgroundCopy.Flaw;
+                // specialItem["特质"] = backgroundCopy.特质;
+                // specialItem["理念"] = backgroundCopy.理念;
+                // specialItem["羁绊"] = backgroundCopy.羁绊;
+                // specialItem["缺陷"] = backgroundCopy.缺陷;
                 return {
-                    "Trait": backgroundCopy.Trait,
-                    "Ideal": backgroundCopy.Ideal,
-                    "Bond": backgroundCopy.Bond,
-                    "Flaw": backgroundCopy.Flaw
+                    "特质": backgroundCopy.特质,
+                    "理念": backgroundCopy.理念,
+                    "羁绊": backgroundCopy.羁绊,
+                    "缺陷": backgroundCopy.缺陷
                 };
 
-            case "ravnicacontacts": // Ravnica Backgrounds
+            case "ravnicacontacts": // Ravnica 背景
                 let guildName = specialItem["_name"],
                     ravnicaContacts = {};
                 ravnicaContacts[guildName + " Ally"] = Random.Array(specialItem["_guild"]);
@@ -420,9 +420,9 @@ var Content = {
                     ravnicaContacts["Non-" + guildName + " Contact"] = nonGuildContact;
                 return ravnicaContacts;
 
-            case "dimircontacts": // Ravnica Backgrounds, House Dimir is a special case
+            case "dimircontacts": // Ravnica 背景, House Dimir is a special case
                 let dimirContacts = {}, secondaryGuild = Random.Array(specialItem._guilds),
-                    otherGuildContacts = backgrounds[secondaryGuild.background]["Contacts"]["_guild"];
+                    otherGuildContacts = backgrounds[secondaryGuild.background]["联系"]["_guild"];
                 dimirContacts[""Dimir盟友""] = Random.Array(specialItem["_dimircontact"]);
                 dimirContacts[""次级公会""] = secondaryGuild.name;
                 dimirContacts[""次要公会盟友""] = Random.Array(otherGuildContacts);
@@ -445,12 +445,12 @@ var Content = {
         return Random.Array(contentArr);
     },
 
-    // Compute age, height, weight, and other physical characteristics
+    // Compute age, height, weight, and other 身体特征
     GetCharacteristics: function (item) {
         let chaObj = {},
             age = Random.Num(item.maxage - item.minage) + item.minage;
         age += (age == "1" ? " year" : " years"); // Extremely rare edge case but it can happen
-        chaObj.Age = age;
+        chaObj.年龄 = age;
 
         let heightmod = Random.DiceRoll(item.heightmod),
             intHeight = item.baseheight + heightmod;
@@ -538,159 +538,159 @@ var HTMLStrings = {
 var Names = {
     Get: function (raceName, gender) {
         switch (raceName) {
-            case "Aarakocra":
-            case "Changeling":
-            case "Grung":
-            case "Kenku":
-            case "Kobold":
-            case "Lizardfolk":
-            case "Locathah":
-            case "Shifter":
-            case "Tortle":
-            case "Verdan":
-            case "Warforged":
+            case "鸟羽人":
+            case "幻身灵":
+            case "格龙蛙人":
+            case "天狗":
+            case "狗头人":
+            case "蜥蜴人":
+            case "洛卡鱼人":
+            case "化兽者":
+            case "龟人":
+            case "佛丹人":
+            case "战俑":
                 return Random.Array(names[raceName]);
 
-            case "Bugbear":
-            case "Goblin":
-            case "Hobgoblin":
+            case "熊地精":
+            case "地精":
+            case "大地精":
                 return this.GetGendered(names["Goblinoid"], gender);
 
-            case "Centaur":
-            case "Minotaur":
-            case "Orc":
-            case "Leonin":
-            case "Loxodon":
-            case "Vedalken":
+            case "人马":
+            case "牛头人":
+            case "兽人":
+            case "狮族":
+            case "象族":
+            case "维多肯":
                 return this.GetGendered(names[raceName], gender);
 
-            case "Aasimar":
-            case "Dhampir":
-            case "Genasi":
-            case "Hexblood":
-            case "Reborn":
+            case "阿斯莫":
+            case "半血裔":
+            case "元素裔":
+            case "巫咒之子":
+            case "重生者":
                 return this.GetHuman(this.GetHumanEthnicity(), gender);
 
-            case "Dragonborn":
-                return this.FirstnameLastname(names.Dragonborn, "Clan", gender);
+            case "龙裔":
+                return this.FirstnameLastname(names.龙裔, "Clan", gender);
 
-            case "Dwarf":
-                if (this.GetSubrace() == "Duergar")
-                    return this.GetGendered(names.Dwarf, gender) + " " + Random.Array(names.Dwarf["Clan (Duergar)"]);
-                return this.FirstnameLastname(names.Dwarf, "Clan", gender);
+            case "矮人":
+                if (this.GetSubrace() == "灰矮人")
+                    return this.GetGendered(names.矮人, gender) + " " + Random.Array(names.矮人["Clan (灰矮人)"]);
+                return this.FirstnameLastname(names.矮人, "Clan", gender);
 
-            case "Elf":
-                if (this.GetSubrace() == "Drow")
-                    return this.FirstnameLastname(names.Drow, "Family", gender);
+            case "精灵":
+                if (this.GetSubrace() == "卓尔")
+                    return this.FirstnameLastname(names.卓尔, "Family", gender);
                 if (this.GetSubrace() == "Shadar-kai")
                     return this.GetGendered(names["Shadar-kai"], gender);
                 return character.age < 80 + Random.Num(40) ?
-                    Random.Array(names.Elf.Child) + " " + Random.Array(names.Elf.Family) :
-                    this.FirstnameLastname(names.Elf, "Family", gender);
+                    Random.Array(names.精灵.Child) + " " + Random.Array(names.精灵.Family) :
+                    this.FirstnameLastname(names.精灵, "Family", gender);
 
-            case "Firbolg":
-                return this.GetGendered(names.Elf, gender);
+            case "费尔伯格人":
+                return this.GetGendered(names.精灵, gender);
 
-            case "Gith":
-                return this.GetSubrace() == "Githyanki" ?
-                    this.GetGendered(names.Githyanki, gender) :
-                    this.GetGendered(names.Githzerai, gender);
+            case "吉斯人":
+                return this.GetSubrace() == "吉斯洋基人" ?
+                    this.GetGendered(names.吉斯洋基人, gender) :
+                    this.GetGendered(names.吉斯泽莱人, gender);
 
-            case "Gnome":
-                if (this.GetSubrace() == "Deep Gnome")
-                    return this.FirstnameLastname(names["Deep Gnome"], "Clan", gender);
+            case "侏儒":
+                if (this.GetSubrace() == "地底侏儒")
+                    return this.FirstnameLastname(names["地底侏儒"], "Clan", gender);
                 let firstNames, numNames = 4 + Random.Num(4);
                 let gnomeNames = [];
                 while (gnomeNames.length < numNames) {
                     let item;
-                    if (gender == "Male" || gender == "Female")
-                        item = Random.Array(names.Gnome[gender]);
+                    if (gender == "男性" || gender == "女性")
+                        item = Random.Array(names.侏儒[gender]);
                     else
-                        item = Random.Array(names.Gnome[this.RandomGender()]);
+                        item = Random.Array(names.侏儒[this.RandomGender()]);
                     if (!gnomeNames.includes(item))
                         gnomeNames.push(item);
                 }
                 firstNames = gnomeNames.join(" ");
-                return firstNames + " \"" + Random.Array(names.Gnome.Nickname) + "\" " + Random.Array(names.Gnome.Clan);
+                return firstNames + " "" + Random.Array(names.侏儒.Nickname) + "" " + Random.Array(names.侏儒.Clan);
 
-            case "Goliath":
-                return Random.Array(names.Goliath.Birth) + " \"" + Random.Array(names.Goliath.Nickname) + "\" " + Random.Array(names.Goliath.Clan);
+            case "歌利亚":
+                return Random.Array(names.歌利亚.Birth) + " "" + Random.Array(names.歌利亚.Nickname) + "" " + Random.Array(names.歌利亚.Clan);
 
-            case "Halfling":
-                return this.FirstnameLastname(names.Halfling, "Family", gender);
+            case "半身人":
+                return this.FirstnameLastname(names.半身人, "Family", gender);
 
-            case "Half-Elf":
+            case "半精灵":
                 let hElfRand = Random.Num(6),
                     elfSubrace = this.GetSubrace(),
                     elfNameArray =
-                        elfSubrace == "Drow" ? names.Drow : names.Elf;
-                if (hElfRand < 2) return this.HumanFirst(this.GetHumanEthnicity(), gender) + " " + Random.Array(elfNameArray.Family); // Human First, Elf Last
-                if (hElfRand < 4) return this.GetGendered(elfNameArray, gender) + this.HumanLast(this.GetHumanEthnicity()); // Elf first, Human Last
-                if (hElfRand < 5) return this.GetHuman(this.GetHumanEthnicity(), gender); // Both Human
-                return this.FirstnameLastname(elfNameArray, "Family", gender); // Both Elf
+                        elfSubrace == "卓尔" ? names.卓尔 : names.精灵;
+                if (hElfRand < 2) return this.HumanFirst(this.GetHumanEthnicity(), gender) + " " + Random.Array(elfNameArray.Family); // 人类 First, 精灵 Last
+                if (hElfRand < 4) return this.GetGendered(elfNameArray, gender) + this.HumanLast(this.GetHumanEthnicity()); // 精灵 first, 人类 Last
+                if (hElfRand < 5) return this.GetHuman(this.GetHumanEthnicity(), gender); // Both 人类
+                return this.FirstnameLastname(elfNameArray, "Family", gender); // Both 精灵
 
-            case "Half-Orc":
+            case "半兽人":
                 let hOrcRand = Random.Num(4);
-                return hOrcRand < 1 ? this.GetGendered(names.Orc, gender) :
-                    hOrcRand < 2 ? this.GetGendered(names.Orc, gender) + this.HumanLast(this.GetHumanEthnicity()) :
+                return hOrcRand < 1 ? this.GetGendered(names.兽人, gender) :
+                    hOrcRand < 2 ? this.GetGendered(names.兽人, gender) + this.HumanLast(this.GetHumanEthnicity()) :
                         this.GetHuman(this.GetHumanEthnicity(), gender);
 
-            case "Human":
+            case "人类":
                 return this.GetHuman(mcEthnicity, gender);
 
-            case "Kalashtar":
-                return Random.Array(names["Kalashtar/Quori"]);
+            case "离梦人":
+                return Random.Array(names["离梦人/Quori"]);
 
-            case "Leonin":
-                return this.FirstnameLastname(names.Leonin, "Pride", gender);
+            case "狮族":
+                return this.FirstnameLastname(names.狮族, "Pride", gender);
 
-            case "Satyr":
-                return this.GetGendered(names.Satyr, gender) + " \"" + Random.Array(names.Satyr.Nicknames) + "\"";
+            case "半羊人":
+                return this.GetGendered(names.半羊人, gender) + " "" + Random.Array(names.半羊人.Nicknames) + """;
 
-            case "Simic Hybrid":
-                let raceNames = Random.Array([names.Human, names.Elf, names.Vedalken]);
-                return raceNames == names.Human ? this.GetHuman(RandomEthnicity.Get(), gender) : this.GetGendered(raceNames, gender);
+            case "析米克混生体":
+                let raceNames = Random.Array([names.人类, names.精灵, names.维多肯]);
+                return raceNames == names.人类 ? this.GetHuman(RandomEthnicity.Get(), gender) : this.GetGendered(raceNames, gender);
 
-            case "Tabaxi":
-                return Random.Array(names.Tabaxi.Name) + " " + Random.Array(names.Tabaxi.Clan);
+            case "斑猫人":
+                return Random.Array(names.斑猫人.Name) + " " + Random.Array(names.斑猫人.Clan);
 
-            case "Triton":
-                return this.FirstnameLastname(names.Triton, "Surname", gender);
+            case "梭螺鱼人":
+                return this.FirstnameLastname(names.梭螺鱼人, "Surname", gender);
 
-            case "Tiefling":
+            case "提夫林":
                 if (Random.Num(5) < 2)
                     return this.GetHuman(this.GetHumanEthnicity(), gender);
                 let lastName = this.HumanLast(this.GetHumanEthnicity());
-                return gender == "Male" || gender == "Female" ?
-                    Random.Num(3) == 0 ? this.GetGendered(names.Infernal, gender) + lastName : Random.Array(names.Virtue) + lastName :
-                    Random.Num(3) > 0 ? Random.Array(names.Virtue) + lastName : this.GetGendered(names.Infernal, gender) + lastName;
+                return gender == "男性" || gender == "女性" ?
+                    Random.Num(3) == 0 ? this.GetGendered(names.炼狱语, gender) + lastName : Random.Array(names.Virtue) + lastName :
+                    Random.Num(3) > 0 ? Random.Array(names.Virtue) + lastName : this.GetGendered(names.炼狱语, gender) + lastName;
 
-            case "Yuan-Ti Pureblood":
-                return Random.Array(names["Yuan-Ti"]);
+            case "纯血原体蛇人":
+                return Random.Array(names["蛇人"]);
         }
     },
 
     Shortened: function () {
-        if (character.Race.name == "Gnome" && character.Race.content[0].content[0].content != "Deep Gnome") {
+        if (character.Race.name == "侏儒" && character.Race.content[0].content[0].content != "地底侏儒") {
             let nameArr = character.Name.split(" "),
                 firstName = nameArr[Random.Num(nameArr.length - 2)];
             return firstName + " " + nameArr[nameArr.length - 2] + " " + nameArr[nameArr.length - 1];
-        } else if (character.Race.name == "Tabaxi") {
-            let nicknameIndex = character.Name.indexOf("\"");
+        } else if (character.Race.name == "斑猫人") {
+            let nicknameIndex = character.Name.indexOf(""");
             return character.Name.substring(nicknameIndex);
         }
         return character.Name;
     },
 
-    RandomGender: () => Random.Array(["Male", "Female"]),
+    RandomGender: () => Random.Array(["男性", "女性"]),
 
     GetSubrace: function () {
         let race = character.Race.content
         for (let index = 0; index < race.length; index++) {
-            if (race[index].name == "Subraces and Variants") {
+            if (race[index].name == "子种族与变体") {
                 let subrace = race[index].content;
                 for (let index2 = 0; index2 < subrace.length; index2++) {
-                    if (subrace[index2].name == "Subrace")
+                    if (subrace[index2].name == "子种族")
                         return subrace[index2].content;
                 }
             }
@@ -704,7 +704,7 @@ var Names = {
 
     // Get the gender or a random generator if the character doesn't have one
     GetGendered: function (names, gender) {
-        return Random.Array(names[(gender == "Male" || gender == "Female" ? gender : this.RandomGender())]);
+        return Random.Array(names[(gender == "男性" || gender == "女性" ? gender : this.RandomGender())]);
     },
 
     // Get a human name
@@ -715,15 +715,15 @@ var Names = {
 
     HumanFirst: function (ethnicity, gender) {
         return ethnicityOption == "standard" ?
-            this.GetGendered(ethnicity == "Tethyrian" ? names.Human.Chondathan : names.Human[ethnicity], gender) :
-            this.GetGendered(names["Human (Real)"][ethnicity], gender);
+            this.GetGendered(ethnicity == "Tethyrian" ? names.人类.Chondathan : names.人类[ethnicity], gender) :
+            this.GetGendered(names["人类 (Real)"][ethnicity], gender);
     },
 
     HumanLast: function (ethnicity) {
         return ethnicityOption == "standard" ?
-            ethnicity == "Bedine" ? " " + Random.Array(names.Human.Bedine.Tribe) :
-                ethnicity == "Tethyrian" ? " " + Random.Array(names.Human.Chondathan.Surname) :
-                    (ethnicity == "Tuigan" || ethnicity == "Ulutiun") ? "" : " " + Random.Array(names.Human[ethnicity].Surname) : "";
+            ethnicity == "Bedine" ? " " + Random.Array(names.人类.Bedine.Tribe) :
+                ethnicity == "Tethyrian" ? " " + Random.Array(names.人类.Chondathan.Surname) :
+                    (ethnicity == "Tuigan" || ethnicity == "Ulutiun") ? "" : " " + Random.Array(names.人类[ethnicity].Surname) : "";
     },
 
     // Get character's human heritage - for half-elves, half-orcs, tieflings, aasimar, and genasi
@@ -759,9 +759,9 @@ var RandomEthnicity = {
     Get: function () {
         return ethnicityOption == "standard" ?
             usedBooks.includes("SCAG") ?
-                Random.Array(races.Human["Subraces and Variants"].Ethnicity.PHB.concat(races.Human["Subraces and Variants"].Ethnicity.SCAG)) :
-                Random.Array(races.Human["Subraces and Variants"].Ethnicity.PHB) :
-            Random.Array(races.Human["Subraces and Variants"].Ethnicity.Real);
+                Random.Array(races.人类["子种族与变体"].Ethnicity.PHB.concat(races.人类["子种族与变体"].Ethnicity.SCAG)) :
+                Random.Array(races.人类["子种族与变体"].Ethnicity.PHB) :
+            Random.Array(races.人类["子种族与变体"].Ethnicity.Real);
     }
 }
 
@@ -769,21 +769,21 @@ var RandomEthnicity = {
 var NPCTraits = {
     Get: function () {
         let newNPCTraits = {
-            "Appearance": Random.Array(npcs.appearances)
+            "外表": Random.Array(npcs.appearances)
         },
             highTraitNum = Random.Num(npcs.highAbilities.length),
             lowTraitNum = Random.Num(npcs.lowAbilities.length - 1);
 
-        // Low ability can't be the same as the high ability
+        // 低属性 can't be the same as the 高属性
         if (lowTraitNum >= highTraitNum)
             lowTraitNum++;
 
-        newNPCTraits["High Ability"] = npcs.highAbilities[highTraitNum];
-        newNPCTraits["Low Ability"] = npcs.lowAbilities[lowTraitNum];
+        newNPCTraits["高属性"] = npcs.highAbilities[highTraitNum];
+        newNPCTraits["低属性"] = npcs.lowAbilities[lowTraitNum];
 
-        newNPCTraits.Talent = Random.Array(npcs.talents);
-        newNPCTraits.Mannerism = Random.Array(npcs.mannerisms);
-        newNPCTraits["Interaction Trait"] = Random.Array(npcs.interactionTraits);
+        newNPCTraits.天赋 = Random.Array(npcs.talents);
+        newNPCTraits.习癖 = Random.Array(npcs.mannerisms);
+        newNPCTraits["互动特质"] = Random.Array(npcs.interactionTraits);
 
         let ideal = Random.Array(npcs.ideals),
             bond, bond1 = Random.Num(10)
@@ -796,9 +796,9 @@ var NPCTraits = {
                 bond2 = Random.Num(9);
             bond = npcs.bonds[bond1] + ", " + npcs.bonds[bond2];
         }
-        newNPCTraits.Values = ideal + ", " + bond;
+        newNPCTraits.价值观 = ideal + ", " + bond;
 
-        newNPCTraits["Flaw or Secret"] = Random.Array(npcs.flawsAndSecrets);
+        newNPCTraits["缺陷或秘密"] = Random.Array(npcs.flawsAndSecrets);
         return newNPCTraits;
     }
 }
@@ -806,52 +806,52 @@ var NPCTraits = {
 var Occupation = {
     Get: function (allowAdventurer) {
         let rand = Random.Num(allowAdventurer ? 100 : 99);
-        return rand < 5 ? "Academic" :
-            rand < 10 ? "Aristocrat" :
-                rand < 25 ? "Artisan or guild member" :
-                    rand < 30 ? "Criminal" :
-                        rand < 35 ? "Entertainer" :
-                            rand < 37 ? "Exile, hermit, or refugee" :
-                                rand < 42 ? "Explorer or wanderer" :
-                                    rand < 54 ? "Farmer or herder" :
-                                        rand < 59 ? "Hunter or trapper" :
-                                            rand < 74 ? "Laborer" :
-                                                rand < 79 ? "Merchant" :
-                                                    rand < 84 ? "Politician or bureaucrat" :
-                                                        rand < 89 ? "Priest" :
-                                                            rand < 94 ? "Sailor" :
-                                                                rand < 99 ? "Soldier" :
-                                                                    "Adventurer (" + Life.ClassWeighted() + ")";
+        return rand < 5 ? "学者" :
+            rand < 10 ? "贵族" :
+                rand < 25 ? "工匠或公会成员" :
+                    rand < 30 ? "罪犯" :
+                        rand < 35 ? "艺人" :
+                            rand < 37 ? "流放者、隐士或难民" :
+                                rand < 42 ? "探险者或流浪者" :
+                                    rand < 54 ? "农夫或牧民" :
+                                        rand < 59 ? "猎人或捕兽者" :
+                                            rand < 74 ? "劳工" :
+                                                rand < 79 ? "商人" :
+                                                    rand < 84 ? "政客或官僚" :
+                                                        rand < 89 ? "祭司" :
+                                                            rand < 94 ? "水手" :
+                                                                rand < 99 ? "士兵" :
+                                                                    "冒险者 (" + Life.ClassWeighted() + ")";
     },
 }
 
-// Return random life events as given in Xanathar's guide
+// Return random 人生事件 as given in Xanathar's guide
 var Life = {
     Get: function () {
         let newLife = {};
-        newLife.Alignment = Random.Array(life.alignments);
-        newLife.Origin = {};
-        if (character.Race.name == "Warforged")
-            newLife.Origin.Built = Random.Array(life.origins.Birthplace);
+        newLife.阵营 = Random.Array(life.alignments);
+        newLife.出身 = {};
+        if (character.Race.name == "战俑")
+            newLife.出身.Built = Random.Array(life.origins.出生地);
         else
-            newLife.Origin.Birthplace = Random.Array(life.origins.Birthplace);
-        let parents = life.origins.Parents[character.Race.name];
+            newLife.出身.出生地 = Random.Array(life.origins.出生地);
+        let parents = life.origins.父母[character.Race.name];
         if (parents != undefined)
-            newLife.Origin.Parents = Random.Array(parents);
+            newLife.出身.父母 = Random.Array(parents);
 
         let raisedBy = this.RaisedBy();
-        if (raisedBy != "Mother and father")
-            newLife.Origin["Absent Parent(s)"] = this.AbsentParent();
+        if (raisedBy != "母亲和父亲")
+            newLife.出身["缺席的父母(s)"] = this.AbsentParent();
 
         let lifestyle = this.Lifestyle();
-        newLife.Origin["Family Lifestyle"] = lifestyle[0];
-        newLife.Origin["Childhood Home"] = this.Home(lifestyle[1]);
-        newLife.Origin["Childhood Memories"] = this.Memories();
+        newLife.出身["家庭生活方式"] = lifestyle[0];
+        newLife.出身["童年住所"] = this.Home(lifestyle[1]);
+        newLife.出身["童年记忆"] = this.Memories();
 
-        newLife.Origin["Siblings"] = this.Siblings(newLife.Origin.Parents);
+        newLife.出身["兄弟姐妹"] = this.兄弟姐妹(newLife.出身.父母);
 
-        newLife["Life Events"] = this.LifeEvents();
-        newLife["Trinket"] = Random.Array(life.trinkets);
+        newLife["人生事件"] = this.LifeEvents();
+        newLife["饰品"] = Random.Array(life.trinkets);
 
         return newLife;
     },
@@ -863,13 +863,13 @@ var Life = {
             let newEventType = "";
             do {
                 let randomEventNum = Random.Num(100);
-                newEventType = randomEventNum == 99 ? "Weird Stuff" :
-                    life.eventTables["Life Events"][Math.floor(randomEventNum / 5)];
+                newEventType = randomEventNum == 99 ? "奇事" :
+                    life.eventTables["人生事件"][Math.floor(randomEventNum / 5)];
             } while (lifeEvents.hasOwnProperty([newEventType]))
 
             let newEvent = "";
             switch (newEventType) {
-                case "Marriage":
+                case "婚姻":
                     let spouseRace;
                     if (Random.Num(3) < 2)
                         spouseRace = character.Race.name;
@@ -877,24 +877,24 @@ var Life = {
                         spouseRace = RaceWeighted.Get();
                     newEvent = ""你爱上或嫁给了一个(n)"" + spouseRace.toLowerCase() + " " + Occupation.Get(true).toLowerCase() + ".";
                     break;
-                case "Friend":
+                case "朋友":
                     newEvent = ""你和一个(n)成为了朋友"" + RaceWeighted.Get().toLowerCase() + " " + this.ClassWeighted().toLowerCase() + ".";
                     break;
-                case "Enemy":
+                case "敌人":
                     newEvent = ""你与一名(n)结下了仇怨"" + RaceWeighted.Get().toLowerCase() + " " + this.ClassWeighted().toLowerCase() + "". 投掷一枚d6。奇数表示你对裂痕负有责任，偶数则表示你是无辜的。"";
                     break;
-                case "Job":
+                case "工作":
                     newEvent = ""你在与你的背景相关的工作中度过了一段时间。游戏开始时额外获得2d6金币。"";
                     break;
-                case "Someone Important":
+                case "重要之人":
                     newEvent = ""你遇到了一个重要的"" + RaceWeighted.Get().toLowerCase() + "", 是"" + this.Relationship().toLowerCase() + "向你移动。";
                     break;
-                case "Adventure":
+                case "冒险":
                     let rand = Random.Num(100);
-                    newEvent = rand == 99 ? life.eventTables.Adventure[10] : life.eventTables.Adventure[Math.floor(rand / 10)];
+                    newEvent = rand == 99 ? life.eventTables.冒险[10] : life.eventTables.冒险[Math.floor(rand / 10)];
                     break;
-                case "Crime":
-                    newEvent = Random.Array(life.eventTables.Crime) + ". " + Random.Array(life.eventTables.Punishment);
+                case "罪行":
+                    newEvent = Random.Array(life.eventTables.罪行) + ". " + Random.Array(life.eventTables.Punishment);
                     break;
                 default:
                     newEvent = Random.Array(life.eventTables[newEventType]);
@@ -905,7 +905,7 @@ var Life = {
         return lifeEvents;
     },
 
-    Siblings: function (parents) // Determine who our siblings are
+    兄弟姐妹: function (parents) // Determine who our siblings are
     {
         let numSiblings = Random.Num(3);
         if (numSiblings == 0) return null;
@@ -913,13 +913,13 @@ var Life = {
         for (let sibNum = 0; sibNum < numSiblings; sibNum++) {
             let newSib = {},
                 race = this.SiblingRace(parents);
-            if (race != "Warforged")
+            if (race != "战俑")
                 newSib.Gender = Random.Array(other.genders);
             newSib.Race = race;
             newSibName = this.SiblingName(newSib);
             while (newSibName == character.Name.substring(0, newSibName.length))
                 newSibName = this.SiblingName(newSib);
-            newSib.Alignment = this.Alignment();
+            newSib.阵营 = this.阵营();
             newSib.Occupation = Occupation.Get(true);
             newSib.Status = this.Status();
 
@@ -927,14 +927,14 @@ var Life = {
 
             let birthOrderRoll = Random.DiceRoll("2d6"),
                 birthOrder;
-            if (newSib.Race == "Warforged") {
-                birthOrder = birthOrderRoll < 3 ? "Simultaneous" :
-                    birthOrderRoll < 8 ? "Older" : "Younger"
-                newSib["Order of Construction"] = birthOrder;
+            if (newSib.Race == "战俑") {
+                birthOrder = birthOrderRoll < 3 ? "同时出生" :
+                    birthOrderRoll < 8 ? "年长" : "年幼"
+                newSib["制造顺序"] = birthOrder;
             } else {
-                birthOrder = birthOrderRoll < 3 ? "Twin, triplet, or quadruplet" :
-                    birthOrderRoll < 8 ? "Older" : "Younger"
-                newSib["Birth Order"] = birthOrder;
+                birthOrder = birthOrderRoll < 3 ? "双胞胎、三胞胎或四胞胎" :
+                    birthOrderRoll < 8 ? "年长" : "年幼"
+                newSib["出生顺序"] = birthOrder;
             }
             siblings[newSibName] = newSib;
         }
@@ -944,29 +944,29 @@ var Life = {
     SiblingRace: function (parents) // If mixed-race, determine races of siblings
     {
         switch (character.Race.name) {
-            case "Half-Elf":
+            case "半精灵":
                 return parents == "“其中一个父母是精灵，另一个是半精灵。”" ?
-                    Random.Array(["Elf", "Half-Elf"]) :
+                    Random.Array(["精灵", "半精灵"]) :
                     parents == "“一位父母是人类，另一位是半精灵。”" ?
-                        Random.Array(["Human", "Half-Elf"]) : "Half-Elf";
-            case "Half-Orc":
+                        Random.Array(["人类", "半精灵"]) : "半精灵";
+            case "半兽人":
                 return parents == ""一个父母是兽人，另一个是半兽人。"" ?
-                    Random.Array(["Orc", "Half-Orc"]) :
+                    Random.Array(["兽人", "半兽人"]) :
                     parents == "“一个父母是人类，另一个是半兽人。”" ?
-                        Random.Array(["Human", "Half-Orc"]) : "Half-Orc";
-            case "Tiefling":
+                        Random.Array(["人类", "半兽人"]) : "半兽人";
+            case "提夫林":
                 return parents == ""两人都为人类，他们的恶魔血统在你出现之前一直沉睡着。"" ?
-                    Random.Array(["Human", "Human", "Human", "Tiefling"]) :
-                    parents == "“一个父母是 Tiefling，另一个是人类。”" ?
-                        Random.Array(["Human", "Tiefling"]) : "Tiefling";
-            case "Genasi":
+                    Random.Array(["人类", "人类", "人类", "提夫林"]) :
+                    parents == "“一个父母是 提夫林，另一个是人类。”" ?
+                        Random.Array(["人类", "提夫林"]) : "提夫林";
+            case "元素裔":
                 return parents == "“一个父母是基因精种，另一个是人类。”" ?
-                    Random.Array(["Human", "Genasi"]) :
+                    Random.Array(["人类", "元素裔"]) :
                     parents == "“父母都是人类，他们的元素血统在你出现之前一直沉睡。”" ?
-                        Random.Array(["Human", "Human", "Human", "Genasi"]) : "Genasi";
-            case "Aasimar":
+                        Random.Array(["人类", "人类", "人类", "元素裔"]) : "元素裔";
+            case "阿斯莫":
                 return parents == ""双方父母都是人类，他们的天界血统在你出生时才显现。"" ?
-                    "Human" : Random.Array(["Human", "Aasimar"]);
+                    "人类" : Random.Array(["人类", "阿斯莫"]);
         }
         return character.Race.name;
     },
@@ -976,45 +976,45 @@ var Life = {
     SiblingName: function (sibling) {
         let siblingRace = sibling.Race,
             name;
-        if (siblingRace == "Tabaxi")
-            return Random.Array(names.Tabaxi.Name);
+        if (siblingRace == "斑猫人")
+            return Random.Array(names.斑猫人.Name);
         else
-            name = (siblingRace == "Human" && character.Race.name != "Human") ?
+            name = (siblingRace == "人类" && character.Race.name != "人类") ?
                 Names.GetHuman(Names.GetHumanEthnicity(), sibling.Gender) :
                 Names.Get(sibling.Race, sibling.Gender);
         let lastSpace = name.lastIndexOf(" ");
         return lastSpace < 0 ? name : name.substring(0, lastSpace);
     },
 
-    Alignment: function () {
+    阵营: function () {
         let roll = Random.DiceRoll("3d6");
-        return roll < 4 ? Random.Array(["Chaotic Evil", "Chaotic Neutral"]) :
-            roll < 6 ? "Lawful Evil" :
-                roll < 9 ? "Neutral Evil" :
-                    roll < 13 ? "Neutral" :
-                        roll < 16 ? "Neutral Good" :
-                            roll < 17 ? "Lawful Good" :
-                                roll < 18 ? "Lawful Neutral" :
-                                    Random.Array(["Chaotic Good", "Chaotic Neutral"]);
+        return roll < 4 ? Random.Array(["混乱邪恶", "混乱中立"]) :
+            roll < 6 ? "守序邪恶" :
+                roll < 9 ? "中立邪恶" :
+                    roll < 13 ? "绝对中立" :
+                        roll < 16 ? "中立善良" :
+                            roll < 17 ? "守序善良" :
+                                roll < 18 ? "守序中立" :
+                                    Random.Array(["混乱善良", "混乱中立"]);
     },
 
     ClassWeighted: function () {
         let rand = Random.Num(115);
-        return rand < 7 ? "Barbarian" :
-            rand < 14 ? "Bard" :
-                rand < 29 ? "Cleric" :
-                    rand < 36 ? "Druid" :
-                        rand < 52 ? "Fighter" :
-                            rand < 58 ? "Monk" :
-                                rand < 64 ? "Paladin" :
-                                    rand < 70 ? "Ranger" :
-                                        rand < 84 ? "Rogue" :
-                                            rand < 89 ? "Sorcerer" :
-                                                rand < 94 ? "Warlock" :
-                                                    rand < 100 ? "Wizard" :
-                                                        rand < 105 ? (usedBooks.includes("EBR") ? "Artificer" : this.ClassWeighted()) :
-                                                            rand < 110 ? (usedBooks.includes("Other") ? "Blood Hunter" : this.ClassWeighted()) :
-                                                                (usedBooks.includes("UA") ? "Mystic" : this.ClassWeighted());
+        return rand < 7 ? "野蛮人" :
+            rand < 14 ? "吟游诗人" :
+                rand < 29 ? "牧师" :
+                    rand < 36 ? "德鲁伊" :
+                        rand < 52 ? "战士" :
+                            rand < 58 ? "武僧" :
+                                rand < 64 ? "圣武士" :
+                                    rand < 70 ? "游侠" :
+                                        rand < 84 ? "游荡者" :
+                                            rand < 89 ? "术士" :
+                                                rand < 94 ? "邪术师" :
+                                                    rand < 100 ? "法师" :
+                                                        rand < 105 ? (usedBooks.includes("EBR") ? "奇械师" : this.ClassWeighted()) :
+                                                            rand < 110 ? (usedBooks.includes("Other") ? "血猎人" : this.ClassWeighted()) :
+                                                                (usedBooks.includes("UA") ? "灵能师" : this.ClassWeighted());
     },
 
     Status: function () {
@@ -1040,7 +1040,7 @@ var Life = {
                                     rand < 35 ? ""收养家庭（同种族或不同种族）"" :
                                         rand < 55 ? ""单身父亲或继父"" :
                                             rand < 75 ? ""单身母亲或继母"" :
-                                                "Mother and father";
+                                                "母亲和父亲";
     },
 
     AbsentParent: function () {
@@ -1053,12 +1053,12 @@ var Life = {
 
     Lifestyle: function () {
         let roll = Random.DiceRoll("3d6");
-        return roll < 4 ? ["Wretched", -40] :
-            roll < 6 ? ["Squalid", -20] :
-                roll < 9 ? ["Poor", -10] :
-                    roll < 13 ? ["Modest", 0] :
-                        roll < 16 ? ["Comfortable", 10] :
-                            roll < 18 ? ["Wealthy", 20] : ["Aristocratic", 40];
+        return roll < 4 ? ["悲惨", -40] :
+            roll < 6 ? ["肮脏", -20] :
+                roll < 9 ? ["贫穷", -10] :
+                    roll < 13 ? ["简朴", 0] :
+                        roll < 16 ? ["舒适", 10] :
+                            roll < 18 ? ["富裕", 20] : ["贵族", 40];
     },
 
     Home: function (lifeMod) {
@@ -1068,8 +1068,8 @@ var Life = {
                 rand < 30 ? ""没有固定居所，你经常搬家"" :
                     rand < 40 ? "“野外村庄的营地”" :
                         rand < 50 ? "“破败街区中的公寓”" :
-                            rand < 70 ? "Small house" :
-                                rand < 90 ? "Large house" :
+                            rand < 70 ? "小型 house" :
+                                rand < 90 ? "大型 house" :
                                     rand < 110 ? "Mansion" :
                                         "“宫殿或城堡”";
     },
@@ -1087,9 +1087,9 @@ var Life = {
 
     Relationship: function () {
         let roll = Random.DiceRoll("3d4");
-        return roll < 5 ? "Hostile" :
-            roll < 11 ? "Friendly" :
-                "Indifferent";
+        return roll < 5 ? "敌对" :
+            roll < 11 ? "友善" :
+                "漠不关心";
     },
 }
 

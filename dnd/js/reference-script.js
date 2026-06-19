@@ -142,15 +142,15 @@ var Content = {
 
             case "backgroundtraits": // For the SCAG backgrounds where the writers were lazy and used personalities from the PHB 
                 let backgroundCopy = backgrounds[splitSpecial[1].split("_").join(" ")];
-                // specialItem["Trait"] = backgroundCopy.Trait;
-                // specialItem["Ideal"] = backgroundCopy.Ideal;
-                // specialItem["Bond"] = backgroundCopy.Bond;
-                // specialItem["Flaw"] = backgroundCopy.Flaw;
+                // specialItem["特质"] = backgroundCopy.Trait;
+                // specialItem["理念"] = backgroundCopy.Ideal;
+                // specialItem["羁绊"] = backgroundCopy.Bond;
+                // specialItem["缺陷"] = backgroundCopy.Flaw;
                 return {
-                    "Trait": backgroundCopy.Trait,
-                    "Ideal": backgroundCopy.Ideal,
-                    "Bond": backgroundCopy.Bond,
-                    "Flaw": backgroundCopy.Flaw
+                    "特质": backgroundCopy.Trait,
+                    "理念": backgroundCopy.Ideal,
+                    "羁绊": backgroundCopy.Bond,
+                    "缺陷": backgroundCopy.Flaw
                 };
 
             case "ravnicacontacts":
@@ -347,4 +347,4 @@ $(function () {
     GetJSON("ua");
 });
 
-const noBulletPointsTraits = ["Subraces and Variants", "Physical Characteristics", "“童年绰号”", "Guide Name", "Animal Enhancement", "Advanced Animal Enhancement", "Artificer Specialty", "Mystic Order", "Blood Hunter Order"];
+const noBulletPointsTraits = ["子种族与变体", "身体特征", "“童年绰号”", "向导姓名", "动物强化", "Advanced 动物强化", "奇械师专精", "灵能宗派", "血猎人宗派"];

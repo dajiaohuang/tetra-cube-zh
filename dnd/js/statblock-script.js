@@ -5,7 +5,7 @@ var mon = {
     size: "medium",
     type: "humanoid",
     tag: "",
-    alignment: "any alignment",
+    alignment: "任意阵营",
     hitDice: 5,
     armorName: "none",
     shieldBonus: 0,
@@ -227,27 +227,27 @@ function UpdateStatblock(moveSeparationPoint, monOverride) {
     let traitsHTML = [];
 
     if (mon.abilities.length > 0) AddToTraitList(traitsHTML, mon.abilities);
-    if (mon.actions.length > 0) AddToTraitList(traitsHTML, mon.actions, "<h3>Actions</h3>");
-    if (mon.bonusActions.length > 0) AddToTraitList(traitsHTML, mon.bonusActions, "<h3>Bonus Actions</h3>");
-    if (mon.reactions.length > 0) AddToTraitList(traitsHTML, mon.reactions, "<h3>Reactions</h3>");
+    if (mon.actions.length > 0) AddToTraitList(traitsHTML, mon.actions, "<h3>动作</h3>");
+    if (mon.bonusActions.length > 0) AddToTraitList(traitsHTML, mon.bonusActions, "<h3>附赠动作</h3>");
+    if (mon.reactions.length > 0) AddToTraitList(traitsHTML, mon.reactions, "<h3>反应</h3>");
     if (mon.isLegendary && (mon.legendaries.length > 0 || mon.legendariesDescription.length > 0))
         AddToTraitList(traitsHTML, mon.legendaries, mon.legendariesDescription == "" ?
-            "<h3>Legendary Actions</h3><div class='property-block'></div>" :
-            ["<h3>Legendary Actions</h3><div class='property-block'>", StringFunctions.FormatString(ReplaceTags(StringFunctions.RemoveHtmlTags(mon.legendariesDescription))), "</div></br>"], true);
+            "<h3>传奇动作</h3><div class='property-block'></div>" :
+            ["<h3>传奇动作</h3><div class='property-block'>", StringFunctions.FormatString(ReplaceTags(StringFunctions.RemoveHtmlTags(mon.legendariesDescription))), "</div></br>"], true);
     if (mon.isMythic && mon.isLegendary && (mon.mythics.length > 0 || mon.mythicDescription.length > 0))
         AddToTraitList(traitsHTML, mon.mythics, mon.mythicDescription == "" ?
-            "<h3>Mythic Actions</h3><div class='property-block'></div>" :
-            ["<h3>Mythic Actions</h3><div class='property-block'>", StringFunctions.FormatString(ReplaceTags(StringFunctions.RemoveHtmlTags(mon.mythicDescription))), "</div></br>"], true);    
+            "<h3>神话动作</h3><div class='property-block'></div>" :
+            ["<h3>神话动作</h3><div class='property-block'>", StringFunctions.FormatString(ReplaceTags(StringFunctions.RemoveHtmlTags(mon.mythicDescription))), "</div></br>"], true);    
     if (mon.isLair && mon.isLegendary && (mon.lairs.length > 0 || mon.lairDescription.length > 0 || mon.lairDescriptionEnd.length > 0)) {
         AddToTraitList(traitsHTML, mon.lairs, mon.lairDescription == "" ?
-            "<h3>Lair Actions</h3><div class='property-block'></div>" :
-            ["<h3>Lair Actions</h3><div class='property-block'>", StringFunctions.FormatString(ReplaceTags(StringFunctions.RemoveHtmlTags(mon.lairDescription))), "</div></br><ul>"], false, true);
+            "<h3>巢穴动作</h3><div class='property-block'></div>" :
+            ["<h3>巢穴动作</h3><div class='property-block'>", StringFunctions.FormatString(ReplaceTags(StringFunctions.RemoveHtmlTags(mon.lairDescription))), "</div></br><ul>"], false, true);
         traitsHTML.push("</ul>" + StringFunctions.FormatString(ReplaceTags(StringFunctions.RemoveHtmlTags(mon.lairDescriptionEnd))));
     }
     if (mon.isRegional && mon.isLegendary && (mon.regionals.length > 0 || mon.regionalDescription.length > 0 || mon.regionalDescriptionEnd.length > 0)) {
         AddToTraitList(traitsHTML, mon.regionals, mon.regionalDescription == "" ?
-            "<h3>Regional Effects</h3><div class='property-block'></div>" :
-            ["<h3>Regional Effects</h3><div class='property-block'>", StringFunctions.FormatString(ReplaceTags(StringFunctions.RemoveHtmlTags(mon.regionalDescription))), "</div></br><ul>"], false, true);
+            "<h3>区域效应</h3><div class='property-block'></div>" :
+            ["<h3>区域效应</h3><div class='property-block'>", StringFunctions.FormatString(ReplaceTags(StringFunctions.RemoveHtmlTags(mon.regionalDescription))), "</div></br><ul>"], false, true);
         traitsHTML.push("</ul>" + StringFunctions.FormatString(ReplaceTags(StringFunctions.RemoveHtmlTags(mon.regionalDescriptionEnd))));
     }
 
@@ -285,7 +285,7 @@ function AddToTraitList(traitsHTML, traitsArr, addElements, isLegendary = false,
             traitsHTML.push("*" + addElements);
     }
 
-    // There's a small difference in formatting for legendary actions and lair/regional actions
+    // There's a small difference in formatting for 传奇动作 and lair/regional actions
     for (let index = 0; index < traitsArr.length; index++) {
         if (isLegendary) {
             traitsHTML.push(StringFunctions.MakeTraitHTMLLegendary(traitsArr[index].name, ReplaceTags(traitsArr[index].desc)));
@@ -415,81 +415,81 @@ function ReplaceTags(desc) {
     return desc;
 }
 
-// Homebrewery/GM Binder markdown
+// Homebrewery/GM Binder Markdown
 function TryMarkdown() {
-    let markdownWindow = window.open();
-    let markdown = ['<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><title>', mon.name, '</title><link rel=""快捷图标"" type="image/x-icon" href="./dndimages/favicon.ico" /></head><body>'];
+    let MarkdownWindow = window.open();
+    let Markdown = ['<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><title>', mon.name, '</title><link rel=""快捷图标"" type="image/x-icon" href="./dndimages/favicon.ico" /></head><body>'];
     
-    markdown.push(
+    Markdown.push(
         "<h2>Homebrewery V3</h2>",
-        BuildMarkdown(V3_MARKDOWN),
+        BuildMarkdown(V3_Markdown),
         "<h2>Homebrewery (Legacy)/GM Binder Markdown</h2>",
-        BuildMarkdown(LEGACY_MARKDOWN));
+        BuildMarkdown(LEGACY_Markdown));
 
 
-    markdown.push("</body></html>");
+    Markdown.push("</body></html>");
 
-    markdownWindow.document.write(markdown.join(""));
+    MarkdownWindow.document.write(Markdown.join(""));
 }
 
 function BuildMarkdown(isV3Markdown) {
-    let markdownLines = [];
+    let MarkdownLines = [];
 
     if (isV3Markdown) {
-        markdownLines.push(`{{怪物,frame${mon.doubleColumns ? ",wide" : ""}`);
+        MarkdownLines.push(`{{怪物,frame${mon.doubleColumns ? ",wide" : ""}`);
     }
     else {
         if (mon.doubleColumns) {
-            markdownLines.push("___");  
+            MarkdownLines.push("___");  
         }
-        markdownLines.push("___");
+        MarkdownLines.push("___");
     }
 
-    markdownLines.push(
+    MarkdownLines.push(
         `## ${mon.name}`,
         `*${StringFunctions.StringCapitalize(mon.size)} ${mon.type}${mon.tag != "" ? ` (${mon.tag})`  : ""}, ${mon.alignment}*`,
         `___`,
-        PrintMarkdownProperty(isV3Markdown, "Armor Class", StringFunctions.FormatString(StringFunctions.GetArmorData())),
-        PrintMarkdownProperty(isV3Markdown, "Hit Points", StringFunctions.GetHP()), 
-        PrintMarkdownProperty(isV3Markdown, "Speed", StringFunctions.GetSpeed()),
+        PrintMarkdownProperty(isV3Markdown, "护甲等级", StringFunctions.FormatString(StringFunctions.GetArmorData())),
+        PrintMarkdownProperty(isV3Markdown, "生命值", StringFunctions.GetHP()), 
+        PrintMarkdownProperty(isV3Markdown, "速度", StringFunctions.GetSpeed()),
         `___`);
-    AddMarkdownAttributesTable(markdownLines);
-    markdownLines.push("___");
+    AddMarkdownAttributesTable(MarkdownLines);
+    MarkdownLines.push("___");
 
     let propertiesDisplayArr = StringFunctions.GetPropertiesDisplayArr();
 
     for (let index = 0; index < propertiesDisplayArr.length; index++) {
-        markdownLines.push(
+        MarkdownLines.push(
             PrintMarkdownProperty(isV3Markdown, 
             propertiesDisplayArr[index].name, 
             Array.isArray(propertiesDisplayArr[index].arr) ? propertiesDisplayArr[index].arr.join(", ") : propertiesDisplayArr[index].arr));
     }
 
-    markdownLines.push(
-        PrintMarkdownProperty(isV3Markdown, "Challenge", mon.cr == "*" ? mon.customCr : `${mon.cr} (${data.crs[mon.cr].xp} XP)`),
+    MarkdownLines.push(
+        PrintMarkdownProperty(isV3Markdown, "挑战等级", mon.cr == "*" ? mon.customCr : `${mon.cr} (${data.crs[mon.cr].xp} XP)`),
         "___");
 
-    AddMarkdownTraitSection(markdownLines, isV3Markdown, null, mon.abilities);
-    AddMarkdownTraitSection(markdownLines, isV3Markdown, "Actions", mon.actions);
-    AddMarkdownTraitSection(markdownLines, isV3Markdown, "Bonus Actions", mon.bonusActions);
-    AddMarkdownTraitSection(markdownLines, isV3Markdown, "Reactions", mon.reactions);
+    AddMarkdownTraitSection(MarkdownLines, isV3Markdown, null, mon.abilities);
+    AddMarkdownTraitSection(MarkdownLines, isV3Markdown, "动作", mon.actions);
+    AddMarkdownTraitSection(MarkdownLines, isV3Markdown, "附赠动作", mon.bonusActions);
+    AddMarkdownTraitSection(MarkdownLines, isV3Markdown, "反应", mon.reactions);
 
     if (mon.isLegendary) {
-        AddMarkdownTraitSection(markdownLines, isV3Markdown, "Legendary Actions", mon.legendaries, mon.legendariesDescription, null, LEGENDARY);
-        if (mon.isMythic) AddMarkdownTraitSection(markdownLines, isV3Markdown, "Mythic Actions", mon.mythics, mon.mythicDescription, null, MYTHIC);
-        if (mon.isLair) AddMarkdownTraitSection(markdownLines, isV3Markdown, "Lair Actions", mon.lairs, mon.lairDescription, mon.lairDescriptionEnd, LAIR);
-        if (mon.isRegional) AddMarkdownTraitSection(markdownLines, isV3Markdown, "Regional Effects", mon.regionals, mon.regionalDescription, mon.regionalDescriptionEnd, REGIONAL);
+        AddMarkdownTraitSection(MarkdownLines, isV3Markdown, "传奇动作", mon.legendaries, mon.legendariesDescription, null, LEGENDARY);
+        if (mon.isMythic) AddMarkdownTraitSection(MarkdownLines, isV3Markdown, "神话动作", mon.mythics, mon.mythicDescription, null, MYTHIC);
+        if (mon.isLair) AddMarkdownTraitSection(MarkdownLines, isV3Markdown, "巢穴动作", mon.lairs, mon.lairDescription, mon.lairDescriptionEnd, LAIR);
+        if (mon.isRegional) AddMarkdownTraitSection(MarkdownLines, isV3Markdown, "区域效应", mon.regionals, mon.regionalDescription, mon.regionalDescriptionEnd, REGIONAL);
     }
 
     if (isV3Markdown) {
-        markdownLines.push("}}");
+        MarkdownLines.push("}}");
     }
     else 
     {
-        LegacyMarkdownFormating(markdownLines);
+        LegacyMarkdownFormating(MarkdownLines);
     }
 
-    return ConvertMarkdownToHtmlString(markdownLines);
+    return ConvertMarkdownToHtmlString(MarkdownLines);
 }
 
 function PrintMarkdownProperty(isV3Markdown, name, value) {
@@ -501,8 +501,8 @@ function PrintMarkdownProperty(isV3Markdown, name, value) {
     }
 }
 
-function AddMarkdownAttributesTable(markdown) {
-    markdown.push(
+function AddMarkdownAttributesTable(Markdown) {
+    Markdown.push(
         ``|力量|敏捷|体质|智力|感知|魅力|``,
         `|:---:|:---:|:---:|:---:|:---:|:---:|`,
         `|${mon.strPoints} (${StringFunctions.BonusFormat(MathFunctions.PointsToBonus(mon.strPoints))})|` +
@@ -513,7 +513,7 @@ function AddMarkdownAttributesTable(markdown) {
         `${mon.chaPoints} (${StringFunctions.BonusFormat(MathFunctions.PointsToBonus(mon.chaPoints))})|`);
 }
 
-function AddMarkdownTraitSection(markdownLines, isV3Markdown, sectionTitle, traitArr, sectionHeader = null, sectionEnd = null, formatOptions = "") {
+function AddMarkdownTraitSection(MarkdownLines, isV3Markdown, sectionTitle, traitArr, sectionHeader = null, sectionEnd = null, formatOptions = "") {
     if (traitArr.length == 0 && !sectionHeader && !sectionEnd)
     {
         return;
@@ -523,49 +523,57 @@ function AddMarkdownTraitSection(markdownLines, isV3Markdown, sectionTitle, trai
     let legendary = formatOptions === LEGENDARY;
     let lairOrRegional = formatOptions === LAIR || formatOptions === REGIONAL;
 
-    if (sectionTitle) markdownLines.push(`### ${sectionTitle}`);
-    if (sectionHeader) markdownLines.push(ReplaceTags(sectionHeader), traitDiv);
+    if (sectionTitle) MarkdownLines.push(`### ${sectionTitle}`);
+    if (sectionHeader) MarkdownLines.push(ReplaceTags(sectionHeader), traitDiv);
 
     if (traitArr.length != 0) {
         for (let index = 0; index < traitArr.length; index++) {
             let desc = ReplaceTags(traitArr[index].desc)
-                .replace(/(\r\n|\r|\n)\s*(\r\n|\r|\n)/g, '\n>\n')
-                .replace(/(\r\n|\r|\n)>/g, `\&lt;br&gt;<br>`)
-                .replace(/(\r\n|\r|\n)/g, `\&lt;br&gt;<br> &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`);
+                .replace(/(\r
+|\r|
+)\s*(\r
+|\r|
+)/g, '\n>\n')
+                .replace(/(\r
+|\r|
+)>/g, `\&lt;br&gt;<br>`)
+                .replace(/(\r
+|\r|
+)/g, `\&lt;br&gt;<br> &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`);
             
             let traitString = (legendary ? "**" : (lairOrRegional ? "* " : "***")) +
             (lairOrRegional ? "" : traitArr[index].name) +
             (legendary ? ".** " : lairOrRegional ? "" : (".*** ")) +
             desc;
 
-            traitString.split("<br>").forEach(line => markdownLines.push(line))
+            traitString.split("<br>").forEach(line => MarkdownLines.push(line))
             if (index + 1 < traitArr.length)
             {
-                markdownLines.push(traitDiv);
+                MarkdownLines.push(traitDiv);
             }
         }
     }
 
-    if (sectionEnd && traitArr.length != 0) markdownLines.push(traitDiv);
-    if (sectionEnd) markdownLines.push(ReplaceTags(sectionEnd));
+    if (sectionEnd && traitArr.length != 0) MarkdownLines.push(traitDiv);
+    if (sectionEnd) MarkdownLines.push(ReplaceTags(sectionEnd));
 }
 
-function LegacyMarkdownFormating(markdownLines) {
+function LegacyMarkdownFormating(MarkdownLines) {
     // Append each line with a >
     // Skip first 1 or 2 lines depending if its wide frame or not
     let startingIndex = mon.doubleColumns ? 2 : 1; 
 
-    for (let index = startingIndex; index < markdownLines.length; index++)
+    for (let index = startingIndex; index < MarkdownLines.length; index++)
     {
-        markdownLines[index] = `> ${markdownLines[index]}`;
+        MarkdownLines[index] = `> ${MarkdownLines[index]}`;
     }
 }
 
-function ConvertMarkdownToHtmlString(markdownLines) {
+function ConvertMarkdownToHtmlString(MarkdownLines) {
     // Add line breaks and code tags
     let builtLines = [];
     
-    markdownLines.forEach(line => {
+    MarkdownLines.forEach(line => {
         line.split("<br>").forEach(subLine => {
             builtLines.push(`${subLine}<br>`);
         });
@@ -590,18 +598,18 @@ var FormFunctions = {
         }
         this.ShowHideTypeOther();
 
-        // Tag and Alignment
+        // Tag and 阵营
         $("#tag-input").val(mon.tag);
         $("#alignment-input").val(mon.alignment);
 
-        // Armor Class
+        // 护甲等级
         $("#armor-input").val(mon.armorName);
         $("#shield-input").prop("checked", (mon.shieldBonus > 0 ? true : false));
         $("#natarmor-input").val(mon.natArmorBonus);
         $("#otherarmor-input").val(mon.otherArmorDesc);
         this.ShowHideOtherArmor();
 
-        // Hit Dice
+        // 生命骰
         $("#hitdice-input").val(mon.hitDice);
         $("#hp-text-input").val(StringFunctions.GetHP());
         $("#custom-hp-input").prop("checked", mon.customHP);
@@ -627,7 +635,7 @@ var FormFunctions = {
         this.SetStatForm("wis", mon.wisPoints);
         this.SetStatForm("cha", mon.chaPoints);
 
-        // Senses
+        // 感官
         $("#blindsight-input").val(mon.blindsight);
         $("#blindness-input").prop("checked", mon.blind);
         this.ShowHideBlindBox();
@@ -674,7 +682,7 @@ var FormFunctions = {
         $("#has-regional-input").prop("checked", mon.isRegional);
         this.ShowHideRegional();
 
-        // Challenge Rating
+        // 挑战等级
         $("#cr-input").val(mon.cr);
         $("#custom-cr-input").val(mon.customCr);
         $("#custom-prof-input").val(mon.customProf);
@@ -684,7 +692,7 @@ var FormFunctions = {
         this.ChangeColumnRadioButtons();
     },
 
-    // Show/Hide form options to make it less overwhelming - only call these from SetForms or HTML elements
+    // Show/皮甲 form options to make it less overwhelming - only call these from SetForms or HTML elements
     ShowHideHtmlElement: function (element, show) {
         show ? $(element).show() : $(element).hide();
     },
@@ -702,7 +710,7 @@ var FormFunctions = {
     },
     ShowHideOtherArmor: function () {
         $("#natarmor-prompt, #otherarmor-prompt").hide();
-        if ($("#armor-input").val() == "natural armor")
+        if ($("#armor-input").val() == "天生护甲")
             $("#natarmor-prompt").show();
         else if ($("#armor-input").val() == "other")
             $("#otherarmor-prompt").show();
@@ -779,7 +787,7 @@ var FormFunctions = {
         $("#" + stat + "bonus").html(StringFunctions.RemoveHtmlTags(StringFunctions.BonusFormat(MathFunctions.PointsToBonus($("#" + stat + "-input").val()))));
     },
 
-    // Set the proficiency bonus 基于 the 怪物's CR
+    // Set the 熟练加值 基于 the 怪物's CR
     ChangeCRForm: function () {
         if (mon.cr == "*") {
             $("#prof-bonus").hide();
@@ -789,7 +797,7 @@ var FormFunctions = {
         }
         else {
             $("#prof-bonus").show();
-            $("#prof-bonus").html("(Proficiency Bonus: +" + StringFunctions.RemoveHtmlTags(CrFunctions.GetProf()) + ")");
+            $("#prof-bonus").html("(熟练加值: +" + StringFunctions.RemoveHtmlTags(CrFunctions.GetProf()) + ")");
             $("#custom-cr").hide();
         }
     },
@@ -935,7 +943,7 @@ var InputFunctions = {
             UpdateStatblock();
             return;
         }
-        $.getJSON("https://api.open5e.com/v1/怪物s/" + name, function (jsonArr) {
+        $.getJSON("https://api.Open5e.com/v1/怪物s/" + name, function (jsonArr) {
             GetVariablesFunctions.SetPreset(jsonArr);
             FormFunctions.SetForms();
             UpdateStatblock();
@@ -1173,13 +1181,13 @@ var GetVariablesFunctions = {
                         armorDescData = [armorDescData.join(",")];
                 }
 
-                // Is it natural armor?
-                if (mon.armorName == "natural armor") {
+                // Is it 天生护甲?
+                if (mon.armorName == "天生护甲") {
                     let natArmorBonusCheck = armorAcData - MathFunctions.GetAC("none");
                     if (natArmorBonusCheck > 0)
                         mon.natArmorBonus = natArmorBonusCheck;
 
-                    // Weird edge case where the 怪物 has a natural armor bonus of <= 0
+                    // Weird edge case where the 怪物 has a 天生护甲 bonus of <= 0
                     else
                         mon.armorName = "other";
                 }
@@ -1215,7 +1223,7 @@ var GetVariablesFunctions = {
         } else
             mon.otherArmorDesc = armorAcData + (preset.armor_desc ? " (" + preset.armor_desc + ")" : "");
 
-        // Hit Dice
+        // 生命骰
         mon.hitDice = parseInt(preset.hit_dice.split("d")[0]);
         mon.hpText = mon.hitDice.toString();
         mon.customHP = false;
@@ -1238,7 +1246,7 @@ var GetVariablesFunctions = {
             mon.speedDesc = StringFunctions.GetSpeed();
         }
 
-        // Saving Throws
+        // 豁免
         mon.sthrows = [];
         if (preset.strength_save)
             this.AddSthrow("str");
@@ -1253,7 +1261,7 @@ var GetVariablesFunctions = {
         if (preset.charisma_save)
             this.AddSthrow("cha");
 
-        // Skills
+        // 技能
         mon.skills = [];
         if (preset.skills) {
             for (let index = 0; index < data.allSkills.length; index++) {
@@ -1267,20 +1275,20 @@ var GetVariablesFunctions = {
             }
         }
 
-        // Conditions
+        // 状态
         mon.conditions = [];
         let conditionsPresetArr = ArrayFunctions.FixPresetArray(preset.condition_immunities);
         for (let index = 0; index < conditionsPresetArr.length; index++)
             this.AddCondition(conditionsPresetArr[index]);
 
-        // Damage Types
+        // 伤害 Types
         mon.damagetypes = [];
         mon.specialdamage = [];
         this.AddPresetDamage(preset.damage_vulnerabilities, "v");
         this.AddPresetDamage(preset.damage_resistances, "r");
         this.AddPresetDamage(preset.damage_immunities, "i");
 
-        // Languages
+        // 语言
         mon.languages = [];
         mon.telepathy = 0;
         mon.understandsBut = "";
@@ -1463,7 +1471,7 @@ var GetVariablesFunctions = {
                     return;
             }
         }
-        note = type == 'v' ? " (Vulnerable)" : type == 'i' ? " (Immune)" : " (Resistant)";
+        note = type == 'v' ? " (易伤)" : type == 'i' ? " (免疫)" : " (抗性)";
         ArrayFunctions.ArrayInsert(mon[special ? "specialdamage" : "damagetypes"], {
             "name": damageName,
             "note": note,
@@ -1594,17 +1602,17 @@ var GetVariablesFunctions = {
 
     // Return the default legendary description
     LegendaryDescriptionDefault: function () {
-        mon.legendariesDescription = "The " + mon.name.toLowerCase() + " can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The " + mon.name.toLowerCase() + " regains spent legendary actions at the start of its turn.";
+        mon.legendariesDescription = "The " + mon.name.toLowerCase() + " can take 3 传奇动作, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The " + mon.name.toLowerCase() + " regains spent 传奇动作 at the start of its turn.";
     },
 
     // Return the default mythic description
     MythicDescriptionDefault: function () {
-        mon.mythicDescription = ""如果 "" + mon.name.toLowerCase() + "'s mythic trait is active, it can use the options below as legendary actions for 1 hour after using {Some Ability}.";
+        mon.mythicDescription = ""如果 "" + mon.name.toLowerCase() + "'s mythic trait is active, it can use the options below as 传奇动作 for 1 hour after using {Some Ability}.";
     },
 
     // Return the default lair description
     LairDescriptionDefault: function () {
-        mon.lairDescription = ""在其巢穴内战斗时，"" + mon.name.toLowerCase() + " can invoke the ambient magic to take lair actions. On initiative count 20 (losing initiative ties), the " + mon.name.toLowerCase() + "可以使用一个巢穴动作来造成以下效果之一：";
+        mon.lairDescription = ""在其巢穴内战斗时，"" + mon.name.toLowerCase() + " can invoke the ambient magic to take 巢穴动作. On initiative count 20 (losing initiative ties), the " + mon.name.toLowerCase() + "可以使用一个巢穴动作来造成以下效果之一：";
     },
 
     // Return the default lair end description
@@ -1680,12 +1688,12 @@ var StringFunctions = {
         if (mon.tremorsense > 0) sensesDisplayArr.push("tremorsense " + mon.tremorsense + " ft.");
         if (mon.truesight > 0) sensesDisplayArr.push("truesight " + mon.truesight + " ft.");
 
-        // Passive Perception
-        let ppData = ArrayFunctions.FindInList(mon.skills, "Perception"),
+        // 被动察觉
+        let ppData = ArrayFunctions.FindInList(mon.skills, "察觉"),
             pp = 10 + MathFunctions.PointsToBonus(mon.wisPoints);
         if (ppData != null)
             pp += CrFunctions.GetProf() * (ppData.hasOwnProperty("note") ? 2 : 1);
-        sensesDisplayArr.push("passive Perception " + pp);
+        sensesDisplayArr.push("被动察觉 " + pp);
         return sensesDisplayArr.join(", ");
     },
 
@@ -1700,19 +1708,19 @@ var StringFunctions = {
             resistantDisplayString = "",
             immuneDisplayString = "";
 
-        // Saving Throws
+        // 豁免
         for (let index = 0; index < mon.sthrows.length; index++)
             sthrowsDisplayArr.push(StringFunctions.StringCapitalize(mon.sthrows[index].name) + " " +
                 StringFunctions.BonusFormat((MathFunctions.PointsToBonus(mon[mon.sthrows[index].name + "Points"]) + CrFunctions.GetProf())));
 
-        // Skills
+        // 技能
         for (let index = 0; index < mon.skills.length; index++) {
             let skillData = mon.skills[index];
             skillsDisplayArr.push(StringFunctions.StringCapitalize(skillData.name) + " " +
                 StringFunctions.BonusFormat(MathFunctions.PointsToBonus(mon[skillData.stat + "Points"]) + CrFunctions.GetProf() * (skillData.hasOwnProperty("note") ? 2 : 1)));
         }
 
-        // Damage Types (It's not pretty but it does its job)
+        // 伤害 Types (It's not pretty but it does its job)
         let vulnerableDisplayArr = [],
             resistantDisplayArr = [],
             immuneDisplayArr = [],
@@ -1780,14 +1788,14 @@ var StringFunctions = {
                 "arr": arr
             })
         };
-        pushArr("Saving Throws", sthrowsDisplayArr);
-        pushArr("Skills", skillsDisplayArr);
-        pushArr("Damage Vulnerabilities", vulnerableDisplayString);
-        pushArr("Damage Resistances", resistantDisplayString);
-        pushArr("Damage Immunities", immuneDisplayString);
-        pushArr("Condition Immunities", conditionsDisplayArr);
-        pushArr("Senses", sensesDisplayString);
-        pushArr("Languages", languageDisplayArr);
+        pushArr("豁免", sthrowsDisplayArr);
+        pushArr("技能", skillsDisplayArr);
+        pushArr("伤害易伤", vulnerableDisplayString);
+        pushArr("伤害抗性", resistantDisplayString);
+        pushArr("伤害免疫", immuneDisplayString);
+        pushArr("状态免疫", conditionsDisplayArr);
+        pushArr("感官", sensesDisplayString);
+        pushArr("语言", languageDisplayArr);
 
         return propertiesDisplayArr;
     },
@@ -1880,7 +1888,7 @@ var MathFunctions = {
     // Compute ability bonuses 基于 ability scores
     PointsToBonus: (points) => Math.floor(points / 2) - 5,
 
-    // Compute armor class
+    // Compute 护甲等级
     GetAC: function (armorNameCheck) {
         let armor = data.armors[armorNameCheck],
             dexBonus = MathFunctions.PointsToBonus(mon.dexPoints);
@@ -1888,7 +1896,7 @@ var MathFunctions = {
             if (armor.type == "light") return armor.ac + dexBonus + mon.shieldBonus;
             if (armor.type == "medium") return armor.ac + Math.min(dexBonus, 2) + mon.shieldBonus;
             if (armor.type == "heavy") return armor.ac + mon.shieldBonus;
-            if (armorNameCheck == "natural armor") return 10 + dexBonus + mon.natArmorBonus + mon.shieldBonus;
+            if (armorNameCheck == "天生护甲") return 10 + dexBonus + mon.natArmorBonus + mon.shieldBonus;
             if (armorNameCheck == "other") return "other";
         }
         return 10 + dexBonus + mon.shieldBonus;
@@ -1953,16 +1961,16 @@ var ArrayFunctions = {
 // Document ready function
 $(function () {
     // Load the preset 怪物 names
-    $.getJSON("https://api.open5e.com/v1/怪物s/?format=json&fields=slug,name&limit=1000&document__slug=wotc-srd", function (srdArr) {
+    $.getJSON("https://api.Open5e.com/v1/怪物s/?format=json&fields=slug,name&limit=1000&document__slug=wotc-SRD", function (srdArr) {
         let 怪物Select = $("#怪物-select");
         怪物Select.append("<option value=''></option>");
         怪物Select.append("<option value=''>-5e SRD-</option>");
         $.each(srdArr.results, function (index, value) {
             怪物Select.append("<option value='" + value.slug + "'>" + value.name + "</option>");
         })
-        $.getJSON("https://api.open5e.com/v1/怪物s/?format=json&fields=slug,name&limit=1000&document__slug=tob", function (tobArr) {
+        $.getJSON("https://api.Open5e.com/v1/怪物s/?format=json&fields=slug,name&limit=1000&document__slug=tob", function (tobArr) {
             怪物Select.append("<option value=''></option>");
-            怪物Select.append("<option value=''>-Tome of Beasts (Kobold Press)-</option>");
+            怪物Select.append("<option value=''>-Tome of Beasts (狗头人 Press)-</option>");
             $.each(tobArr.results, function (index, value) {
                 怪物Select.append("<option value='" + value.slug + "'>" + value.name + "</option>");
             })

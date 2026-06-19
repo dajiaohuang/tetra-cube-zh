@@ -193,8 +193,8 @@ def extract_all_texts():
                     elif has_english(normalized):
                         entries.append(("text", text, None))
 
-        # Attributes
-        attr_names = ["title", "placeholder", "aria-label", "alt", "content",
+        # Attributes (NEVER translate: id, class, name, href, src, type, for, rel)
+        attr_names = ["title", "placeholder", "aria-label", "alt",
                        "data-original-title", "data-content"]
         for tag in soup.find_all(True):
             for attr in attr_names:

@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<title>D&amp;D 5e 属性块生成器</title>
+<title>D&amp;D 5e Statblock Generator</title>
 <link href="dndimages/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 <link href="css/statblock-style.css" rel="stylesheet" type="text/css"/>
@@ -29,28 +29,30 @@
 <body id="stat-block-body" style="min-width: 1000px;">
 <div class="container" style="text-align: center;">
 <div class="content">
-<div style="text-align: center;"><a href="dnd-reference.html">角色选项参考</a> - <a href="dnd-char-gen.html">"角色生成器"</a> - <a href="dnd-magic-items.html">魔法物品生成器</a> - <b>属性块生成器</b></div>
+<div style="text-align: center;"><a href="dnd-reference.html">PC Options Reference</a> - <a href="dnd-char-gen.html">Character Generator</a> - <a href="dnd-magic-items.html">Magic Item
+                    Generator</a> - <b>Statblock Generator</b></div>
 <br/>
-<h1>D&amp;D 5e 属性块生成器</h1>
-<p>基于 <a href="http://valloric.github.io/statblock5e/">Statblock5e</a> and <a href="https://open5e.com/">Open5e</a></p>
+<h1>D&amp;D 5e Statblock Generator</h1>
+<p>Based on <a href="http://valloric.github.io/statblock5e/">Statblock5e</a> and <a href="https://open5e.com/">Open5e</a></p>
 <br/>
-<button onclick="TrySaveFile()">"保存属性块"</button>
-<button onclick="LoadFilePrompt()">加载属性块</button>
+<button onclick="TrySaveFile()">Save Statblock</button>
+<button onclick="LoadFilePrompt()">Load Statblock</button>
 <span style="display: inline-table;">
-<button onclick="TryPrint()">"可打印区块"</button>
+<button onclick="TryPrint()">Printable Block</button>
 <br/>
 <input id="print-color-mode" type="checkbox"/>
-<label for="print-color-mode" title="如果选中，则打印下方显示的属性块，否则打印黑白版本。">颜色模式</label>
+<label for="print-color-mode" title="Print the statblock shown below if checked, or a black-and-white version if not.">Color mode</label>
 </span>
-<button onclick="PrintMultiple()">打印多个...</button>
-<button onclick="TryImage()">查看图片</button>
-<button onclick="TryMarkdown()">查看 Markdown</button>
+<button onclick="PrintMultiple()">Print Multiple...</button>
+<button onclick="TryImage()">View Image</button>
+<button onclick="TryMarkdown()">View Markdown</button>
 <input hidden="" id="file-upload" onchange="TryLoadFile();" type="file">
 <br/><br/>
-<div id="怪物-选择-form">怪物预设： <select id="怪物-select">
-<option value="">-选择-</option>
-<option value="default">恢复默认设置</option>
-</select> <button id="怪物-选择-button" onclick="InputFunctions.GetPreset()" type="button">使用</button></div>
+<div id="monster-select-form">Monster Presets: <select id="monster-select">
+<option value="">-Select-</option>
+<option value="default">Restore Default</option>
+</select> <button id="monster-select-button" onclick="InputFunctions.GetPreset()" type="button">Use
+                    Preset</button></div>
 <br/>
 <!-- The Actual Stat Block -->
 <div id="stat-block-wrapper">
@@ -58,8 +60,8 @@
 <hr class="orange-border"/>
 <div class="section-left">
 <div class="creature-heading">
-<h1 id="怪物-name">怪物</h1>
-<h2 id="怪物-type">体型, 类型, 阵营</h2>
+<h1 id="monster-name">Monster</h1>
+<h2 id="monster-type">体型, type, alignment</h2>
 </div> <!-- creature heading -->
 <svg class="tapered-rule" height="5" width="100%">
 <polyline points="0,0 400,2.5 0,5"></polyline>
@@ -74,7 +76,7 @@
 <p id="hit-points"></p>
 </div> <!-- property line -->
 <div class="property-line last">
-<h4>Speed</h4>
+<h4>速度</h4>
 <p id="speed"></p>
 </div> <!-- property line -->
 <svg class="tapered-rule" height="5" width="100%">
@@ -111,7 +113,7 @@
 </svg>
 <div id="properties-list"></div>
 <div class="property-line last" id="challenge-rating-line">
-<h4>Challenge</h4>
+<h4>挑战等级</h4>
 <p id="challenge-rating"></p>
 </div> <!-- property line -->
 </div> <!-- top stats -->
@@ -132,47 +134,47 @@
 </div> <!-- stat block -->
 <div class="options">
 <form>
-<label for="1col-input"><input checked="" id="1col-input" name="columns-input" type="radio" value="1col"/> 一列布局</label>
-<label for="2col-input" style="margin-left: .5rem;"><input id="2col-input" name="columns-input" type="radio" value="2col"/> "两列显示"</label>
+<label for="1col-input"><input checked="" id="1col-input" name="columns-input" type="radio" value="1col"/> One Column</label>
+<label for="2col-input" style="margin-left: .5rem;"><input id="2col-input" name="columns-input" type="radio" value="2col"/> Two Columns</label>
 </form>
 <button id="left-separator-button" onclick="UpdateBlockFromVariables(1)" type="button">&lt;&lt;</button>
-<button onclick="UpdateBlockFromVariables(0)" type="button">更新属性块</button>
+<button onclick="UpdateBlockFromVariables(0)" type="button">Update Statblock</button>
 <button id="right-separator-button" onclick="UpdateBlockFromVariables(-1)" type="button">&gt;&gt;</button>
 <hr/>
 <table id="type-form">
 <tr>
 <td>
-<label for="name-input">Name: <br/><input id="name-input" type="text" value="怪物"/></label>
+<label for="name-input">Name: <br/><input id="name-input" type="text" value="Monster"/></label>
 </td>
 <td>
-<label for="size-input">Size: <br/>
+<label for="size-input">体型: <br/>
 <select id="size-input">
-<option value="tiny">Tiny</option>
-<option value="small">Small</option>
-<option selected="selected" value="medium">Medium</option>
-<option value="large">Large</option>
-<option value="huge">Huge</option>
-<option value="gargantuan">Gargantuan</option>
+<option value="tiny">微型</option>
+<option value="small">小型</option>
+<option selected="selected" value="medium">中型</option>
+<option value="large">大型</option>
+<option value="huge">巨型</option>
+<option value="gargantuan">超巨型</option>
 </select>
 </label>
 </td>
 <td>
 <label for="type-input">Type: <br/>
 <select id="type-input" onchange="FormFunctions.ShowHideTypeOther()">
-<option value="aberration">Aberration</option>
-<option value="beast">Beast</option>
-<option value="celestial">Celestial</option>
-<option value="construct">Construct</option>
-<option value="dragon">Dragon</option>
-<option value="elemental">Elemental</option>
-<option value="fey">Fey</option>
-<option value="fiend">Fiend</option>
-<option value="giant">Giant</option>
-<option selected="" value="humanoid">Humanoid</option>
-<option value="monstrosity">Monstrosity</option>
-<option value="ooze">Ooze</option>
-<option value="计划t">计划t</option>
-<option value="undead">Undead</option>
+<option value="aberration">异怪</option>
+<option value="beast">野兽</option>
+<option value="celestial">天界生物</option>
+<option value="construct">构装生物</option>
+<option value="dragon">龙类</option>
+<option value="elemental">元素生物</option>
+<option value="fey">精类</option>
+<option value="fiend">魔族</option>
+<option value="giant">巨人</option>
+<option selected="" value="humanoid">类人生物</option>
+<option value="monstrosity">怪兽</option>
+<option value="ooze">泥怪</option>
+<option value="plant">植物</option>
+<option value="undead">亡灵</option>
 <option value="*">Other</option>
 </select>
 </label>
@@ -183,7 +185,7 @@
 <input id="tag-input" type="text"/></label>
 </td>
 <td>
-<label for="alignment-input">Alignment: <br/>
+<label for="alignment-input">阵营: <br/>
 <input id="alignment-input" type="text" value="any alignment"/></label>
 </td>
 </tr>
@@ -195,7 +197,7 @@
 <td>
 <div id="hitdice-input-prompt"><label for="hitdice-input">生命骰: <br/><input id="hitdice-input" max="99" min="1" type="number" value="5"/></label></div>
 <div id="hp-text-input-prompt"><label for="hp-text-input">生命值:<br/><input id="hp-text-input" value="4 (1d8)"/></label></div>
-<div class="box-note" id="custom-hp-box-prompt"><label for="custom-hp-input">(自定义生命值：
+<div class="box-note" id="custom-hp-box-prompt"><label for="custom-hp-input">(Custom HP:
                                     <input id="custom-hp-input" onchange="FormFunctions.ShowHideCustomHP()" type="checkbox"/>)</label></div>
 </td>
 <td>
@@ -204,35 +206,35 @@
 <option selected="" value="none">None</option>
 <option value="natural armor">天生护甲</option>
 <option value="mage armor">Mage 护甲</option>
-<option value="padded armor">Padded</option>
-<option value="leather armor">Leather</option>
+<option value="padded armor">棉甲</option>
+<option value="leather armor">皮甲</option>
 <option value="studded leather">镶钉皮甲</option>
-<option value="hide armor">Hide</option>
+<option value="hide armor">皮甲</option>
 <option value="chain shirt">链甲衫</option>
 <option value="scale mail">鳞甲</option>
-<option value="breastplate">Breastplate</option>
+<option value="breastplate">胸甲</option>
 <option value="half plate">半身板甲</option>
 <option value="ring mail">环甲</option>
 <option value="chain mail">链甲</option>
-<option value="splint">Splint</option>
-<option value="plate">Plate</option>
+<option value="splint">板条甲</option>
+<option value="plate">全身板甲</option>
 <option value="other">Other</option>
 </select></label>
-<div class="box-note" id="shield-box-note"><label for="shield-input">(Shield: <input id="shield-input" type="checkbox"/>)</label></div>
+<div class="box-note" id="shield-box-note"><label for="shield-input">(盾牌: <input id="shield-input" type="checkbox"/>)</label></div>
 </td>
 <td colspan="2">
 <div id="natarmor-prompt"><label for="natarmor-input">天生护甲 Bonus:<br/><input id="natarmor-input" max="99" min="1" type="number" value="3"/></label></div>
 <div id="otherarmor-prompt">
 <label for="otherarmor-input">Description: <input id="otherarmor-input" type="text" value="10 (armor)"/></label><br/>
-<div class="box-note" id="otherarmor-box-note"><i>使用 _ 斜体显示</i></div>
+<div class="box-note" id="otherarmor-box-note"><i>Use _ to italicize</i></div>
 </div>
 </td>
 </tr>
 </table>
 <br/>
-<table id="怪物-speed-form">
+<table id="monster-speed-form">
 <tr>
-<td class="normal-speed-col"><label for="speed-input">Speed:<br/><input id="speed-input" max="995" min="0" step="5" type="number" value="30"/> ft.</label></td>
+<td class="normal-speed-col"><label for="speed-input">速度:<br/><input id="speed-input" max="995" min="0" step="5" type="number" value="30"/> ft.</label></td>
 <td class="normal-speed-col"><label for="burrow-speed-input">Burrow 速度:<br/><input id="burrow-speed-input" max="995" min="0" step="5" type="number" value="0"/>
                                 ft.</label></td>
 <td class="normal-speed-col"><label for="climb-speed-input">Climb 速度:<br/><input id="climb-speed-input" max="995" min="0" step="5" type="number" value="0"/> ft.</label></td>
@@ -243,7 +245,7 @@
 </td>
 <td class="normal-speed-col"><label for="swim-speed-input">游泳速度:<br/><input id="swim-speed-input" max="995" min="0" step="5" type="number" value="0"/> ft.</label></td>
 <td class="custom-speed-col" colspan="5">
-<label for="custom-speed-prompt" style="width: 100%;">Speed: <input id="custom-speed-prompt" type="text" value="30 ft."/></label><br/>
+<label for="custom-speed-prompt" style="width: 100%;">速度: <input id="custom-speed-prompt" type="text" value="30 ft."/></label><br/>
 </td>
 <td>
 <br/>
@@ -254,7 +256,7 @@
 </tr>
 </table>
 <hr/>
-<table id="怪物-stats-form">
+<table id="monster-stats-form">
 <tr>
 <td><label for="str-input">STR: <br/><input id="str-input" max="99" min="1" onchange="FormFunctions.ChangeBonus('str')" type="number" value="10"/> (<span id="strbonus"></span>)</label></td>
 <td><label for="dex-input">DEX: <br/><input id="dex-input" max="99" min="1" onchange="FormFunctions.ChangeBonus('dex')" type="number" value="10"/> (<span id="dexbonus"></span>)</label></td>
@@ -270,42 +272,42 @@
 <td id="sthrows-form">
 <label for="sthrows-input">豁免:</label><br/>
 <select id="sthrows-input">
-<option value="str">Strength</option>
-<option value="dex">Dexterity</option>
-<option value="con">Constitution</option>
-<option value="int">Intelligence</option>
-<option value="wis">Wisdom</option>
-<option value="cha">Charisma</option>
+<option value="str">力量</option>
+<option value="dex">敏捷</option>
+<option value="con">体质</option>
+<option value="int">智力</option>
+<option value="wis">感知</option>
+<option value="cha">魅力</option>
 </select>
-<button onclick="InputFunctions.AddSthrowInput()" type="button">Proficient</button>
+<button onclick="InputFunctions.AddSthrowInput()" type="button">熟练</button>
 <div id="sthrows-input-section">
 <ul class="statblock-list" id="sthrows-input-list"></ul>
 </div>
 </td>
 <td id="skills-form">
-<label for="skills-input">Skills:</label><br/>
+<label for="skills-input">技能:</label><br/>
 <select id="skills-input">
-<option value="acrobatics">Acrobatics</option>
+<option value="acrobatics">特技</option>
 <option value="animal Handling">驯兽</option>
 <option value="arcana">Arcana</option>
-<option value="athletics">Athletics</option>
-<option value="deception">Deception</option>
-<option value="history">History</option>
-<option value="insight">Insight</option>
-<option value="intimidation">Intimidation</option>
-<option value="investigation">Investigation</option>
-<option value="medicine">Medicine</option>
-<option value="nature">Nature</option>
-<option value="perception">Perception</option>
-<option value="performance">Performance</option>
-<option value="persuasion">Persuasion</option>
-<option value="religion">Religion</option>
+<option value="athletics">运动</option>
+<option value="deception">欺瞒</option>
+<option value="history">历史</option>
+<option value="insight">洞悉</option>
+<option value="intimidation">威吓</option>
+<option value="investigation">调查</option>
+<option value="medicine">医药</option>
+<option value="nature">自然</option>
+<option value="perception">察觉</option>
+<option value="performance">表演</option>
+<option value="persuasion">游说</option>
+<option value="religion">宗教</option>
 <option value="sleight of Hand">巧手</option>
-<option value="stealth">Stealth</option>
-<option value="survival">Survival</option>
+<option value="stealth">隐匿</option>
+<option value="survival">求生</option>
 </select>
-<button onclick="InputFunctions.AddSkillInput()" type="button">Proficient</button>
-<button onclick="InputFunctions.AddSkillInput(' (ex)')" type="button">Expert</button>
+<button onclick="InputFunctions.AddSkillInput()" type="button">熟练</button>
+<button onclick="InputFunctions.AddSkillInput(' (ex)')" type="button">专精</button>
 <div id="skills-input-section">
 <ul class="statblock-list" id="skills-input-list"></ul>
 </div>
@@ -313,23 +315,23 @@
 <td id="conditions-form">
 <label for="conditions-input">状态免疫: </label><br/>
 <select id="conditions-input">
-<option value="blinded">Blinded</option>
-<option value="charmed">Charmed</option>
-<option value="deafened">Deafened</option>
-<option value="exhaustion">Exhaustion</option>
-<option value="frightened">Frightened</option>
-<option value="grappled">Grappled</option>
-<option value="incapacitated">Incapacitated</option>
-<option value="invisible">Invisible</option>
-<option value="paralyzed">Paralyzed</option>
-<option value="petrified">Petrified</option>
-<option value="poisoned">Poisoned</option>
-<option value="prone">Prone</option>
-<option value="restrained">Restrained</option>
-<option value="stunned">Stunned</option>
-<option value="unconscious">Unconscious</option>
+<option value="blinded">目盲</option>
+<option value="charmed">魅惑</option>
+<option value="deafened">耳聋</option>
+<option value="exhaustion">力竭</option>
+<option value="frightened">恐慌</option>
+<option value="grappled">受擒</option>
+<option value="incapacitated">失能</option>
+<option value="invisible">隐形</option>
+<option value="paralyzed">麻痹</option>
+<option value="petrified">石化</option>
+<option value="poisoned">中毒</option>
+<option value="prone">倒地</option>
+<option value="restrained">束缚</option>
+<option value="stunned">震慑</option>
+<option value="unconscious">昏迷</option>
 </select>
-<button onclick="InputFunctions.AddConditionInput()" type="button">Immune</button>
+<button onclick="InputFunctions.AddConditionInput()" type="button">免疫</button>
 <div id="conditions-input-section">
 <ul class="statblock-list" id="conditions-input-list"></ul>
 </div>
@@ -342,58 +344,58 @@
 <td id="damagetypes-form">
 <label for="damagetypes-input">伤害 Types:<br/>
 <select id="damagetypes-input" onchange="FormFunctions.ShowHideDamageOther()">
-<option value="acid">Acid</option>
-<option value="bludgeoning">Bludgeoning</option>
-<option value="cold">Cold</option>
-<option value="fire">Fire</option>
-<option value="force">Force</option>
-<option value="lightning">Lightning</option>
-<option value="necrotic">Necrotic</option>
-<option value="piercing">Piercing</option>
-<option value="poison">Poison</option>
-<option value="psychic">Psychic</option>
-<option value="radiant">Radiant</option>
-<option value="slashing">Slashing</option>
-<option value="thunder">Thunder</option>
+<option value="acid">强酸</option>
+<option value="bludgeoning">钝击</option>
+<option value="cold">寒冷</option>
+<option value="fire">火焰</option>
+<option value="force">力场</option>
+<option value="lightning">闪电</option>
+<option value="necrotic">暗蚀</option>
+<option value="piercing">穿刺</option>
+<option value="poison">毒素</option>
+<option value="psychic">心灵</option>
+<option value="radiant">光耀</option>
+<option value="slashing">挥砍</option>
+<option value="thunder">雷鸣</option>
 <option value="bludgeoning, piercing, and slashing from nonmagical attacks">
-                                        非魔法攻击</option>
+                                        Nonmagical Attacks</option>
 <option value="bludgeoning, piercing, and slashing from nonmagical attacks that aren't silvered">
-                                        非镀银攻击</option>
+                                        Non-Silvered Attacks</option>
 <option value="bludgeoning, piercing, and slashing from nonmagical attacks that aren't adamantine">
-                                        非亚当antine攻击</option>
+                                        Non-Adamantine Attacks</option>
 <option value="*">Other</option>
 </select>
 </label>
 <div><input id="other-damage-input" type="text" value=""/></div>
 <div>
-<button onclick="InputFunctions.AddDamageTypeInput('v')" type="button">Vulnerable</button>
-<button onclick="InputFunctions.AddDamageTypeInput('r')" type="button">Resistant</button>
-<button onclick="InputFunctions.AddDamageTypeInput('i')" type="button">Immune</button>
+<button onclick="InputFunctions.AddDamageTypeInput('v')" type="button">易伤</button>
+<button onclick="InputFunctions.AddDamageTypeInput('r')" type="button">抗性</button>
+<button onclick="InputFunctions.AddDamageTypeInput('i')" type="button">免疫</button>
 </div>
 <div id="damage-input-section">
 <ul class="statblock-list" id="damage-input-list"></ul>
 </div>
 </td>
 <td id="languages-form">
-<label for="languages-input">Languages:<br/>
+<label for="languages-input">语言:<br/>
 <select id="languages-input" onchange="FormFunctions.ShowHideLanguageOther()">
 <option value="All">All</option>
-<option value="Abyssal">Abyssal</option>
+<option value="Abyssal">深渊语</option>
 <option value="Aquan">Aquan</option>
 <option value="Auran">Auran</option>
-<option value="Celestial">Celestial</option>
+<option value="Celestial">天界生物</option>
 <option value="Common">Common</option>
-<option value="Deep Speech">深渊语</option>
+<option value="Deep Speech">Deep Speech</option>
 <option value="Draconic">Draconic</option>
 <option value="Dwarvish">Dwarvish</option>
 <option value="Elvish">Elvish</option>
-<option value="Giant">Giant</option>
+<option value="Giant">巨人</option>
 <option value="Gnomish">Gnomish</option>
-<option value="Goblin">Goblin</option>
-<option value="Halfling">Halfling</option>
+<option value="Goblin">地精</option>
+<option value="Halfling">半身人</option>
 <option value="Ignan">Ignan</option>
-<option value="Infernal">Infernal</option>
-<option value="Orc">Orc</option>
+<option value="Infernal">炼狱语</option>
+<option value="Orc">兽人</option>
 <option value="Primordial">Primordial</option>
 <option value="Sylvan">Sylvan</option>
 <option value="Terran">Terran</option>
@@ -406,8 +408,8 @@
 <input id="other-language-input" type="text" value=""/>
 </div>
 <div>
-<button onclick="InputFunctions.AddLanguageInput(true)" type="button">Speaks</button>
-<button onclick="InputFunctions.AddLanguageInput(false)" type="button">Understands</button> but
+<button onclick="InputFunctions.AddLanguageInput(true)" type="button">可说</button>
+<button onclick="InputFunctions.AddLanguageInput(false)" type="button">可理解</button> but
                                 <input id="understands-but-input" type="text" value="can't speak"/>
 </div>
 <div id="languages-input-section">
@@ -420,13 +422,13 @@
 <table id="senses-form">
 <tr>
 <td>
-<label for="blindsight-input">Blindsight: <input id="blindsight-input" max="995" min="0" onchange="FormFunctions.ShowHideBlindBox()" step="5" type="number" value="0"/>
+<label for="blindsight-input">盲视: <input id="blindsight-input" max="995" min="0" onchange="FormFunctions.ShowHideBlindBox()" step="5" type="number" value="0"/>
                                 ft.</label><br/>
-<div class="box-note" id="blind-box-note"><label for="blindness-input">"(盲视范围：" <input id="blindness-input" type="checkbox"/>)</label></div>
+<div class="box-note" id="blind-box-note"><label for="blindness-input">(Blind beyond: <input id="blindness-input" type="checkbox"/>)</label></div>
 </td>
-<td><label for="darkvision-input">Darkvision: <input id="darkvision-input" max="995" min="0" step="5" type="number" value="0"/> ft.</label></td>
-<td><label for="tremorsense-input">Tremorsense: <input id="tremorsense-input" max="995" min="0" step="5" type="number" value="0"/> ft.</label></td>
-<td><label for="truesight-input">Truesight: <input id="truesight-input" max="995" min="0" step="5" type="number" value="0"/> ft.</label></td>
+<td><label for="darkvision-input">黑暗视觉: <input id="darkvision-input" max="995" min="0" step="5" type="number" value="0"/> ft.</label></td>
+<td><label for="tremorsense-input">震颤感知: <input id="tremorsense-input" max="995" min="0" step="5" type="number" value="0"/> ft.</label></td>
+<td><label for="truesight-input">真实视觉: <input id="truesight-input" max="995" min="0" step="5" type="number" value="0"/> ft.</label></td>
 </tr>
 </table>
 <br/>
@@ -437,7 +439,7 @@
 <br/>
 <div id="prof-bonus"></div>
 <div id="custom-cr">
-<label for="custom-cr-input">CR 文本： <input id="custom-cr-input" placeholder="留空以隐藏" style="width: 16rem;" type="text" value="1 (200 XP)"/></label>
+<label for="custom-cr-input">CR Text: <input id="custom-cr-input" placeholder="Leave blank to hide" style="width: 16rem;" type="text" value="1 (200 XP)"/></label>
 <br/>
 <label for="custom-prof-input">熟练加值: <input id="custom-prof-input" max="99" min="-99" type="number" value="2"/></label>
 </div>
@@ -447,21 +449,24 @@
 <table>
 <tr>
 <td>
-<label for="short-name-input" style="width: 100%; text-align: right;">"缩短"</label>
+<label for="short-name-input" style="width: 100%; text-align: right;">Shortened
+                                Name:</label>
 </td>
 <td>
 <input id="short-name-input" placeholder="None" style="width: 30%;" type="text" value=""/>
-<div class="tooltip">?<span class="tooltiptext">这将替换能力文字中的 [MON]，除非留空。</span>
+<div class="tooltip">?<span class="tooltiptext">This will replace [MON] in ability text,
+                                    unless left blank.</span>
 </div>
 </td>
 </tr>
 <tr>
 <td>
-<label for="plural-name-input" style="text-align: right; width: 100%;">缩写复数：</label>
+<label for="plural-name-input" style="text-align: right; width: 100%;">Shortened Plural:</label>
 </td>
 <td>
 <input id="plural-name-input" placeholder="None" style="width: 30%;" type="text" value=""/>
-<div class="tooltip">?<span class="tooltiptext">此处将替换能力文字中的 [MONS]，除非留空。</span>
+<div class="tooltip">?<span class="tooltiptext">This will replace [MONS] in ability
+                                    text, unless left blank.</span>
 </div>
 </td>
 
@@ -469,7 +474,7 @@
 </table>
 <br/>
 <div>
-<label for="is-legendary-input"><b>传奇生物：</b> <input id="is-legendary-input" onclick="FormFunctions.ShowHideLegendaryCreature()" type="checkbox"/></label>
+<label for="is-legendary-input"><b>Legendary Creature:</b> <input id="is-legendary-input" onclick="FormFunctions.ShowHideLegendaryCreature()" type="checkbox"/></label>
 </div>
 <div id="legendary-actions-form">
 <br/>
@@ -479,13 +484,15 @@
 <br/><br/>
 <b>传奇动作 Description:</b>
 <div><label for="legendaries-descsection-input" style="width: 100%"><textarea id="legendaries-descsection-input" rows="4"></textarea></label></div>
-<div><button onclick="InputFunctions.LegendaryDescriptionDefaultInput()" type="button">"重置为默认值"</button></div>
+<div><button onclick="InputFunctions.LegendaryDescriptionDefaultInput()" type="button">Reset to
+                            Default</button></div>
 </div>
 <div id="mythic-actions-form">
 <br/>
 <b>神话动作 Description:</b>
 <div><label for="mythic-descsection-input" style="width: 100%"><textarea id="mythic-descsection-input" rows="4"></textarea></label></div>
-<div><button onclick="InputFunctions.MythicDescriptionDefaultInput()" type="button">"重置为默认值"</button></div>
+<div><button onclick="InputFunctions.MythicDescriptionDefaultInput()" type="button">Reset to
+                            Default</button></div>
 </div>
 <div id="lair-actions-form">
 <br/>
@@ -493,7 +500,8 @@
 <div><label for="lair-descsection-input" style="width: 100%"><textarea id="lair-descsection-input" rows="4"></textarea></label></div>
 <b>巢穴动作 End Note Description:</b>
 <div><label for="lair-end-descsection-input" style="width: 100%"><textarea id="lair-end-descsection-input" rows="4"></textarea></label></div>
-<div><button onclick="InputFunctions.LairDescriptionDefaultInput()" type="button">"重置为默认值"</button></div>
+<div><button onclick="InputFunctions.LairDescriptionDefaultInput()" type="button">Reset to
+                            Default</button></div>
 </div>
 <div id="regional-actions-form">
 <br/>
@@ -501,54 +509,56 @@
 <div><label for="regional-descsection-input" style="width: 100%"><textarea id="regional-descsection-input" rows="4"></textarea></label></div>
 <b>区域效应 End Note Description:</b>
 <div><label for="regional-end-descsection-input" style="width: 100%"><textarea id="regional-end-descsection-input" rows="4"></textarea></label></div>
-<div><button onclick="InputFunctions.RegionalDescriptionDefaultInput()" type="button">"重置为默认值"</button></div>
+<div><button onclick="InputFunctions.RegionalDescriptionDefaultInput()" type="button">Reset to
+                            Default</button></div>
 </div>
 <br/>
 <b>Abilities:</b>
 <div><label for="abilities-name-input" style="width: 100%;">Name: <input id="abilities-name-input" style="margin-right: 40px; width: 30%;" type="text" value=""/></label></div>
 <div><textarea id="abilities-desc-input" style="height: 10em;"></textarea></div>
 <div>
-<button id="add-ability-button" onclick="InputFunctions.AddAbilityInput('abilities')" type="button">添加属性</button>
-<button id="add-action-button" onclick="InputFunctions.AddAbilityInput('actions')" type="button">"添加动作"</button>
+<button id="add-ability-button" onclick="InputFunctions.AddAbilityInput('abilities')" type="button">Add Ability</button>
+<button id="add-action-button" onclick="InputFunctions.AddAbilityInput('actions')" type="button">Add Action</button>
 <button id="add-bonus-action-button" onclick="InputFunctions.AddAbilityInput('bonusActions')" type="button">Add 附赠动作</button>
 <button id="add-reaction-button" onclick="InputFunctions.AddAbilityInput('reactions')" type="button">Add 反应</button>
-<button id="add-legendary-button" onclick="InputFunctions.AddAbilityInput('legendaries')" type="button">添加传奇动作</button>
-<button id="add-mythic-button" onclick="InputFunctions.AddAbilityInput('mythics')" type="button">添加神话动作</button>
-<button id="add-lair-button" onclick="InputFunctions.AddAbilityInput('lairs')" type="button">"添加巢穴动作"</button>
-<button id="add-regional-button" onclick="InputFunctions.AddAbilityInput('regionals')" type="button">添加区域效果</button>
+<button id="add-legendary-button" onclick="InputFunctions.AddAbilityInput('legendaries')" type="button">Add Legendary Action</button>
+<button id="add-mythic-button" onclick="InputFunctions.AddAbilityInput('mythics')" type="button">Add Mythic Action</button>
+<button id="add-lair-button" onclick="InputFunctions.AddAbilityInput('lairs')" type="button">Add Lair Action</button>
+<button id="add-regional-button" onclick="InputFunctions.AddAbilityInput('regionals')" type="button">Add Regional Effect</button>
 </div>
 <div>
 <select id="common-ability-input"></select>
-<button id="add-common-ability-button" onclick="InputFunctions.AddCommonAbilityInput()" type="button">使用预设</button>
+<button id="add-common-ability-button" onclick="InputFunctions.AddCommonAbilityInput()" type="button">Use Preset</button>
 </div>
 <div>
-<label for="format-helper-checkbox">显示格式帮助： <input id="format-helper-checkbox" onclick="FormFunctions.ShowHideFormatHelper()" type="checkbox"/></label>
+<label for="format-helper-checkbox">Show Formatting Help: <input id="format-helper-checkbox" onclick="FormFunctions.ShowHideFormatHelper()" type="checkbox"/></label>
 </div>
 <div id="format-helper" style="text-align: left; padding: 0 2rem;">
 <br/>
 <div>Use _ to italicize and ** to bold. For 施法 lists, use &gt; to reverse-indent.</div>
 <br/>
-<div><b>[MON]</b>： 显示怪物的名字。</div>
-<div><b>[CHA]</b>：显示怪物的魅力调整值。</div>
-<div><b>[3D6]</b>：计算3d6的结果。</div>
-<div><b>[STR ATK]</b>: Calculates the modifier to the 怪物's 攻击检定 for a strength-based attack.</div>
-<div><b>[DEX 2D8]</b>：计算基于敏捷的攻击伤害骰 2d8 的伤害值。
+<div><b>[MON]</b>: Shows the monster's name.</div>
+<div><b>[CHA]</b>: Shows the monster's charisma modifier.</div>
+<div><b>[3D6]</b>: Computes 3d6.</div>
+<div><b>[STR ATK]</b>: Calculates the modifier to the monster's 攻击检定 for a strength-based
+                        attack.</div>
+<div><b>[DEX 2D8]</b>: Calculates the damage roll for a dexterity-based attack with damage dice 2d8.
                     </div>
-<div><b>[WIS SAVE]</b>：计算怪物的感知豁免DC。</div>
-<div><b>[3D6 + 1], [STR ATK - 2], [WIS SAVE + 3]</b>：向给定的数值添加一个修正值。</div>
+<div><b>[WIS SAVE]</b>: Calculates the save DC vs the monster's wisdom.</div>
+<div><b>[3D6 + 1], [STR ATK - 2], [WIS SAVE + 3]</b>: Adds a modifier to the given values.</div>
 <br/>
 </div>
 <div style="text-align: left; min-height: 5rem;">
 <div id="abilities-input-section"><b>Abilities:</b><br/>
 <ul class="statblock-list" id="abilities-input-list"></ul>
 </div>
-<div id="actions-input-section"><b>Actions:</b><br/>
+<div id="actions-input-section"><b>动作:</b><br/>
 <ul class="statblock-list" id="actions-input-list"></ul>
 </div>
 <div id="bonusActions-input-section"><b>附赠动作:</b><br/>
 <ul class="statblock-list" id="bonusActions-input-list"></ul>
 </div>
-<div id="reactions-input-section"><b>Reactions:</b><br/>
+<div id="reactions-input-section"><b>反应:</b><br/>
 <ul class="statblock-list" id="reactions-input-list"></ul>
 </div>
 <div id="legendaries-input-section"><b>传奇动作:</b><br/>
@@ -566,7 +576,7 @@
 </div>
 <br/>
 </div>
-<div class="footer"><a href="https://github.com/Tetra-cube/Tetra-cube.github.io">GitHub 仓库</a></div>
+<div class="footer"><a href="https://github.com/Tetra-cube/Tetra-cube.github.io">GitHub Repo</a></div>
 </input></div>
 </div>
 </body>

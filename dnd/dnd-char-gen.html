@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<title>D&amp;D 5e 角色生成器</title>
+<title>D&amp;D 5e Character Generator</title>
 <link href="./dndimages/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 <link href="css/all.min.css" rel="stylesheet" type="text/css"/>
@@ -26,60 +26,61 @@
 <body id="char-gen-body">
 <div class="container">
 <div class="content">
-<div style="text-align: center;"><a href="dnd-reference.html">角色选项参考</a> - <b>角色</b> - <a href="dnd-magic-items.html">魔法物品生成器</a> - <a href="dnd-statblock.html">属性块生成器</a></div>
+<div style="text-align: center;"><a href="dnd-reference.html">PC Options Reference</a> - <b>Character
+                    Generator</b> - <a href="dnd-magic-items.html">Magic Item Generator</a> - <a href="dnd-statblock.html">Statblock Generator</a></div>
 <br/>
-<h1>D&amp;D 5e 随机角色生成器</h1>
+<h1>D&amp;D 5e Random Character Generator</h1>
 <br/>
-<div>选择要使用的书籍：</div>
+<div>Select which books to use:</div>
 <br/>
 <div class="booklist row">
 <div class="col-12 col-md-6">
 <div><label><b><input checked="" disabled="" id="PHBbox" type="checkbox"/> 玩家手册
                                 <sup>(PHB)</sup></b></label></div>
-<div><label><b><input checked="" id="VGtMbox" onclick="拖放downs.Update()" type="checkbox"/> Volo's
-                                Guide to 怪物s <sup>(VGtM)</sup></b></label></div>
-<div><label><b><input checked="" id="MRbox" onclick="拖放downs.Update()" type="checkbox"/> Volo's Guide
+<div><label><b><input checked="" id="VGtMbox" onclick="Dropdowns.Update()" type="checkbox"/> Volo's
+                                向导 to Monsters <sup>(VGtM)</sup></b></label></div>
+<div><label><b><input checked="" id="MRbox" onclick="Dropdowns.Update()" type="checkbox"/> Volo's 向导
                                 Monstrous Races <sup>(MR)</sup></b></label></div>
-<div><label><b><input checked="" id="XGtEbox" onclick="拖放downs.Update()" type="checkbox"/> Xanathar's
-                                Guide to Everything <sup>(XGtE)</sup></b></label></div>
-<div><label><b><input checked="" id="MToFbox" onclick="拖放downs.Update()" type="checkbox"/>
+<div><label><b><input checked="" id="XGtEbox" onclick="Dropdowns.Update()" type="checkbox"/> Xanathar's
+                                向导 to Everything <sup>(XGtE)</sup></b></label></div>
+<div><label><b><input checked="" id="MToFbox" onclick="Dropdowns.Update()" type="checkbox"/>
                                 魔邓肯的众敌卷册 <sup>(MToF)</sup></b></label></div>
-<div><label><b><input checked="" id="TCoEbox" onclick="拖放downs.Update()" type="checkbox"/> Tasha's
+<div><label><b><input checked="" id="TCoEbox" onclick="Dropdowns.Update()" type="checkbox"/> Tasha's
                                 Cauldron of Everything <sup>(TCoE)</sup></b></label></div>
-<div><label><b><input checked="" id="EEbox" onclick="拖放downs.Update()" type="checkbox"/> Elemental
+<div><label><b><input checked="" id="EEbox" onclick="Dropdowns.Update()" type="checkbox"/> 元素生物
                                 Evil Player's Companion <sup>(EE)</sup></b></label></div>
-<div><label><b><input checked="" id="SCAGbox" onclick="拖放downs.Update()" type="checkbox"/> Sword Coast
-                                Adventurer's Guide <sup>(SCAG)</sup></b></label></div>
-<div><label><b><input id="DMGbox" onclick="拖放downs.Update()" type="checkbox"/> Dungeon Master's
-                                Guide <sup>(DMG)</sup></b></label></div>
+<div><label><b><input checked="" id="SCAGbox" onclick="Dropdowns.Update()" type="checkbox"/> Sword Coast
+                                冒险者's 向导 <sup>(SCAG)</sup></b></label></div>
+<div><label><b><input id="DMGbox" onclick="Dropdowns.Update()" type="checkbox"/> Dungeon Master's
+                                向导 <sup>(DMG)</sup></b></label></div>
 </div>
 <div class="col-12 col-md-6">
-<div><label><b><input id="Modbox" onclick="拖放downs.Update()" type="checkbox"/> 冒险模组
+<div><label><b><input id="Modbox" onclick="Dropdowns.Update()" type="checkbox"/> 冒险模组
                                 <sup>(Mod)</sup></b></label></div>
-<div><label><b><input id="EBRbox" onclick="拖放downs.Update()" type="checkbox"/> Eberron: Rising from
+<div><label><b><input id="EBRbox" onclick="Dropdowns.Update()" type="checkbox"/> Eberron: Rising from
                                 the Last War <sup>(EBR)</sup></b></label></div>
-<div><label><b><input id="EGtWbox" onclick="拖放downs.Update()" type="checkbox"/> Explorer's Guide to
+<div><label><b><input id="EGtWbox" onclick="Dropdowns.Update()" type="checkbox"/> Explorer's 向导 to
                                 Wildemount <sup>(EGtW)</sup></b></label></div>
-<div><label><b><input id="GGtRbox" onclick="拖放downs.Update()" type="checkbox"/> Guildmaster's Guide
+<div><label><b><input id="GGtRbox" onclick="Dropdowns.Update()" type="checkbox"/> Guildmaster's 向导
                                 to Ravnica <sup>(GGtR)</sup></b></label></div>
-<div><label><b><input id="MOoTbox" onclick="拖放downs.Update()" type="checkbox"/> Mythic Odysseys of
+<div><label><b><input id="MOoTbox" onclick="Dropdowns.Update()" type="checkbox"/> Mythic Odysseys of
                                 Theros <sup>(MOoT)</sup></b></label></div>
-<div><label><b><input id="AIbox" onclick="拖放downs.Update()" type="checkbox"/> Acquisitions
+<div><label><b><input id="AIbox" onclick="Dropdowns.Update()" type="checkbox"/> Acquisitions
                                 Incorporated <sup>(AI)</sup></b></label></div>
-<div><label><b><input id="Otherbox" onclick="拖放downs.Update()" type="checkbox"/> Other Notable
+<div><label><b><input id="Otherbox" onclick="Dropdowns.Update()" type="checkbox"/> Other Notable
                                 Content <sup>(Other)</sup></b></label></div>
-<div><label><b><input id="UAbox" onclick="拖放downs.Update()" type="checkbox"/> 未发掘的奥秘
+<div><label><b><input id="UAbox" onclick="Dropdowns.Update()" type="checkbox"/> 未发掘的奥秘
                                 <sup>(UA)</sup></b></label></div>
 </div>
 </div>
 <hr/>
 <div style="text-align: center;">
-<button onclick="Generate.All()" type="button">生成角色</button>
-<button onclick="CardType.Set()" type="button">洗牌</button>
+<button onclick="Generate.All()" type="button">Generate Character</button>
+<button onclick="CardType.Set()" type="button">Randomize Card</button>
 <br/><br/>
 <div id="cardcontainer">
 <canvas height="792" id="canvas" width="612"></canvas>
-<div><a href="" id="sourcelink">角色艺术来源</a><br/></div>
+<div><a href="" id="sourcelink">Character Art Source</a><br/></div>
 </div>
 <div id="plaintext">
 <textarea cols="40" id="textarea" readonly="" rows="50"></textarea>
@@ -87,42 +88,42 @@
 <br/>
 <div id="recent-characters" style="display: none;">
 <label>
-                        最近的角色：
-                        <select class="拖放down" id="recent-characters-拖放down" style="width: 20rem;">
-<option value="">-选择-</option>
+                        Recent Characters:
+                        <select class="dropdown" id="recent-characters-dropdown" style="width: 20rem;">
+<option value="">-Select-</option>
 </select>
 </label>
-<button onclick="Characters.LoadFrom拖放down()" type="button">Load</button>
+<button onclick="Characters.LoadFromDropdown()" type="button">Load</button>
 </div>
 </div>
 <hr/>
 <div class="row radio-row">
 <div class="col-12 col-sm-6 col-lg-3">
 <b>Show:</b>
-<div><label><input checked="" id="personality-radio" name="show-button" onclick="CardType.Set()" type="radio"/> Personality </label></div>
-<div><label><input id="characteristics-radio" name="show-button" onclick="CardType.Set()" type="radio"/> Characteristics </label></div>
+<div><label><input checked="" id="personality-radio" name="show-button" onclick="CardType.Set()" type="radio"/> 个性 </label></div>
+<div><label><input id="characteristics-radio" name="show-button" onclick="CardType.Set()" type="radio"/> 特性 </label></div>
 <div><label><input id="empty-radio" name="show-button" onclick="CardType.Set()" type="radio"/> Empty
                             Card </label></div>
 <div><label><input id="plaintext-radio" name="show-button" onclick="CardType.Set()" type="radio"/>
-                            纯文本 </label></div>
+                            Plain Text </label></div>
 <br/>
 </div>
 <div class="col-12 col-sm-6 col-lg-3">
-<b>角色类型：</b>
+<b>Character Type:</b>
 <div><label><input checked="" id="either-radio" name="character-type-button" onclick="CharacterType.Get()" type="radio"/> Either </label></div>
-<div><label><input id="pc-radio" name="character-type-button" onclick="CharacterType.Get()" type="radio"/> Adventurer </label></div>
-<div><label><input id="npc-radio" name="character-type-button" onclick="CharacterType.Get()" type="radio"/> Civilian </label></div>
+<div><label><input id="pc-radio" name="character-type-button" onclick="CharacterType.Get()" type="radio"/> 冒险者 </label></div>
+<div><label><input id="npc-radio" name="character-type-button" onclick="CharacterType.Get()" type="radio"/> 平民 </label></div>
 <br/>
 </div>
 <div class="col-12 col-sm-6 col-lg-3">
-<b>种族随机化器：</b>
+<b>Race Randomizer:</b>
 <div><label><input checked="" id="normal-radio" name="race-randomizer-button" type="radio"/> Normal
                         </label></div>
 <div><label><input id="weighted-radio" name="race-randomizer-button" type="radio"/> Weighted </label>
 </div>
-<div><label><input id="15x-weighted-radio" name="race-randomizer-button" type="radio"/> "权重 x1.5"
+<div><label><input id="15x-weighted-radio" name="race-randomizer-button" type="radio"/> Weighted x1.5
                         </label></div>
-<div><label><input id="20x-weighted-radio" name="race-randomizer-button" type="radio"/> 加权 x2
+<div><label><input id="20x-weighted-radio" name="race-randomizer-button" type="radio"/> Weighted x2
                         </label></div>
 <br/>
 </div>
@@ -140,7 +141,7 @@
 <button class="lock-button" id="all-lock-button" onclick="LockFunctions.TryLockAll()" style="width: 4rem;"><i class="fas fa-lock"></i> All</button>
 <button class="lock-button" id="none-lock-button" onclick="LockFunctions.TryUnlockAll()" style="width: 4rem;"><i class="fas fa-lock-open"></i> All</button>
 <br/>
-<button onclick="Generate.All()" type="button">生成角色</button>
+<button onclick="Generate.All()" type="button">Generate Character</button>
 </div>
 <br/>
 <h2 id="name">Character</h2>
@@ -160,11 +161,11 @@
 <div class="npc-show row" style=" max-width: 30rem; margin: auto;">
 <div class="col-12 col-sm-6">
 <button class="lock-button" id="traits-lock-button" onclick="LockFunctions.TryLock('traits')"><i class="fas fa-lock-open"></i></button>
-<button onclick="Generate.NPCTraitsInput()" type="button">生成描述</button>
+<button onclick="Generate.NPCTraitsInput()" type="button">Generate Description</button>
 </div>
 <div class="col-12 col-sm-6">
 <button class="lock-button" id="occupation-lock-button" onclick="LockFunctions.TryLock('occupation')"><i class="fas fa-lock-open"></i></button>
-<button onclick="Generate.OccupationInput()" type="button">生成职业</button>
+<button onclick="Generate.OccupationInput()" type="button">Generate Occupation</button>
 </div>
 </div>
 <div>
@@ -177,10 +178,10 @@
 <div>
 <label for="gendermenu"><b>Gender: </b></label>
 <br class="small-only-br"/>
-<select class="拖放down" id="gendermenu">
+<select class="dropdown" id="gendermenu">
 <option value="Random">Random</option>
-<option value="Male">Male</option>
-<option value="Female">Female</option>
+<option value="Male">男性</option>
+<option value="Female">女性</option>
 <option value="Nonbinary or Unknown">非二元性别或未知</option>
 </select>
 <button onclick="Generate.GenderInput()" type="button">Generate</button>
@@ -197,7 +198,7 @@
 </label>
 <br class="sometimes-br"/>
 <button class="lock-button" id="class-lock-button" onclick="LockFunctions.TryLock('class')"><i class="fas fa-lock-open"></i></button>
-<select class="拖放down" id="classmenu"></select>
+<select class="dropdown" id="classmenu"></select>
 <button onclick="Generate.ClassInput()" type="button">Generate</button>
 <br/><br/>
 </div>
@@ -212,7 +213,7 @@
 </label>
 <br class="sometimes-br"/>
 <button class="lock-button" id="race-lock-button" onclick="LockFunctions.TryLock('race')"><i class="fas fa-lock-open"></i></button>
-<select class="拖放down" id="racemenu"></select>
+<select class="dropdown" id="racemenu"></select>
 <button onclick="Generate.RaceInput()" type="button">Generate</button>
 <br/><br/>
 </div>
@@ -227,7 +228,7 @@
 </label>
 <br class="sometimes-br"/>
 <button class="lock-button" id="background-lock-button" onclick="LockFunctions.TryLock('background')"><i class="fas fa-lock-open"></i></button>
-<select class="拖放down" id="backgroundmenu"></select>
+<select class="dropdown" id="backgroundmenu"></select>
 <button onclick="Generate.BackgroundInput()" type="button">Generate</button>
 <br/><br/>
 </div>
@@ -245,7 +246,7 @@
 <br/>
 <sub>Refer to Xanathar's 向导 (starting on page 61) for supplementary tables.</sub>
 </div>
-<div class="footer"><a href="https://github.com/Tetra-cube/Tetra-cube.github.io">GitHub 仓库</a></div>
+<div class="footer"><a href="https://github.com/Tetra-cube/Tetra-cube.github.io">GitHub Repo</a></div>
 </div>
 </div>
 </body>

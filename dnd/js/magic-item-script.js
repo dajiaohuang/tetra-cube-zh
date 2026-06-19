@@ -8,38 +8,38 @@ function GenerateDMG() {
     let subBuffer = [];
 
     subBuffer.push(GetItemType());
-    AddProp("Creator", RandomFromArray(dmgTables.creator), subBuffer);
-    AddProp("History", RandomFromArray(dmgTables.history), subBuffer);
+    AddProp("创造者", RandomFromArray(dmgTables.creator), subBuffer);
+    AddProp("历史", RandomFromArray(dmgTables.history), subBuffer);
 
     let property = RandomFromArray(dmgTables.property);
-    AddProp("Property", property, subBuffer);
+    AddProp("特性", property, subBuffer);
     if (RandomNum(20) == 0)
-        AddProp("Property", GetSecondProperty(dmgTables.property, property), subBuffer);
+        AddProp("特性", GetSecondProperty(dmgTables.property, property), subBuffer);
 
-    AddProp("Quirk", RandomFromArray(dmgTables.quirk), subBuffer);
+    AddProp("怪癖", RandomFromArray(dmgTables.quirk), subBuffer);
     AddToItemsList(subBuffer.join("<br>"));
 }
 
 function GenerateHomebrew() {
     let subBuffer = [];
     subBuffer.push(GetItemType());
-    AddProp("Origin", RandomFromArray(homebrewTables.origin), subBuffer);
+    AddProp("出身", RandomFromArray(homebrewTables.origin), subBuffer);
 
 
     let majorprop = RandomFromArray(homebrewTables.majorprop);
-    AddProp("Major Property", majorprop, subBuffer);
+    AddProp("主要特性", majorprop, subBuffer);
     if (RandomNum(15) == 0)
-        AddProp("Major Property", GetSecondProperty(homebrewTables.majorprop, majorprop), subBuffer);
+        AddProp("主要特性", GetSecondProperty(homebrewTables.majorprop, majorprop), subBuffer);
 
     let minorprop = RandomFromArray(homebrewTables.minorprop);
-    AddProp("Minor Property", RandomFromArray(homebrewTables.minorprop), subBuffer);
+    AddProp("次要特性", RandomFromArray(homebrewTables.minorprop), subBuffer);
     if (RandomNum(15) == 0)
-        AddProp("Minor Property", GetSecondProperty(homebrewTables.minorprop, minorprop), subBuffer);
+        AddProp("次要特性", GetSecondProperty(homebrewTables.minorprop, minorprop), subBuffer);
 
     let specialprop = RandomFromArray(homebrewTables.specialprop);
-    AddProp("Special Property", RandomFromArray(homebrewTables.specialprop), subBuffer);
+    AddProp("特殊特性", RandomFromArray(homebrewTables.specialprop), subBuffer);
     if (RandomNum(15) == 0)
-        AddProp("Special Property", GetSecondProperty(homebrewTables.specialprop, specialprop), subBuffer);
+        AddProp("特殊特性", GetSecondProperty(homebrewTables.specialprop, specialprop), subBuffer);
 
     AddToItemsList(subBuffer.join("<br>"));
 }
@@ -47,12 +47,12 @@ function GenerateHomebrew() {
 function GetItemType() {
     let type = RandomFromArray(itemTypes);
     if (type == "armor")
-        return "<b>Armor (" + RandomFromArray(armorTypes) + ")</b>";
+        return "<b>护甲 (" + RandomFromArray(armorTypes) + ")</b>";
     if (type == "weapon")
-        return "<b>Weapon (" + RandomFromArray(weaponTypes) + ")</b>";
+        return "<b>武器 (" + RandomFromArray(weaponTypes) + ")</b>";
     if (type == "other")
         return "<b>" + RandomFromArray(otherTypes) + "</b>";
-    return "<b>Wondrous Item</b>";
+    return "<b>奇物</b>";
 }
 
 function GetSecondProperty(table, firstprop) {
@@ -103,7 +103,7 @@ function GetTable(arr) {
     return newArr;
 }
 
-const itemTypes = ["armor", "weapon", "weapon", "wondrous item", "wondrous item", "other"],
-    armorTypes = ["studded leather", "breastplate", "half plate", "chain mail", "splint", "plate"],
+const itemTypes = ["armor", "weapon", "weapon", "奇物", "奇物", "other"],
+    armorTypes = ["镶钉皮甲", "breastplate", "半身板甲", "链甲", "splint", "plate"],
     weaponTypes = ["dagger", "greatclub", "handaxe", "javelin", ""轻锤"", "mace", "quarterstaff", "sickle", "spear", ""轻型十字弓"", "shortbow", "battleaxe", "flail", "glaive", "greataxe", "greatsword", "halberd", "lance", "longsword", "maul", "morningstar", "pike", "rapier", "scimitar", "trident", "“战戟”", "warhammer", "whip", "“手弩”", ""重型十字弓"", "longbow", "net"],
     otherTypes = ["Instrument", "Ring", "Rod", "Staff", "Wand"]

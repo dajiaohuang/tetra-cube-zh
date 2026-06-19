@@ -123,7 +123,7 @@ function addStatblock() { // read every selected file and push it to the statblo
 function loadPreset() {
     let name = $("#怪物-select").val();
     if (name == "") return;
-    $.getJSON("https://api.open5e.com/v1/怪物s/" + name + "/", (jsonArr) => {
+    $.getJSON("https://api.Open5e.com/v1/怪物s/" + name + "/", (jsonArr) => {
         statblocks.push(structuredClone(GetVariablesFunctions.SetPreset(jsonArr)));
         refresh()
     })

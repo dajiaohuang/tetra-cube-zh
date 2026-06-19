@@ -84,8 +84,13 @@ def apply_fixes_to_file(filepath, fixes, dry_run=False):
     result = original
     changes = 0
     for wrong, correct in fixes:
-        # Case-insensitive replacement
-        pat = re.compile(re.escape(wrong), re.IGNORECASE)
+        # Single-word terms: use word boundary to avoid breaking code
+        if ' ' not in wrong:
+            pattern = r'\b' + re.escape(wrong) + r'\b'
+        # Multi-word: normalize whitespace for cross-line matching
+        else:
+            pattern = re.sub(r'\s+', r'\\s+', re.escape(wrong))
+        pat = re.compile(pattern, re.IGNORECASE)
         new_result, n = pat.subn(correct, result)
         if n > 0:
             changes += n
