@@ -4,7 +4,7 @@ const padding = 20,
     textWidthMax = 612 - paddingx2,
     maxLines = 11,
     lineCheck = maxLines + 1,
-    labelFont = ""粗体 16px Tahoma"",
+    labelFont = "bold 16px Tahoma",
     descriptionFont = "16px Tahoma",
     subclassesCard = {
         "野蛮人": "原初道途",
@@ -237,7 +237,7 @@ var Card = {
     },
 
     BackgroundName: function () {
-        let variant = this.FindTraitByName(character.Background.content, "“可选变体”");
+        let variant = this.FindTraitByName(character.Background.content, "Optional Variant");
         if (variant != null && Random.Num(2) == 1)
             return character.Background.name + " (" + variant + ")";
         return character.Background.name;
@@ -254,7 +254,7 @@ var Card = {
                 case "半精灵":
                     if (!usedBooks.includes("SCAG"))
                         return "";
-                    return this.FindTraitByName(subvar, ""精灵血统"") + " Ancestry - ";
+                    return this.FindTraitByName(subvar, "Elven Ancestry") + " Ancestry - ";
                 case "人类":
                     return this.FindTraitByName(subvar, "Ethnicity") + " - ";
                 case "提夫林":

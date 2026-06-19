@@ -203,7 +203,7 @@
 			"A parasite inhabits your body. You indulge your hunger to sate it.",
 			"You loved an immortal and were willing to be transformed into a 吸血鬼 to join them, but tr年龄dy interrupted the transformation.",
 			"You are a diminished manifestation of an otherworldly being. Slaking your hunger hastens your renewal.",
-			"You don’t know your origins, but you were raised by 吸血鬼s or other 怪物s.",
+			"You don’t know your origins, but you were raised by 吸血鬼s or other monsters.",
 			"A radical experiment changed your body, making you reliant on others for vital fluids."
 		]
 	},
@@ -826,7 +826,7 @@
 						"Spotted brown"
 					],
 					"Note on age": [
-						"While 吉斯洋基人 bodies live for about a century, they are 年龄less while on the astral 计划e."
+						"While 吉斯洋基人 bodies live for about a century, they are 年龄less while on the astral plane."
 					]
 				}
 			},
@@ -1849,8 +1849,8 @@
 			}
 		},
 		"Tabaxi Obsession": [
-			"A god or 计划ar entity",
-			"A 怪物",
+			"A god or planar entity",
+			"A monster",
 			"A lost civilization",
 			"A 法师's secrets",
 			"A mundane item",
@@ -2031,7 +2031,7 @@
 		"Triton Quirk": [
 			"You phrase requests as orders that you expect to be obeyed.",
 			"You are quick to boast of the greatness of your civilization.",
-			"You learned an antiquated version of Common and 拖放 'thee' and 'thou' into your speech.",
+			"You learned an antiquated version of Common and drop 'thee' and 'thou' into your speech.",
 			"You assume that people are telling you the truth about local customs and expectations.",
 			"The surface world is a wondrous place, and you catalog all its details in a journal.",
 			"You mistakenly assume that surface folk know about and are impressed by your people's history. "

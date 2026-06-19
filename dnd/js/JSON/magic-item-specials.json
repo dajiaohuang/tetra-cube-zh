@@ -243,7 +243,7 @@
 		},
 		{
 			"name": "Hungry",
-			"desc": "This item’s magical properties function only if fresh blood from a 类人生物 has been applied to it within the past 24 hours. It needs only a 拖放 to activate.",
+			"desc": "This item’s magical properties function only if fresh blood from a 类人生物 has been applied to it within the past 24 hours. It needs only a drop to activate.",
 			"weight": 1
 		},
 		{

@@ -5,7 +5,7 @@ var backgrounds, books, classes, names, other, races, ua,
 function UpdateList() {
     // Get Books
     {
-        usedBooks = ["Real", "PHB"];
+        usedBooks = ["真实", "PHB"];
         for (let bookNum = 0; bookNum < books.availableBooks.length; bookNum++) {
             let book = books.availableBooks[bookNum];
             if (document.getElementById(book + "box").checked)
@@ -27,7 +27,7 @@ function UpdateList() {
     $("#uaraces").html(UAStuff.Get(ua.races));
     $("#uaclasses").html(UAStuff.Get(ua.classes));
     $("#uaother").html(UAStuff.Get(ua.other));
-    $("#ua计划eshift").html(UAStuff.Get(ua.计划eshift));
+    $("#uaplaneshift").html(UAStuff.Get(ua.planeshift));
 
     Collapsibles.RetractAll("races");
     Collapsibles.RetractAll("classes");
@@ -112,7 +112,10 @@ var Content = {
         let splitSpecial = special.split("-");
 
         switch (splitSpecial[0]) {
-            case "book": // Remove this item if we don'没有必要的书籍't have
+            case "book": // Remove this item if we don't have the necessary book
+                return this.CheckForBook(splitSpecial[1]) ? specialItem : null;
+
+            case "booksort": // Take a bunch of arrays and make a composite array, discarding data from books we don't have
             case 'humanethnicity':
                 let heObj = {};
                 for (let bookName in specialItem) {
@@ -123,10 +126,10 @@ var Content = {
 
             case "characteristics": // Output height, weight, appearance, etc
                 let chObj = {};
-                chObj[""基础身高""] = Math.floor(specialItem.baseheight / 12) + "'" + (specialItem.baseheight % 12) + "\"";
-                chObj["“高度修正”"] = "+" + specialItem.heightmod;
-                chObj["“基础重量”"] = specialItem.baseweight + " lb.";
-                chObj[""重量调整""] = "x (" + specialItem.weightmod + ") lb.";
+                chObj["Base Height"] = Math.floor(specialItem.baseheight / 12) + "'" + (specialItem.baseheight % 12) + "\"";
+                chObj["Height Mod"] = "+" + specialItem.heightmod;
+                chObj["Base Weight"] = specialItem.baseweight + " lb.";
+                chObj["Weight Mod"] = "x (" + specialItem.weightmod + ") lb.";
                 if (specialItem.hasOwnProperty("_other")) {
                     for (let propertyName in specialItem._other)
                         chObj[propertyName] = specialItem._other[propertyName];
@@ -158,7 +161,7 @@ var Content = {
                     ravnicaContacts = {}, nonGuildList = [];
                 for (let index = 0; index < specialItem._nonguild.length; index++) {
                     if (specialItem._nonguild[index] == "_reroll")
-                        nonGuildList[index] = ""额外投掷一次 "" + guildName + "" 接触；你可以决定接触对象是盟友还是对手。""
+                        nonGuildList[index] = "Roll an additional " + guildName + " contact; you can decide if the contact is an ally or a rivalf."
                     else
                         nonGuildList[index] = specialItem._nonguild[index];
                 }
@@ -170,8 +173,8 @@ var Content = {
                 let dimirContacts = {}, guilds = [];
                 for (let index = 0; index < specialItem._guilds.length; index++)
                     guilds.push(specialItem._guilds[index].name);
-                dimirContacts["“Dimir 联络人”"] = specialItem["_dimircontact"];
-                dimirContacts[""次级公会""] = guilds;
+                dimirContacts["Dimir Contact"] = specialItem["_dimircontact"];
+                dimirContacts["Secondary Guild"] = guilds;
                 return dimirContacts;
         }
 
@@ -347,4 +350,4 @@ $(function () {
     GetJSON("ua");
 });
 
-const noBulletPointsTraits = ["子种族与变体", "身体特征", "“童年绰号”", "向导姓名", "动物强化", "Advanced 动物强化", "奇械师专精", "灵能宗派", "血猎人宗派"];
+const noBulletPointsTraits = ["子种族与变体", "身体特征", "Childhood Nickname", "向导姓名", "动物强化", "Advanced 动物强化", "奇械师专精", "灵能宗派", "血猎人宗派"];

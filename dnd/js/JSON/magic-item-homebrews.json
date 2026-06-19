@@ -22,27 +22,27 @@
 		},
 		{
 			"name": "元素生物 Air",
-			"desc": "The item was forged through the power of 元素生物 air by an 鸟羽人, djinn, air 元素裔, powerful air 元素生物, one of the Wind Dukes of Aaqa, or another resident of the 计划e of air. It is light blue or white colored and weighs very little, and may incorporate bird im年龄ry. It might have wind, cold, 闪电, 雷鸣, storm, or 飞行-based powers, or be able to summon creatures of 元素生物 air.",
+			"desc": "The item was forged through the power of 元素生物 air by an 鸟羽人, djinn, air 元素裔, powerful air 元素生物, one of the Wind Dukes of Aaqa, or another resident of the plane of air. It is light blue or white colored and weighs very little, and may incorporate bird im年龄ry. It might have wind, cold, 闪电, 雷鸣, storm, or 飞行-based powers, or be able to summon creatures of 元素生物 air.",
 			"weight": 8
 		},
 		{
 			"name": "元素生物 Earth",
-			"desc": "The item was forged through the power of 元素生物 earth by a dao, earth 元素裔, powerful earth 元素生物, or another resident of the 计划e of earth. It is made of stone, metal, or 宝石stones, and may be unusually heavy. It might have stone, metal or weight-based powers, conjure fissures or earthquakes, or be able to summon creatures of 元素生物 earth.",
+			"desc": "The item was forged through the power of 元素生物 earth by a dao, earth 元素裔, powerful earth 元素生物, or another resident of the plane of earth. It is made of stone, metal, or 宝石stones, and may be unusually heavy. It might have stone, metal or weight-based powers, conjure fissures or earthquakes, or be able to summon creatures of 元素生物 earth.",
 			"weight": 8
 		},
 		{
 			"name": "元素生物 火焰",
-			"desc": "The item was forged through the power of 元素生物 fire by an azer, efreeti, fire 元素裔, powerful fire 元素生物, or another resident of the 计划e of fire. It is hot to the touch, likely red or orange, and may be made of brass or black iron. It has heat or fire-based powers, and may be able to summon creatures of 元素生物 fire.",
+			"desc": "The item was forged through the power of 元素生物 fire by an azer, efreeti, fire 元素裔, powerful fire 元素生物, or another resident of the plane of fire. It is hot to the touch, likely red or orange, and may be made of brass or black iron. It has heat or fire-based powers, and may be able to summon creatures of 元素生物 fire.",
 			"weight": 8
 		},
 		{
 			"name": "元素生物 Water",
-			"desc": "The item was forged through the power of 元素生物 water by a 人鱼, 海精灵, marid, water 元素裔, 梭螺鱼人, powerful water 元素生物, or another resident of the 计划e of water. It is made of worked fish scales, shells, coral, or anything else that might be found under the sea. Its powers are 基于 water, liquid, mist, or rain, and may be able to summon creatures of 元素生物 water.",
+			"desc": "The item was forged through the power of 元素生物 water by a 人鱼, 海精灵, marid, water 元素裔, 梭螺鱼人, powerful water 元素生物, or another resident of the plane of water. It is made of worked fish scales, shells, coral, or anything else that might be found under the sea. Its powers are based on water, liquid, mist, or rain, and may be able to summon creatures of 元素生物 water.",
 			"weight": 8
 		},
 		{
 			"name": "侏儒",
-			"desc": "This item was crafted by the diminutive 侏儒s. It is not especially powerful and 倒地 to breaking, but might just be useful enough to save the life of its user in their moment of need. It is 小型 and looks like a steampunk contraption, complete with unnecessary mechanical parts. The 计划e of Bytopia produces many such items.",
+			"desc": "This item was crafted by the diminutive 侏儒s. It is not especially powerful and 倒地 to breaking, but might just be useful enough to save the life of its user in their moment of need. It is 小型 and looks like a steampunk contraption, complete with unnecessary mechanical parts. The plane of Bytopia produces many such items.",
 			"weight": 8
 		},
 		{
@@ -52,7 +52,7 @@
 		},
 		{
 			"name": "Angel",
-			"desc": "This item was created by an angel from the upper 计划es, possibly Arcadia, Bytopia, or Elysium, but usually Mount Celestia. It may be lightweight or radiate light. Its 外表 is gold and white, and it incorporates wings, halos, and 天界生物 bodies. It may also include eyes, rings, animal heads, or fire. Its powers might relate to truth, radiance, healing, or destroying evil. 魔族s find the item repulsive.",
+			"desc": "This item was created by an angel from the upper planes, possibly Arcadia, Bytopia, or Elysium, but usually Mount Celestia. It may be lightweight or radiate light. Its 外表 is gold and white, and it incorporates wings, halos, and 天界生物 bodies. It may also include eyes, rings, animal heads, or fire. Its powers might relate to truth, radiance, healing, or destroying evil. 魔族s find the item repulsive.",
 			"weight": 5
 		},
 		{
@@ -67,7 +67,7 @@
 		},
 		{
 			"name": "仙灵",
-			"desc": "This item was crafted by 小型 fey creatures such as pixies, sprites, or 仙灵 dragons, likely as a gift. It is likely to be a 小型 item made from leaves, sticks, baubles, or perhaps silver or mithral. Its powers might be 基于 隐匿, trickery, 妖精荒野, or the magic of the specific creatures that created it. It also might play tricks on its user or cause surges of wild magic.",
+			"desc": "This item was crafted by 小型 fey creatures such as pixies, sprites, or 仙灵 dragons, likely as a gift. It is likely to be a 小型 item made from leaves, sticks, baubles, or perhaps silver or mithral. Its powers might be based on 隐匿, trickery, 妖精荒野, or the magic of the specific creatures that created it. It also might play tricks on its user or cause surges of wild magic.",
 			"weight": 4
 		},
 		{
@@ -92,7 +92,7 @@
 		},
 		{
 			"name": "Yugoloth",
-			"desc": "This item was created by a powerful yugoloth from the 计划e of Gehenna, for its精灵 or for a client that paid well. It is a warped and twisted metal instrument. It might have heat, cold, acid, poison, disease, 黑暗, 隐形, teleportation, or extra计划ar powers. If its 创造者 made the item for its精灵 or another yugoloth, it might be designed for fighting other 魔族s. 天界生物s find the item repulsive.",
+			"desc": "This item was created by a powerful yugoloth from the plane of Gehenna, for its精灵 or for a client that paid well. It is a warped and twisted metal instrument. It might have heat, cold, acid, poison, disease, 黑暗, 隐形, teleportation, or extraplanar powers. If its 创造者 made the item for its精灵 or another yugoloth, it might be designed for fighting other 魔族s. 天界生物s find the item repulsive.",
 			"weight": 4
 		},
 		{
@@ -117,12 +117,12 @@
 		},
 		{
 			"name": "吉斯洋基人",
-			"desc": "This item was crafted by the 吉斯洋基人 of the astral 计划e. It always appears new, regardless of its actual 年龄, though it may be unfinished if its 吉斯洋基人 创造者 abandoned it in a fit of boredom. Its powers might be 心灵, telekinetic, or relate to the astral 计划e in some way. It might also be effective against 吉斯泽莱人 or mind flayers.",
+			"desc": "This item was crafted by the 吉斯洋基人 of the astral plane. It always appears new, regardless of its actual 年龄, though it may be unfinished if its 吉斯洋基人 创造者 abandoned it in a fit of boredom. Its powers might be 心灵, telekinetic, or relate to the astral plane in some way. It might also be effective against 吉斯泽莱人 or mind flayers.",
 			"weight": 3
 		},
 		{
 			"name": "吉斯泽莱人",
-			"desc": "This item was crafted by the 吉斯泽莱人 of the 计划e of Limbo. It is, more than likely, forged of the chaos-stuff of Limbo, and only the sharpest of minds can use it- but those who can use it can shape it to their will using the power of their mind alone. It might also be effective against 吉斯洋基人 or mind flayers. Such items are often created for 武僧s, but can just as easily be made for others.",
+			"desc": "This item was crafted by the 吉斯泽莱人 of the plane of Limbo. It is, more than likely, forged of the chaos-stuff of Limbo, and only the sharpest of minds can use it- but those who can use it can shape it to their will using the power of their mind alone. It might also be effective against 吉斯洋基人 or mind flayers. Such items are often created for 武僧s, but can just as easily be made for others.",
 			"weight": 3
 		},
 		{
@@ -137,7 +137,7 @@
 		},
 		{
 			"name": "Mechanus",
-			"desc": "This item was created on Mechanus, the clockwork 计划e of ultimate order. It was likely forged by a modron heirarch. Its 外表 is bronze or copper-colored, and it may incorporate perfect geometric shapes, or gears and other mechanical parts. Its powers are extremely predictable and reliable (often not requiring a roll for abilities that normally do), and might relate to 构装生物s or creating order.",
+			"desc": "This item was created on Mechanus, the clockwork plane of ultimate order. It was likely forged by a modron heirarch. Its 外表 is bronze or copper-colored, and it may incorporate perfect geometric shapes, or gears and other mechanical parts. Its powers are extremely predictable and reliable (often not requiring a roll for abilities that normally do), and might relate to 构装生物s or creating order.",
 			"weight": 3
 		},
 		{
@@ -157,7 +157,7 @@
 		},
 		{
 			"name": "Dryad",
-			"desc": "This item was crafted by a dryad, likely as a gift. It is invariably made of wood and has 计划t, animal, or water manipulation powers.",
+			"desc": "This item was crafted by a dryad, likely as a gift. It is invariably made of wood and has plant, animal, or water manipulation powers.",
 			"weight": 2
 		},
 		{
@@ -167,7 +167,7 @@
 		},
 		{
 			"name": "地精oid",
-			"desc": "This item was crafted by a 地精oid, almost certainly a 大地精. It is a tool of warfare and is barely distinguishable from a mundane 地精oid item, if at all. It has one use, which is most likely for 战斗, and always straightforward. It may have come from the 计划e of Acheron, where the 地精oids are locked in an endless battle against the 兽人s.",
+			"desc": "This item was crafted by a 地精oid, almost certainly a 大地精. It is a tool of warfare and is barely distinguishable from a mundane 地精oid item, if at all. It has one use, which is most likely for 战斗, and always straightforward. It may have come from the plane of Acheron, where the 地精oids are locked in an endless battle against the 兽人s.",
 			"weight": 2
 		},
 		{
@@ -177,82 +177,82 @@
 		},
 		{
 			"name": "Mind Flayer",
-			"desc": "This item was created by the illithids, for thems精灵 or their 类人生物 thralls. Its 外表 incorporates brains, mollusk im年龄ry, eyes, or tentacles. It might have mind reading, mind control, or extra计划ar powers, or be capable of 心灵 attacks, and may be more effective in the hands of a user with high 智力. Mind flayers personalize their 魔法物品, so it may be connected to a specific individual, or require magical modifications to attune to it.",
+			"desc": "This item was created by the illithids, for thems精灵 or their 类人生物 thralls. Its 外表 incorporates brains, mollusk im年龄ry, eyes, or tentacles. It might have mind reading, mind control, or extraplanar powers, or be capable of 心灵 attacks, and may be more effective in the hands of a user with high 智力. Mind flayers personalize their 魔法物品, so it may be connected to a specific individual, or require magical modifications to attune to it.",
 			"weight": 2
 		},
 		{
 			"name": "Negative Energy",
-			"desc": "The item was forged with energy from the negative energy 计划e. It is cloaked in shadow, even while in 太阳light, and it has powers relating to 黑暗, rot, decay, death, or undeath.",
+			"desc": "The item was forged with energy from the negative energy plane. It is cloaked in shadow, even while in 太阳light, and it has powers relating to 黑暗, rot, decay, death, or undeath.",
 			"weight": 2
 		},
 		{
 			"name": "兽人",
-			"desc": "This item was crafted by an 兽人, most likely a 牧师. It is a tool of warfare and is only distinguishable from a mundane 兽人ish item by one unusual decoration, such as fur or teeth from a beast. It has one use, which is most likely for 战斗, and always straightforward. It may have come from the 计划e of Acheron, where the 兽人s are locked in an endless battle against the 地精oids.",
+			"desc": "This item was crafted by an 兽人, most likely a 牧师. It is a tool of warfare and is only distinguishable from a mundane 兽人ish item by one unusual decoration, such as fur or teeth from a beast. It has one use, which is most likely for 战斗, and always straightforward. It may have come from the plane of Acheron, where the 兽人s are locked in an endless battle against the 地精oids.",
 			"weight": 2
 		},
 		{
 			"name": "Positive Energy",
-			"desc": "The item was forged with energy from the positive energy 计划e. It glows brightly, and it has powers relating to healing, radiance, or creating life.",
+			"desc": "The item was forged with energy from the positive energy plane. It glows brightly, and it has powers relating to healing, radiance, or creating life.",
 			"weight": 2
 		},
 		{
 			"name": "印记城",
-			"desc": "This item was created in 印记城，万门之城 at the center of 多重宇宙. It is most likely fashioned from the stone, iron, or bronze that makes up most of 印记城's architecture. The item's powers could be anything, but it likely has extra计划ar or otherwise obscure powers of some sort. Undoubtedly, the item is also a 钥匙 to a portal somewhere in the city of doors.",
+			"desc": "This item was created in 印记城，万门之城 at the center of 多重宇宙. It is most likely fashioned from the stone, iron, or bronze that makes up most of 印记城's architecture. The item's powers could be anything, but it likely has extraplanar or otherwise obscure powers of some sort. Undoubtedly, the item is also a 钥匙 to a portal somewhere in the city of doors.",
 			"weight": 2
 		},
 		{
 			"name": "Sphinx",
-			"desc": "This item was created by a sphinx. It resembles a mundane item, but jewel-encrusted, parts of it have the color and texture of sand, and it may incorporate egyptian im年龄ry. It is made for one specific purpose, might have sand-based or extra计划ar powers, and is typically tied to the sphinx that created it in some way. These items are difficult to acquire without being given them by the sphinx its精灵, and knowingly taking one that rightfully belongs to someone else may incur the sphinx's wrath.",
+			"desc": "This item was created by a sphinx. It resembles a mundane item, but jewel-encrusted, parts of it have the color and texture of sand, and it may incorporate egyptian im年龄ry. It is made for one specific purpose, might have sand-based or extraplanar powers, and is typically tied to the sphinx that created it in some way. These items are difficult to acquire without being given them by the sphinx its精灵, and knowingly taking one that rightfully belongs to someone else may incur the sphinx's wrath.",
 			"weight": 2
 		},
 		{
 			"name": "Black 龙类",
-			"desc": "This item was created by a black dragon, for its精灵 or a minion. It may be made from the dragon's scales and 禽爪, precious metals and 宝石s from its hoard, 宝藏 looted from 废墟s and fallen civilizations, or bone and other remains. It might have powers 基于 acid, insects, or rot and decay, or powers that are especially brutal and painful.",
+			"desc": "This item was created by a black dragon, for its精灵 or a minion. It may be made from the dragon's scales and 禽爪, precious metals and 宝石s from its hoard, 宝藏 looted from 废墟s and fallen civilizations, or bone and other remains. It might have powers based on acid, insects, or rot and decay, or powers that are especially brutal and painful.",
 			"weight": 2
 		},
 		{
 			"name": "Blue 龙类",
-			"desc": "This item was created by a blue dragon, for its精灵 or a minion. It may be made from the dragon's scales and 禽爪, precious metals and 宝石s (especially sapphires) from its hoard, or reinf兽人ed glass. Its powers might be 基于 闪电 and 雷鸣, or sand.",
+			"desc": "This item was created by a blue dragon, for its精灵 or a minion. It may be made from the dragon's scales and 禽爪, precious metals and 宝石s (especially sapphires) from its hoard, or reinf兽人ed glass. Its powers might be based on 闪电 and 雷鸣, or sand.",
 			"weight": 2
 		},
 		{
 			"name": "Brass 龙类",
-			"desc": "This item was created by a brass dragon, for its精灵, for a minion, or as a gift. It may be made from the dragon's scales and 禽爪, precious metals (especially brass) and 宝石s from its hoard, or reinf兽人ed glass. Its powers might be 基于 fire, sand, or the dragon's sleep breath, and it may be hot to the touch. Brass dragon items are likely to be sentient, or contain bound creatures, to sate the dragon's desire for 小型 talk.",
+			"desc": "This item was created by a brass dragon, for its精灵, for a minion, or as a gift. It may be made from the dragon's scales and 禽爪, precious metals (especially brass) and 宝石s from its hoard, or reinf兽人ed glass. Its powers might be based on fire, sand, or the dragon's sleep breath, and it may be hot to the touch. Brass dragon items are likely to be sentient, or contain bound creatures, to sate the dragon's desire for 小型 talk.",
 			"weight": 2
 		},
 		{
 			"name": "Bronze 龙类",
-			"desc": "This item was created by a bronze dragon, for its精灵, for a minion, or as a gift. It may be made from the dragon's scales and 禽爪, precious metals (especially bronze) and 宝石s (especially pearls) from its hoard, or materials found under the sea, such as fish scale, coral, or whalebone. Its powers might be 基于 闪电, 雷鸣, water, or the dragon's 斥力吐息. Bronze dragon items are most likely forged for warfare.",
+			"desc": "This item was created by a bronze dragon, for its精灵, for a minion, or as a gift. It may be made from the dragon's scales and 禽爪, precious metals (especially bronze) and 宝石s (especially pearls) from its hoard, or materials found under the sea, such as fish scale, coral, or whalebone. Its powers might be based on 闪电, 雷鸣, water, or the dragon's 斥力吐息. Bronze dragon items are most likely forged for warfare.",
 			"weight": 2
 		},
 		{
 			"name": "Copper 龙类",
-			"desc": "This item was created by a copper dragon, for its精灵, for a minion, or as a gift. It may be made from the dragon's scales and 禽爪, precious metals (especially copper) and 宝石s from its hoard, or solid stone. Its powers might be 基于 acid, stone, mud, secrecy, or the dragon's slowing breath. An item made by a copper dragon is likely to incorporate music, stories, riddles, or pranks in some way, possibly at the expense of its user. Copper dragon items are often made for 吟游诗人s, as well.",
+			"desc": "This item was created by a copper dragon, for its精灵, for a minion, or as a gift. It may be made from the dragon's scales and 禽爪, precious metals (especially copper) and 宝石s from its hoard, or solid stone. Its powers might be based on acid, stone, mud, secrecy, or the dragon's slowing breath. An item made by a copper dragon is likely to incorporate music, stories, riddles, or pranks in some way, possibly at the expense of its user. Copper dragon items are often made for 吟游诗人s, as well.",
 			"weight": 2
 		},
 		{
 			"name": "Green 龙类",
-			"desc": "This item was created by a green dragon, for its精灵 or a minion. It may be made from the dragon's scales and 禽爪, or precious metals and 宝石s (especially emeralds) from its hoard, and may be adorned with carvings or sculptures made by its captives. Its powers might be 基于 poison, 计划t manipulation, or thick fog.",
+			"desc": "This item was created by a green dragon, for its精灵 or a minion. It may be made from the dragon's scales and 禽爪, or precious metals and 宝石s (especially emeralds) from its hoard, and may be adorned with carvings or sculptures made by its captives. Its powers might be based on poison, plant manipulation, or thick fog.",
 			"weight": 2
 		},
 		{
 			"name": "Gold 龙类",
-			"desc": "This item was created by a gold dragon, for its精灵, for a minion, or as a gift. It may be made from the dragon's scales and 禽爪, and it inevitably incorporates precious metals (especially gold) and 宝石s (especially pearls) from its hoard. Its powers might be 基于 fire, divination, dreams, wealth, or the dragon's weakening breath, and it may be hot to the touch. Gold dragon items are visibily expensive and may even require gold or items of value to be fed to them to work. Gold dragons can make more powerful items than any other dragon are well worth the cost.",
+			"desc": "This item was created by a gold dragon, for its精灵, for a minion, or as a gift. It may be made from the dragon's scales and 禽爪, and it inevitably incorporates precious metals (especially gold) and 宝石s (especially pearls) from its hoard. Its powers might be based on fire, divination, dreams, wealth, or the dragon's weakening breath, and it may be hot to the touch. Gold dragon items are visibily expensive and may even require gold or items of value to be fed to them to work. Gold dragons can make more powerful items than any other dragon are well worth the cost.",
 			"weight": 2
 		},
 		{
 			"name": "Red 龙类",
-			"desc": "This item was created by a red dragon, for its精灵 or a minion. It may be made from the dragon's scales and 禽爪, or precious metals and 宝石s (especially rubies) from its hoard. It is most likely hot to the touch, and its powers are 基于 fire, magma, or heat, and it may be able to cause fissures or quakes in the earth.",
+			"desc": "This item was created by a red dragon, for its精灵 or a minion. It may be made from the dragon's scales and 禽爪, or precious metals and 宝石s (especially rubies) from its hoard. It is most likely hot to the touch, and its powers are based on fire, magma, or heat, and it may be able to cause fissures or quakes in the earth.",
 			"weight": 2
 		},
 		{
 			"name": "Silver 龙类",
-			"desc": "This item was created by a silver dragon, for its精灵, for a minion, or as a gift. It may be made from the dragon's scales and 禽爪, precious metals (especially silver) and 宝石s from its hoard, or relics from 类人生物 civilizations. Its powers might be 基于 cold, fog, clouds, weather, or the dragon's paralyzing breath, and it may be cold to the touch. Silver dragon items are often made for 人类s or other short-lived races.",
+			"desc": "This item was created by a silver dragon, for its精灵, for a minion, or as a gift. It may be made from the dragon's scales and 禽爪, precious metals (especially silver) and 宝石s from its hoard, or relics from 类人生物 civilizations. Its powers might be based on cold, fog, clouds, weather, or the dragon's paralyzing breath, and it may be cold to the touch. Silver dragon items are often made for 人类s or other short-lived races.",
 			"weight": 2
 		},
 		{
 			"name": "White 龙类",
-			"desc": "This item was created by a white dragon, for its精灵 or a minion. It may be made from the dragon's scales and 禽爪, precious metals and 宝石s (especially diamonds) from its hoard, ivory, whalebone, rare furs, unmelting ice, or anything else the dragon can find in its arctic domain. It is most likely cold to the touch, and its powers are 基于 snow, ice, frigid water or fog, or cold.",
+			"desc": "This item was created by a white dragon, for its精灵 or a minion. It may be made from the dragon's scales and 禽爪, precious metals and 宝石s (especially diamonds) from its hoard, ivory, whalebone, rare furs, unmelting ice, or anything else the dragon can find in its arctic domain. It is most likely cold to the touch, and its powers are based on snow, ice, frigid water or fog, or cold.",
 			"weight": 2
 		},
 		{
@@ -267,7 +267,7 @@
 		},
 		{
 			"name": "Carceri",
-			"desc": "This item was created by a 魔族 or prisoner of the prison 计划e of Carceri, or a cultist or 邪术师 of such a being. It is an instrument made of twisted flesh or warped metal, and its power is to capture or restrain. An especially powerful item may banish victims to the prison 计划e its精灵- or point to a way out of it. 天界生物s find the item repulsive.",
+			"desc": "This item was created by a 魔族 or prisoner of the prison plane of Carceri, or a cultist or 邪术师 of such a being. It is an instrument made of twisted flesh or warped metal, and its power is to capture or restrain. An especially powerful item may banish victims to the prison plane its精灵- or point to a way out of it. 天界生物s find the item repulsive.",
 			"weight": 1
 		},
 		{
@@ -282,7 +282,7 @@
 		},
 		{
 			"name": "龙类 Turtle",
-			"desc": "This item was created by a dragon turtle, for its精灵, for a minion, or as a gift. It may be made from parts of the dragon turtle's shell or 爪击, precious metals and 宝石s from its hoard, or materials found under the sea, such as fish scale, coral, or whalebone. Its powers might be 基于 water, steam, or the dragon turtle's protective shell. If made for a non-aquatic creature, it has 游泳 or water breathing powers.",
+			"desc": "This item was created by a dragon turtle, for its精灵, for a minion, or as a gift. It may be made from parts of the dragon turtle's shell or 爪击, precious metals and 宝石s from its hoard, or materials found under the sea, such as fish scale, coral, or whalebone. Its powers might be based on water, steam, or the dragon turtle's protective shell. If made for a non-aquatic creature, it has 游泳 or water breathing powers.",
 			"weight": 1
 		},
 		{
@@ -312,12 +312,12 @@
 		},
 		{
 			"name": "自然 天界生物",
-			"desc": "This item was created by a 天界生物 from the chaos-aligned upper 计划es of Elysium, Arborea, or the Beastlands. Its 外表 is gold and white, and it incorporates symbols of 动物 and 自然. Its powers might relate to 自然, or they might relate to celebration, dancing, feasting, and other such things. 魔族s find the item repulsive.",
+			"desc": "This item was created by a 天界生物 from the chaos-aligned upper planes of Elysium, Arborea, or the Beastlands. Its 外表 is gold and white, and it incorporates symbols of 动物 and 自然. Its powers might relate to 自然, or they might relate to celebration, dancing, feasting, and other such things. 魔族s find the item repulsive.",
 			"weight": 1
 		},
 		{
 			"name": "Neogi",
-			"desc": "The item was created by the alien neogi, possibly for 类人生物 thralls. It has a distinctly spider-like 外表 to it, and may even have disturbing, moving spider legs attached to it. It might have mind control, poison, or extra计划ar powers, or borrow power from an eldritch entity much greater than the neogi. It is possible that the item exerts some form of mind control over its user.",
+			"desc": "The item was created by the alien neogi, possibly for 类人生物 thralls. It has a distinctly spider-like 外表 to it, and may even have disturbing, moving spider legs attached to it. It might have mind control, poison, or extraplanar powers, or borrow power from an eldritch entity much greater than the neogi. It is possible that the item exerts some form of mind control over its user.",
 			"weight": 1
 		},
 		{
@@ -332,7 +332,7 @@
 		},
 		{
 			"name": "Pandemonium",
-			"desc": "This item was created by a 魔族 or lost soul from Pandemonium, the 计划e of madness, or a cultist or 邪术师 of such a being. It is an object made of stone, and it causes madness and 力竭 to its victims, its user, or both. It likely invokes the h枭人g winds of Pandemonium.",
+			"desc": "This item was created by a 魔族 or lost soul from Pandemonium, the plane of madness, or a cultist or 邪术师 of such a being. It is an object made of stone, and it causes madness and 力竭 to its victims, its user, or both. It likely invokes the h枭人g winds of Pandemonium.",
 			"weight": 1
 		},
 		{
@@ -347,7 +347,7 @@
 		},
 		{
 			"name": "Shadow 龙类",
-			"desc": "This item was created by a shadow dragon, for its精灵, for a minion, or as a gift. It may be made from the dragon's scales and 禽爪, precious metals and 宝石s from its hoard, bones or flesh from dead creatures, or solid 黑暗. Its powers are 基于 黑暗, 隐匿, the dragon's 吐息武器, or the shadowfell its精灵. A shadow dragon item may gain power in the dark, or lose it in the light, and its user risks falling victim to shadowfell despair or worse.",
+			"desc": "This item was created by a shadow dragon, for its精灵, for a minion, or as a gift. It may be made from the dragon's scales and 禽爪, precious metals and 宝石s from its hoard, bones or flesh from dead creatures, or solid 黑暗. Its powers are based on 黑暗, 隐匿, the dragon's 吐息武器, or the shadowfell its精灵. A shadow dragon item may gain power in the dark, or lose it in the light, and its user risks falling victim to shadowfell despair or worse.",
 			"weight": 1
 		},
 		{
@@ -357,7 +357,7 @@
 		},
 		{
 			"name": "Slaad",
-			"desc": "This item was created by a slaad from the chaotic 计划e of Limbo. Its 外表 is chaotic, nonsensical, and may constantly alter its精灵. It might also contain a slaad control 宝石. Its powers are invariably random and unpredictable, often to the point of unreliability, but they might include shapechanging or regenerative powers.",
+			"desc": "This item was created by a slaad from the chaotic plane of Limbo. Its 外表 is chaotic, nonsensical, and may constantly alter its精灵. It might also contain a slaad control 宝石. Its powers are invariably random and unpredictable, often to the point of unreliability, but they might include shapechanging or regenerative powers.",
 			"weight": 1
 		},
 		{
@@ -377,7 +377,7 @@
 		},
 		{
 			"name": "Ysgardian",
-			"desc": "This item was created by an inhabitant of the 计划e of Ysgard, usually a heroic soul who died and ascended to the 计划e. It is invariably a powerful weapon or armor designed for 战斗 with great 怪物s or powerful evils. It is made from the finest materials available, decorated with the spoils of battle, and may incorporate norse im年龄ry. The item might be designed to fight a particular type of enemy (usually evil 怪物s or 魔族s), and grow more powerful the more battles against such foes are won by its user. It might also have a limited ability to resurrect its user, should they fall in battle.",
+			"desc": "This item was created by an inhabitant of the plane of Ysgard, usually a heroic soul who died and ascended to the plane. It is invariably a powerful weapon or armor designed for 战斗 with great monsters or powerful evils. It is made from the finest materials available, decorated with the spoils of battle, and may incorporate norse im年龄ry. The item might be designed to fight a particular type of enemy (usually evil monsters or 魔族s), and grow more powerful the more battles against such foes are won by its user. It might also have a limited ability to resurrect its user, should they fall in battle.",
 			"weight": 1
 		}
 	],
@@ -419,7 +419,7 @@
 		},
 		{
 			"name": "Foe",
-			"desc": "This item is designed to fight 怪物s of a certain type. It may warn its user when such enemies are near, be extra effective against them in 战斗, weaken them when they are nearby, prevent them from approaching its user, or banish them to their 计划e of origin.",
+			"desc": "This item is designed to fight monsters of a certain type. It may warn its user when such enemies are near, be extra effective against them in 战斗, weaken them when they are nearby, prevent them from approaching its user, or banish them to their plane of origin.",
 			"weight": 3
 		},
 		{
@@ -454,7 +454,7 @@
 		},
 		{
 			"name": "Communication",
-			"desc": "This item allows its user to speak (normally or telepathically) with creatures far away, creatures they do not share a 语言 with, or things that cannot normally speak such as 计划ts and 动物.",
+			"desc": "This item allows its user to speak (normally or telepathically) with creatures far away, creatures they do not share a 语言 with, or things that cannot normally speak such as plants and 动物.",
 			"weight": 2
 		},
 		{
@@ -473,8 +473,8 @@
 			"weight": 2
 		},
 		{
-			"name": "Demi计划e",
-			"desc": "This item is linked to a demi计划e which can contain items or creatures. It may be used for stor年龄, or for something else. A weaker item might have a 小型, empty demi计划e, but a stronger item may have a 大型r demi计划e with its own native environment or even permanent inhabitants.",
+			"name": "Demiplane",
+			"desc": "This item is linked to a demiplane which can contain items or creatures. It may be used for stor年龄, or for something else. A weaker item might have a 小型, empty demiplane, but a stronger item may have a 大型r demiplane with its own native environment or even permanent inhabitants.",
 			"weight": 2
 		},
 		{
@@ -549,12 +549,12 @@
 		},
 		{
 			"name": "求生",
-			"desc": "This item allows its user to survive without food or water, without air, in places of extreme heat or cold, or in 计划es 敌对 to life its精灵.",
+			"desc": "This item allows its user to survive without food or water, without air, in places of extreme heat or cold, or in planes 敌对 to life its精灵.",
 			"weight": 2
 		},
 		{
 			"name": "Teleportation",
-			"desc": "This item can teleport creatures or items, either short range (such as a place the user can see) or long range (such as another place on the same 计划e).",
+			"desc": "This item can teleport creatures or items, either short range (such as a place the user can see) or long range (such as another place on the same plane).",
 			"weight": 2
 		},
 		{
@@ -584,7 +584,7 @@
 		},
 		{
 			"name": "Astral",
-			"desc": "This item has some connection to the astral 计划e, such as enabling its user to astrally project.",
+			"desc": "This item has some connection to the astral plane, such as enabling its user to astrally project.",
 			"weight": 1
 		},
 		{
@@ -624,7 +624,7 @@
 		},
 		{
 			"name": "Locator",
-			"desc": "This item knows the direction to the nearest object or location of a certain type, such as food, running water, temples to a specific god, or inter计划ar portals.",
+			"desc": "This item knows the direction to the nearest object or location of a certain type, such as food, running water, temples to a specific god, or interplanar portals.",
 			"weight": 1
 		},
 		{
@@ -648,8 +648,8 @@
 			"weight": 1
 		},
 		{
-			"name": "计划ar Travel",
-			"desc": "This item can transport the user or a group of people to another 计划e of existence, temporary or permanently, or banish enemies there.",
+			"name": "Planar Travel",
+			"desc": "This item can transport the user or a group of people to another plane of existence, temporary or permanently, or banish enemies there.",
 			"weight": 1
 		},
 		{
@@ -669,7 +669,7 @@
 		},
 		{
 			"name": "Safe警卫",
-			"desc": "This item protects its user against death. It might allow them to 拖放 to 1 hit point instead of falling 昏迷, automatically stabilize them when knocked out, or allow their soul to remain on the 计划e for resurrection after they die.",
+			"desc": "This item protects its user against death. It might allow them to drop to 1 hit point instead of falling 昏迷, automatically stabilize them when knocked out, or allow their soul to remain on the plane for resurrection after they die.",
 			"weight": 1
 		},
 		{
@@ -766,7 +766,7 @@
 		},
 		{
 			"name": "Eye",
-			"desc": "This item allows its user to see or hear through it. This property may not work if the item is too far away, on a different 计划e of existence, or protected by abjuration magic or solid lead.",
+			"desc": "This item allows its user to see or hear through it. This property may not work if the item is too far away, on a different plane of existence, or protected by abjuration magic or solid lead.",
 			"weight": 1
 		},
 		{
@@ -830,8 +830,8 @@
 			"weight": 1
 		},
 		{
-			"name": "计划ar",
-			"desc": "This item is attuned to a particular 计划e of existence other than the material 计划e, and has some special effect while on that 计划e. For instance, an item attuned to the shadowfell might make its user 免疫 to shadowfell despair.",
+			"name": "Planar",
+			"desc": "This item is attuned to a particular plane of existence other than the material plane, and has some special effect while on that plane. For instance, an item attuned to the shadowfell might make its user 免疫 to shadowfell despair.",
 			"weight": 1
 		},
 		{
@@ -861,7 +861,7 @@
 		},
 		{
 			"name": "Traceable",
-			"desc": "The user of this item knows its location when it is not on their person, or they can follow the path it has traveled since they last had it. This property may not work if the item is too far away, on a different 计划e of existence, or protected by abjuration magic or solid lead.",
+			"desc": "The user of this item knows its location when it is not on their person, or they can follow the path it has traveled since they last had it. This property may not work if the item is too far away, on a different plane of existence, or protected by abjuration magic or solid lead.",
 			"weight": 1
 		},
 		{

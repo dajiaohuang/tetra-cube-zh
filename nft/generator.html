@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<title>免费NFT生成器</title>
+<title>免费生成 NFT</title>
 <link href="./images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 <link href="css/nft.css" rel="stylesheet" type="text/css"/>
@@ -25,7 +25,7 @@
 <body id="nft-gen-body">
 <div class="container">
 <div class="content">
-<h1 class="centered-element">免费NFT生成器</h1>
+<h1 class="centered-element">免费生成 NFT</h1>
 <br/>
 <div>
 <label>
@@ -34,43 +34,43 @@
 </div>
 </label>
 </div>
-<div class="error-text" id="invalid-id" style="display: none;">无效标识符</div>
+<div class="error-text" id="invalid-id" style="display: none;">无效的标识符</div>
 <br/>
 <div>
 <label>
-<div class="input-label">输入一个URL： </div>
+<div class="input-label">输入一个网址： </div>
 <div><input class="form-control" id="url-input" onchange="setButtonValidity()" type="text"/>
 </div>
 </label>
 </div>
-<div class="error-text" id="invalid-url" style="display: none;">无效的URL</div>
+<div class="error-text" id="invalid-url" style="display: none;">无效的网址</div>
 <br/>
 <div class="centered-element">
 <button class="btn btn-secondary" id="generate-button" onclick="generate()">生成我的 NFT</button>
 </div>
 <br/>
 <div id="generating-value" style="display: none;">
-				生成值中...
+				正在生成值...
 			</div>
 <div id="your-nft" style="display: none;">
 <div>
 <label>
-<div class="input-label">您的NFT: </div>
-<div><input class="form-control" id="nft-input" onclick="this.setSelectionRange(0, this.value.length)" readonly="" type="text"/></div>
+<div class="input-label">您的 NFT: </div>
+<div><input class="form-control" id="nft-input" onclick="ZZEVENT1009ZZ" readonly="" type="text"/></div>
 </label>
 </div>
 <div>
-<div><b>该NFT的大致价值为：</b></div>
+<div><b>此NFT的估计价值为：</b></div>
 <br/>
-<div id="nft-value">$<span id="nft-value-number"></span> 百万美金</div>
+<div id="nft-value">$<span id="nft-value-number"></span> 百万美元</div>
 </div>
 </div>
 <!-- <br><br><br>
-			<h2>常见问题</h2>
+			<h2>FAQ</h2>
 			<div class="centered-element">
-				<button id="常见问题-button" class="btn btn-primary" onclick="showHide常见问题()">Show</button>
+				<button id="faq-button" class="btn btn-primary" onclick="showHideFaq()">Show</button>
 			</div>
-			<div id="常见问题" style="display: none;">
+			<div id="faq" style="display: none;">
 				<br>
 				<p><b>Q: Hey wait a minute, these aren't real NFTS!</b></p>
 				<p>A: I assure you, these are genuine Nice Fuckin' Tokens.</p>
@@ -79,7 +79,7 @@
 				<ol>
 					<li>They contain URLs</li>
 					<li>Intellectually... exceptional people can be convinced to buy them for money</li>
-					<li>If you donate a 百万美元 or more I will personally start a forest fire</li>
+					<li>If you donate a million dollars or more I will personally start a forest fire</li>
 				</ol>
 				The only difference is instead of being stored on a cumbersome blockchain, they are stored in a much
 				more efficient manner on your clipboard.

@@ -197,7 +197,7 @@
 				"You come from a temple famed for the brewery it operates. Some say you smell like one of its ales.",
 				"Your temple is a fortress and a proving ground that trains warrior-祭司s.",
 				"Your temple is a peaceful, humble place, filled with vegetable gardens and simple 祭司s.",
-				"You served in a temple in the Outer 计划es.",
+				"You served in a temple in the Outer Planes.",
 				null,
 				null,
 				null
@@ -227,7 +227,7 @@
 			"Became a cleric because": [
 				"A supernatural being in service to the gods called me to become a divine 年龄nt in the world.",
 				"I saw the injustice and horror in the world and felt moved to take a stand against them.",
-				"My god gave me an unmistakable sign. I 拖放ped everything to serve the divine.",
+				"My god gave me an unmistakable sign. I dropped everything to serve the divine.",
 				"Although I was always devout, it wasn't until I completed a pilgrim年龄 that I knew my true calling.",
 				"I used to serve in my 宗教's bureaucracy but found I needed to work in the world, to bring the mes智者 of my faith to the darkest corners of the land.",
 				"I realize that my god works through me, and I do as commanded, even though I don't know why I was chosen to serve."
@@ -327,7 +327,7 @@
 			],
 			"UA": [
 				"Brute",
-				"怪物 Hunter",
+				"Monster Hunter",
 				"Scout",
 				"Sharpshooter"
 			]
@@ -339,7 +339,7 @@
 				"Crossed greatswords in front of a castle gate, signifying the defense of a city or kingdom",
 				"A 骷髅 with a dagger through it, representing the doom you bring your enemies",
 				"A phoenix in a ring of fire, an expression of an indomitable spirit",
-				"Three 拖放s of blood beneath a horizontal sword blade on a black background, symbolizing three foes you have sworn to kill",
+				"Three drops of blood beneath a horizontal sword blade on a black background, symbolizing three foes you have sworn to kill",
 				null,
 				null,
 				null
@@ -369,7 +369,7 @@
 			"Became a fighter because": [
 				"I wanted to hone my 战斗 技能, and so I joined a war college.",
 				"I squired for a 骑士 who taught me how to fight, care for a steed, and conduct mys精灵 with honor. I decided to take up that path for mys精灵.",
-				"Horrible 怪物s descended on my community, killing someone I loved. I took up arms to destroy those creatures and others of a similar 自然.",
+				"Horrible monsters descended on my community, killing someone I loved. I took up arms to destroy those creatures and others of a similar 自然.",
 				"I joined the army and learned how to fight as part of a group.",
 				"I grew up fighting, and I refined my 天赋s by defending mys精灵 against people who crossed me.",
 				"I could always pick up just about any weapon and know how to use it effectively."
@@ -513,7 +513,7 @@
 			],
 			"Nemesis": [
 				"A mighty 兽人 war chief who threatens to overrun and destroy everything you hold sacred",
-				"A 魔族 or a 天界生物, the 年龄nt of a power of the Outer 计划es, who has been 冲锋d with corrupting or redeeming you, as appropriate",
+				"A 魔族 or a 天界生物, the 年龄nt of a power of the Outer Planes, who has been 冲锋d with corrupting or redeeming you, as appropriate",
 				"A dragon whose servants dog your steps",
 				"A high 祭司 who sees you as a mis向导d 愚者 and wants you to abandon your 宗教",
 				"A rival 圣武士 who trained with you but became an oathbreaker and holds you responsible",
@@ -554,7 +554,7 @@
 			"XGtE": [
 				"Gloom Stalker",
 				"Horizon Walker",
-				"怪物 Slayer"
+				"Monster Slayer"
 			],
 			"TCoE": [
 				"精类 Wanderer",
@@ -603,7 +603,7 @@
 				"I found purpose while I honed my hunting 技能 by bringing down dangerous 动物 at the edge of civilization.",
 				"I always had a way with 动物, able to calm them with a soothing word and a touch.",
 				"I suffer from terrible wanderlust, so being a 游侠 gave me a reason not to remain in one place for too long.",
-				"I have seen what happens when the 怪物s come out from the dark. I took it upon mys精灵 to become the first line of defense against the evils that lie beyond civilization's borders.",
+				"I have seen what happens when the monsters come out from the dark. I took it upon mys精灵 to become the first line of defense against the evils that lie beyond civilization's borders.",
 				"I met a grizzled 游侠 who taught me woodcraft and the secrets of the wild lands.",
 				"I served in an army, learning the precepts of my profession while blazing trails and scouting enemy encampments."
 			]
@@ -704,7 +704,7 @@
 		"Personality": {
 			"Arcane Origins": [
 				"Your power arises from your family's bloodline. You are related to some powerful creature, or you inherited a blessing or a 诅咒.",
-				"You are the reincarnation of a being from another 计划e of existence",
+				"You are the reincarnation of a being from another plane of existence",
 				"A powerful entity entered the world. Its magic changed you.",
 				"Your birth was prophesied in an ancient text, and you are foretold to use your power for terrible ends.",
 				"You are the product of generations of careful, selective breeding",
@@ -717,7 +717,7 @@
 				"Your powers are seen as a great blessing by those around you, and you are expected to use them in service to your community.",
 				"Your powers caused destruction and even a death when they became evident, and you were treated as a criminal.",
 				"Your neighbors hate and fear your power, causing them to shun you.",
-				"You came to the attention of a sinister cult that 计划s on exploiting your abilities.",
+				"You came to the attention of a sinister cult that plans on exploiting your abilities.",
 				"People around you believe that your powers are a 诅咒 levied on your family for a past transgression.",
 				"Your powers are believed to be tied to an ancient line of mad kings that supposedly ended in a bloody revolt over a century ago.",
 				null,
@@ -750,7 +750,7 @@
 				"When I was born, all the water in the house froze solid, the milk spoiled, or all the iron turned to copper. My family is convinced that this event was a harbinger of st游侠 things to come for me.",
 				"I suffered a terrible emotional or physical strain, which brought forth my latent magical power. I have fought to control it ever since.",
 				"My immediate family never spoke of my ancestors, and when I asked, they would change the subject. It wasn't until I 星辰ted displaying strange 天赋s that the full truth of my herit年龄 came out.",
-				"When a 怪物 threatened one of my friends, I became filled with anxiety. I lashed out instinctively and blasted the wretched thing with a f兽人e that came from within me.",
+				"When a monster threatened one of my friends, I became filled with anxiety. I lashed out instinctively and blasted the wretched thing with a f兽人e that came from within me.",
 				"Sensing something special in me, a st游侠 taught me how to control my gift.",
 				"After I escaped from a magical conflagration, I realized that though I was unharmed, I was not unchanged. I began to exhibit unusual abilities that I am just beginning to understand."
 			]

@@ -172,7 +172,7 @@
 		"humanoid",
 		"monstrosity",
 		"ooze",
-		"计划t",
+		"plant",
 		"undead"
 	],
 	"crs": {
@@ -377,7 +377,7 @@
 	},
 	"defaultPreset": {
 		"slug": "",
-		"name": "怪物",
+		"name": "Monster",
 		"size": "Medium",
 		"type": "类人生物",
 		"subtype": "",
@@ -654,7 +654,7 @@
 		},
 		{
 			"name": "Corrode Metal",
-			"desc": "Any nonmagical weapon made of metal that hits the [MON] corrodes. After dealing 伤害, the weapon takes a permanent and cumulative -1 penalty to 伤害 rolls. If its penalty 拖放s to -5, the weapon is destroyed. Non magical ammunition made of metal that hits the [MON] is destroyed after dealing 伤害.\nThe [MON] can eat through 2-inch-thick, nonmagical metal in 1 round."
+			"desc": "Any nonmagical weapon made of metal that hits the [MON] corrodes. After dealing 伤害, the weapon takes a permanent and cumulative -1 penalty to 伤害 rolls. If its penalty drops to -5, the weapon is destroyed. Non magical ammunition made of metal that hits the [MON] is destroyed after dealing 伤害.\nThe [MON] can eat through 2-inch-thick, nonmagical metal in 1 round."
 		},
 		{
 			"name": "Cunning Action",
@@ -726,15 +726,15 @@
 		{
 			"name": "Etherealness (Action)",
 			"realname": "Etherealness",
-			"desc": "The [MON] magically enters the 以太位面 from the Material 计划e, or vice versa."
+			"desc": "The [MON] magically enters the 以太位面 from the Material Plane, or vice versa."
 		},
 		{
 			"name": "Ethereal Jaunt",
-			"desc": "As a 附赠动作, the [MON] can magically shift from the Material 计划e to the 以太位面, or vice versa."
+			"desc": "As a 附赠动作, the [MON] can magically shift from the Material Plane to the 以太位面, or vice versa."
 		},
 		{
 			"name": "Ethereal Sight",
-			"desc": "The [MON] can see 60 ft. into the 以太位面 when it is on the Material 计划e, and vice versa."
+			"desc": "The [MON] can see 60 ft. into the 以太位面 when it is on the Material Plane, and vice versa."
 		},
 		{
 			"name": "Evasion",
@@ -966,7 +966,7 @@
 		},
 		{
 			"name": "Rust Metal",
-			"desc": "Any nonmagical weapon made of metal that hits the [MON] corrodes. After dealing 伤害, the weapon takes a permanent and cumulative -1 penalty to 伤害 rolls. If its penalty 拖放s to -5, the weapon is destroyed. Non magical ammunition made of metal that hits the [MON] is destroyed after dealing 伤害."
+			"desc": "Any nonmagical weapon made of metal that hits the [MON] corrodes. After dealing 伤害, the weapon takes a permanent and cumulative -1 penalty to 伤害 rolls. If its penalty drops to -5, the weapon is destroyed. Non magical ammunition made of metal that hits the [MON] is destroyed after dealing 伤害."
 		},
 		{
 			"name": "凶蛮攻击",
@@ -994,7 +994,7 @@
 			"desc": "The [MON] is 免疫 to scrying and to any effect that would sense its emotions, read its thoughts, or detect its location."
 		},
 		{
-			"name": "Siege 怪物",
+			"name": "Siege Monster",
 			"desc": "The [MON] deals double 伤害 to objects and structures."
 		},
 		{
@@ -1003,8 +1003,8 @@
 			"desc": "The [MON] deals an extra [???D???] 伤害 when it hits a target with a weapon attack and has 优势 on the 攻击检定, or when the target is within 5 ft. of an ally of the [MON] that isn't 失能 and the [MON] doesn't have 劣势 on the 攻击检定."
 		},
 		{
-			"name": "Speak With 计划ts and Beasts",
-			"desc": "The [MON] can communicate with beasts and 计划ts as if they shared a 语言."
+			"name": "Speak With Plants and Beasts",
+			"desc": "The [MON] can communicate with beasts and plants as if they shared a 语言."
 		},
 		{
 			"name": "蛛行术",
@@ -1062,7 +1062,7 @@
 		},
 		{
 			"name": "不死坚韧",
-			"desc": "If 伤害 reduces the [MON] to 0 生命值, it must make a 体质 豁免 with a DC of 5 + the 伤害 taken, unless the 伤害 is 光耀 or from a critical hit. On a success, the [MON] 拖放s to 1 hit point instead."
+			"desc": "If 伤害 reduces the [MON] to 0 生命值, it must make a 体质 豁免 with a DC of 5 + the 伤害 taken, unless the 伤害 is 光耀 or from a critical hit. On a success, the [MON] drops to 1 hit point instead."
 		},
 		{
 			"name": "Water Breathing",

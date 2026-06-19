@@ -59,9 +59,9 @@
 			"In a 智者's laboratory",
 			"In 妖精荒野",
 			"In the Shadowfell",
-			"On the Astral 计划e or the 以太位面",
-			"On an Inner 计划e of your choice",
-			"On an Outer 计划e of your choice"
+			"On the Astral Plane or the 以太位面",
+			"On an Inner Plane of your choice",
+			"On an Outer Plane of your choice"
 		],
 		"Parents": {
 			"Half-Elf": [
@@ -144,7 +144,7 @@
 			"You suffered a grievous injury. Although the wound healed, it still pains you from time to time.",
 			"You were wounded, but in time you fully recovered.",
 			"You contracted a disease while exploring a filthy warren. You recovered from the disease, but you have a persistent cough, pockmarks on your skin, or prematurely gray hair.",
-			"You were 中毒 by a trap or a 怪物. You recovered, but the next time you must make a 豁免 against poison, you make the 豁免 with 劣势.",
+			"You were 中毒 by a trap or a monster. You recovered, but the next time you must make a 豁免 against poison, you make the 豁免 with 劣势.",
 			"You lost something of sentimental value to you during your 冒险. Remove one trinket from your possessions.",
 			"You were terribly 恐慌 by something you encountered and ran away, abandoning your companions to their fate.",
 			"You learned a great deal during your 冒险. The next time you make an 属性检定 or a 豁免, you have 优势 on the roll.",
@@ -220,7 +220,7 @@
 			"You saw a ghoul feeding on a corpse.",
 			"A 天界生物 or a 魔族 visited you in your dreams to give a warning of dangers to come.",
 			"You briefly visited 妖精荒野 or the Shadowfell.",
-			"You saw a portal that you believe leads to another 计划e of existence."
+			"You saw a portal that you believe leads to another plane of existence."
 		],
 		"Tragedy": [
 			"A family member or a close friend died. Roll on the Cause of Death supplemental table to find out how.",
@@ -337,7 +337,7 @@
 		"A crystal knob from a door",
 		"A 小型 packet filled with pink dust",
 		"A fragment of a beautiful song, written as musical notes on two pieces of parchment",
-		"A silver tear拖放 earring made from a real tear拖放",
+		"A silver teardrop earring made from a real teardrop",
 		"The shell of an egg painted with scenes of 人类 misery in disturbing detail",
 		"A fan that, when unfolded, shows a sleeping cat",
 		"A set of bone pipes",
@@ -347,7 +347,7 @@
 		"An invitation to a party where a murder happened",
 		"A bronze pentacle with an etching of a rat's head in its center",
 		"A purple handkerchief embroidered with the name of a powerful archm年龄",
-		"Half of a floor计划 for a temple, castle, or some other structure",
+		"Half of a floorplan for a temple, castle, or some other structure",
 		"A bit of folded cloth that, when unfolded, turns into a stylish cap",
 		"A receipt of deposit at a bank in a far-flung city",
 		"A diary with seven missing p年龄s",

@@ -53,7 +53,7 @@
 			"link": "https://dnd.法师s.com/articles/unearthed-arcana/three-sub职业"
 		},
 		{
-			"name": "战士: 怪物 Hunter",
+			"name": "战士: Monster Hunter",
 			"source": "Gothic Heroes",
 			"link": "https://dnd.法师s.com/articles/专长ures/gothic-heroes"
 		},
@@ -230,16 +230,16 @@
 			"link": "https://dnd.法师s.com/articles/专长ures/专长"
 		}
 	],
-	"计划eshift": [
+	"planeshift": [
 		{
 			"name": "A武僧het",
 			"source": "异界传送: 阿芒凯",
-			"link": "https://magic.法师s.com/en/articles/archive/专长ure/计划e-shift-a武僧het-2017-07-05"
+			"link": "https://magic.法师s.com/en/articles/archive/专长ure/plane-shift-a武僧het-2017-07-05"
 		},
 		{
 			"name": "Dominaria",
 			"source": "异界传送: 多明尼亚",
-			"link": "https://magic.法师s.com/en/articles/archive/专长ure/计划e-shift-dominaria-2018-07-31"
+			"link": "https://magic.法师s.com/en/articles/archive/专长ure/plane-shift-dominaria-2018-07-31"
 		},
 		{
 			"name": "Innistrad",
@@ -249,17 +249,17 @@
 		{
 			"name": "Ixalan",
 			"source": "异界传送: 依夏兰",
-			"link": "https://magic.法师s.com/en/articles/archive/专长ure/计划e-shift-ixalan-2018-01-09"
+			"link": "https://magic.法师s.com/en/articles/archive/专长ure/plane-shift-ixalan-2018-01-09"
 		},
 		{
 			"name": "Kaladesh",
 			"source": "异界传送: 卡拉德许",
-			"link": "https://magic.法师s.com/en/articles/archive/专长ure/计划e-shift-kaladesh-2017-02-16"
+			"link": "https://magic.法师s.com/en/articles/archive/专长ure/plane-shift-kaladesh-2017-02-16"
 		},
 		{
 			"name": "Zendikar",
 			"source": "异界传送: 赞迪卡",
-			"link": "https://magic.法师s.com/en/articles/archive/专长ure/计划e-shift-zendikar-2016-04-27"
+			"link": "https://magic.法师s.com/en/articles/archive/专长ure/plane-shift-zendikar-2016-04-27"
 		}
 	]
 }

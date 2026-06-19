@@ -3,9 +3,9 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<title>FE:A 台词生成器</title>
+<title>FE:A 引用生成器</title>
 <link href="quotegen-style.css" rel="stylesheet" type="text/css"/>
-<link href="feimages/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="feimages/favicon.ico" rel="shortcut icon" type="image/x-icon">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="quotegen-script.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -17,7 +17,7 @@
 
 	  gtag('config', 'UA-145234284-1');
 	</script>
-</head>
+</link></head>
 <body>
 <div class="container">
 <div id="kofiheader">
@@ -29,8 +29,8 @@
             </script>
 </div>
 <div class="content">
-<h1>Fire Emblem：Awakening台词生成器</h1>
-<div>此生成器设计用于与以下精灵图集一起使用： <a href="http://feaspritestuff.tumblr.com/sheets">feaspritestuff</a>.</div>
+<h1>Fire Emblem：觉醒名言生成器</h1>
+<div>此生成器设计用于与spritesheets上的图标配合使用 <a href="http://feaspritestuff.tumblr.com/sheets">feaspritestuff</a>.</div>
 <br/>
 <hr/>
 <br/><canvas id="image-canvas"></canvas><br/><br/>
@@ -38,52 +38,52 @@
 <table id="normal-options">
 <tr id="lp-options">
 <td class="left-align fixed-width-td">
-<img class="x-button" id="lp-remove" src="feimages/remove.png" title="移除头像"/>
-<label for="lp">左侧肖像：</label>
+<img class="x-button" id="lp-remove" src="feimages/remove.png" title="Remove Portrait"/>
+<label for="lp">左侧头像：</label>
 </td>
 <td class="left-align"><input id="lp" type="file"/>
 </td>
 <td class="right-align">
-<label for="lp-flip">Flip<input id="lp-flip" type="checkbox"/></label>
+<label for="lp-flip">翻转<input id="lp-flip" type="checkbox"/></label>
 <label for="lp-sprite-index">图标索引：<input disabled="" id="lp-sprite-index" max="999" min="1" type="number" value="1"/></label><br/>
 </td>
 </tr>
 <tr id="rp-options">
 <td class="left-align fixed-width-td">
-<img class="x-button" id="rp-remove" src="feimages/remove.png" title="移除头像"/>
-<label for="rp">右侧肖像：</label>
+<img class="x-button" id="rp-remove" src="feimages/remove.png" title="Remove Portrait"/>
+<label for="rp">右侧头像：</label>
 </td>
 <td class="left-align">
 <input id="rp" type="file"/>
 </td>
 <td class="right-align">
-<label for="rp-flip">Flip<input id="rp-flip" type="checkbox"/></label>
+<label for="rp-flip">翻转<input id="rp-flip" type="checkbox"/></label>
 <label for="rp-sprite-index">图标索引：<input disabled="" id="rp-sprite-index" max="999" min="1" type="number" value="1"/></label><br/>
 </td>
 </tr>
 </table>
 <br/>
 <div class="dialogue-input" id="name-option">
-<label for="name">Name: <input id="name" maxlength="255" style="width: 10rem;" type="text"/></label><br/>
+<label for="name">名称： <input id="name" maxlength="255" style="width: 10rem;" type="text"/></label><br/>
 </div>
 <div class="dialogue-input" id="dialogue-option-1">
-<label for="dialogue-1">Line 1: <input id="dialogue-1" maxlength="255" style="width: 25rem;" type="text"/></label><br/>
+<label for="dialogue-1">第一行： <input id="dialogue-1" maxlength="255" style="width: 25rem;" type="text"/></label><br/>
 </div>
 <div class="dialogue-input" id="dialogue-option-2">
-<label for="dialogue-2">Line 2: <input id="dialogue-2" maxlength="255" style="width: 25rem;" type="text"/></label><br/>
+<label for="dialogue-2">第二行： <input id="dialogue-2" maxlength="255" style="width: 25rem;" type="text"/></label><br/>
 </div>
 <div id="box-location-option">
-<label for="l-box-radio">Left<input id="l-box-radio" name="box-location" type="radio"/></label>  
-                    <label for="r-box-radio">Right<input id="r-box-radio" name="box-location" type="radio"/></label>  
+<label for="l-box-radio">左边<input id="l-box-radio" name="box-location" type="radio"/></label>  
+                    <label for="r-box-radio">右侧<input id="r-box-radio" name="box-location" type="radio"/></label>  
                     <label for="no-box-radio">无文本框<input id="no-box-radio" name="box-location" type="radio"/></label>
 </div>
 <hr/>
-<b>"额外选项:"</b>
+<b>额外选项：</b>
 <table id="advanced-options">
 <tr id="bkg-options">
 <td class="left-align fixed-width-td">
-<img class="x-button" id="remove-bkg" src="feimages/remove.png" title='"恢复默认背景"'/>
-<label for="bkg">Background:</label>
+<img class="x-button" id="remove-bkg" src="feimages/remove.png" title="Restore Default Background"/>
+<label for="bkg">背景：</label>
 </td>
 <td class="left-align" colspan="2">
 <input id="bkg" type="file"/><br/>
@@ -91,27 +91,27 @@
 </tr>
 <tr id="lp2-options">
 <td class="left-align fixed-width-td">
-<img class="x-button" id="lp2-remove" src="feimages/remove.png" title="移除头像"/>
-<label for="lp2">左侧肖像2：</label>
+<img class="x-button" id="lp2-remove" src="feimages/remove.png" title="Remove Portrait"/>
+<label for="lp2">左侧头像2：</label>
 </td>
 <td class="left-align">
 <input id="lp2" type="file"/>
 </td>
 <td class="right-align">
-<label for="lp2-flip">Flip<input id="lp2-flip" type="checkbox"/></label>
+<label for="lp2-flip">翻转<input id="lp2-flip" type="checkbox"/></label>
 <label for="lp2-sprite-index">图标索引：<input disabled="" id="lp2-sprite-index" max="999" min="1" type="number" value="1"/></label><br/>
 </td>
 </tr>
 <tr id="rp2-options">
 <td class="left-align fixed-width-td">
-<img class="x-button" id="rp2-remove" src="feimages/remove.png" title="移除头像"/>
-<label for="rp2">右侧头像2：</label>
+<img class="x-button" id="rp2-remove" src="feimages/remove.png" title="Remove Portrait"/>
+<label for="rp2">右侧头像 2：</label>
 </td>
 <td class="left-align">
 <input id="rp2" type="file"/>
 </td>
 <td class="right-align">
-<label for="rp2-flip">Flip<input id="rp2-flip" type="checkbox"/></label>
+<label for="rp2-flip">翻转<input id="rp2-flip" type="checkbox"/></label>
 <label for="rp2-sprite-index">图标索引：<input disabled="" id="rp2-sprite-index" max="999" min="1" type="number" value="1"/></label><br/>
 </td>
 </tr>
@@ -119,25 +119,25 @@
 <br/>
 <div class="advanced-option" id="box-type-option">
 <b>盒子类型：</b>  
-                    <label for="type-1-radio">Type 1<input id="type-1-radio" name="box-type" type="radio"/></label>  
-                    <label for="type-2-radio">Type 2<input id="type-2-radio" name="box-type" type="radio"/></label>  
-                    <label for="type-3-radio">Type 3<input id="type-3-radio" name="box-type" type="radio"/></label>  
-                    <label for="type-4-radio">Type 4<input id="type-4-radio" name="box-type" type="radio"/></label>  
-                    <label for="type-5-radio">Type 5<input id="type-5-radio" name="box-type" type="radio"/></label>
+                    <label for="type-1-radio">类型1<input id="type-1-radio" name="box-type" type="radio"/></label>  
+                    <label for="type-2-radio">类型2<input id="type-2-radio" name="box-type" type="radio"/></label>  
+                    <label for="type-3-radio">类型3<input id="type-3-radio" name="box-type" type="radio"/></label>  
+                    <label for="type-4-radio">类型4<input id="type-4-radio" name="box-type" type="radio"/></label>  
+                    <label for="type-5-radio">类型5<input id="type-5-radio" name="box-type" type="radio"/></label>
 </div>
 <div class="advanced-option" id="darken-portrait-options">
-<b>Darken:</b>  
-                    <label for="lp-darken">Left<input id="lp-darken" type="checkbox"/></label>  
-                    <label for="rp-darken">Right<input id="rp-darken" type="checkbox"/></label>  
-                    <label for="lp2-darken">Left 2<input id="lp2-darken" type="checkbox"/></label>  
-                    <label for="rp2-darken">Right 2<input id="rp2-darken" type="checkbox"/></label>
+<b>深化：</b>  
+                    <label for="lp-darken">左边<input id="lp-darken" type="checkbox"/></label>  
+                    <label for="rp-darken">右侧<input id="rp-darken" type="checkbox"/></label>  
+                    <label for="lp2-darken">左边 2<input id="lp2-darken" type="checkbox"/></label>  
+                    <label for="rp2-darken">右侧 2<input id="rp2-darken" type="checkbox"/></label>
 </div>
 <div class="advanced-option" id="darken-bkg-option">
-<label for="darken-bkg"><b>暗化背景？</b> <input id="darken-bkg" type="checkbox"/></label>
+<label for="darken-bkg"><b>深化背景？</b> <input id="darken-bkg" type="checkbox"/></label>
 </div>
 </form>
 <div id="footer">
-                资源来自 <a href="http://incorrectfeaquotes.tumblr.com/tagged/resources">here</a> | <a href="https://github.com/Tetra-cube/Tetra-cube.github.io">GitHub 仓库</a> | Version 1.6
+                来源资源 <a href="http://incorrectfeaquotes.tumblr.com/tagged/resources">here</a> | <a href="https://github.com/Tetra-cube/Tetra-cube.github.io">GitHub 代码库</a> | 版本 1.6
             </div>
 </div>
 </div>

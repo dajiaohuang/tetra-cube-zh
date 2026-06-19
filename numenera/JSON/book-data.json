@@ -1,6 +1,6 @@
 {
 	"Cypher": {
-		"探索": [
+		"Discovery": [
 			{
 				"name": "Adhesion clamps",
 				"page": 276,
@@ -386,7 +386,7 @@
 				"minimumCraftingLevel": 1
 			},
 			{
-				"name": "Machine control im计划t",
+				"name": "Machine control implant",
 				"page": 282,
 				"weight": 1,
 				"levelDie": 6,
@@ -650,7 +650,7 @@
 				"minimumCraftingLevel": 8
 			},
 			{
-				"name": "速度 boost",
+				"name": "Speed boost",
 				"page": 287,
 				"weight": 1,
 				"levelDie": 6,
@@ -682,7 +682,7 @@
 				"minimumCraftingLevel": 7
 			},
 			{
-				"name": "Telepathy im计划t",
+				"name": "Telepathy implant",
 				"page": 287,
 				"weight": 1,
 				"levelDie": 6,
@@ -786,7 +786,7 @@
 				"minimumCraftingLevel": 5
 			}
 		],
-		"命运" : [
+		"Destiny" : [
 			{
 				"name": "Ablative thrower",
 				"page": 180,
@@ -828,7 +828,7 @@
 				"minimumCraftingLevel": 2
 			},
 			{
-				"name": "命运 nodule",
+				"name": "Destiny nodule",
 				"page": 181,
 				"weight": 4,
 				"levelDie": 6,
@@ -1075,7 +1075,7 @@
 				"levelBonus": 6
 			},
 			{
-				"name": "Sustenance im计划t",
+				"name": "Sustenance implant",
 				"page": 185,
 				"weight": 3,
 				"levelDie": 6,
@@ -1463,7 +1463,7 @@
 		]
 	},
 	"Artifact": {
-		"探索": [
+		"Discovery": [
 			{
 				"name": "Amber casement",
 				"page": 292,
@@ -1849,7 +1849,7 @@
 				"minimumCraftingLevel": 1
 			},
 			{
-				"name": "计划t jar",
+				"name": "Plant jar",
 				"page": 299,
 				"weight": 1,
 				"levelDie": 6,
@@ -1857,7 +1857,7 @@
 				"minimumCraftingLevel": 1
 			},
 			{
-				"name": "Poison brain im计划t",
+				"name": "Poison brain implant",
 				"page": 299,
 				"weight": 1,
 				"levelDie": 6,
@@ -2065,7 +2065,7 @@
 				"minimumCraftingLevel": 2
 			}
 		],
-		"命运": [
+		"Destiny": [
 			{
 				"name": "Abhuman lure",
 				"page": 186,
@@ -2671,7 +2671,7 @@
 		]
 	},
 	"Oddity": {
-		"探索": [
+		"Discovery": [
 			"Crystal that shatters easily but then instantly reforms",
 			"Egg-shaped metallic bauble that occasionally spins and speaks in a language no one knows",
 			"Aerosol can that sprays sparkling paint that hangs in the air",
@@ -2688,7 +2688,7 @@
 			"Lightning bug in a glass globe",
 			"Plastic disk that displays ever-changing but meaningless symbols",
 			"Small rod that emits a voice saying the same thing in an unknown language every time a button is pushed",
-			"Glass plate that 显示s what seems to be a live image of the moon, but from a closer vantage",
+			"Glass plate that shows what seems to be a live image of the moon, but from a closer vantage",
 			"Comb that glows when used",
 			"Small square cage that puts whatever single creature is inside it into stasis",
 			"Plastic bottle containing a spray that cleans any stain and never runs out",
@@ -2697,7 +2697,7 @@
 			"Tiny toy ornithopter made of a solid piece of material that seems indestructible",
 			"Fuzzy stuffed ravage bear that makes growling noises when you squeeze it",
 			"Goggles that tint everything green",
-			"Series of thin plastic cards that 显示 all kinds of unknown creatures",
+			"Series of thin plastic cards that show all kinds of unknown creatures",
 			"Candle that never runs down",
 			"Bag of sixteen rubber balloons",
 			"Three silken gloves with six fingers each",
@@ -2714,7 +2714,7 @@
 			"Wooden rod that increases in length by about 1 inch (2.5 cm) a month",
 			"Brass device with nested circular plates that rotate and click",
 			"Cape that billows as if blown by the wind when worn, even in still air",
-			"Glass cube that 显示s what seems to be a live aerial view of an unknown, ruined city",
+			"Glass cube that shows what seems to be a live aerial view of an unknown, ruined city",
 			"Armband that tightens slightly when within 100 feet (30 m) of abhumans",
 			"Small jar of black paint that refills itself each day",
 			"Metallic mask that fits perfectly on your face and changes expression when you do",
@@ -2722,7 +2722,7 @@
 			"Green glass sphere that floats next to you and whistles when you are angry",
 			"Metal canister that fills with 4 quarts (3.8 liters) of water at the same time each day",
 			"Metal and glass disk that, when pressed against flesh, instantly etches a tattoo of a black scorpion",
-			"Small mirror that 显示s someone other than you when you gaze into it",
+			"Small mirror that shows someone other than you when you gaze into it",
 			"Canister that produces an extremely foul odor and a puff of dark red smoke when opened",
 			"Goggles that allow you to see perfectly through steam or smoke",
 			"Box that produces a 3-inch (7.5 cm) cube of a firm but gelatinous substance at the same time each day",
@@ -2739,12 +2739,12 @@
 			"Two 5-inch (12.7 cm) metal and glass disks that hover around your wrists",
 			"Six small, clear synth bags that can be sealed and are very durable",
 			"Glass orb that always drips perfumed water very slowly",
-			"Jar of sixteen seeds; when 计划ted, each seed grows into a daffodil made of gold in six months",
+			"Jar of sixteen seeds; when planted, each seed grows into a daffodil made of gold in six months",
 			"Rose made of nigh-indestructible glass",
 			"Octagon-shaped amulet that is black during the day and sky blue at night",
 			"Mummified fish with feathered wings in a wooden box",
 			"Two-headed animal fetus in a glass jar",
-			"S添加le sized for a very small animal, such as a squirrel or a small cat",
+			"Saddle sized for a very small animal, such as a squirrel or a small cat",
 			"Small rectangular device that makes a chirping sound at the same time each day",
 			"Pair of tiny metal rods that, when brought within 1 inch (2.5 cm) of each other, vibrate exactly fifteen minutes before the sun rises on any given day",
 			"Ceramic ring that makes you feel as though gentle hands are caressing your body",
@@ -2775,7 +2775,7 @@
 		]
 	},
 	"Installation": {
-		"命运": [
+		"Destiny": [
 			{
 				"name": "Alarm tower",
 				"page": 154,
@@ -3603,7 +3603,7 @@
 		]
 	},
 	"Automaton": {
-		"命运": [
+		"Destiny": [
 			{
 				"name": "Alarm mech",
 				"page": 148,
@@ -3855,7 +3855,7 @@
 		]
 	},
 	"Vehicle": {
-		"命运": [
+		"Destiny": [
 			{
 				"name": "Battle cart",
 				"page": 170,
@@ -3977,7 +3977,7 @@
 				"minimumCraftingLevel": 3
 			},
 			{
-				"name": "计划etary escape pod",
+				"name": "Planetary escape pod",
 				"page": 176,
 				"weight": 3,
 				"minimumCraftingLevel": 5
@@ -4361,7 +4361,7 @@
 				"minimumCraftingLevel": 4
 			},
 			{
-				"name": "Mindspeaking im计划t",
+				"name": "Mindspeaking implant",
 				"page": 41,
 				"weight": 2,
 				"minimumCraftingLevel": 3

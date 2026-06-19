@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<title>D&amp;D 5e PC Options Reference</title>
+<title>D&amp;D 5e 角色选项参考资料</title>
 <link href="dndimages/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 <link href="css/dnd-style.css" rel="stylesheet" type="text/css"/>
@@ -24,45 +24,34 @@
 <body id="ref-body">
 <div class="container">
 <div class="content">
-<div style="text-align: center;"><b>PC Options Reference</b> - <a href="dnd-char-gen.html">Character
-                    Generator</a> - <a href="dnd-magic-items.html">Magic Item Generator</a> - <a href="dnd-statblock.html">Statblock Generator</a></div>
+<div style="text-align: center;"><b>角色选项参考</b> - <a href="dnd-char-gen.html">角色生成器</a> - <a href="dnd-magic-items.html">魔法物品生成器</a> - <a href="dnd-statblock.html">统计块生成器</a></div>
 <br/>
-<h1>D&amp;D 5e Content Reference</h1>
+<h1>D&amp;D 5e 参考资料</h1>
 <br/>
-<div>Select which books to use:</div>
+<div>选择要使用的书籍：</div>
 <br/>
 <div class="booklist row">
 <div class="col-12 col-md-6">
 <div><label><b><input checked="" disabled="" id="PHBbox" type="checkbox"/> 玩家手册
-                                <sup>(PHB)</sup></b></label></div>
-<div><label><b><input checked="" id="VGtMbox" onclick="UpdateList()" type="checkbox"/> Volo's 向导 to
-                                Monsters <sup>(VGtM)</sup></b></label></div>
-<div><label><b><input checked="" id="MRbox" onclick="UpdateList()" type="checkbox"/> Volo's 向导
-                                Monstrous Races <sup>(MR)</sup></b></label></div>
-<div><label><b><input checked="" id="XGtEbox" onclick="UpdateList()" type="checkbox"/> Xanathar's 向导
-                                to Everything <sup>(XGtE)</sup></b></label></div>
-<div><label><b><input checked="" id="MToFbox" onclick="UpdateList()" type="checkbox"/> Mordenkainen's
-                                Tome of Foes <sup>(MToF)</sup></b></label></div>
-<div><label><b><input checked="" id="TCoEbox" onclick="UpdateList()" type="checkbox"/> Tasha's
-                                Cauldron of Everything <sup>(TCoE)</sup></b></label></div>
-<div><label><b><input checked="" id="EEbox" onclick="UpdateList()" type="checkbox"/> 元素生物 Evil
-                                Player's Companion <sup>(EE)</sup></b></label></div>
-<div><label><b><input checked="" id="SCAGbox" onclick="UpdateList()" type="checkbox"/> Sword Coast
-                                冒险者's 向导 <sup>(SCAG)</sup></b></label></div>
+                                <sup>（PHB）</sup></b></label></div>
+<div><label><b><input checked="" id="VGtMbox" onclick="UpdateList()" type="checkbox"/> 瓦罗怪物指南 <sup>(VGtM)</sup></b></label></div>
+<div><label><b><input checked="" id="MRbox" onclick="UpdateList()" type="checkbox"/> 瓦罗怪物指南（怪物种族） <sup>(MR)</sup></b></label></div>
+<div><label><b><input checked="" id="XGtEbox" onclick="UpdateList()" type="checkbox"/> 珊娜萨的万事指南 <sup>(XGtE)</sup></b></label></div>
+<div><label><b><input checked="" id="MToFbox" onclick="UpdateList()" type="checkbox"/> 魔邓肯的众敌卷册 <sup>（MToF）</sup></b></label></div>
+<div><label><b><input checked="" id="TCoEbox" onclick="UpdateList()" type="checkbox"/> 塔莎的万象坩埚 <sup>(TCoE)</sup></b></label></div>
+<div><label><b><input checked="" id="EEbox" onclick="UpdateList()" type="checkbox"/> 元素邪恶玩家伴侣 <sup>（EE）</sup></b></label></div>
+<div><label><b><input checked="" id="SCAGbox" onclick="UpdateList()" type="checkbox"/> 剑湾冒险者指南 <sup>(SCAG)</sup></b></label></div>
 <div><label><b><input id="DMGbox" onclick="UpdateList()" type="checkbox"/> 城主指南
-                                <sup>(DMG)</sup></b></label></div>
+                                <sup>（DMG）</sup></b></label></div>
 </div>
 <div class="col-12 col-md-6">
 <div><label><b><input id="Modbox" onclick="UpdateList()" type="checkbox"/> 冒险模组
                                 <sup>(Mod)</sup></b></label></div>
-<div><label><b><input id="EBRbox" onclick="UpdateList()" type="checkbox"/> Eberron: Rising from the
-                                Last War <sup>(EBR)</sup></b></label></div>
-<div><label><b><input id="EGtWbox" onclick="UpdateList()" type="checkbox"/> Explorer's 向导 to
-                                Wildemount <sup>(EGtW)</sup></b></label></div>
-<div><label><b><input id="GGtRbox" onclick="UpdateList()" type="checkbox"/> Guildmaster's 向导 to
-                                Ravnica <sup>(GGtR)</sup></b></label></div>
+<div><label><b><input id="EBRbox" onclick="UpdateList()" type="checkbox"/> 艾伯伦：从终末战争中崛起 <sup>（EBR）</sup></b></label></div>
+<div><label><b><input id="EGtWbox" onclick="UpdateList()" type="checkbox"/> 荒洲探险家指南 <sup>（EGtW）</sup></b></label></div>
+<div><label><b><input id="GGtRbox" onclick="UpdateList()" type="checkbox"/> 拉尼卡公会长指南 <sup>（GGtR）</sup></b></label></div>
 <div><label><b><input id="MOoTbox" onclick="UpdateList()" type="checkbox"/> 塞洛斯之神话奥德赛
-                                <sup>(MOoT)</sup></b></label></div>
+                                <sup>（MOoT）</sup></b></label></div>
 <div><label><b><input id="AIbox" onclick="UpdateList()" type="checkbox"/> 艾奎兹玄有限责任公司
                                 <sup>(AI)</sup></b></label></div>
 <div><label><b><input id="Otherbox" onclick="UpdateList()" type="checkbox"/> 其他值得关注的内容
@@ -72,45 +61,43 @@
 </div>
 </div>
 <hr/>
-<h2 class="expand-retract-h2">Races</h2>
-<div class="expand-retract-text" onclick="Collapsibles.ExpandAll('races')">Expand All</div>
-<div class="expand-retract-text" onclick="Collapsibles.RetractAll('races')">Retract All</div>
+<h2 class="expand-retract-h2">种族列表</h2>
+<div class="expand-retract-text" onclick="Collapsibles.ExpandAll('races')">展开全部</div>
+<div class="expand-retract-text" onclick="Collapsibles.RetractAll('races')">收起全部</div>
 <div id="races"></div>
 <br/>
 <hr/>
 <h2 class="expand-retract-h2">职业</h2>
-<div class="expand-retract-text" onclick="Collapsibles.ExpandAll('classes')">Expand All</div>
-<div class="expand-retract-text" onclick="Collapsibles.RetractAll('classes')">Retract All</div>
+<div class="expand-retract-text" onclick="Collapsibles.ExpandAll('classes')">展开全部</div>
+<div class="expand-retract-text" onclick="Collapsibles.RetractAll('classes')">收起全部</div>
 <div id="classes"></div>
 <br/>
 <hr/>
 <h2 class="expand-retract-h2">背景</h2>
-<div class="expand-retract-text" onclick="Collapsibles.ExpandAll('backgrounds')">Expand All</div>
-<div class="expand-retract-text" onclick="Collapsibles.RetractAll('backgrounds')">Retract All</div>
+<div class="expand-retract-text" onclick="Collapsibles.ExpandAll('backgrounds')">展开全部</div>
+<div class="expand-retract-text" onclick="Collapsibles.RetractAll('backgrounds')">收起全部</div>
 <div id="backgrounds"></div>
 <br/>
 <hr/>
-<h2 class="expand-retract-h2">Names</h2>
-<div class="expand-retract-text" onclick="Collapsibles.ExpandAll('names')">Expand All</div>
-<div class="expand-retract-text" onclick="Collapsibles.RetractAll('names')">Retract All</div>
+<h2 class="expand-retract-h2">名字</h2>
+<div class="expand-retract-text" onclick="Collapsibles.ExpandAll('names')">展开全部</div>
+<div class="expand-retract-text" onclick="Collapsibles.RetractAll('names')">收起全部</div>
 <div id="names"></div>
 <br/>
 <hr/>
 <div id="uacontent">
 <h2>未发掘的奥秘 Index</h2>
-<h3><span class="collapsiblebutton" onclick="Collapsibles.CollapseExpand(this)">[+]</span> UA Races
-                    &amp; Subraces</h3>
+<h3><span class="collapsiblebutton" onclick="Collapsibles.CollapseExpand(this)">[+]</span> UA 种族与亚种</h3>
 <ul id="uaraces" style="display: none"></ul>
-<h3><span class="collapsiblebutton" onclick="Collapsibles.CollapseExpand(this)">[+]</span> UA 职业
-                    &amp; Subclasses</h3>
+<h3><span class="collapsiblebutton" onclick="Collapsibles.CollapseExpand(this)">[+]</span> UA 职业 &amp; Subclasses</h3>
 <ul id="uaclasses" style="display: none"></ul>
-<h3><span class="collapsiblebutton" onclick="Collapsibles.CollapseExpand(this)">[+]</span> UA Other</h3>
+<h3><span class="collapsiblebutton" onclick="Collapsibles.CollapseExpand(this)">[+]</span> UA 其他</h3>
 <ul id="uaother" style="display: none"></ul>
-<h3><span class="collapsiblebutton" onclick="Collapsibles.CollapseExpand(this)">[+]</span> Plane Shift
+<h3><span class="collapsiblebutton" onclick="Collapsibles.CollapseExpand(this)">[+]</span> 平面转移
                 </h3>
 <ul id="uaplaneshift" style="display: none"></ul>
 </div>
-<div class="footer"><a href="https://github.com/Tetra-cube/Tetra-cube.github.io">GitHub Repo</a></div>
+<div class="footer"><a href="https://github.com/Tetra-cube/Tetra-cube.github.io">GitHub 仓库</a></div>
 </div>
 </div>
 </body>

@@ -7,14 +7,14 @@ const BLOCKTEMPLATE = `<div class="stat-block-container"> <!-- id="stat-block-wr
     <hr class="orange-border" />
     <div class="section-left">
         <div class="creature-heading">
-            <h1 id="怪物-name">怪物</h1>
-            <h2 id="怪物-type">Size, 类型, 阵营</h2>
+            <h1 id="monster-name">Monster</h1>
+            <h2 id="monster-type">Size, type, alignment</h2>
         </div> <!-- creature heading -->
         <svg height="5" width="100%" class="tapered-rule">
             <polyline points="0,0 400,2.5 0,5"></polyline>
         </svg>
         <div class="top-stats">
-            <div class=""属性行第一"">
+            <div class="property-line first">
                 <h4>Armor Class</h4>
                 <p id="armor-class"></p>
             </div> <!-- property line -->
@@ -76,7 +76,7 @@ const BLOCKTEMPLATE = `<div class="stat-block-container"> <!-- id="stat-block-wr
             <div id="traits-list-right"></div>
         </div> <!-- actions -->
     </div> <!-- section right -->
-    <hr class=""橙色边框底部"" />
+    <hr class="orange-border bottom" />
 </div>
 </div>`
 
@@ -105,7 +105,7 @@ let blockList = {
         let mon = statblocks[elem.index()];
         saveAs(new Blob([JSON.stringify(mon)], {
             type: "text/plain;charset=utf-8"
-        }), mon.name.toLowerCase() + ".怪物")
+        }), mon.name.toLowerCase() + ".monster")
     }
 }
 
@@ -121,14 +121,14 @@ function addStatblock() { // read every selected file and push it to the statblo
 }
 
 function loadPreset() {
-    let name = $("#怪物-select").val();
+    let name = $("#monster-select").val();
     if (name == "") return;
-    $.getJSON("https://api.Open5e.com/v1/怪物s/" + name + "/", (jsonArr) => {
+    $.getJSON("https://api.open5e.com/v1/monsters/" + name + "/", (jsonArr) => {
         statblocks.push(structuredClone(GetVariablesFunctions.SetPreset(jsonArr)));
         refresh()
     })
         .fail(function () {
-            console.error(""加载预设失败。"");
+            console.error("Failed to load preset.");
             return;
         })
 }
@@ -139,7 +139,7 @@ function printBlocks() {
         <head>
             <meta charset="utf-8"/>
             <title>Statblock printer - RESULT</title>
-            <link rel=""快捷图标"" type="image/x-icon" href="./dndimages/favicon.ico" />
+            <link rel="shortcut icon" type="image/x-icon" href="./dndimages/favicon.ico" />
             <link rel="stylesheet" type="text/css" href="css/statblock-style.css">
             <link rel="stylesheet" type="text/css" href="css/libre-baskerville.css">
             <link rel="stylesheet" type="text/css" href="css/noto-sans.css">
@@ -167,19 +167,19 @@ function refresh() {
     }
 
     var savePaper = $("#save-paper-input").prop("checked");
-    var isAlreadyHori = false; // whether the current statblock is 计划ned to be placed on the left side
+    var isAlreadyHori = false; // whether the current statblock is planned to be placed on the left side
     var savePaperApplied = false; // for width determination
     
     $.each(statblocks, (index, mon) => {
         // Refresh statblock list
         statblocksList.append(
             `<li>
-                <i class="fa fa-arrow-up ${index == 0 ? 'disabled' : ''}" title="Up" onclick="${index>0 ? 'blockList.up($(this).parent())' : ''}"></i>
-                <i class="fa fa-arrow-down ${index + 1 == statblocks.length ? 'disabled' : ''}" title="Down" onclick="${index + 1 == statblocks.length ? '' : 'blockList.down($(this).parent())'}"></i>
+                <i class="fa fa-arrow-up ${printMargin}" title="Up" onclick="${index>0 ? 'blockList.up($(this).parent())' : ''}"></i>
+                <i class="fa fa-arrow-down ${printMargin}" title="Down" onclick="${index + 1 == statblocks.length ? '' : 'blockList.down($(this).parent())'}"></i>
                 <i class="fa fa-trash" title="Remove" onclick="blockList.remove($(this).parent())"></i>
                 <i class="fa fa-clone" title="Clone" onclick="blockList.clone($(this).parent())"></i>
                 <i class="fa fa-download" title="Download" onclick="blockList.download($(this).parent())"></i>
-                <b>${StringFunctions.RemoveHtmlTags(mon.name)}</b> <i>${StringFunctions.StringCapitalize(StringFunctions.RemoveHtmlTags(mon.size) + " " + mon.type + (mon.tag == "" ? ", " : " (" + mon.tag + "), ") + mon.alignment)}</i>
+                <b>${printMargin}</b> <i>${printMargin}</i>
             </li>`
         );
 
@@ -241,9 +241,9 @@ $(() => {
         refresh();
     });
 
-    // initialise drag&拖放
+    // initialise drag&drop
     let b = $("body")[0];
-    let overlay = $("#dragn拖放-overlay");
+    let overlay = $("#dragndrop-overlay");
     /* b.ondragover = b.ondragenter = evt => {
         evt.preventDefault();
     }; */
@@ -257,7 +257,7 @@ $(() => {
     overlay[0].ondragleave = evt => {
         overlay.addClass("hidden");
     }
-    b.on拖放 = evt => {
+    b.ondrop = evt => {
         evt.preventDefault();
         $('#file-upload')[0].files = evt.dataTransfer.files;
         overlay.addClass("hidden");

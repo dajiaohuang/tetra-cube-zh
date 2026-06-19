@@ -52,7 +52,7 @@ function GetItemType() {
         return "<b>武器 (" + RandomFromArray(weaponTypes) + ")</b>";
     if (type == "other")
         return "<b>" + RandomFromArray(otherTypes) + "</b>";
-    return "<b>奇物</b>";
+    return "<b>Wondrous Item</b>";
 }
 
 function GetSecondProperty(table, firstprop) {
@@ -105,5 +105,5 @@ function GetTable(arr) {
 
 const itemTypes = ["armor", "weapon", "weapon", "奇物", "奇物", "other"],
     armorTypes = ["镶钉皮甲", "breastplate", "半身板甲", "链甲", "splint", "plate"],
-    weaponTypes = ["dagger", "greatclub", "handaxe", "javelin", ""轻锤"", "mace", "quarterstaff", "sickle", "spear", ""轻型十字弓"", "shortbow", "battleaxe", "flail", "glaive", "greataxe", "greatsword", "halberd", "lance", "longsword", "maul", "morningstar", "pike", "rapier", "scimitar", "trident", "“战戟”", "warhammer", "whip", "“手弩”", ""重型十字弓"", "longbow", "net"],
+    weaponTypes = ["dagger", "greatclub", "handaxe", "javelin", "light hammer", "mace", "quarterstaff", "sickle", "spear", "light crossbow", "shortbow", "battleaxe", "flail", "glaive", "greataxe", "greatsword", "halberd", "lance", "longsword", "maul", "morningstar", "pike", "rapier", "scimitar", "trident", "war pick", "warhammer", "whip", "hand crossbow", "heavy crossbow", "longbow", "net"],
     otherTypes = ["Instrument", "Ring", "Rod", "Staff", "Wand"]
