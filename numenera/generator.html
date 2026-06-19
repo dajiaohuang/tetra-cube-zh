@@ -1,18 +1,17 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <title>Numenera Generator</title>
-    <link rel="stylesheet" type="text/css" href="generator.css">
-    <script src="jquery-3.6.1.min.js"></script>
-    <script src="generator-book-data.js"></script>
-    <script src="generator-tetras-data.js"></script>
-    <script src="generator.js"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145234284-1"></script>
-    <script>
+<meta charset="utf-8"/>
+<title>Numenera 生成器</title>
+<link href="generator.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-3.6.1.min.js"></script>
+<script src="generator-book-data.js"></script>
+<script src="generator-tetras-data.js"></script>
+<script src="generator.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-145234284-1"></script>
+<script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
@@ -21,31 +20,30 @@
     </script>
 </head>
 <body>
-</div>
-    <h1>Numenera Generator</h1>
-    <br>
-    <div id="options">
-        <div>
-            <b>Allowed Books: </b>
-            <label>Discovery <input type="checkbox" id="discovery-book" onclick="OnCheck()" checked></label><label>Destiny <input type="checkbox" id="destiny-book" onclick="OnCheck()" checked></label><label>Building Tomorrow <input type="checkbox" id="building-tomorrow-book" onclick="OnCheck()"></label>
-        </div>
-        <br>
-        <div>
-            <button id="generate-tetras" onclick="GenerateTetras()">Inspiration (Tetra's Items)</button>
-            <button id="generate-cypher" onclick="GenerateCypherArtifact('Cypher')">Cypher</button>
-            <button id="generate-artifact" onclick="GenerateCypherArtifact('Artifact')">Artifact</button>
-            <button id="generate-oddity" onclick="GenerateOddity()">Oddity</button>
-            <button id="generate-installation" onclick="GenerateOther('Installation')">Installation</button>
-            <br>
-            <button id="generate-automaton" onclick="GenerateOther('Automaton')">Automaton</button>
-            <button id="generate-vehicle" onclick="GenerateOther('Vehicle')">Vehicle</button>
-            <button id="generate-biological" onclick="GenerateOther('Biological')">Biological</button>
-            <button id="generate-otherspace" onclick="GenerateOther('Otherspace')">Otherspace</button>
-            <button id="generate-plan" onclick="GeneratePlan()">Plan</button>
-        </div>
-        <hr>
-    </div>
-    <div id="items-list"></div>
-</body>
 
+<h1>Numenera 生成器</h1>
+<br/>
+<div id="options">
+<div>
+<b>允许的书籍： </b>
+<label>探索 <input checked="" id="探索-book" onclick="OnCheck()" type="checkbox"/></label><label>Destiny <input checked="" id="destiny-book" onclick="OnCheck()" type="checkbox"/></label><label>建造明天 <input id="building-tomorrow-book" onclick="OnCheck()" type="checkbox"/></label>
+</div>
+<br/>
+<div>
+<button id="generate-tetras" onclick="GenerateTetras()">启发（Tetra的物品）</button>
+<button id="generate-cypher" onclick="GenerateCypherArtifact('Cypher')">Cypher</button>
+<button id="generate-artifact" onclick="GenerateCypherArtifact('Artifact')">Artifact</button>
+<button id="generate-oddity" onclick="GenerateOddity()">Oddity</button>
+<button id="generate-installation" onclick="GenerateOther('Installation')">Installation</button>
+<br/>
+<button id="generate-automaton" onclick="GenerateOther('Automaton')">Automaton</button>
+<button id="generate-vehicle" onclick="GenerateOther('Vehicle')">Vehicle</button>
+<button id="generate-biological" onclick="GenerateOther('Biological')">Biological</button>
+<button id="generate-otherspace" onclick="GenerateOther('Otherspace')">Otherspace</button>
+<button id="generate-计划" onclick="Generate计划()">计划</button>
+</div>
+<hr/>
+</div>
+<div id="items-list"></div>
+</body>
 </html>

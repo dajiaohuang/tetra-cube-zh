@@ -1,0 +1,1920 @@
+{
+	"condition": [
+		{
+			"ENG_name": "Blinded",
+			"name": "目盲",
+			"source": "PHB",
+			"page": 290,
+			"srd": true,
+			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 62
+				},
+				{
+					"source": "HftT",
+					"page": 48
+				}
+			],
+			"reprintedAs": [
+				"目盲|XPHB"
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"目盲的生物不能视物，其所有需要视觉的属性检定直接失败。",
+						"对该生物发动攻击检定时具有优势。而目盲生物发动攻击检定时具有劣势。"
+					]
+				}
+			],
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Blinded",
+			"name": "目盲",
+			"source": "XPHB",
+			"page": 361,
+			"srd52": true,
+			"basicRules2024": true,
+			"entries": [
+				"目盲状态期间，你将遭受以下这些效应。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Can't See",
+							"name": "看不见",
+							"type": "entries",
+							"entries": [
+								"你无法视物，且会自动失败于任何需要视觉的属性检定。"
+							]
+						},
+						{
+							"ENG_name": "Attacks Affected",
+							"name": "攻击影响",
+							"type": "entries",
+							"entries": [
+								"以你为目标的{@action 攻击|XPHB}检定具有{@variantrule 优势|XPHB}，而你进行的攻击检定具有{@variantrule 劣势|XPHB}。"
+							]
+						}
+					]
+				}
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Charmed",
+			"basicRules": true,
+			"entries": [
+				{
+					"items": [
+						"被魅惑生物不能攻击魅惑者，其造成伤害的能力或魔法效应也不能以魅惑者为目标。",
+						"魅惑者对被魅惑生物进行任何与社交相关的属性检定时具有优势。"
+					],
+					"type": "list"
+				}
+			],
+			"hasFluffImages": true,
+			"name": "魅惑",
+			"otherSources": [
+				{
+					"page": 62,
+					"source": "RMR"
+				},
+				{
+					"page": 48,
+					"source": "HftT"
+				}
+			],
+			"page": 290,
+			"reprintedAs": [
+				"魅惑|XPHB"
+			],
+			"source": "PHB",
+			"srd": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Charmed",
+			"name": "魅惑",
+			"source": "XPHB",
+			"page": 361,
+			"srd52": true,
+			"basicRules2024": true,
+			"entries": [
+				"魅惑状态期间，你将遭受以下这些效应。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Can't Harm the Charmer",
+							"name": "无法伤害魅惑源",
+							"type": "entries",
+							"entries": [
+								"你无法攻击魅惑源，也无法将其作为伤害性能力或{@variantrule 魔法效应|XPHB|魔法效应}的对象。"
+							]
+						},
+						{
+							"ENG_name": "Social Advantage",
+							"name": "社交优势",
+							"type": "entries",
+							"entries": [
+								"魅惑源对你进行的任何有关社交的属性检定均具有{@variantrule 优势|XPHB}。"
+							]
+						}
+					]
+				}
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Deafened",
+			"name": "耳聋",
+			"source": "PHB",
+			"page": 290,
+			"srd": true,
+			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 62
+				},
+				{
+					"source": "HftT",
+					"page": 48
+				}
+			],
+			"reprintedAs": [
+				"耳聋|XPHB"
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"耳聋的生物不能听音，其所有需要听觉的属性检定直接失败。"
+					]
+				}
+			],
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Deafened",
+			"name": "耳聋",
+			"source": "XPHB",
+			"page": 365,
+			"srd52": true,
+			"basicRules2024": true,
+			"entries": [
+				"耳聋状态期间，你将遭受以下这个效应。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Can't Hear",
+							"name": "听不见",
+							"type": "entries",
+							"entries": [
+								"你无法听声，且会自动失败于任何依赖听觉的属性检定。"
+							]
+						}
+					]
+				}
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Exhaustion",
+			"name": "力竭",
+			"source": "PHB",
+			"page": 291,
+			"srd": true,
+			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 62
+				}
+			],
+			"reprintedAs": [
+				"力竭|XPHB"
+			],
+			"entries": [
+				"某些特殊能力和环境危害（例如遭受饥饿，或是长时间暴露在极热或极冷的温度下），会导致名为力竭的特殊状态。力竭状态分为六个递增的等级。当特定效应造成力竭时，根据其具体描述的不同可能令生物陷入一级或更高等级的力竭中。",
+				{
+					"type": "table",
+					"colLabels": [
+						"等级",
+						"效应"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-11"
+					],
+					"rows": [
+						[
+							"1",
+							"属性检定具有劣势"
+						],
+						[
+							"2",
+							"速度减半"
+						],
+						[
+							"3",
+							"攻击检定和豁免检定具有劣势"
+						],
+						[
+							"4",
+							"生命值上限减半"
+						],
+						[
+							"5",
+							"速度降为0"
+						],
+						[
+							"6",
+							"死亡"
+						]
+					]
+				},
+				"已力竭的生物如果受另一效应影响而再次遭受力竭，则将其当前力竭等级与该效应造成的力竭等级相叠加。",
+				"再度遭受高等级力竭的生物承受其当前力竭等级及所有更低级力竭的效应。例如，受2级力竭影响的生物进行属性检定时具有劣势，且速度减半。",
+				"移除力竭的效应按其描述降低力竭等级。力竭等级小于1时，所有力竭产生的效果结束。",
+				"生物在获得足够的饮食，并完成一次长休后，其力竭等级即可降低1级。生物从死亡状态复活时，其力竭等级也可以降低1级。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Exhaustion",
+			"name": "力竭",
+			"source": "XPHB",
+			"page": 365,
+			"srd52": true,
+			"basicRules2024": true,
+			"entries": [
+				"力竭状态期间，你将遭受以下这些效应。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Exhaustion Levels",
+							"name": "力竭等级",
+							"type": "entries",
+							"entries": [
+								"此状态可叠加。每次你获得此状态，力竭等级都增加 1 级。当你力竭等级累加到 6 级你将死亡。"
+							]
+						},
+						{
+							"ENG_name": "D20 Tests Affected",
+							"name": "D20检定影响",
+							"type": "entries",
+							"entries": [
+								"当你进行一次D20检定时，此次检定将减去你力竭等级 2 倍的值。"
+							]
+						},
+						{
+							"ENG_name": "Speed Reduced",
+							"name": "速度降低",
+							"type": "entries",
+							"entries": [
+								"你的{@variantrule 速度|XPHB}减少等于你力竭等级 5 倍尺。"
+							]
+						},
+						{
+							"ENG_name": "Removing Exhaustion Levels",
+							"name": "移除力竭等级",
+							"type": "entries",
+							"entries": [
+								"你可以依靠完成{@variantrule 长休|XPHB}来降低 1 级力竭等级。当你力竭等级降至 0 时，此状态结束。"
+							]
+						}
+					]
+				}
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Frightened",
+			"name": "恐慌",
+			"source": "PHB",
+			"page": 290,
+			"srd": true,
+			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 62
+				},
+				{
+					"source": "HftT",
+					"page": 48
+				}
+			],
+			"reprintedAs": [
+				"恐慌|XPHB"
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"造成恐慌的源头仍在被恐慌生物视线范围内时，其所有属性检定和攻击检定具有劣势。",
+						"被恐慌生物不能自主向造成恐慌的源头移动。"
+					]
+				}
+			],
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Frightened",
+			"name": "恐慌",
+			"source": "XPHB",
+			"page": 367,
+			"srd52": true,
+			"basicRules2024": true,
+			"entries": [
+				"恐慌状态期间，你将遭受以下这些效应。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Ability Checks and Attacks Affected",
+							"name": "属性检定与攻击影响",
+							"type": "entries",
+							"entries": [
+								"只要恐惧源在你的视线范围内，你进行的属性检定与攻击检定就具有{@variantrule 劣势|XPHB}。"
+							]
+						},
+						{
+							"ENG_name": "Can't Approach",
+							"name": "无法靠近",
+							"type": "entries",
+							"entries": [
+								"你无法自愿地向靠近恐惧源的方向移动。"
+							]
+						}
+					]
+				}
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Grappled",
+			"name": "受擒",
+			"source": "PHB",
+			"page": 290,
+			"srd": true,
+			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 62
+				},
+				{
+					"source": "HftT",
+					"page": 48
+				}
+			],
+			"reprintedAs": [
+				"受擒|XPHB"
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"被擒抱生物的速度变为0，且无法受益于任何速度加值。",
+						"如果擒抱者陷入{@condition 失能}状态，则擒抱状态结束。",
+						"如果某种效应将被擒抱生物移动到擒抱者或擒抱效果的接触范围之外，则其擒抱状态结束。例如，当生物被法术{@spell 雷鸣波}推开时。"
+					]
+				}
+			],
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Grappled",
+			"name": "受擒",
+			"source": "XPHB",
+			"page": 367,
+			"srd52": true,
+			"basicRules2024": true,
+			"entries": [
+				"受擒状态期间，你将遭受以下这些效应。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Speed 0",
+							"name": "速度归零",
+							"type": "entries",
+							"entries": [
+								"你的{@variantrule 速度|XPHB}变为 0，且无法被增加。"
+							]
+						},
+						{
+							"ENG_name": "Attacks Affected",
+							"name": "攻击影响",
+							"type": "entries",
+							"entries": [
+								"除擒抱者外，你对其他任何目标进行的攻击检定都具有{@variantrule 劣势|XPHB}。"
+							]
+						},
+						{
+							"ENG_name": "Movable",
+							"name": "带动",
+							"type": "entries",
+							"entries": [
+								"擒抱者移动时，其可以拖拽或承载你，但其每移动 1 尺都需要为此额外消耗 1 尺移动力。若你的体型为微型或你的体型小于擒抱者两级以上，擒抱者拖拽/承载你将不需要额外消耗移动力。"
+							]
+						}
+					]
+				}
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Incapacitated",
+			"name": "失能",
+			"source": "PHB",
+			"page": 290,
+			"srd": true,
+			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 62
+				},
+				{
+					"source": "HftT",
+					"page": 48
+				}
+			],
+			"reprintedAs": [
+				"失能|XPHB"
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"失能的生物不能执行任何动作或反应。"
+					]
+				}
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Incapacitated",
+			"basicRules2024": true,
+			"entries": [
+				"失能状态期间，你将遭受以下这些效应。",
+				{
+					"entries": [
+						{
+							"ENG_name": "Inactive",
+							"entries": [
+								"你无法执行任何{@variantrule 动作|XPHB|动作}、{@variantrule 附赠动作|XPHB}以及{@variantrule 反应|XPHB}。"
+							],
+							"name": "无法行动",
+							"type": "entries"
+						},
+						{
+							"ENG_name": "No Concentration",
+							"entries": [
+								"你的{@status 专注|XPHB}将被打断。"
+							],
+							"name": "无法专注",
+							"type": "entries"
+						},
+						{
+							"ENG_name": "Speechless",
+							"entries": [
+								"你无法说话。"
+							],
+							"name": "无法说话",
+							"type": "entries"
+						},
+						{
+							"ENG_name": "Surprised",
+							"entries": [
+								"如果你在陷入失能状态期间投掷{@variantrule 先攻|XPHB}，你的先攻检定将具有{@variantrule 劣势|XPHB}。"
+							],
+							"name": "措手不及",
+							"type": "entries"
+						}
+					],
+					"type": "entries"
+				}
+			],
+			"name": "失能",
+			"page": 369,
+			"source": "XPHB",
+			"srd52": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Invisible",
+			"name": "隐形",
+			"source": "PHB",
+			"page": 291,
+			"srd": true,
+			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 62
+				},
+				{
+					"source": "HftT",
+					"page": 48
+				}
+			],
+			"reprintedAs": [
+				"隐形|XPHB"
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"隐形的生物只能被魔法或特殊感官观察到。在判断隐匿时，该生物视为处于重度遮蔽。不过，隐形的生物身处位置依然可以通过其发出的声音或留下的踪迹来辨认。",
+						"对该生物发动攻击检定时具有劣势。而隐形的生物发动攻击检定时具有优势。"
+					]
+				}
+			],
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Invisible",
+			"basicRules2024": true,
+			"entries": [
+				"隐形状态期间，你将获得以下这些效应。",
+				{
+					"entries": [
+						{
+							"ENG_name": "Surprise",
+							"entries": [
+								"如果你在投掷先攻时处于{@variantrule 先攻|XPHB}状态，你的先攻检定将具有{@variantrule 优势|XPHB}。"
+							],
+							"name": "出其不意",
+							"type": "entries"
+						},
+						{
+							"ENG_name": "Concealed",
+							"entries": [
+								"任何需要能够看见目标的效应都不会影响到你，除非效应的源头能通过某种方式看到你。你所着装或携带的一切装备也同样会被隐蔽起来。"
+							],
+							"name": "隐蔽",
+							"type": "entries"
+						},
+						{
+							"ENG_name": "Attacks Affected",
+							"entries": [
+								"以你为目标的{@action 攻击|XPHB}检定具有{@variantrule 劣势|XPHB}，而你进行的攻击检定具有{@variantrule 优势|XPHB}。如果一个生物能以某种方式看见你，那么你在面对该生物时不会获得这一增益。"
+							],
+							"name": "攻击影响",
+							"type": "entries"
+						}
+					],
+					"type": "entries"
+				}
+			],
+			"name": "隐形",
+			"page": 370,
+			"source": "XPHB",
+			"srd52": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Paralyzed",
+			"name": "麻痹",
+			"source": "PHB",
+			"page": 291,
+			"srd": true,
+			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 62
+				},
+				{
+					"source": "HftT",
+					"page": 48
+				}
+			],
+			"reprintedAs": [
+				"麻痹|XPHB"
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"麻痹的生物陷入{@condition 失能}状态，并且无法移动或说话。",
+						"该生物进行力量和敏捷豁免时直接失败。",
+						"对该生物发动攻击检定时具有优势。",
+						"攻击者身处该生物身边5尺范围内时，其任何命中该生物的攻击都将直接造成重击。"
+					]
+				}
+			],
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Paralyzed",
+			"name": "麻痹",
+			"source": "XPHB",
+			"page": 371,
+			"srd52": true,
+			"basicRules2024": true,
+			"entries": [
+				"麻痹状态期间，你将遭受以下这些效应。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Incapacitated",
+							"name": "失能",
+							"type": "entries",
+							"entries": [
+								"你陷入{@condition 失能|XPHB}状态。"
+							]
+						},
+						{
+							"ENG_name": "Speed 0",
+							"name": "速度归零",
+							"type": "entries",
+							"entries": [
+								"你的{@variantrule 速度|XPHB}变为 0，且无法被增加。"
+							]
+						},
+						{
+							"ENG_name": "Saving Throws Affected",
+							"name": "豁免影响",
+							"type": "entries",
+							"entries": [
+								"你自动失败于力量豁免检定与敏捷{@variantrule 豁免检定|XPHB|豁免检定}。"
+							]
+						},
+						{
+							"ENG_name": "Attacks Affected",
+							"name": "攻击影响",
+							"type": "entries",
+							"entries": [
+								"以你为目标的{@action 攻击|XPHB}检定具有{@variantrule 优势|XPHB}。"
+							]
+						},
+						{
+							"ENG_name": "Automatic Critical Hits",
+							"name": "自动重击",
+							"type": "entries",
+							"entries": [
+								"若攻击者位于你 5 尺内，其任何命中你的攻击检定都会变为{@variantrule 重击|XPHB}。"
+							]
+						}
+					]
+				}
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Petrified",
+			"name": "石化",
+			"source": "PHB",
+			"page": 291,
+			"srd": true,
+			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 62
+				},
+				{
+					"source": "HftT",
+					"page": 48
+				}
+			],
+			"reprintedAs": [
+				"石化|XPHB"
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"石化的生物遭受变形，其与随身着装或携带的非魔法物品一同被转化为无生命的实心雕像（通常是石雕）。其重量变为原本的十倍，并且停止老化。",
+						"石化的生物陷入{@condition 失能}状态，并且无法移动，无法说话，也无法感知周围的事物。",
+						"对该生物发动攻击检定时具有优势。",
+						"该生物进行力量和敏捷豁免时直接失败。",
+						"石化的生物具有所有伤害类型的伤害抗性。",
+						"石化的生物免疫毒素和疾病，但已经生效的毒素或疾病只是被暂缓，而非移除。"
+					]
+				}
+			],
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Petrified",
+			"name": "石化",
+			"source": "XPHB",
+			"page": 372,
+			"srd52": true,
+			"basicRules2024": true,
+			"entries": [
+				"石化状态期间，你将遭受以下这些效应。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Turned to Inanimate Substance",
+							"name": "化为非活动材质",
+							"type": "entries",
+							"entries": [
+								"你与你穿着或携带的所有非魔法物品将被变化为坚固的、非活动的材质（通常是石头）。你的重量变为原本的十倍，且你将停止老化。"
+							]
+						},
+						{
+							"ENG_name": "Incapacitated",
+							"name": "失能",
+							"type": "entries",
+							"entries": [
+								"你陷入{@condition 失能|XPHB}状态。"
+							]
+						},
+						{
+							"ENG_name": "Speed 0",
+							"name": "速度归零",
+							"type": "entries",
+							"entries": [
+								"你的{@variantrule 速度|XPHB}变为 0，且无法被增加。"
+							]
+						},
+						{
+							"ENG_name": "Attacks Affected",
+							"name": "攻击影响",
+							"type": "entries",
+							"entries": [
+								"以你为目标的{@action 攻击|XPHB}检定具有{@variantrule 优势|XPHB}。"
+							]
+						},
+						{
+							"ENG_name": "Saving Throws Affected",
+							"name": "豁免影响",
+							"type": "entries",
+							"entries": [
+								"你自动失败于力量豁免检定与敏捷{@variantrule 豁免检定|XPHB|豁免检定}。"
+							]
+						},
+						{
+							"ENG_name": "Resist Damage",
+							"name": "伤害全抗",
+							"type": "entries",
+							"entries": [
+								"你具有所有伤害的{@variantrule 抗性|XPHB}。"
+							]
+						},
+						{
+							"ENG_name": "Poison Immunity",
+							"name": "中毒免疫",
+							"type": "entries",
+							"entries": [
+								"你具有{@condition 中毒|XPHB}状态的{@variantrule 免疫|XPHB}。"
+							]
+						}
+					]
+				}
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Poisoned",
+			"name": "中毒",
+			"source": "PHB",
+			"page": 292,
+			"srd": true,
+			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 62
+				},
+				{
+					"source": "HftT",
+					"page": 48
+				}
+			],
+			"reprintedAs": [
+				"中毒|XPHB"
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"中毒的生物发动攻击检定和属性检定时具有劣势。"
+					]
+				}
+			],
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Poisoned",
+			"name": "中毒",
+			"source": "XPHB",
+			"page": 372,
+			"srd52": true,
+			"basicRules2024": true,
+			"entries": [
+				"中毒状态期间，你将遭受以下这个效应。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Ability Checks and Attacks Affected",
+							"name": "属性检定与攻击影响",
+							"type": "entries",
+							"entries": [
+								"你进行的攻击检定与属性检定具有{@variantrule 劣势|XPHB}。"
+							]
+						}
+					]
+				}
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Prone",
+			"name": "倒地",
+			"source": "PHB",
+			"page": 292,
+			"srd": true,
+			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 62
+				},
+				{
+					"source": "HftT",
+					"page": 48
+				}
+			],
+			"reprintedAs": [
+				"倒地|XPHB"
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"倒地的生物只能以爬行方式移动，直至其成功起立以结束倒地状态为止。",
+						"该生物发动攻击检定时具有劣势。",
+						"倒地的生物周边5尺范围内有攻击者对其发动攻击时，本次攻击所进行的攻击检定具有优势。而该范围外的攻击者对该倒地生物发动的攻击检定则具有劣势。"
+					]
+				}
+			],
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Prone",
+			"name": "倒地",
+			"source": "XPHB",
+			"page": 372,
+			"srd52": true,
+			"basicRules2024": true,
+			"entries": [
+				"倒地状态期间，你将遭受以下这些效应。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Restricted Movement",
+							"name": "阻碍移动",
+							"type": "entries",
+							"entries": [
+								"你唯二的移动选项是{@variantrule 匍匐|XPHB|匍匐}或是消耗你{@variantrule 速度|XPHB}一半数值（向下取整）的移动力起立，并由此终止这一状态。如果你的{@variantrule 速度|XPHB}为 0，你无法起立。"
+							]
+						},
+						{
+							"ENG_name": "Attacks Affected",
+							"name": "攻击影响",
+							"type": "entries",
+							"entries": [
+								"你进行的攻击检定具有{@variantrule 劣势|XPHB}。若攻击者位于你 5 尺内，其以你为目标的攻击检定具有{@variantrule 优势|XPHB}；若攻击者不位于你 5 尺内，其以你为目标的攻击检定具有{@variantrule 劣势|XPHB}。"
+							]
+						}
+					]
+				}
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Restrained",
+			"name": "束缚",
+			"source": "PHB",
+			"page": 292,
+			"srd": true,
+			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 62
+				},
+				{
+					"source": "HftT",
+					"page": 48
+				}
+			],
+			"reprintedAs": [
+				"束缚|XPHB"
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"被束缚生物的速度变为0，并且无法受益于任何速度加值。",
+						"对该生物发动攻击检定时具有优势。而目盲生物发动攻击检定时具有劣势。",
+						"该生物在敏捷豁免检定上具有劣势。"
+					]
+				}
+			],
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Restrained",
+			"name": "束缚",
+			"source": "XPHB",
+			"page": 373,
+			"srd52": true,
+			"basicRules2024": true,
+			"entries": [
+				"束缚状态期间，你将遭受以下这些效应。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Speed 0",
+							"name": "速度归零",
+							"type": "entries",
+							"entries": [
+								"你的{@variantrule 速度|XPHB}变为 0，且无法被增加。"
+							]
+						},
+						{
+							"ENG_name": "Attacks Affected",
+							"name": "攻击影响",
+							"type": "entries",
+							"entries": [
+								"以你为目标的{@action 攻击|XPHB}检定具有{@variantrule 优势|XPHB}，而你进行的攻击检定具有{@variantrule 劣势|XPHB}。"
+							]
+						},
+						{
+							"ENG_name": "Saving Throws Affected",
+							"name": "豁免影响",
+							"type": "entries",
+							"entries": [
+								"你进行的敏捷{@variantrule 豁免检定|XPHB|豁免检定}具有{@variantrule 劣势|XPHB}。"
+							]
+						}
+					]
+				}
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Stunned",
+			"name": "震慑",
+			"source": "PHB",
+			"page": 292,
+			"srd": true,
+			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 62
+				},
+				{
+					"source": "HftT",
+					"page": 48
+				}
+			],
+			"reprintedAs": [
+				"震慑|XPHB"
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"被震慑的生物陷入{@condition 失能}状态，并且无法移动，以及无法清晰连贯地说话。",
+						"该生物进行力量和敏捷豁免时直接失败。",
+						"对该生物发动攻击检定时具有优势。"
+					]
+				}
+			],
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Stunned",
+			"name": "震慑",
+			"source": "XPHB",
+			"page": 376,
+			"srd52": true,
+			"basicRules2024": true,
+			"entries": [
+				"震慑状态期间，你将遭受以下这些效应。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Incapacitated",
+							"name": "失能",
+							"type": "entries",
+							"entries": [
+								"你陷入{@condition 失能|XPHB}状态。"
+							]
+						},
+						{
+							"ENG_name": "Saving Throws Affected",
+							"name": "豁免影响",
+							"type": "entries",
+							"entries": [
+								"你自动失败于力量豁免检定与敏捷{@variantrule 豁免检定|XPHB|豁免检定}。"
+							]
+						},
+						{
+							"ENG_name": "Attacks Affected",
+							"name": "攻击影响",
+							"type": "entries",
+							"entries": [
+								"以你为目标的{@action 攻击|XPHB}检定具有{@variantrule 优势|XPHB}。"
+							]
+						}
+					]
+				}
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Unconscious",
+			"name": "昏迷",
+			"source": "PHB",
+			"page": 292,
+			"srd": true,
+			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 62
+				},
+				{
+					"source": "HftT",
+					"page": 48
+				}
+			],
+			"reprintedAs": [
+				"昏迷|XPHB"
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"昏迷的生物陷入{@condition 失能}状态，并且无法移动，无法说话，也无法感知周围的事物",
+						"昏迷的生物会放开手中持握物，并{@condition 倒地}。",
+						"该生物进行力量和敏捷豁免时直接失败。",
+						"对该生物发动攻击检定时具有优势。",
+						"攻击者身处该生物身边5尺范围内时，其任何命中该生物的攻击都将直接造成重击。"
+					]
+				}
+			],
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Unconscious",
+			"name": "昏迷",
+			"source": "XPHB",
+			"page": 376,
+			"srd52": true,
+			"basicRules2024": true,
+			"entries": [
+				"昏迷状态期间，你将遭受以下这些效应。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Inert",
+							"name": "迟钝",
+							"type": "entries",
+							"entries": [
+								"你陷入{@condition 失能|XPHB}状态与{@condition 倒地|XPHB}状态，你手上持握的东西也会全数掉落。此状态结束时，{@condition 倒地|XPHB}状态并不会因此结束。"
+							]
+						},
+						{
+							"ENG_name": "Speed 0",
+							"name": "速度归零",
+							"type": "entries",
+							"entries": [
+								"你的{@variantrule 速度|XPHB}变为 0，且无法被增加。"
+							]
+						},
+						{
+							"ENG_name": "Attacks Affected",
+							"name": "攻击影响",
+							"type": "entries",
+							"entries": [
+								"以你为目标的{@action 攻击|XPHB}检定具有{@variantrule 优势|XPHB}。"
+							]
+						},
+						{
+							"ENG_name": "Saving Throws Affected",
+							"name": "豁免影响",
+							"type": "entries",
+							"entries": [
+								"你自动失败于力量豁免检定与敏捷{@variantrule 豁免检定|XPHB|豁免检定}。"
+							]
+						},
+						{
+							"ENG_name": "Automatic Critical Hits",
+							"name": "自动重击",
+							"type": "entries",
+							"entries": [
+								"若攻击者位于你 5 尺内，其任何命中你的攻击检定都会变为{@variantrule 重击|XPHB}。"
+							]
+						},
+						{
+							"ENG_name": "Unaware",
+							"name": "无知觉",
+							"type": "entries",
+							"entries": [
+								"你无法感知到你周遭的事物。"
+							]
+						}
+					]
+				}
+			],
+			"translator": "不全书"
+		}
+	],
+	"disease": [
+		{
+			"ENG_name": "Arcane Blight",
+			"name": "奥术枯萎病",
+			"source": "IDRotF",
+			"page": 233,
+			"entries": [
+				"任何人形生物在墓城中停留12小时，必须成功通过一次{@dc 15}体质豁免，否则会感染奥术枯萎病。这种魔法疾病会将人形生物转变为{@creature 诺斯怪}，但受害者会先经历幻觉、孤独感和偏执感。其他症状包括皮肤湿冷、脱发和近视（远视能力减弱）。",
+				"感染奥术枯萎病的玩家角色会获得以下缺陷：\"我不相信任何人。\"这个缺陷将取代任何与之冲突的缺陷，它源于角色难以与现实区分的错觉。常见的错觉包括认为盟友正在密谋窃取受害者的财富或以其他方式背叛受害者。",
+				"每当完成一次长休时，受感染的类人生物必须重复该豁免检定。若检定成功，则未来对抗奥术枯萎病的豁免DC降低{@dice 1d6}。若豁免DC降至0，该生物将克服奥术枯萎病并对进一步暴露的效果免疫。若生物在此类豁免检定中失败三次，则会在DM的控制下转变为{@creature 诺斯怪}。只有{@spell 祈愿术}法术或神圣干预才能逆转这种转变。",
+				"{@spell 高等复原术}或类似魔法可以解除目标的感染，消除缺陷以及其他的所有症状，但这类魔法并不能保护目标免受进一步暴露的影响。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Blinding Sickness",
+			"name": "失明症",
+			"source": "PHB",
+			"page": 227,
+			"entries": [
+				"痛苦缠绕着患病者的意志，并使其眼睛变成奶白色。患病生物进行感知检定和感知豁免时具有劣势，并且承受{@condition 目盲}状态。",
+				"{@note 这种疾病可以通过{@spell 疫病术|PHB}法术施加。}"
+			]
+		},
+		{
+			"ENG_name": "Blue Mist Fever",
+			"name": "蓝雾热",
+			"source": "ToA",
+			"page": 40,
+			"entries": [
+				"一股魔法薄雾悄然弥漫在楚尔特丛林中。接触到这种稀薄、蓝色、无味的雾气可能会使巨人和类人生物感染蓝雾热。施展{@spell 解除魔法}法术，可在施法者选定的、法术范围内的一点为起点，清除 20 尺见方区域内的薄雾。遭遇这片薄雾时，其覆盖范围通常为 {@dice 1d6} 个上述区域（400 至 2400 平方尺）。",
+				"接触到雾气的巨人或类人生物必须通过 {@dc 13} 的体质豁免，否则将感染蓝雾热。受感染的生物在豁免失败后 {@dice 1d6} 小时内开始出现幻觉，看到上蹿下跳的蓝色猴子，这些幻觉持续到疾病结束。该生物每24小时可以重复进行一次豁免，成功则结束效应。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Bluerot",
+			"name": "蓝腐病",
+			"source": "GoS",
+			"page": 234,
+			"entries": [
+				"这种疾病针对类人生物。感染了蓝疫的受害者会在面部和背部长出丑陋的蓝色疱疹。这种病通过不死生物（包括塔玛罗特命运中的溺水者）传播，受害者通常是通过被感染生物造成的伤口获得的。疾病引起的疱疹在{@dice 1d4}小时内显现，导致受害者的体质和魅力值各减少{@dice 1d4}，最低降至3。紧随其后的是发烧和四肢的刺痛感。感染的生物对光耀伤害易感，并获得了在水下呼吸的能力。",
+				"在每次长休结束时，受感染的生物进行一次 {@dc 12} 体质豁免。若成功，受害者恢复因疾病失去的1点体质和1点魅力。如果受感染的生物恢复了所有因疾病失去的属性点，它即被治愈。其他提升受害者属性值的效果无法治愈该疾病。若豁免失败，受害者受到18（{@damage 4d8}）点暗蚀伤害，仿佛疖子爆裂并扩散。因该伤害生命值降至0的生物在疾病治愈前无法恢复生命值，尽管它可以如常被稳定。"
+			]
+		},
+		{
+			"ENG_name": "Cackle Fever",
+			"name": "疯笑病",
+			"source": "DMG",
+			"page": 257,
+			"srd": true,
+			"reprintedAs": [
+				"疯笑病|XDMG"
+			],
+			"entries": [
+				"这种疾病在类人生物间传播，但侏儒却神奇的对之免疫。由于患上这种病的生物常常会不由自主的狂笑，也有人昵它为\"尖笑症the shrieks\"。",
+				"症状通常在感染后{@dice 1d4}小时内出现，包括发热和方向感混乱。受感染的生物将提升一级{@condition 力竭}。只有在该疾病被治愈后此该力竭状态才能被移除。",
+				"被感染的生物在承受巨大压力（给生物带来巨大压力的事件包括参与战斗、受到伤害、陷入恐慌、做噩梦等）时必须进行一次{@dc 13}的体质豁免。",
+				"豁免失败时，该生物受到5（{@dice 1d10}）点心灵伤害，并因疯狂大笑而陷入{@condition 失能}状态1分钟。该生物可以在其每个回合结束时重复进行该豁免检定，成功则结束疯狂大笑和{@condition 失能}状态。任何类人生物在感染失心疯且处于狂笑状态的生物周围10尺内开始自己回合时，必须成功通过{@dc 10}的体质豁免否则同样感染失心疯。一旦生物在此豁免中成功，则他在接下来的24小时内免疫同一患病生物传染的失心疯。",
+				"感染失心疯的生物在每次长休结束时可以进行一次{@dc 13}的体质豁免。豁免成功，则下一次它进行该豁免的DC以及它避免陷入狂笑状态的豁免DC均降低{@dice 1d6}。当豁免DC降至0时，该生物便从失心疯中痊愈。如果一名生物在此豁免上失败三次，它将随机获得一种{@variantrule 疯狂|DMG|永久性疯狂}。"
+			]
+		},
+		{
+			"ENG_name": "Cackle Fever",
+			"name": "疯笑病",
+			"source": "XDMG",
+			"page": 61,
+			"srd52": true,
+			"type": "Magical Contagion",
+			"entries": [
+				"廉价制作的药水和灵药有时会被失心疯所污染。这种疾病只在类人生物间传播；奇怪的是，侏儒却免疫这种疫病。染疫的生物会在感染{@dice 1d4}天之后开始承受以下效应：",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Fever",
+							"name": "发热",
+							"type": "item",
+							"entry": "该生物获得1级{@condition 力竭|XPHB}，该力竭将持续存在，直至该生物康复。"
+						},
+						{
+							"ENG_name": "Uncontrollable Laughter",
+							"name": "失控狂笑",
+							"type": "item",
+							"entry": "在该生物具有此{@condition 力竭|XPHB}状态期间，每当其受到除心灵伤害之外的伤害时，它都要进行一次{@dc 13}的体质豁免。豁免失败则该生物受到5（{@damage 1d10}）心灵伤害，并开始无法控制地狂笑而因此陷入{@condition 失能|XPHB}状态。该生物在其每个回合结束时重复此豁免，豁免成功则结束此效应。该生物亦将在1分钟后自动成功于此豁免。"
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Fighting the Contagion",
+							"name": "抵抗疫病",
+							"type": "entries",
+							"entries": [
+								"每当染疫的生物完成一次长休时，它都要进行一次{@dc 13}的体质豁免。一旦该生物累计成功通过该豁免3次，它就会康复，并在接下来的1年里免疫失心疯。"
+							]
+						},
+						{
+							"ENG_name": "Spreading the Contagion",
+							"name": "传播疫病",
+							"type": "entries",
+							"entries": [
+								"任何在以感染了疯笑病的生物为中心、10尺半径的{@variantrule 光环 [效应区域]|XPHB|光环}区域内开始回合的类人生物（侏儒除外）都必须成功通过一次{@dc 10}的体质豁免，否则亦将感染疯笑病。豁免成功则该生物在接下来的24小时内不会再因致使其进行豁免的那个特定生物而感染该疫病。"
+							]
+						}
+					]
+				}
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Filth Fever",
+			"name": "腐热症",
+			"source": "PHB",
+			"page": 227,
+			"entries": [
+				"患者身体发起严重的高烧。患病生物进行力量检定和力量豁免时，以及发动基于力量的攻击检定时具有劣势。",
+				"{@note 这种疾病可以通过{@spell 疫病术|PHB}法术施加。}"
+			]
+		},
+		{
+			"ENG_name": "Flesh Rot",
+			"name": "烂肉症",
+			"source": "PHB",
+			"page": 227,
+			"entries": [
+				"患者的肌肤逐渐腐朽。患病生物进行魅力检定时具有劣势，并且具有所有伤害类型的伤害易伤。",
+				"{@note 这种疾病可以通过{@spell 疫病术|PHB}法术施加。}"
+			]
+		},
+		{
+			"ENG_name": "Frigid Woe",
+			"name": "寒症",
+			"source": "EGW",
+			"page": 125,
+			"entries": [
+				"寒症是由艾欧尔法师制造的特殊疾病，无法通过常规治疗或魔法治愈。治愈感染寒症的生物的唯一方法是找到并服用人造的解毒剂，这些解毒剂是储存在埃塞克罗斯遗迹中的金瓶中的乳状液体。创造这种疾病的目的是为了削弱众神的力量，并避开牧师和天使的治愈能力。",
+				"这种疾病是通过吸入艾欧尔魔法师们很久以前创造的蓝色孢子来传播的。当生物与这些孢子接触时，必须成功通过一次{@dc 11}的体质豁免否则就会感染寒症。症状在受感染生物身上显现需要{@dice 1d4}天。这些症状包括疲劳、身体发冷以及出现在生物体表的可见蓝色血管。只要被感染的生物仍保持感染状态，其速度就会降低5尺。症状出现后每10天，被感染的生物必须成功通过一次{@dc 11}的体质豁免，失败则其速度会继续降低5尺。如果由于这种疾病而使生物的速度降低到0，则该生物死亡，其身体变成一座冰雕。",
+				"一个生物可以通过一个动作喝下解毒剂，从而立即终止该疾病的所有症状和影响。"
+			]
+		},
+		{
+			"ENG_name": "Ghoul Gut",
+			"name": "食尸鬼胃病",
+			"source": "OoW",
+			"page": 111,
+			"entries": [
+				"被食尸鬼部位污染的水携带食尸鬼的肠子。饮用这种受污染水的生物必须通过一次 {@dc 12} 体质豁免检定，否则将染上疾病。症状在受害者开始长时间休息或下次变得激动时发作，如在战斗中。受害者遭受严重痉挛，其肠道发出像是两只食尸鬼战斗的声音。当症状首次发作时，受害者受到5（{@damage 2d4}）点坏死伤害。此外，患病的受害者无法从非魔法来源恢复生命值或命中骰，包括休息或使用命中骰。完成长时间休息的受害者可以尝试一次 {@dc 12} 体质豁免检定。成功通过豁免后，受害者摆脱了疾病。失败则角色再次受到5（{@damage 2d4}）点坏死伤害。",
+				"一个角色如果成功通过 {@dc 15} 感知（{@skill 医药}）检定，也可以为另一个生物去除疾病。这样做需要该角色在进行检定时在长休期间照顾病患。照料者在这次休息中无法获得任何益处。"
+			]
+		},
+		{
+			"ENG_name": "Grackle-Lung",
+			"name": "格莱克肺",
+			"source": "OotA",
+			"page": 54,
+			"entries": [
+				"Gracklstugh的持续烟雾导致生活在其中的生物患上了烟肺病，表现为持续剧烈的咳嗽和咳出浓稠的黑痰。每当一个有生命的呼吸生物在Gracklstugh完成一次长休息后，它必须进行一次{@dc 11}体质豁免检定。每失败一次豁免，该生物就会因呼吸道逐渐堵塞而获得一层{@condition 力竭}。当生物达到6层{@condition 力竭}时，会像平常一样死亡。",
+				"由于鸦肺病引起的1级或多级{@condition 力竭}的生物必须通过一次体质检定才能采取{@action 疾走}行动。如果检定失败，则无法尝试该行动。如果生物试图施放需要口头成分的法术，它必须通过一次体质检定，否则无法完成法术，导致法术失败且无效果。每次检定的难度等级为10加上生物当前的{@condition 力竭}等级。",
+				"如果一个生物的{@condition 力竭}等级降到1以下，它就不再受格拉克肺病的影响，并在接下来的一周内对其免疫。灰矮人和德罗对格拉克肺病有抵抗力，对其进行体质检查时具有优势。任何治愈疾病的法术或效果也能治愈格拉克肺病，有效地移除由该疾病引起的所有{@condition 力竭}等级。"
+			]
+		},
+		{
+			"ENG_name": "Lichen Plague",
+			"name": "苔藓瘟疫",
+			"source": "FRAiF",
+			"page": 98,
+			"type": "Magical Contagion",
+			"entries": [
+				"与胆汁苔藓孢子接触的野兽、巨人、类人生物或怪兽有感染可怕疾病的风险，因为苔藓在其身体上扎根并生长到大脑中。生物在感染后 {@dice 1d4} 天会遭受以下影响：",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Skinroot",
+							"name": "皮根病",
+							"type": "item",
+							"entry": "该疫病首先表现为身体随机区域出现不超过1平方英寸的黄绿色苔藓斑块。当感染者完成一次长休时，必须成功通过{@dc 14}的体质豁免，否则随着苔藓向头部蔓延，获得1级力竭。此力竭等级持续到该生物身上的疫病结束。"
+						},
+						{
+							"ENG_name": "Mindroot",
+							"name": "心智根须",
+							"type": "item",
+							"entry": "一个感染了苔藓疫病的类人生物死亡时，会立即作为一具{@creature 丧尸|XMM}在DM的控制下复活。"
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Fighting the Contagion",
+							"name": "抵抗疫病",
+							"type": "entries",
+							"entries": [
+								"当感染者完成一次长休时，需进行一次{@dc 14}的体质豁免。如果该生物成功通过三次此类豁免，则疫病效果结束，且该生物将永久免疫苔藓瘟疫。成功的豁免检定无需连续。"
+							]
+						},
+						{
+							"ENG_name": "Spreading the Contagion",
+							"name": "传播疫病",
+							"type": "entries",
+							"entries": [
+								"任何野兽、巨人、类人生物或怪兽与受感染生物身上的苔藓发生皮肤接触时，必须成功通过{@dc 14}的体质豁免否则会感染苔藓瘟疫。豁免成功时，该生物在接下来的24小时内不会感染苔藓瘟疫。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Mindfire",
+			"name": "脑热症",
+			"source": "PHB",
+			"page": 227,
+			"entries": [
+				"患病生物进行智力检定和智力豁免时具有劣势，并且其在战斗中视为受到{@spell 困惑术}效应影响。",
+				"{@note 这种疾病可以通过{@spell 疫病术|PHB}法术施加。}"
+			]
+		},
+		{
+			"ENG_name": "Mudpox",
+			"name": "泥痘病",
+			"source": "FRAiF",
+			"page": 98,
+			"type": "Magical Contagion",
+			"entries": [
+				"接触来自幽暗地域的死泥怪与融雪和泥浆混合后，一直让人们生病。任何野兽或类人生物接触被泥痘污染的泥浆后，必须成功通过{@dc 12}的体质豁免否则被感染，遭受以下效果：",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Disrupted Digestion",
+							"name": "消化紊乱",
+							"type": "item",
+							"entry": "每日黎明，该生物必须成功通过一次{@dc 12}的体质豁免否则会吐出前一天吃下的食物，并获得1级力竭。如果该生物连续三次成功通过此豁免，则疫病结束。"
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Fighting the Contagion",
+							"name": "抵抗疫病",
+							"type": "entries",
+							"entries": [
+								"一个{@spell 医疗术|XPHB}或{@spell 次等复原术|XPHB}法术会立即结束该疫病。"
+							]
+						},
+						{
+							"ENG_name": "Spreading the Contagion",
+							"name": "传播疫病",
+							"type": "entries",
+							"entries": [
+								"任何与感染泥痘的类人生物进行皮肤接触的类人生物必须成功通过{@dc 12}的体质豁免否则也会感染该疫病。如果该生物在此豁免中成功，它在接下来的24小时内不会从该特定感染生物处感染此疫病。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Redface",
+			"name": "红脸病",
+			"source": "GoS",
+			"page": 168,
+			"entries": [
+				"赤面症的效果与{@disease 腐眼症}相同（参见{@book 城主指南|DMG}第8章中的\"{@book 疾病|DMG|8|疾病}\"），但它是由空气中的污染物而非受污染的饮用水引起的，因此难以避免。"
+			]
+		},
+		{
+			"ENG_name": "Saprophytic Plague",
+			"name": "腐生瘟疫",
+			"source": "CM",
+			"page": 253,
+			"entries": [
+				"Xanthoria 对巫妖身份的研究以及她创造的活体命匣导致了在剑湾传播的瘟疫的出现。任何进入被腐生瘟疫感染的生物10英尺范围内的野兽或人形生物必须成功通过一次{@dc 20}体质豁免检定，否则也会被感染。成功通过检定的生物对瘟疫免疫24小时，且任何免疫疾病的生物自动通过检定。",
+				"失败的豁免后，生物会在{@dice 1d4}小时后体验到最初的症状\u2014\u2014身体疼痛、恶心、言语不清和无法控制的流涎，并增加1级{@condition 力竭}。此后每24小时，生物自动增加1级{@condition 力竭}。任何被腐生疫病杀死的生物会转变成一种无生命的洋红色粘液。",
+				"一个生物如果被腐生瘟疫感染至少24小时，就会表现得像僵尸一样，对周围环境几乎没有意识，因为真菌生长物从它的头部、身体和四肢上冒出来。它有一种强烈的冲动要待在未感染生物的群体中，以便传播传染源。这是感染了瘟疫的人形生物开始一遍又一遍地说\"仙托利亚\"这个词的时候，他们并不明白这个词的含义。这种行为是由一个孢子的菌丝网络造成的，它在仙托利亚和被瘟疫感染的人形生物之间形成了一个脆弱的联系。",
+				"暴露于瘟疫孢子的食物会在{@dice 2d12}小时内腐烂或变酸，留下一团鲜艳的紫红色滴漏菌类物质。食用受感染的食物需要进行如上所述的豁免检定。",
+				"任何治疗疾病的魔法都可以清除生物体内的腐生瘟疫。施放{@spell 净化饮食}可以摧毁食物中的感染。"
+			]
+		},
+		{
+			"ENG_name": "Seizure",
+			"name": "癫痫症",
+			"source": "PHB",
+			"page": 227,
+			"entries": [
+				"患者全身颤抖不止。患病生物进行敏捷检定和敏捷豁免时，以及发动基于敏捷的攻击检定时具劣势。",
+				"{@note 这种疾病可以通过{@spell 疫病术|PHB}法术施加。}"
+			]
+		},
+		{
+			"ENG_name": "Sewer Plague",
+			"name": "下水道瘟疫",
+			"source": "DMG",
+			"page": 257,
+			"srd": true,
+			"reprintedAs": [
+				"下水道瘟疫|XDMG"
+			],
+			"entries": [
+				"下水道瘟疫是许多在下水道、垃圾堆和沼泽中滋生的疾病统称。生活在上述区域的生物，例如老鼠和食腐兽otyughs，通常是这类疾病的传染源。",
+				"任何被携带此疫病的生物伤到，或是接触了被此疫病污染的秽物或内脏的类人生物都必须成功通过一次{@dc 11}的体质豁免，否则将被下水道瘟疫感染。",
+				"下水道瘟疫通常在感染后{@dice 1d4}日才会表现出症状，其症状包括乏力和抽搐。受感染的生物将提升一级{@condition 力竭}，且无法通过长休恢复生命值，在使用生命骰时也只能恢复数值的一半。",
+				"染疫的生物在每日黎明时都要进行一次{@dc 11}的体质豁免。豁免失败则病情恶化，该生物获得1级{@condition 力竭}。",
+				"如果豁免失败，则它承受的{@condition 力竭}状态降低一级。如果该豁免使{@condition 力竭}状态等级低于1，则该生物从该疾病状态中痊愈。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Sewer Plague",
+			"name": "下水道瘟疫",
+			"source": "XDMG",
+			"page": 61,
+			"srd52": true,
+			"type": "Magical Contagion",
+			"entries": [
+				"污秽的药水和炼金废物可以产生下水道瘟疫：这种疫病在下水道和垃圾堆中滋生，并通过栖息在上述区域的生物传播，例如老鼠和食腐兽。任何被携带此疫病的生物伤到，或是接触了被此疫病污染的秽物或内脏的类人生物都必须成功通过一次{@dc 11} 的体质豁免，否则将被下水道瘟疫感染。染疫的生物会在感染 {@dice 1d4} 天之后开始承受以下效应：",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Fatigue",
+							"name": "疲惫",
+							"type": "item",
+							"entry": "该生物获得1级{@condition 力竭|XPHB}。"
+						},
+						{
+							"ENG_name": "Weakness",
+							"name": "虚弱",
+							"type": "item",
+							"entry": "只要该生物具有任意来源的力竭等级，它在消耗生命骰恢复生命值时就只能恢复一半的生命值。"
+						},
+						{
+							"ENG_name": "Restlessness",
+							"name": "无休",
+							"type": "item",
+							"entry": "只要该生物具有任意来源的力竭等级， 它就不会因完成长休而恢复任何生命值、亦不会因此降低力竭等级。"
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Fighting the Contagion",
+							"name": "抵抗疫病",
+							"type": "entries",
+							"entries": [
+								"染疫的生物在每日黎明时都要进行一次{@dc 11} 的体质豁免。豁免失败则病情恶化，该生物获得1级{@condition 力竭|XPHB}。豁免成功则该生物降低1级力竭。若该生物的力竭等级降至0，则该生物康复。"
+							]
+						}
+					]
+				}
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Shaking Plague",
+			"name": "震颤瘟疫",
+			"source": "FRAiF",
+			"page": 70,
+			"type": "Magical Contagion",
+			"entries": [
+				"魔法实验出错导致了震颤瘟疫的产生，这种瘟疫会影响类人生物。生物在感染后的 {@dice 1d4} 天会受到以下影响：",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Fatigue",
+							"name": "疲惫",
+							"type": "item",
+							"entry": "该生物获得1个{@condition 力竭|XPHB}等级。当该生物有任何{@condition 力竭|XPHB}等级时，完成一次{@variantrule 长休|XPHB}不会降低该生物的{@condition 力竭|XPHB}等级。"
+						},
+						{
+							"ENG_name": "Pus Boils",
+							"name": "脓疱",
+							"type": "item",
+							"entry": "当该生物有任何{@condition 力竭|XPHB}等级时，其皮肤上会布满充满脓液的疖子。"
+						},
+						{
+							"ENG_name": "Shaking",
+							"name": "颤抖",
+							"type": "item",
+							"entry": "当该生物有任何{@condition 力竭|XPHB}等级时，魔法抑制的震动会折磨它。该生物在敏捷检定和豁免检定上具有{@variantrule 劣势|XPHB}，并且每当该生物施放一个带有姿势成分的法术时，它必须成功通过{@dc 11}的体质豁免检定，否则法术消散且无效果，用于施放它的动作、{@variantrule 附赠动作|XPHB}或{@variantrule 反应|XPHB}被浪费。如果该法术是用法术位施放的，则该法术位不会被消耗。"
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Fighting the Contagion",
+							"name": "抵抗疫病",
+							"type": "entries",
+							"entries": [
+								"日常在拂晓时，受感染的生物进行一次{@dc 11}体质豁免检定。若豁免失败，该生物获得1层{@condition 力竭|XPHB}状态等级，其疲惫加剧。若豁免成功，该生物的{@condition 力竭|XPHB}状态等级降低1层。若该生物的{@condition 力竭|XPHB}状态等级降至0，疫病术对其终止。"
+							]
+						},
+						{
+							"ENG_name": "Spreading the Contagion",
+							"name": "传播疫病",
+							"type": "entries",
+							"entries": [
+								"任何与感染震颤疫病的生物进行皮肤接触的类人生物必须成功通过{@dc 11}的体质豁免否则也会感染该疫病术。豁免成功时，该类人生物在接下来的24小时内不会从该特定感染生物处感染此疫病。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Shivering Sickness",
+			"name": "寒颤病",
+			"source": "ToA",
+			"page": 40,
+			"entries": [
+				"楚尔特丛林和沼泽中的原生昆虫携带这种疾病\u2014\u2014寒颤病。最简单的预防措施是在所有裸露的皮肤上涂一层驱虫药膏（有关驱虫剂的价格，见{@adventure \"购买特殊物品\"|ToA|1|购买特殊物品}）。",
+				"被{@creature 昆虫集群||昆虫集群}、{@creature 巨蜈蚣||巨蜈蚣}、{@creature 巨蝎||巨蝎}或{@creature 巨黄蜂||巨黄蜂}伤害的巨人或类人生物在遭遇结束时暴露在该疾病下。每次长休结束时，如果他们从上一次长休结束至今都没有使用过驱蚊剂，那么他们就会暴露在该疾病下。",
+				"暴露在该疾病下的巨人或类人生物必须进行一次 {@dc 11} 的体质豁免，豁免失败则被感染。具有天生护甲的生物在该豁免上具优势。受感染的生物在 {@dice 2d6} 小时后表现出症状，包括视力模糊、失去方向感、体温突然下降，无法控制的战栗和牙齿打颤。",
+				"一旦症状开始，受感染的生物在消耗生命骰时回血时，只能获得正常恢复的生命值的一半，并且无法从长休中恢复生命值。被感染的生物的属性检定和攻击检定具劣势。在长休结束后，受感染生物重骰该豁免，豁免成功则摆脱该疾病。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Sight Rot",
+			"name": "腐眼症",
+			"source": "DMG",
+			"page": 257,
+			"srd": true,
+			"reprintedAs": [
+				"腐眼症|XDMG"
+			],
+			"entries": [
+				"腐眼症是一种极度痛苦的传染病。感染的生物眼部将出血不止，并最终失明。",
+				"野兽或类人生物饮用被腐眼症污染的水时必须进行一次{@dc 15}的体质豁免，豁免失败则感染腐眼症。感染1天后，受感染生物的视力开始变得模糊。该生物进行攻击检定和进行依赖视力的属性检定时具有-1减值。在症状出现后的每次长休结束时，此减值都会恶化1点。当减值达到-5时，受害者将陷入{@condition 目盲}状态，直到通过魔法如{@spell 次等复原术}或{@spell 医疗术}恢复视力。",
+				"腐眼症可以用一种生长在沼泽中的稀有花卉\u2014\u2014明目花Eyebright治愈。拥有{@item 草药工具|PHB}熟练项的角色可以花费一小时用明目花制成一剂药膏。在长休前将药膏敷在眼部可以阻止腐眼症恶化。使用三剂药膏后，腐眼症将被治愈。"
+			]
+		},
+		{
+			"ENG_name": "Sight Rot",
+			"name": "腐眼症",
+			"source": "XDMG",
+			"page": 61,
+			"srd52": true,
+			"type": "Magical Contagion",
+			"entries": [
+				"野兽或类人生物在饮用被腐眼症污染的水体时必须进行一次{@dc 15}的体质豁免，豁免失败则陷入{@condition 目盲|XPHB}状态，直至疫病康复。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Fighting the Contagion",
+							"name": "抵抗疫病",
+							"type": "entries",
+							"entries": [
+								"{@spell 医疗术|XPHB}、{@spell 次等复原术|XPHB}及类似魔法可以立即治愈此疫病。一个具有{@item 草药工具|XPHB}熟练的角色可以花费1小时来用该工具制作一份非魔法性的药膏。将药膏涂在一个感染腐眼症的生物的眼睛上后，该疫病的效果将被压制24小时。当该疫病被以此法累计压制72小时（即制作并使用了三份药膏）后，该生物就会康复。"
+							]
+						},
+						{
+							"ENG_name": "Spreading the Contagion",
+							"name": "传播疫病",
+							"type": "entries",
+							"entries": [
+								"任何与腐眼症感染者有皮肤接触的类人生物都必须成功通过一次{@dc 15}的体质豁免，否则也会感染此疫病。豁免成功则该生物在接下来的24小时内不会再因致使其进行豁免的那个特定生物而感染该疫病。"
+							]
+						}
+					]
+				}
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Slimy Doom",
+			"name": "恶心症",
+			"source": "PHB",
+			"page": 227,
+			"entries": [
+				"患者开始不受控地流血。患病生物进行体质检定和体质豁免时具有劣势。另外每当该生物受到伤害时都会陷入{@condition 震慑}状态，直至其下一回合结束。",
+				"{@note 这种疾病可以通过{@spell 疫病术|PHB}法术施加。}"
+			]
+		},
+		{
+			"ENG_name": "Spider Eggs",
+			"name": "蜘蛛卵",
+			"source": "WDMM",
+			"page": 47,
+			"entries": [
+				"如果队伍被击败，稳定下来的角色在{@dice 1d4}小时后醒来，发现自己被困在粘性的网中，悬挂在离地面10英尺处，身体里植入了蜘蛛卵。被困在茧中的角色是{@condition 束缚}状态，可以使用其行动来尝试通过成功进行{@dc 15}力量检定来逃脱。",
+				"植入宿主的蜘蛛卵在{@dice 2d12}小时内孵化，幼蜘蛛在咬出道路时杀死宿主。这种寄生作用像疾病一样。对宿主施放{@spell 次等复原术}法术或类似的魔法可以杀死蜘蛛卵，结束威胁。"
+			]
+		},
+		{
+			"ENG_name": "Super-Tetanus",
+			"name": "超级破伤风",
+			"source": "TftYP",
+			"page": 104,
+			"entries": [
+				"感染超级破伤风的生物会因心脏加速跳动和肌肉痉挛到足以折断骨头的痛苦而痛苦不堪。该生物在每个回合开始时会受到11点（{@damage 2d10}）伤害。如果受害者没有通过其他方式治愈，它可以在每次暴露后每分钟结束时重复进行豁免检定，通过成功的检定来结束效果。"
+			]
+		},
+		{
+			"ENG_name": "The Gnawing Plague",
+			"name": "啮磨鼠疫",
+			"source": "VRGR",
+			"page": 153,
+			"entries": [
+				"啮磨鼠疫，也被称为\"啮疫\"，在黎塞穆洛的任何一个地方都是众所周知的。",
+				{
+					"ENG_name": "Transmission",
+					"name": "传播",
+					"type": "entries",
+					"page": 153,
+					"entries": [
+						"当生物被{@creature 老鼠}、{@creature 巨鼠}、{@creature 鼠群}或{@creature 鼠人}咬伤，或与感染生物发生身体接触时，啮磨鼠疫就会开始传播。"
+					]
+				},
+				{
+					"ENG_name": "Infection",
+					"name": "感染",
+					"type": "entries",
+					"page": 153,
+					"entries": [
+						"感染。暴露于疾病下的生物必须进行一次{@dc 10}的体质豁免，失败则被感染。此豁免的DC可以根据鼠疫传播的严重程度而提高（见后述\"{@book 鼠疫周期|VRGR|3|鼠疫周期}\"）。"
+					]
+				},
+				{
+					"ENG_name": "Symptoms",
+					"name": "症状",
+					"type": "entries",
+					"page": 153,
+					"entries": [
+						"感染生物在{@dice 1d2}天后表现出啮磨鼠疫的病征。感染生物将提升一级{@condition 力竭}，在使用生命骰时只能恢复数值的一半，且长休结束后无法恢复生命值。",
+						"鼠疫的症状包括淋巴结肿大、疲劳、斑点性皮疹、流汗和震颤，尤其是面部震颤。当地人把这种抽搐比作老鼠的嗅探。患者通常会在嘴里放一些皮革碎片以防止牙齿咯咯作响，但他们迟早会咬碎这些碎片。"
+					]
+				},
+				{
+					"ENG_name": "Recovery",
+					"name": "康复",
+					"type": "entries",
+					"page": 154,
+					"entries": [
+						"每次长休结束时，受感染的生物必须进行一次{@dc 10}的体质豁免。豁免失败则提升1级{@condition 力竭}。豁免成功则降低1级{@condition 力竭}。如果一次成功的豁免将受感染生物的{@condition 力竭}降低到1以下，该生物从疾病中康复。"
+					]
+				},
+				{
+					"ENG_name": "Immunity",
+					"name": "免疫",
+					"type": "entries",
+					"page": 154,
+					"entries": [
+						"所有种类的老鼠与鼠人对啮磨鼠疫免疫。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "The Rusting",
+			"name": "锈蚀",
+			"source": "FRAiF",
+			"page": 165,
+			"type": "Magical Contagion",
+			"entries": [
+				"锈蚀表现为一层薄薄的铁质涂层，覆盖在受害者身体表面。当接触湿气时，这种铁质皮肤会腐蚀成锈色斑块。随着锈蚀覆盖受害者，受害者最终会转变为一种名为锈蚀者的生物类型（见{@book 第九章|FRAiF|9}）。",
+				"任何被锈蚀生物所伤或在锈蚀显现区域停留1小时的生物需进行{@dc 10}的体质豁免。构装体和亡灵自动通过此豁免。豁免失败时，该生物将感染锈蚀并遭受以下影响：",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Curse",
+							"name": "诅咒",
+							"type": "item",
+							"entry": "该生物获得1个{@condition 力竭|XPHB}等级并被诅咒。当该生物处于诅咒状态时，完成一次{@variantrule 长休|XPHB}不会降低该生物的{@condition 力竭|XPHB}等级。"
+						},
+						{
+							"ENG_name": "Plated Joints",
+							"name": "板甲关节",
+							"type": "item",
+							"entry": "该生物的{@variantrule 速度|XPHB}缩小了5尺。"
+						},
+						{
+							"ENG_name": "Rusted Fate",
+							"name": "锈蚀命运",
+							"type": "item",
+							"entry": "当一个被诅咒的生物的{@condition 力竭|XPHB}等级达到6时，它不会死亡。相反，该生物会转变为自身生锈的版本；其生物类型变为构装体，并获得{@variantrule 免疫|XPHB}毒素伤害和{@condition 力竭|XPHB}、{@condition 石化|XPHB}以及{@condition 中毒|XPHB}状态的免疫。随后该诅咒对该生物结束。"
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Fighting the Contagion",
+							"name": "抵抗疫病",
+							"type": "entries",
+							"entries": [
+								"每天拂晓，受影响的生物需进行一次{@dc 10}体质豁免检定。若豁免失败，该生物获得1层{@condition 力竭|XPHB}状态，同时更多铁质覆盖其皮肤。若豁免成功，该生物的{@condition 力竭|XPHB}状态等级降低1层。若该生物的{@condition 力竭|XPHB}状态等级降至0，则疫病术对其终止。",
+								"移除诅咒会立即终止该生物身上的疫病术。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Throat Leeches",
+			"name": "咽喉水蛭",
+			"source": "ToA",
+			"page": 40,
+			"entries": [
+				"被称为咽喉水蛭的微小寄生虫会感染楚尔特丛林、沼泽和河流中的水源。任何喝下了受污染的水的巨人或类人生物必须进行一次 {@dc 12} 的体质豁免，豁免失败则感染咽喉水蛭。症状立即发作，包括喉咙发炎和呼吸急促。{@dice 1d6} 小时后，受感染角色提升 1 级{@condition 力竭}，持续至该疾病被治愈为止（下列情况除外）。每次长休结束时，受感染生物必须重骰该豁免。豁免失败则该生物的{@condition 力竭}增加 1 级；豁免成功则该生物的{@condition 力竭}降低 1 级。如果一次成功的豁免使受感染生物的{@condition 力竭}降低至 0，则该生物从该疾病中恢复。",
+				"冒险者可以通过只喝雨水、或经过煮沸的水、或被魔法净化的水来避免感染咽喉水蛭。"
+			],
+			"translator": "不全书"
+		}
+	],
+	"status": [
+		{
+			"ENG_name": "Bloodied",
+			"name": "浴血",
+			"source": "XPHB",
+			"page": 362,
+			"srd52": true,
+			"basicRules2024": true,
+			"entries": [
+				"在一名生物具有的{@variantrule 生命值|XPHB}只有一半或不足一半期间，其处于浴血。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Concentration",
+			"name": "专注",
+			"source": "PHB",
+			"page": 203,
+			"srd": true,
+			"basicRules": true,
+			"reprintedAs": [
+				"专注|XPHB"
+			],
+			"entries": [
+				"某些法术需要你保持{@status 专注}才能保持其魔力的激活。如果你失去了{@status 专注}，法术也将随即终结。",
+				"需要{@status 专注}的法术会在其持续时间条目中说明，同时还会指明为其保持专注情况下法术能持续时间的上限。你可以随时终止你的{@status 专注}（无需动作）。",
+				"常规的活动\u2014\u2014例如移动或攻击\u2014\u2014并不会影响你的{@status 专注}，可以打断你{@status 专注}的因素如下",
+				{
+					"type": "list",
+					"items": [
+						{
+							"ENG_name": "Casting another spell that requires concentration",
+							"name": "施放另一个需要专注的法术",
+							"type": "entries",
+							"entries": [
+								"当你施放另一个需要{@status 专注}的法术时，你失去对当前法术的{@status 专注}。也就是说，你不能同时为两个法术进行专注。"
+							]
+						},
+						{
+							"ENG_name": "Taking damage",
+							"name": "受到伤害",
+							"type": "entries",
+							"entries": [
+								"如果在你{@status 专注||专注于}于法术期间受到了伤害，你必须通过一次体质豁免来维持自己的{@status 专注}。该豁免DC为10或你所受伤害值的一半，以两者中较高值为准。如果你同时从多个不同的来源处受到了伤害（例如箭矢与龙的吐息），你必须分别为每个不同来源的伤害各投一次豁免。"
+							]
+						},
+						{
+							"ENG_name": "Being incapacitated or killed",
+							"name": "陷入失能或死亡",
+							"type": "entries",
+							"entries": [
+								"当你陷入{@condition 失能}状态或死亡时，也会失去当前的{@status 专注}。"
+							]
+						}
+					]
+				},
+				"DM也可以判定你的专注会被某些特定的情况干扰。例如你被暴风雨中掩面而来的巨浪击退时，DM可以要求你进行一次{@dc 10}的体质豁免，以维持你的{@status 专注}不中断。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Concentration",
+			"name": "专注",
+			"source": "XPHB",
+			"page": 363,
+			"srd52": true,
+			"basicRules2024": true,
+			"entries": [
+				"部分法术及其他的效应会在它们的描述中注明其需要维持专注来保持效应激活。如果上述效应的创造者失去了专注，该效应将终止。如果该效应具有最大持续时间，该效应的描述中会写明其创造者最多能维持多久的专注：至多 1 分钟、1 小时乃至其他各种持续时间。创造者可以在任何时间终止它的专注（无需动作）。以下这些情况可以打断你的专注。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Another Concentration Effect",
+							"name": "另一个专注效应",
+							"type": "entries",
+							"entries": [
+								"若你开始施展另一道需要专注的法术，或是开始激活另一个需要专注的效应，你将失去你原本的专注。"
+							]
+						},
+						{
+							"ENG_name": "Damage",
+							"name": "伤害",
+							"type": "entries",
+							"entries": [
+								"当你受到伤害时，必须成功通过一次体质{@variantrule 豁免检定|XPHB|豁免检定}才能维持专注。该次体质豁免的DC等于 10，或者等于你所受伤害的一半（向下取整），两者取高者，DC至高为 30。"
+							]
+						},
+						{
+							"ENG_name": "Incapacitated or Dead",
+							"name": "失能与死亡",
+							"type": "entries",
+							"entries": [
+								"如果你陷入{@condition 失能|XPHB}状态或死亡，你的专注将终止。"
+							]
+						}
+					]
+				}
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Surprised",
+			"name": "突袭",
+			"source": "PHB",
+			"page": 189,
+			"srd": true,
+			"basicRules": true,
+			"reprintedAs": [
+				"突袭|XPHB"
+			],
+			"entries": [
+				"一队冒险者悄悄地包围了匪徒的营地，并从树后跳出来发动攻击。一只{@creature 凝胶方块}在地城的通道滑行，而冒险者们发现时已经有同伴被其吞没。这些情况即为一方遭另一方突袭。",
+				"生物是否遭受突袭由DM作最终判定。如果遭遇双方都不执行隐匿，则双方将直接发现对方的存在而不构成突袭。否则，DM会将躲藏方的敏捷（{@skill 隐匿}）检定结果，与对方每一人的被动感知（{@skill 察觉}）值作对抗。任何没有注意到威胁的角色或怪物，都视为{@status 突袭}。",
+				"被突袭时，你在自已的第一个回合中不能移动或执行任何动作，而且直至该回合结束前都不能执行任何反应。另外，团体中某个生物在其队友没遭突袭时，也可能独自{@status 突袭}。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Surprised",
+			"name": "突袭",
+			"source": "XPHB",
+			"page": 376,
+			"srd52": true,
+			"basicRules2024": true,
+			"entries": [
+				"如果在战斗开始时，生物仍未察觉到危险，该生物就是\"被突袭\"了。被突袭的生物进行的{@variantrule 先攻|XPHB}检定具有{@variantrule 劣势|XPHB}。"
+			],
+			"translator": "不全书"
+		}
+	]
+}

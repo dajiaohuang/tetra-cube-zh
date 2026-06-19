@@ -105,5 +105,5 @@ function GetTable(arr) {
 
 const itemTypes = ["armor", "weapon", "weapon", "wondrous item", "wondrous item", "other"],
     armorTypes = ["studded leather", "breastplate", "half plate", "chain mail", "splint", "plate"],
-    weaponTypes = ["dagger", "greatclub", "handaxe", "javelin", "light hammer", "mace", "quarterstaff", "sickle", "spear", "light crossbow", "shortbow", "battleaxe", "flail", "glaive", "greataxe", "greatsword", "halberd", "lance", "longsword", "maul", "morningstar", "pike", "rapier", "scimitar", "trident", "war pick", "warhammer", "whip", "hand crossbow", "heavy crossbow", "longbow", "net"],
+    weaponTypes = ["dagger", "greatclub", "handaxe", "javelin", ""轻锤"", "mace", "quarterstaff", "sickle", "spear", ""轻型十字弓"", "shortbow", "battleaxe", "flail", "glaive", "greataxe", "greatsword", "halberd", "lance", "longsword", "maul", "morningstar", "pike", "rapier", "scimitar", "trident", "“战戟”", "warhammer", "whip", "“手弩”", ""重型十字弓"", "longbow", "net"],
     otherTypes = ["Instrument", "Ring", "Rod", "Staff", "Wand"]

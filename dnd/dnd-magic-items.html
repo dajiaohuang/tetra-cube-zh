@@ -1,21 +1,20 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <title>D&amp;D 5e Magic Item Generator</title>
-    <link rel="shortcut icon" type="image/x-icon" href="./dndimages/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="css/dnd-style.css">
-    <link rel="stylesheet" type="text/css" href="css/dnd-rwd.css">
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/magic-item-script.js"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145234284-1"></script>
-    <script>
+<meta charset="utf-8"/>
+<title>"D&amp;D 5e 魔法物品生成器"</title>
+<link href="./dndimages/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="css/all.min.css" rel="stylesheet" type="text/css"/>
+<link href="css/dnd-style.css" rel="stylesheet" type="text/css"/>
+<link href="css/dnd-rwd.css" rel="stylesheet" type="text/css"/>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/magic-item-script.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-145234284-1"></script>
+<script>
         window.dataLayer = window.dataLayer || [];
         function gtag() {
             dataLayer.push(arguments);
@@ -23,21 +22,18 @@
         gtag('js', new Date());
         gtag('config', 'UA-145234284-1');
     </script>
-
 </head>
-
 <body id="magic-items-body">
-    <div class="container">
-        <div class="content">
-            <div style="text-align: center;"><a href="dnd-reference.html">PC Options Reference</a> - <a href="dnd-char-gen.html">Character Generator</a> - <b>Magic Item Generator</b> - <a href="dnd-statblock.html">Statblock Generator</a></div><br>
-            <h1>D&amp;D 5e Random Magic Item Generator</h1>
-            <br>
-            <div style="text-align: center;"><button onclick="GenerateHomebrew()">Generate (Tetra's Items)</button> <button onclick="GenerateDMG()">Generate (DMG)</button></div>
-            <br>
-            <div id="magic-items-list" style="min-height: 25rem;"></div>
-            <div class="footer"><a href="https://github.com/Tetra-cube/Tetra-cube.github.io">GitHub Repo</a></div>
-        </div>
-    </div>
+<div class="container">
+<div class="content">
+<div style="text-align: center;"><a href="dnd-reference.html">角色选项参考</a> - <a href="dnd-char-gen.html">"角色生成器"</a> - <b>魔法物品生成器</b> - <a href="dnd-statblock.html">属性块生成器</a></div><br/>
+<h1>"D&amp;D 5e 随机魔法物品生成器"</h1>
+<br/>
+<div style="text-align: center;"><button onclick="GenerateHomebrew()">生成（Tetracube物品）</button> <button onclick="GenerateDMG()">生成 (DMG)</button></div>
+<br/>
+<div id="magic-items-list" style="min-height: 25rem;"></div>
+<div class="footer"><a href="https://github.com/Tetra-cube/Tetra-cube.github.io">GitHub 仓库</a></div>
+</div>
+</div>
 </body>
-
 </html>

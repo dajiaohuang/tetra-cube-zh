@@ -1,265 +1,265 @@
 {
 	"races": [
 		{
-			"name": "Abyssal Tiefling",
+			"name": "深渊语 提夫林",
 			"source": "That Old Black Magic",
-			"link": "https://dnd.wizards.com/articles/unearthed-arcana/old-black-magic"
+			"link": "https://dnd.法师s.com/articles/unearthed-arcana/old-black-magic"
 		},
 		{
-			"name": "Dhampir, Hexblood, and Reborn",
-			"source": "Gothic Lineages",
-			"link": "https://dnd.wizards.com/articles/unearthed-arcana/gothic-lineages"
+			"name": "半血裔, 巫咒之子, and 重生者",
+			"source": "Gothic Line年龄s",
+			"link": "https://dnd.法师s.com/articles/unearthed-arcana/gothic-line年龄s"
 		},
 		{
-			"name": "Elf Subraces: Avariel and Grugach",
-			"source": "Elf Subraces",
-			"link": "https://dnd.wizards.com/articles/unearthed-arcana/elf-subraces"
+			"name": "精灵 子种族s: Avariel and Grugach",
+			"source": "精灵 子种族s",
+			"link": "https://dnd.法师s.com/articles/unearthed-arcana/精灵-子种族s"
 		},
 		{
-			"name": "Revenant Subrace",
+			"name": "Revenant 子种族",
 			"source": "Gothic Heroes",
-			"link": "https://dnd.wizards.com/articles/features/gothic-heroes"
+			"link": "https://dnd.法师s.com/articles/专长ures/gothic-heroes"
 		}
 	],
 	"classes": [
 		{
-			"name": "Bard: College of Satire",
+			"name": "吟游诗人: College of Satire",
 			"source": "Kits of Old",
-			"link": "https://dnd.wizards.com/articles/unearthed-arcana/kits-old"
+			"link": "https://dnd.法师s.com/articles/unearthed-arcana/kits-old"
 		},
 		{
-			"name": "Bard: College of Spirits",
-			"source": "Subclasses, Part 4",
-			"link": "https://dnd.wizards.com/articles/unearthed-arcana/subclasses-part-4"
+			"name": "吟游诗人: College of Spirits",
+			"source": "Sub职业, Part 4",
+			"link": "https://dnd.法师s.com/articles/unearthed-arcana/sub职业-part-4"
 		},
 		{
-			"name": "Cleric: City Domain",
+			"name": "牧师: City Domain",
 			"source": "Modern Magic",
-			"link": "https://dnd.wizards.com/articles/unearthed-arcana/modern-magic"
+			"link": "https://dnd.法师s.com/articles/unearthed-arcana/modern-magic"
 		},
 		{
-			"name": "Cleric: Protection Domain",
-			"source": "Cleric: Divine Domains",
-			"link": "https://dnd.wizards.com/articles/unearthed-arcana/cleric-divine-domains"
+			"name": "牧师: Protection Domain",
+			"source": "牧师: 神圣领域s",
+			"link": "https://dnd.法师s.com/articles/unearthed-arcana/牧师-divine-domains"
 		},
 		{
-			"name": "Druid: Circle of Twilight",
-			"source": "Druid Circles and Wild Shape",
-			"link": "https://dnd.wizards.com/articles/unearthed-arcana/druid-circles-and-wild-shape"
+			"name": "德鲁伊: Circle of Twilight",
+			"source": "德鲁伊结社s and Wild Shape",
+			"link": "https://dnd.法师s.com/articles/unearthed-arcana/德鲁伊-circles-and-wild-shape"
 		},
 		{
-			"name": "Fighter: Brute",
-			"source": "Three Subclasses",
-			"link": "https://dnd.wizards.com/articles/unearthed-arcana/three-subclasses"
+			"name": "战士: Brute",
+			"source": "Three Sub职业",
+			"link": "https://dnd.法师s.com/articles/unearthed-arcana/three-sub职业"
 		},
 		{
-			"name": "Fighter: Monster Hunter",
+			"name": "战士: 怪物 Hunter",
 			"source": "Gothic Heroes",
-			"link": "https://dnd.wizards.com/articles/features/gothic-heroes"
+			"link": "https://dnd.法师s.com/articles/专长ures/gothic-heroes"
 		},
 		{
-			"name": "Fighter: Scout",
+			"name": "战士: Scout",
 			"source": "Kits of Old",
-			"link": "https://dnd.wizards.com/articles/unearthed-arcana/kits-old"
+			"link": "https://dnd.法师s.com/articles/unearthed-arcana/kits-old"
 		},
 		{
-			"name": "Fighter: Sharpshooter",
-			"source": "Fighter: Martial Archetypes",
-			"link": "https://dnd.wizards.com/articles/unearthed-arcana/fighter"
+			"name": "战士: Sharpshooter",
+			"source": "战士: 武术范型s",
+			"link": "https://dnd.法师s.com/articles/unearthed-arcana/战士"
 		},
 		{
-			"name": "Monk: Way of the Ascendant Dragon",
-			"source": "Subclasses, Part 5",
-			"link": "https://dnd.wizards.com/articles/unearthed-arcana/subclasses5"
+			"name": "武僧: Way of the Ascendant 龙类",
+			"source": "Sub职业, Part 5",
+			"link": "https://dnd.法师s.com/articles/unearthed-arcana/sub职业5"
 		},
 		{
-			"name": "Monk: Way of Tranquility",
-			"source": "Monk: Monastic Traditions",
-			"link": "https://dnd.wizards.com/articles/unearthed-arcana/monk-monastic-traditions"
+			"name": "武僧: Way of Tranquility",
+			"source": "武僧: 宗派传统s",
+			"link": "https://dnd.法师s.com/articles/unearthed-arcana/武僧-monastic-traditions"
 		},
 		{
-			"name": "Mystic Class",
-			"source": "Unearthed Arcana Update",
-			"link": "https://dnd.wizards.com/articles/unearthed-arcana/unearthed-arcana-update"
+			"name": "灵能师 Class",
+			"source": "未发掘的奥秘 Update",
+			"link": "https://dnd.法师s.com/articles/unearthed-arcana/unearthed-arcana-update"
 		},
 		{
-			"name": "Paladin: Oath of Treachery",
-			"source": "Paladin: Sacred Oaths",
-			"link": "https://dnd.wizards.com/articles/unearthed-arcana/paladin-sacred-oaths"
+			"name": "圣武士: Oath of Treachery",
+			"source": "圣武士: 圣誓s",
+			"link": "https://dnd.法师s.com/articles/unearthed-arcana/圣武士-sacred-oaths"
 		},
 		{
-			"name": "Alternative Ranger Class",
-			"source": "The Ranger, Revised",
-			"link": "https://dnd.wizards.com/articles/features/unearthed-arcana-ranger-revised"
+			"name": "Alternative 游侠 Class",
+			"source": "The 游侠, Revised",
+			"link": "https://dnd.法师s.com/articles/专长ures/unearthed-arcana-游侠-revised"
 		},
 		{
-			"name": "Ranger: Drakewarden",
-			"source": "Subclasses, Part 5",
-			"link": "https://dnd.wizards.com/articles/unearthed-arcana/subclasses5"
+			"name": "游侠: Drakewarden",
+			"source": "Sub职业, Part 5",
+			"link": "https://dnd.法师s.com/articles/unearthed-arcana/sub职业5"
 		},
 		{
-			"name": "Ranger: Primeval Guardian",
-			"source": "Ranger and Rogue",
-			"link": "https://dnd.wizards.com/articles/unearthed-arcana/ranger-and-rogue"
+			"name": "游侠: Primeval 警卫ian",
+			"source": "游侠 and 游荡者",
+			"link": "https://dnd.法师s.com/articles/unearthed-arcana/游侠-and-游荡者"
 		},
 		{
-			"name": "Sorcerer: Giant Soul",
-			"source": "Giant Soul Sorcerer",
-			"link": "https://dnd.wizards.com/articles/unearthed-arcana/giant-soul-sorcerer"
+			"name": "术士: 巨人 Soul",
+			"source": "巨人 Soul 术士",
+			"link": "https://dnd.法师s.com/articles/unearthed-arcana/giant-soul-术士"
 		},
 		{
-			"name": "Sorcerer: Phoenix Sorcery, Sea Sorcery, Stone Sorcery",
-			"source": "Sorcerer",
-			"link": "https://dnd.wizards.com/articles/unearthed-arcana/sorcerer"
+			"name": "术士: Phoenix S兽人ery, Sea S兽人ery, Stone S兽人ery",
+			"source": "术士",
+			"link": "https://dnd.法师s.com/articles/unearthed-arcana/术士"
 		},
 		{
-			"name": "Warlock: Ghost in the Machine",
+			"name": "邪术师: Ghost in the Machine",
 			"source": "Modern Magic",
-			"link": "https://dnd.wizards.com/articles/unearthed-arcana/modern-magic"
+			"link": "https://dnd.法师s.com/articles/unearthed-arcana/modern-magic"
 		},
 		{
-			"name": "Warlock: The Raven Queen",
-			"source": "Warlock and Wizard",
-			"link": "https://dnd.wizards.com/articles/unearthed-arcana/warlock-and-wizard"
+			"name": "邪术师: The R艾文 Queen",
+			"source": "邪术师 and 法师",
+			"link": "https://dnd.法师s.com/articles/unearthed-arcana/邪术师-and-法师"
 		},
 		{
-			"name": "Warlock: Seeker",
+			"name": "邪术师: Seeker",
 			"source": "The Faithful",
-			"link": "https://dnd.wizards.com/articles/features/faithful"
+			"link": "https://dnd.法师s.com/articles/专长ures/faithful"
 		},
 		{
-			"name": "Warlock: The Undead",
-			"source": "Subclasses, Part 4",
-			"link": "https://dnd.wizards.com/articles/unearthed-arcana/subclasses-part-4"
+			"name": "邪术师: The 亡灵",
+			"source": "Sub职业, Part 4",
+			"link": "https://dnd.法师s.com/articles/unearthed-arcana/sub职业-part-4"
 		},
 		{
-			"name": "Wizard: Onomancy",
-			"source": "Cleric, Druid, and Wizard",
-			"link": "https://dnd.wizards.com/articles/unearthed-arcana/cleric-druid-wizard"
+			"name": "法师: Onomancy",
+			"source": "牧师, 德鲁伊, and 法师",
+			"link": "https://dnd.法师s.com/articles/unearthed-arcana/牧师-德鲁伊-法师"
 		},
 		{
-			"name": "Wizard: Psionics",
-			"source": "Fighter, Rogue, and Wizard",
-			"link": "https://dnd.wizards.com/articles/unearthed-arcana/unearthed-arcana-fighter-rogue-and-wizard"
+			"name": "法师: Psionics",
+			"source": "战士, 游荡者, and 法师",
+			"link": "https://dnd.法师s.com/articles/unearthed-arcana/unearthed-arcana-战士-游荡者-and-法师"
 		},
 		{
-			"name": "Wizard: School of Invention",
-			"source": "Three Subclasses",
-			"link": "https://dnd.wizards.com/articles/unearthed-arcana/three-subclasses"
+			"name": "法师: School of Invention",
+			"source": "Three Sub职业",
+			"link": "https://dnd.法师s.com/articles/unearthed-arcana/three-sub职业"
 		},
 		{
-			"name": "Wizard: Technomancy",
+			"name": "法师: Technomancy",
 			"source": "Modern Magic",
-			"link": "https://dnd.wizards.com/articles/unearthed-arcana/modern-magic"
+			"link": "https://dnd.法师s.com/articles/unearthed-arcana/modern-magic"
 		},
 		{
-			"name": "Wizard: Theurgy",
-			"source": "Wizard Revisited",
-			"link": "https://dnd.wizards.com/articles/unearthed-arcana/wizard-revisited"
+			"name": "法师: Theurgy",
+			"source": "法师 Revisited",
+			"link": "https://dnd.法师s.com/articles/unearthed-arcana/法师-revisited"
 		}
 	],
 	"other": [
 		{
-			"name": "Cantrips & 1st Level Spells",
-			"source": "Starter Spells",
-			"link": "https://dnd.wizards.com/articles/unearthed-arcana/starter-spells"
+			"name": "Cantrips & 1st Level 法术",
+			"source": "星辰ter 法术",
+			"link": "https://dnd.法师s.com/articles/unearthed-arcana/星辰ter-法术"
 		},
 		{
-			"name": "Class Feature Variants",
-			"source": "Class Feature Variants",
-			"link": "https://dnd.wizards.com/articles/unearthed-arcana/class-feature-variants"
+			"name": "Class 专长ure Variants",
+			"source": "Class 专长ure Variants",
+			"link": "https://dnd.法师s.com/articles/unearthed-arcana/class-专长ure-variants"
 		},
 		{
-			"name": "Demon Conjuring Spells",
+			"name": "Demon Conjuring 法术",
 			"source": "That Old Black Magic",
-			"link": "https://dnd.wizards.com/articles/unearthed-arcana/old-black-magic"
+			"link": "https://dnd.法师s.com/articles/unearthed-arcana/old-black-magic"
 		},
 		{
-			"name": "Feats",
-			"source": "Feats",
-			"link": "https://dnd.wizards.com/articles/unearthed-arcana/feats"
+			"name": "专长",
+			"source": "专长",
+			"link": "https://dnd.法师s.com/articles/unearthed-arcana/专长"
 		},
 		{
-			"name": "Fighting Style: Mariner",
-			"source": "Waterborne Adventures",
-			"link": "https://dnd.wizards.com/articles/unearthed-arcana/unearthed-arcana-waterborne-adventures"
+			"name": "Fighting Style: 水手r",
+			"source": "Waterborne 冒险s",
+			"link": "https://dnd.法师s.com/articles/unearthed-arcana/unearthed-arcana-waterborne-冒险s"
 		},
 		{
-			"name": "Fighting Styles: Close Quarters Shooter, Tunnel Fighter",
-			"source": "Unearthed Arcana: Light, Dark, Underdark!",
-			"link": "https://dnd.wizards.com/articles/unearthed-arcana/light-dark-underdark"
+			"name": "Fighting Styles: Close Quarters Shooter, Tunnel 战士",
+			"source": "未发掘的奥秘: Light, Dark, Underdark!",
+			"link": "https://dnd.法师s.com/articles/unearthed-arcana/light-dark-underdark"
 		},
 		{
 			"name": "Modern Campaign Content",
 			"source": "Modern Magic",
-			"link": "https://dnd.wizards.com/articles/unearthed-arcana/modern-magic"
+			"link": "https://dnd.法师s.com/articles/unearthed-arcana/modern-magic"
 		},
 		{
-			"name": "Prestige Classes and Rune Magic",
-			"source": "Prestige Classes and Rune Magic",
-			"link": "https://dnd.wizards.com/articles/features/prestige-classes-and-rune-magic"
+			"name": "Prestige 职业 and Rune Magic",
+			"source": "Prestige 职业 and Rune Magic",
+			"link": "https://dnd.法师s.com/articles/专长ures/prestige-职业-and-rune-magic"
 		},
 		{
-			"name": "Psionic Spells & Feats",
+			"name": "Psionic 法术 & 专长",
 			"source": "Psionic Options Revisited",
-			"link": "https://dnd.wizards.com/articles/unearthed-arcana/psionic-options-revisited"
+			"link": "https://dnd.法师s.com/articles/unearthed-arcana/psionic-options-revisited"
 		},
 		{
 			"name": "Sidekicks",
 			"source": "Sidekicks",
-			"link": "https://dnd.wizards.com/articles/unearthed-arcana/sidekicks"
+			"link": "https://dnd.法师s.com/articles/unearthed-arcana/sidekicks"
 		},
 		{
-			"name": "Skill Feats",
-			"source": "Feats for Skills",
-			"link": "https://dnd.wizards.com/articles/unearthed-arcana/feats-skills"
+			"name": "Skill 专长",
+			"source": "专长 for 技能",
+			"link": "https://dnd.法师s.com/articles/unearthed-arcana/专长-技能"
 		},
 		{
-			"name": "Spells and Magic Tattoos",
-			"source": "Spells and Magic Tattoos",
-			"link": "https://dnd.wizards.com/articles/unearthed-arcana/spells-magic-tattoos"
+			"name": "法术 and Magic Tattoos",
+			"source": "法术 and Magic Tattoos",
+			"link": "https://dnd.法师s.com/articles/unearthed-arcana/法术-magic-tattoos"
 		},
 		{
-			"name": "Warlock Eldritch Inovcations",
-			"source": "Warlock and Wizard",
-			"link": "https://dnd.wizards.com/articles/unearthed-arcana/warlock-and-wizard"
+			"name": "邪术师 Eldritch Inovcations",
+			"source": "邪术师 and 法师",
+			"link": "https://dnd.法师s.com/articles/unearthed-arcana/邪术师-and-法师"
 		},
 		{
-			"name": "Weapon Mastery & Tool Feats",
-			"source": "Feats",
-			"link": "https://dnd.wizards.com/articles/features/feats"
+			"name": "武器 Mastery & Tool 专长",
+			"source": "专长",
+			"link": "https://dnd.法师s.com/articles/专长ures/专长"
 		}
 	],
-	"planeshift": [
+	"计划eshift": [
 		{
-			"name": "Amonkhet",
-			"source": "Plane Shift: Amonkhet",
-			"link": "https://magic.wizards.com/en/articles/archive/feature/plane-shift-amonkhet-2017-07-05"
+			"name": "A武僧het",
+			"source": "异界传送: 阿芒凯",
+			"link": "https://magic.法师s.com/en/articles/archive/专长ure/计划e-shift-a武僧het-2017-07-05"
 		},
 		{
 			"name": "Dominaria",
-			"source": "Plane Shift: Dominaria",
-			"link": "https://magic.wizards.com/en/articles/archive/feature/plane-shift-dominaria-2018-07-31"
+			"source": "异界传送: 多明尼亚",
+			"link": "https://magic.法师s.com/en/articles/archive/专长ure/计划e-shift-dominaria-2018-07-31"
 		},
 		{
 			"name": "Innistrad",
-			"source": "Announcing Plane Shift: Innistrad",
+			"source": "Announcing 异界传送: 依尼翠",
 			"link": "https://www.dragonmag.com/5.0/#!/article/106375/102161027"
 		},
 		{
 			"name": "Ixalan",
-			"source": "Plane Shift: Ixalan",
-			"link": "https://magic.wizards.com/en/articles/archive/feature/plane-shift-ixalan-2018-01-09"
+			"source": "异界传送: 依夏兰",
+			"link": "https://magic.法师s.com/en/articles/archive/专长ure/计划e-shift-ixalan-2018-01-09"
 		},
 		{
 			"name": "Kaladesh",
-			"source": "Plane Shift: Kaladesh",
-			"link": "https://magic.wizards.com/en/articles/archive/feature/plane-shift-kaladesh-2017-02-16"
+			"source": "异界传送: 卡拉德许",
+			"link": "https://magic.法师s.com/en/articles/archive/专长ure/计划e-shift-kaladesh-2017-02-16"
 		},
 		{
 			"name": "Zendikar",
-			"source": "Plane Shift: Zendikar",
-			"link": "https://magic.wizards.com/en/articles/archive/feature/plane-shift-zendikar-2016-04-27"
+			"source": "异界传送: 赞迪卡",
+			"link": "https://magic.法师s.com/en/articles/archive/专长ure/计划e-shift-zendikar-2016-04-27"
 		}
 	]
 }

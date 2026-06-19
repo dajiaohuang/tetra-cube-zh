@@ -172,7 +172,7 @@
 		"humanoid",
 		"monstrosity",
 		"ooze",
-		"plant",
+		"计划t",
 		"undead"
 	],
 	"crs": {
@@ -377,12 +377,12 @@
 	},
 	"defaultPreset": {
 		"slug": "",
-		"name": "Monster",
+		"name": "怪物",
 		"size": "Medium",
-		"type": "humanoid",
+		"type": "类人生物",
 		"subtype": "",
 		"group": null,
-		"alignment": "any alignment",
+		"alignment": "任意阵营",
 		"armor_class": 10,
 		"armor_desc": null,
 		"hit_points": 22,
@@ -422,12 +422,12 @@
 		"document_slug": "systems-reference-document"
 	},
 	"attackTypes": [
-		"melee or ranged weapon attack:",
-		"melee or ranged spell attack:",
-		"melee weapon attack:",
-		"melee spell attack:",
-		"ranged weapon attack:",
-		"ranged spell attack:"
+		"近战或远程武器攻击:",
+		"近战 or 远程 法术攻击:",
+		"近战武器攻击:",
+		"近战 法术攻击:",
+		"远程武器攻击:",
+		"远程 法术攻击:"
 	],
 	"commonAbilities": [
 		{
@@ -439,64 +439,64 @@
 			"desc": null
 		},
 		{
-			"name": "Melee Weapon Attack (STR)",
+			"name": "近战武器攻击 (STR)",
 			"realname": "",
-			"desc": "_Melee Weapon Attack:_ [STR ATK] to hit, reach ??? ft., one target. _Hit:_ [STR ???D???] ??? damage."
+			"desc": "_近战武器攻击:_ [STR ATK] to hit, reach ??? ft., one target. _Hit:_ [STR ???D???] ??? 伤害."
 		},
 		{
-			"name": "Melee Weapon Attack (DEX)",
+			"name": "近战武器攻击 (DEX)",
 			"realname": "",
-			"desc": "_Melee Weapon Attack:_ [DEX ATK] to hit, reach ??? ft., one target. _Hit:_ [DEX ???D???] ??? damage."
+			"desc": "_近战武器攻击:_ [DEX ATK] to hit, reach ??? ft., one target. _Hit:_ [DEX ???D???] ??? 伤害."
 		},
 		{
-			"name": "Melee Spell Attack (INT)",
+			"name": "近战 法术攻击 (INT)",
 			"realname": "",
-			"desc": "_Melee Spell Attack:_ [INT ATK] to hit, reach ??? ft., one target. _Hit:_ [INT ???D???] ??? damage."
+			"desc": "_近战 法术攻击:_ [INT ATK] to hit, reach ??? ft., one target. _Hit:_ [INT ???D???] ??? 伤害."
 		},
 		{
-			"name": "Melee Spell Attack (WIS)",
+			"name": "近战 法术攻击 (WIS)",
 			"realname": "",
-			"desc": "_Melee Spell Attack:_ [WIS ATK] to hit, reach ??? ft., one target. _Hit:_ [WIS ???D???] ??? damage."
+			"desc": "_近战 法术攻击:_ [WIS ATK] to hit, reach ??? ft., one target. _Hit:_ [WIS ???D???] ??? 伤害."
 		},
 		{
-			"name": "Melee Spell Attack (CHA)",
+			"name": "近战 法术攻击 (CHA)",
 			"realname": "",
-			"desc": "_Melee Spell Attack:_ [CHA ATK] to hit, reach ??? ft., one target. _Hit:_ [CHA ???D???] ??? damage."
+			"desc": "_近战 法术攻击:_ [CHA ATK] to hit, reach ??? ft., one target. _Hit:_ [CHA ???D???] ??? 伤害."
 		},
 		{
-			"name": "Ranged Weapon Attack (STR)",
+			"name": "远程武器攻击 (STR)",
 			"realname": "",
-			"desc": "_Ranged Weapon Attack:_ [STR ATK] to hit, range ???/??? ft., one target. _Hit:_ [STR ???D???] ??? damage."
+			"desc": "_远程武器攻击:_ [STR ATK] to hit, range ???/??? ft., one target. _Hit:_ [STR ???D???] ??? 伤害."
 		},
 		{
-			"name": "Ranged Weapon Attack (DEX)",
+			"name": "远程武器攻击 (DEX)",
 			"realname": "",
-			"desc": "_Ranged Weapon Attack:_ [DEX ATK] to hit, range ???/??? ft., one target. _Hit:_ [DEX ???D???] ??? damage."
+			"desc": "_远程武器攻击:_ [DEX ATK] to hit, range ???/??? ft., one target. _Hit:_ [DEX ???D???] ??? 伤害."
 		},
 		{
-			"name": "Ranged Spell Attack (INT)",
+			"name": "远程 法术攻击 (INT)",
 			"realname": "",
-			"desc": "_Ranged Spell Attack:_ [INT ATK] to hit, range ???/??? ft., one target. _Hit:_ [INT ???D???] ??? damage."
+			"desc": "_远程 法术攻击:_ [INT ATK] to hit, range ???/??? ft., one target. _Hit:_ [INT ???D???] ??? 伤害."
 		},
 		{
-			"name": "Ranged Spell Attack (WIS)",
+			"name": "远程 法术攻击 (WIS)",
 			"realname": "",
-			"desc": "_Ranged Spell Attack:_ [WIS ATK] to hit, range ???/??? ft., one target. _Hit:_ [WIS ???D???] ??? damage."
+			"desc": "_远程 法术攻击:_ [WIS ATK] to hit, range ???/??? ft., one target. _Hit:_ [WIS ???D???] ??? 伤害."
 		},
 		{
-			"name": "Ranged Spell Attack (CHA)",
+			"name": "远程 法术攻击 (CHA)",
 			"realname": "",
-			"desc": "_Ranged Spell Attack:_ [CHA ATK] to hit, range ???/??? ft., one target. _Hit:_ [CHA ???D???] ??? damage."
+			"desc": "_远程 法术攻击:_ [CHA ATK] to hit, range ???/??? ft., one target. _Hit:_ [CHA ???D???] ??? 伤害."
 		},
 		{
-			"name": "Melee or Ranged Weapon Attack (STR)",
+			"name": "近战或远程武器攻击 (STR)",
 			"realname": "",
-			"desc": "_Melee or Ranged Weapon Attack:_ [STR ATK] to hit, reach ??? ft. or range ???/??? ft., one target. _Hit:_ [STR ???D???] ??? damage."
+			"desc": "_近战或远程武器攻击:_ [STR ATK] to hit, reach ??? ft. or range ???/??? ft., one target. _Hit:_ [STR ???D???] ??? 伤害."
 		},
 		{
-			"name": "Melee or Ranged Weapon Attack (DEX)",
+			"name": "近战或远程武器攻击 (DEX)",
 			"realname": "",
-			"desc": "_Melee or Ranged Weapon Attack:_ [DEX ATK] to hit, reach ??? ft. or range ???/??? ft., one target. _Hit:_ [DEX ???D???] ??? damage."
+			"desc": "_近战或远程武器攻击:_ [DEX ATK] to hit, reach ??? ft. or range ???/??? ft., one target. _Hit:_ [DEX ???D???] ??? 伤害."
 		},
 		{
 			"name": "",
@@ -510,74 +510,74 @@
 		{
 			"name": "Legendary Resistance",
 			"realname": "Legendary Resistance (3/day)",
-			"desc": "If the [MON] fails a saving throw, it can choose to succeed instead."
+			"desc": "If the [MON] fails a 豁免, it can choose to succeed instead."
 		},
 		{
-			"name": "Spellcasting (INT)",
+			"name": "施法 (INT)",
 			"realname": "Spellcasting",
-			"desc": "The [MON] is a ???-level spellcaster. Its spellcasting ability is Intelligence (spell save DC [INT SAVE], [INT ATK] to hit with spell attacks). The [MON] has the following ??? spells prepared:\n\n> Cantrips (at will): _spell, spell, spell, spell_\n> 1st level (4 slots): _spell, spell, spell_\n> 2nd level (3 slots): _spell, spell, spell_\n> 3rd level (2 slots): _spell, spell_"
+			"desc": "The [MON] is a ???-level spellcaster. Its 施法 ability is 智力 (法术豁免 DC [INT SAVE], [INT ATK] to hit with 法术攻击s). The [MON] has the following ??? 法术 prepared:\n\n> Cantrips (at will): _spell, spell, spell, spell_\n> 1st level (4 slots): _spell, spell, spell_\n> 2nd level (3 slots): _spell, spell, spell_\n> 3rd level (2 slots): _spell, spell_"
 		},
 		{
-			"name": "Spellcasting (WIS)",
+			"name": "施法 (WIS)",
 			"realname": "Spellcasting",
-			"desc": "The [MON] is a ???-level spellcaster. Its spellcasting ability is Wisdom (spell save DC [WIS SAVE], [WIS ATK] to hit with spell attacks). The [MON] has the following ??? spells prepared:\n\n> Cantrips (at will): _spell, spell, spell, spell_\n> 1st level (4 slots): _spell, spell, spell_\n> 2nd level (3 slots): _spell, spell, spell_\n> 3rd level (2 slots): _spell, spell_"
+			"desc": "The [MON] is a ???-level spellcaster. Its 施法 ability is 感知 (法术豁免 DC [WIS SAVE], [WIS ATK] to hit with 法术攻击s). The [MON] has the following ??? 法术 prepared:\n\n> Cantrips (at will): _spell, spell, spell, spell_\n> 1st level (4 slots): _spell, spell, spell_\n> 2nd level (3 slots): _spell, spell, spell_\n> 3rd level (2 slots): _spell, spell_"
 		},
 		{
-			"name": "Spellcasting (CHA)",
+			"name": "施法 (CHA)",
 			"realname": "Spellcasting",
-			"desc": "The [MON] is a ???-level spellcaster. Its spellcasting ability is Charisma (spell save DC [CHA SAVE], [CHA ATK] to hit with spell attacks). The [MON] has the following ??? spells prepared:\n\n> Cantrips (at will): _spell, spell, spell, spell_\n> 1st level (4 slots): _spell, spell, spell_\n> 2nd level (3 slots): _spell, spell, spell_\n> 3rd level (2 slots): _spell, spell_"
+			"desc": "The [MON] is a ???-level spellcaster. Its 施法 ability is 魅力 (法术豁免 DC [CHA SAVE], [CHA ATK] to hit with 法术攻击s). The [MON] has the following ??? 法术 prepared:\n\n> Cantrips (at will): _spell, spell, spell, spell_\n> 1st level (4 slots): _spell, spell, spell_\n> 2nd level (3 slots): _spell, spell, spell_\n> 3rd level (2 slots): _spell, spell_"
 		},
 		{
-			"name": "Innate Spellcasting (INT)",
+			"name": "天生施法 (INT)",
 			"realname": "Innate Spellcasting",
-			"desc": "The [MON]'s innate spellcasting ability is Intelligence (spell save DC [INT SAVE], [INT ATK] to hit with spell attacks). It can innately cast the following spells, requiring no material components:\n\n> At will: _spell, spell, spell_\n> 3/day each: _spell, spell, spell_\n> 1/day each: _spell, spell_"
+			"desc": "The [MON]'s 天生施法 ability is 智力 (法术豁免 DC [INT SAVE], [INT ATK] to hit with 法术攻击s). It can innately cast the following 法术, requiring no material components:\n\n> 随意： _spell, spell, spell_\n> 3/day each: _spell, spell, spell_\n> 1/日 每个 _spell, spell_"
 		},
 		{
-			"name": "Innate Spellcasting (WIS)",
+			"name": "天生施法 (WIS)",
 			"realname": "Innate Spellcasting",
-			"desc": "The [MON]'s innate spellcasting ability is Wisdom (spell save DC [WIS SAVE], [WIS ATK] to hit with spell attacks). It can innately cast the following spells, requiring no material components:\n\n> At will: _spell, spell, spell_\n> 3/day each: _spell, spell, spell_\n> 1/day each: _spell, spell_"
+			"desc": "The [MON]'s 天生施法 ability is 感知 (法术豁免 DC [WIS SAVE], [WIS ATK] to hit with 法术攻击s). It can innately cast the following 法术, requiring no material components:\n\n> 随意： _spell, spell, spell_\n> 3/day each: _spell, spell, spell_\n> 1/日 每个 _spell, spell_"
 		},
 		{
-			"name": "Innate Spellcasting (CHA)",
+			"name": "天生施法 (CHA)",
 			"realname": "Innate Spellcasting",
-			"desc": "The [MON]'s innate spellcasting ability is Charisma (spell save DC [CHA SAVE], [CHA ATK] to hit with spell attacks). It can innately cast the following spells, requiring no material components:\n\n> At will: _spell, spell, spell_\n> 3/day each: _spell, spell, spell_\n> 1/day each: _spell, spell_"
+			"desc": "The [MON]'s 天生施法 ability is 魅力 (法术豁免 DC [CHA SAVE], [CHA ATK] to hit with 法术攻击s). It can innately cast the following 法术, requiring no material components:\n\n> 随意： _spell, spell, spell_\n> 3/day each: _spell, spell, spell_\n> 1/日 每个 _spell, spell_"
 		},
 		{
 			"name": "",
 			"desc": null
 		},
 		{
-			"name": "Aggressive",
-			"desc": "As a bonus action, the [MON] can move up to its speed toward a hostile creature that it can see."
+			"name": "好斗",
+			"desc": "As a 附赠动作, the [MON] can move up to its 速度 toward a 敌对 creature that it can see."
 		},
 		{
-			"name": "Ambusher",
-			"desc": "The [MON] has advantage on attack rolls against any creature it has surprised."
+			"name": "伏击",
+			"desc": "The [MON] has 优势 on 攻击检定s against any creature it has 措手不及."
 		},
 		{
-			"name": "Amorphous",
+			"name": "无定形",
 			"desc": "The [MON] can move through a space as narrow as 1 inch wide without squeezing."
 		},
 		{
-			"name": "Amphibious",
+			"name": "水陆两栖",
 			"desc": "The [MON] can breathe air and water."
 		},
 		{
 			"name": "Angelic Weapons",
-			"desc": "The [MON]'s weapon attacks are magical. When the [MON] hits with any weapon, the weapon deals an extra [???D???] radiant damage (included in the attack)."
+			"desc": "The [MON]'s weapon attacks are magical. When the [MON] hits with any weapon, the weapon deals an extra [???D???] 光耀 伤害 (included in the attack)."
 		},
 		{
 			"name": "Animal Telepathy",
 			"realname": "??? Telepathy",
-			"desc": "The [MON] can magically command any ??? within 120 feet of it, using a limited telepathy."
+			"desc": "The [MON] can magically command any ??? within 120 feet of it, using a 有限感应."
 		},
 		{
 			"name": "Antimagic Susceptibility",
-			"desc": "The [MON] is incapacitated while in the area of an antimagic field. If targeted by dispel magic, the [MON] must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute."
+			"desc": "The [MON] is 失能 while in the area of an antimagic field. If targeted by dispel magic, the [MON] must succeed on a 体质 豁免 against the caster's 法术豁免 DC or fall 昏迷 for 1 minute."
 		},
 		{
 			"name": "Assassinate",
-			"desc": "During its first turn, the [MON] has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the [MON] scores against a surprised creature is a critical hit."
+			"desc": "During its first turn, the [MON] has 优势 on 攻击检定s against any creature that hasn't taken a turn. Any hit the [MON] scores against a 措手不及 creature is a critical hit."
 		},
 		{
 			"name": "Attack (Legendary Action)",
@@ -585,106 +585,106 @@
 			"desc": "The [MON] makes a ??? attack."
 		},
 		{
-			"name": "Aversion to Damage",
+			"name": "Aversion to 伤害",
 			"realname": "Aversion to ???",
-			"desc": "If the [MON] takes ??? damage, it has disadvantage on attack rolls and ability checks until the end of its next turn."
+			"desc": "If the [MON] takes ??? 伤害, it has 劣势 on 攻击检定s and 属性检定s until the end of its next turn."
 		},
 		{
-			"name": "Beast of Burden",
+			"name": "野兽 of Burden",
 			"desc": "The [MON] is considered to be a ??? animal for the purpose of determining its carrying capacity."
 		},
 		{
 			"name": "Berserk",
-			"desc": "Whenever the [MON] starts its turn with ??? hit points or fewer, roll a d6. On a 6, the [MON] goes berserk. On each of its turns while berserk, the [MON] attacks the nearest creature it can see. If no creature is near enough to move to and attack, the [MON] attacks an object, with preference for an object smaller than itself. Once the [MON] goes berserk, it continues to do so until it is destroyed or regains all its hit points."
+			"desc": "Whenever the [MON] 星辰ts its turn with ??? 生命值 or fewer, roll a d6. On a 6, the [MON] goes berserk. On each of its turns while berserk, the [MON] attacks the nearest creature it can see. If no creature is near enough to move to and attack, the [MON] attacks an object, with preference for an object 小型er than its精灵. Once the [MON] goes berserk, it continues to do so until it is destroyed or regains all its 生命值."
 		},
 		{
-			"name": "Blind Senses",
-			"desc": "The [MON] can't use its blindsight while deafened and unable to smell."
+			"name": "Blind 感官",
+			"desc": "The [MON] can't use its 盲视 while 耳聋 and unable to smell."
 		},
 		{
 			"name": "Blood Frenzy",
-			"desc": "The [MON] has advantage on melee attack rolls against any creature that doesn't have all its hit points."
+			"desc": "The [MON] has 优势 on 近战 攻击检定s against any creature that doesn't have all its 生命值."
 		},
 		{
-			"name": "Brave",
-			"desc": "The [MON] has advantage on saving throws against being frightened."
+			"name": "勇气",
+			"desc": "The [MON] has 优势 on 豁免 against being 恐慌."
 		},
 		{
-			"name": "Breath Weapon (Cone, Action)",
+			"name": "吐息武器 (Cone, Action)",
 			"realname": "Breath Weapon (Recharge ???)",
-			"desc": "The [MON] exhales ??? in a ???-foot cone. Each creature in that area must make a DC ??? Dexterity saving throw, taking [???D???] ??? damage on a failed save, or half as much damage on a successful one."
+			"desc": "The [MON] exhales ??? in a ???-foot cone. Each creature in that area must make a DC ??? 敏捷 豁免, taking [???D???] ??? 伤害 on a failed save, or half as much 伤害 on a successful one."
 		},
 		{
-			"name": "Breath Weapon (Line, Action)",
+			"name": "吐息武器 (Line, Action)",
 			"realname": "Breath Weapon (Recharge ???)",
-			"desc": "The [MON] exhales ??? in a ???-foot line that is ??? feet wide. Each creature in that line must make a DC ??? Dexterity saving throw, taking [???D???] ??? damage on a failed save, or half as much damage on a successful one."
+			"desc": "The [MON] exhales ??? in a ???-foot line that is ??? feet wide. Each creature in that line must make a DC ??? 敏捷 豁免, taking [???D???] ??? 伤害 on a failed save, or half as much 伤害 on a successful one."
 		},
 		{
 			"name": "Brute",
-			"desc": "A melee weapon deals one extra die of its damage when the [MON] hits with it (included in the attack)."
+			"desc": "A 近战 weapon deals one extra die of its 伤害 when the [MON] hits with it (included in the attack)."
 		},
 		{
-			"name": "Camouflage",
+			"name": "Camoufl年龄",
 			"realname": "??? Camouflage",
-			"desc": "The [MON] has advantage on Dexterity (Stealth) checks made to hide in ??? terrain."
+			"desc": "The [MON] has 优势 on 敏捷 (隐匿) checks made to 皮甲 in ??? terrain."
 		},
 		{
-			"name": "Change Shape (Dragon, Action)",
+			"name": "Change Shape (龙类, Action)",
 			"realname": "Change Shape",
-			"desc": "The [MON] magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the [MON]'s choice).\nIn a new form, the [MON] retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form."
+			"desc": "The [MON] magically polymorphs into a 类人生物 or beast that has a 挑战等级 no higher than its own, or back into its true form. It reverts to its true form if it dies. Any 装备 it is wearing or carrying is absorbed or borne by the new form (the [MON]'s choice).\nIn a new form, the [MON] retains its 阵营, 生命值, 生命骰, ability to speak, proficiencies, Legendary Resistance, 巢穴动作, and 智力, 感知, and 魅力 scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class 专长ures or 传奇动作 of that form."
 		},
 		{
-			"name": "Change Shape (Humanoid, Action)",
+			"name": "Change Shape (类人生物, Action)",
 			"realname": "Change Shape",
-			"desc": "The [MON] magically polymorphs into a small or medium humanoid, or back into its true form. Its statistics are the same in each form. Any equipment the [MON] is wearing or carrying isn't transformed. If the [MON] dies, it reverts to its true form."
+			"desc": "The [MON] magically polymorphs into a 小型 or 中型 类人生物, or back into its true form. Its statistics are the same in each form. Any 装备 the [MON] is wearing or carrying isn't transformed. If the [MON] dies, it reverts to its true form."
 		},
 		{
-			"name": "Charge",
-			"desc": "If the [MON] moves at least ??? ft. straight toward a target and then hits it with a ??? attack on the same turn, the target takes an extra [???D???] ??? damage. If the target is a creature, it must succeed on a DC ??? Strength saving throw or be knocked prone."
+			"name": "冲锋",
+			"desc": "If the [MON] moves at least ??? ft. straight toward a target and then hits it with a ??? attack on the same turn, the target takes an extra [???D???] ??? 伤害. If the target is a creature, it must succeed on a DC ??? 力量 豁免 or be knocked 倒地."
 		},
 		{
 			"name": "Confer Resistance",
 			"realname": "Confer ??? Resistance",
-			"desc": "The [MON] can grant resistance to ??? damage to anyone riding it."
+			"desc": "The [MON] can grant resistance to ??? 伤害 to anyone riding it."
 		},
 		{
 			"name": "Constrict (Action)",
 			"realname": "Constrict",
-			"desc": "_Melee Weapon Attack:_ [STR ATK] to hit, reach 5 ft., one creature. _Hit:_ [STR ???D???] bludgeoning damage, and the target is grappled (escape DC ???). Until this grapple ends, the creature is restrained, and the [MON] can't constrict another target."
+			"desc": "_近战武器攻击:_ [STR ATK] to hit, reach 5 ft., one creature. _Hit:_ [STR ???D???] 钝击 伤害, and the target is 受擒 (escape DC ???). Until this grapple ends, the creature is 束缚, and the [MON] can't constrict another target."
 		},
 		{
 			"name": "Corrode Metal",
-			"desc": "Any nonmagical weapon made of metal that hits the [MON] corrodes. After dealing damage, the weapon takes a permanent and cumulative -1 penalty to damage rolls. If its penalty drops to -5, the weapon is destroyed. Non magical ammunition made of metal that hits the [MON] is destroyed after dealing damage.\nThe [MON] can eat through 2-inch-thick, nonmagical metal in 1 round."
+			"desc": "Any nonmagical weapon made of metal that hits the [MON] corrodes. After dealing 伤害, the weapon takes a permanent and cumulative -1 penalty to 伤害 rolls. If its penalty 拖放s to -5, the weapon is destroyed. Non magical ammunition made of metal that hits the [MON] is destroyed after dealing 伤害.\nThe [MON] can eat through 2-inch-thick, nonmagical metal in 1 round."
 		},
 		{
 			"name": "Cunning Action",
-			"desc": "On each of its turns, the [MON] can use a bonus action to take the Dash, Disengage, or Hide action."
+			"desc": "On each of its turns, the [MON] can use a 附赠动作 to take the Dash, Diseng年龄, or 皮甲 action."
 		},
 		{
-			"name": "Damage Absorption",
+			"name": "伤害 Absorption",
 			"realname": "??? Absorption",
-			"desc": "Whenever the [MON] is subjected to ??? damage, it takes no damage and instead regains a number of hit points equal to the ??? damage dealt."
+			"desc": "Whenever the [MON] is subjected to ??? 伤害, it takes no 伤害 and instead regains a number of 生命值 equal to the ??? 伤害 dealt."
 		},
 		{
-			"name": "Damage Transfer",
-			"desc": "While it is grappling a creature, the [MON] takes only half the damage dealt to it, and the creature grappled by the [MON] takes the other half."
+			"name": "伤害 Transfer",
+			"desc": "While it is grappling a creature, the [MON] takes only half the 伤害 dealt to it, and the creature 受擒 by the [MON] takes the other half."
 		},
 		{
 			"name": "Dark Devotion",
-			"desc": "The [MON] has advantage on saving throws against being charmed or frightened."
+			"desc": "The [MON] has 优势 on 豁免 against being 魅惑 or 恐慌."
 		},
 		{
 			"name": "Death Burst",
-			"desc": "When the [MON] dies, it explodes in a burst of ???. Each creature within ??? ft. of it must make a DC ??? Dexterity saving throw, taking [???D???] ??? damage on a failed save, or half as much damage on a successful one."
+			"desc": "When the [MON] dies, it explodes in a burst of ???. Each creature within ??? ft. of it must make a DC ??? 敏捷 豁免, taking [???D???] ??? 伤害 on a failed save, or half as much 伤害 on a successful one."
 		},
 		{
 			"name": "Detect (Legendary Action)",
 			"realname": "Detect",
-			"desc": "The [MON] makes a Wisdom (Perception) check."
+			"desc": "The [MON] makes a 感知 (察觉) check."
 		},
 		{
 			"name": "Devil's Sight",
-			"desc": "Magical darkness doesn't impede the devil's darkvision."
+			"desc": "Magical 黑暗 doesn't impede the devil's 黑暗视觉."
 		},
 		{
 			"name": "Divine Awareness",
@@ -692,32 +692,32 @@
 		},
 		{
 			"name": "Divine Eminence",
-			"desc": "As a bonus action, the [MON] can expend a spell slot to cause its melee weapon attacks to magically deal an extra [???D???] radiant damage to a target on a hit. This benefit lasts until the end of the turn. If the [MON] expends a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each level above 1st."
+			"desc": "As a 附赠动作, the [MON] can expend a spell slot to cause its 近战武器攻击s to magically deal an extra [???D???] 光耀 伤害 to a target on a hit. This benefit lasts until the end of the turn. If the [MON] expends a spell slot of 2nd level or higher, the extra 伤害 increases by 1d6 for each level above 1st."
 		},
 		{
-			"name": "Duergar Resilience",
-			"desc": "The duergar has advantage on saving throws against poison, spells, and illusions, as well as to resist being charmed or paralyzed."
+			"name": "灰矮人 Resilience",
+			"desc": "The 灰矮人 has 优势 on 豁免 against poison, 法术, and illusions, as well as to resist being 魅惑 or 麻痹."
 		},
 		{
-			"name": "Dwarven Resilience",
-			"desc": "The dwarf has advantage on saving throws against poison, spells, and illusions, as well as to resist being charmed or paralyzed."
+			"name": "矮人体魄",
+			"desc": "The 矮人 has 优势 on 豁免 against poison, 法术, and illusions, as well as to resist being 魅惑 or 麻痹."
 		},
 		{
-			"name": "Earth Glide",
+			"name": "Earth 滑翔",
 			"desc": "The [MON] can burrow through nonmagical, unworked earth and stone. While doing so, the [MON] doesn't disturb the material it moves through."
 		},
 		{
 			"name": "Echolocation",
-			"desc": "The [MON] can't use its blindsight while deafened."
+			"desc": "The [MON] can't use its 盲视 while 耳聋."
 		},
 		{
-			"name": "Elemental Demise",
-			"desc": "If the [MON] dies, its body disintegrates into ???, leaving behind only equipment the [MON] was wearing or carrying."
+			"name": "元素生物 Demise",
+			"desc": "If the [MON] dies, its body disintegrates into ???, leaving behind only 装备 the [MON] was wearing or carrying."
 		},
 		{
-			"name": "Elemental Form",
+			"name": "元素生物 Form",
 			"realname": "??? Form",
-			"desc": "The [MON] can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing."
+			"desc": "The [MON] can enter a 敌对 creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing."
 		},
 		{
 			"name": "Ephemeral",
@@ -726,31 +726,31 @@
 		{
 			"name": "Etherealness (Action)",
 			"realname": "Etherealness",
-			"desc": "The [MON] magically enters the Ethereal Plane from the Material Plane, or vice versa."
+			"desc": "The [MON] magically enters the 以太位面 from the Material 计划e, or vice versa."
 		},
 		{
 			"name": "Ethereal Jaunt",
-			"desc": "As a bonus action, the [MON] can magically shift from the Material Plane to the Ethereal Plane, or vice versa."
+			"desc": "As a 附赠动作, the [MON] can magically shift from the Material 计划e to the 以太位面, or vice versa."
 		},
 		{
 			"name": "Ethereal Sight",
-			"desc": "The [MON] can see 60 ft. into the Ethereal Plane when it is on the Material Plane, and vice versa."
+			"desc": "The [MON] can see 60 ft. into the 以太位面 when it is on the Material 计划e, and vice versa."
 		},
 		{
 			"name": "Evasion",
-			"desc": "If the [MON] is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the [MON] instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+			"desc": "If the [MON] is subjected to an effect that allows it to make a 敏捷 豁免 to take only half 伤害, the [MON] instead takes no 伤害 if it succeeds on the 豁免, and only half 伤害 if it fails."
 		},
 		{
-			"name": "False Appearance",
+			"name": "False 外表",
 			"desc": "While the [MON] remains motionless, it is indistinguishable from ???."
 		},
 		{
 			"name": "Fear Aura",
-			"desc": "Any creature hostile to the [MON] that starts its turn within ??? feet of the [MON] must make a DC ??? Wisdom saving throw, unless the [MON] is incapacitated. On a failed save, the creature is frightened until the start of its next turn. If a creature's saving throw is successful, the creature is immune to the [MON]'s Fear Aura for the next 24 hours."
+			"desc": "Any creature 敌对 to the [MON] that 星辰ts its turn within ??? feet of the [MON] must make a DC ??? 感知 豁免, unless the [MON] is 失能. On a failed save, the creature is 恐慌 until the 星辰t of its next turn. If a creature's 豁免 is successful, the creature is 免疫 to the [MON]'s Fear Aura for the next 24 hours."
 		},
 		{
-			"name": "Fey Ancestry",
-			"desc": "The [MON] has advantage on saving throws against being charmed, and magic can't put the [MON] to sleep."
+			"name": "妖精血统",
+			"desc": "The [MON] has 优势 on 豁免 against being 魅惑, and magic can't put the [MON] to sleep."
 		},
 		{
 			"name": "Flyby",
@@ -758,311 +758,311 @@
 		},
 		{
 			"name": "Freedom of Movement",
-			"desc": "The [MON] ignores difficult terrain, and magical effects can't reduce its speed or cause it to be restrained. It can spend 5 feet of movement to escape from nonmagical restraints or being grappled."
+			"desc": "The [MON] ignores 困难地形, and magical effects can't reduce its 速度 or cause it to be 束缚. It can spend 5 feet of movement to escape from nonmagical restraints or being 受擒."
 		},
 		{
 			"name": "Frightful Presence (Action)",
 			"realname": "Frightful Presence",
-			"desc": "Each creature of the [MON]'s choice that is within 120 feet of the [MON] and aware of it must succeed on a DC ??? Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the [MON]'s Frightful Presence for the next 24 hours."
+			"desc": "Each creature of the [MON]'s choice that is within 120 feet of the [MON] and aware of it must succeed on a DC ??? 感知 豁免 or become 恐慌 for 1 minute. A creature can repeat the 豁免 at the end of each of its turns, ending the effect on its精灵 on a success. If a creature's 豁免 is successful or the effect ends for it, the creature is 免疫 to the [MON]'s Frightful Presence for the next 24 hours."
 		},
 		{
-			"name": "Gnome Cunning",
-			"desc": "The gnome has advantage on Intelligence, Wisdom, and Charisma saving throws against magic."
+			"name": "侏儒狡黠",
+			"desc": "The 侏儒 has 优势 on 智力, 感知, and 魅力 豁免 against magic."
 		},
 		{
 			"name": "Grappler",
-			"desc": "The [MON] has advantage on attack rolls against any creature grappled by it."
+			"desc": "The [MON] has 优势 on 攻击检定s against any creature 受擒 by it."
 		},
 		{
 			"name": "Healing Touch (Action)",
 			"realname": "Healing Touch (???/day)",
-			"desc": "The [MON] touches another creature. The target magically regains [???D??? + ???] hit points and is freed from any curse, disease, poison, blindness, or deafness."
+			"desc": "The [MON] touches another creature. The target magically regains [???D??? + ???] 生命值 and is freed from any 诅咒, disease, poison, blindness, or deafness."
 		},
 		{
-			"name": "Halfling Nimbleness",
-			"desc": "The halfling can move through the space of any creature that is of a size larger than its own."
+			"name": "半身人灵巧",
+			"desc": "The 半身人 can move through the space of any creature that is of a 体型 大型r than its own."
 		},
 		{
 			"name": "Heated Body",
-			"desc": "A creature that touches the [MON] or hits it with a melee attack while within ??? feet of it takes [???D???] fire damage."
+			"desc": "A creature that touches the [MON] or hits it with a 近战 attack while within ??? feet of it takes [???D???] fire 伤害."
 		},
 		{
 			"name": "Heated Weapons",
-			"desc": "Any metal melee weapon the [MON] wields deals an extra [???D???] fire damage on a hit (included in the attack)."
+			"desc": "Any metal 近战 weapon the [MON] wields deals an extra [???D???] fire 伤害 on a hit (included in the attack)."
 		},
 		{
 			"name": "Hellish Weapons",
-			"desc": "The [MON]'s weapon attacks are magical and deal an extra [???D???] poison damage on a hit (included in the attacks)."
+			"desc": "The [MON]'s weapon attacks are magical and deal an extra [???D???] poison 伤害 on a hit (included in the attacks)."
 		},
 		{
-			"name": "Hold Breath",
+			"name": "屏息",
 			"desc": "The [MON] can hold its breath for ???."
 		},
 		{
 			"name": "Ice Walk",
-			"desc": "The [MON] can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra movement."
+			"desc": "The [MON] can move across and climb icy surfaces without needing to make an 属性检定. Additionally, 困难地形 composed of ice or snow doesn't cost it extra movement."
 		},
 		{
 			"name": "Illumination",
 			"desc": "The [MON] sheds bright light in a ???-foot radius and dim light in an additional ??? ft."
 		},
 		{
-			"name": "Illusory Appearance (Action)",
+			"name": "Illusory 外表 (Action)",
 			"realname": "Illusory Appearance",
-			"desc": "The [MON] covers itself and anything it is wearing or carrying with a magical illusion that makes it look like another creature of its general size and shape. The effect ends if the [MON] takes a bonus action to end it or if it dies.\nThe changes wrought by this effect fail to hold up to physical inspection. For example, the [MON] could appear to have no claws, but someone touching its hand might feel the claws. Otherwise, a creature must take an action to visually inspect the illusion and succeed on a DC ??? Intelligence (Investigation) check to discern that the [MON] is disguised."
+			"desc": "The [MON] covers its精灵 and anything it is wearing or carrying with a magical illusion that makes it look like another creature of its general 体型 and shape. The effect ends if the [MON] takes a 附赠动作 to end it or if it dies.\nThe changes wrought by this effect fail to hold up to physical inspection. For example, the [MON] could appear to have no 爪击, but someone touching its hand might feel the 爪击. Otherwise, a creature must take an action to visually inspect the illusion and succeed on a DC ??? 智力 (调查) check to discern that the [MON] is disguised."
 		},
 		{
 			"name": "Immutable Form",
-			"desc": "The [MON] is immune to any spell or effect that would alter its form."
+			"desc": "The [MON] is 免疫 to any spell or effect that would alter its form."
 		},
 		{
 			"name": "Incorporeal",
-			"desc": "The [MON] can move through other creatures and objects as if they were difficult terrain. It takes [???D???] force damage if it ends its turn inside an object."
+			"desc": "The [MON] can move through other creatures and objects as if they were 困难地形. It takes [???D???] f兽人e 伤害 if it ends its turn inside an object."
 		},
 		{
-			"name": "Innate Spellcasting (Single Spell)",
+			"name": "天生施法 (Single Spell)",
 			"realname": "Innate Spellcasting (???/Day)",
-			"desc": "The [MON] can innately cast ??? (spell save DC ???), requiring no material components. Its innate spellcasting ability is ???."
+			"desc": "The [MON] can innately cast ??? (法术豁免 DC ???), requiring no material components. Its 天生施法 ability is ???."
 		},
 		{
 			"name": "Inscrutable",
-			"desc": "The [MON] is immune to any effect that would sense its emotions or read its thoughts, as well as any divination spell that it refuses. Wisdom (Insight) checks made to ascertain the [MON]'s intentions or sincerity have disadvantage."
+			"desc": "The [MON] is 免疫 to any effect that would sense its emotions or read its thoughts, as well as any divination spell that it refuses. 感知 (洞悉) checks made to ascertain the [MON]'s intentions or sincerity have 劣势."
 		},
 		{
-			"name": "Invisibility (Action)",
+			"name": "隐形 (Action)",
 			"realname": "Invisibility",
-			"desc": "The [MON] magically turns invisible until it attacks or casts a spell, or until its concentration ends (as if concentrating on a spell). Any equipment the [MON] wears or carries is invisible with it."
+			"desc": "The [MON] magically turns 隐形 until it attacks or casts a spell, or until its 专注 ends (as if concentrating on a spell). Any 装备 the [MON] wears or carries is 隐形 with it."
 		},
 		{
-			"name": "Invisibility (Permanent)",
+			"name": "隐形 (Permanent)",
 			"realname": "Invisibility",
-			"desc": "The [MON] is invisible."
+			"desc": "The [MON] is 隐形."
 		},
 		{
 			"name": "Keen Hearing",
-			"desc": "The [MON] has advantage on Wisdom (Perception) checks that rely on hearing."
+			"desc": "The [MON] has 优势 on 感知 (察觉) checks that rely on hearing."
 		},
 		{
 			"name": "Keen Sight",
-			"desc": "The [MON] has advantage on Wisdom (Perception) checks that rely on sight."
+			"desc": "The [MON] has 优势 on 感知 (察觉) checks that rely on sight."
 		},
 		{
-			"name": "Keen Smell",
-			"desc": "The [MON] has advantage on Wisdom (Perception) checks that rely on smell."
+			"name": "敏锐嗅觉",
+			"desc": "The [MON] has 优势 on 感知 (察觉) checks that rely on smell."
 		},
 		{
 			"name": "Keen Hearing and Sight",
-			"desc": "The [MON] has advantage on Wisdom (Perception) checks that rely on hearing or sight."
+			"desc": "The [MON] has 优势 on 感知 (察觉) checks that rely on hearing or sight."
 		},
 		{
-			"name": "Keen Hearing and Smell",
-			"desc": "The [MON] has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+			"name": "敏锐嗅听觉",
+			"desc": "The [MON] has 优势 on 感知 (察觉) checks that rely on hearing or smell."
 		},
 		{
 			"name": "Keen Sight and Smell",
-			"desc": "The [MON] has advantage on Wisdom (Perception) checks that rely on sight or smell."
+			"desc": "The [MON] has 优势 on 感知 (察觉) checks that rely on sight or smell."
 		},
 		{
-			"name": "Labyrinthine Recall",
+			"name": "迷宫追忆",
 			"desc": "The [MON] can perfectly recall any path it has traveled."
 		},
 		{
 			"name": "Leadership (Action)",
 			"realname": "Leadership (Recharges after a Short or Long Rest)",
-			"desc": "For 1 minute, the [MON] can utter a special command or warning whenever a nonhostile creature that it can see within 30 ft. of it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the [MON]. A creature can benefit from only one Leadership die at a time. This effect ends if the [MON] is incapacitated."
+			"desc": "For 1 minute, the [MON] can utter a special command or warning whenever a non敌对 creature that it can see within 30 ft. of it makes an 攻击检定 or a 豁免. The creature can add a d4 to its roll provided it can hear and understand the [MON]. A creature can benefit from only one Leadership die at a time. This effect ends if the [MON] is 失能."
 		},
 		{
-			"name": "Life Drain (Action)",
+			"name": "Life 汲取 (Action)",
 			"realname": "Life Drain",
-			"desc": "_Melee Spell Attack:_ +??? to hit, reach ??? ft., one creature. _Hit:_ [???D??? + ???] necrotic damage. The target must succeed on a DC ??? Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the creature finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
+			"desc": "_近战 法术攻击:_ +??? to hit, reach ??? ft., one creature. _Hit:_ [???D??? + ???] 暗蚀 伤害. The target must succeed on a DC ??? 体质 豁免 or its hit point maximum is reduced by an amount equal to the 伤害 taken. This reduction lasts until the creature finishes a 长休. The target dies if this effect reduces its hit point maximum to 0."
 		},
 		{
-			"name": "Limited Amphibiousness",
-			"desc": "The [MON] can breathe air and water, but it needs to be submerged at least once every 4 hours to avoid suffocating."
+			"name": "有限两栖",
+			"desc": "The [MON] can breathe air and water, but it needs to be submerged at least once every 4 hours to a虚空 suffocating."
 		},
 		{
-			"name": "Limited Magic Immunity",
-			"desc": "The [MON] can't be affected or detected by spells of ??? level or lower unless it wishes to be. It has advantage on saving throws against all other spells and magical effects."
+			"name": "Limited Magic 免疫",
+			"desc": "The [MON] can't be affected or detected by 法术 of ??? level or lower unless it wishes to be. It has 优势 on 豁免 against all other 法术 and magical effects."
 		},
 		{
-			"name": "Limited Telepathy",
-			"desc": "The [MON] can magically communicate simple ideas, emotions, and images telepathically with any creature within ??? ft. of it."
+			"name": "有限感应",
+			"desc": "The [MON] can magically communicate simple ideas, emotions, and im年龄s telepathically with any creature within ??? ft. of it."
 		},
 		{
-			"name": "Lucky",
-			"desc": "When the [MON] rolls a 1 on the d20 for an attack roll, ability check, or saving throw, it can reroll the die and must use the new roll."
+			"name": "幸运",
+			"desc": "When the [MON] rolls a 1 on the d20 for an 攻击检定, 属性检定, or 豁免, it can reroll the die and must use the new roll."
 		},
 		{
-			"name": "Magic Resistance",
-			"desc": "The [MON] has advantage on saving throws against spells and other magical effects."
+			"name": "魔法抗性",
+			"desc": "The [MON] has 优势 on 豁免 against 法术 and other magical effects."
 		},
 		{
 			"name": "Magic Weapons",
 			"desc": "The [MON]'s weapon attacks are magical."
 		},
 		{
-			"name": "Martial Advantage",
-			"desc": "Once per turn, the [MON] can deal an extra [???D???] damage to a creature it hits with a weapon attack if that creature is within 5 ft. of an ally of the [MON] that isn't incapacitated."
+			"name": "成军优势",
+			"desc": "Once per turn, the [MON] can deal an extra [???D???] 伤害 to a creature it hits with a weapon attack if that creature is within 5 ft. of an ally of the [MON] that isn't 失能."
 		},
 		{
-			"name": "Mimicry",
-			"desc": "The [MON] can mimic ??? sounds it has heard. A creature that hears the sounds can tell they are imitations with a successful DC ??? Wisdom (Insight) check."
+			"name": "拟声",
+			"desc": "The [MON] can mimic ??? sounds it has heard. A creature that hears the sounds can tell they are imitations with a successful DC ??? 感知 (洞悉) check."
 		},
 		{
-			"name": "Naturally Stealthy",
-			"desc": "The [MON] can attempt to hide even when it is obscured only by a creature that is at least one size larger than itself."
+			"name": "天生善匿",
+			"desc": "The [MON] can attempt to 皮甲 even when it is obscured only by a creature that is at least one 体型 大型r than its精灵."
 		},
 		{
-			"name": "Nimble Escape",
-			"desc": "The [MON] can take the Disengage or Hide action as a bonus action on each of its turns."
+			"name": "迅捷逃逸",
+			"desc": "The [MON] can take the Diseng年龄 or 皮甲 action as a 附赠动作 on each of its turns."
 		},
 		{
-			"name": "Pack Tactics",
-			"desc": "The [MON] has advantage on an attack roll against a creature if at least one of the [MON]'s allies is within 5 ft. of the creature and the ally isn't incapacitated."
+			"name": "集群战术",
+			"desc": "The [MON] has 优势 on an 攻击检定 against a creature if at least one of the [MON]'s allies is within 5 ft. of the creature and the ally isn't 失能."
 		},
 		{
-			"name": "Parry (Reaction)",
+			"name": "Parry (反应)",
 			"realname": "Parry",
-			"desc": "The [MON] adds ??? to its AC against one melee attack that would hit it. To do so, the [MON] must see the attacker and be wielding a melee weapon."
+			"desc": "The [MON] adds ??? to its AC against one 近战 attack that would hit it. To do so, the [MON] must see the attacker and be wielding a 近战 weapon."
 		},
 		{
 			"name": "Petrifying Gaze",
-			"desc": "If a creature starts its turn within ??? ft. of the [MON] and the two of them can see each other, the [MON] can force the creature to make a DC ??? Constitution saving throw if the [MON] isn't incapacitated. On a failed save, the creature magically begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified until freed by the greater restoration spell or other magic.\nA creature that isn't surprised can avert its eyes to avoid the saving throw at the start of its turn. If it does so, it can't see the [MON] until the start of its next turn, when it can avert its eyes again. If it looks at the [MON] in the meantime, it must immediately make the save.\nIf the [MON] sees its reflection within ??? ft. of it in bright light, it is affected by its own gaze."
+			"desc": "If a creature 星辰ts its turn within ??? ft. of the [MON] and the two of them can see each other, the [MON] can f兽人e the creature to make a DC ??? 体质 豁免 if the [MON] isn't 失能. On a failed save, the creature magically begins to turn to stone and is 束缚. It must repeat the 豁免 at the end of its next turn. On a success, the effect ends. On a failure, the creature is 石化 until freed by the greater restoration spell or other magic.\nA creature that isn't 措手不及 can avert its eyes to a虚空 the 豁免 at the 星辰t of its turn. If it does so, it 看不见 the [MON] until the 星辰t of its next turn, when it can avert its eyes again. If it looks at the [MON] in the meantime, it must immediately make the save.\nIf the [MON] sees its reflection within ??? ft. of it in bright light, it is affected by its own gaze."
 		},
 		{
 			"name": "Pounce",
-			"desc": "If the [MON] moves at least ??? ft. straight toward a target and then hits it with a ??? attack on the same turn, the target takes an extra [???D???] ??? damage. If the target is a creature, it must succeed on a DC ??? Strength saving throw or be knocked prone. If the target is prone, the [MON] can make another ??? attack against it as a bonus action."
+			"desc": "If the [MON] moves at least ??? ft. straight toward a target and then hits it with a ??? attack on the same turn, the target takes an extra [???D???] ??? 伤害. If the target is a creature, it must succeed on a DC ??? 力量 豁免 or be knocked 倒地. If the target is 倒地, the [MON] can make another ??? attack against it as a 附赠动作."
 		},
 		{
-			"name": "Rampage",
-			"desc": "When the [MON] reduces a creature to 0 hit points with a melee attack on its turn, the [MON] can take a bonus action to move up to half its speed and make a ??? attack."
+			"name": "横行",
+			"desc": "When the [MON] reduces a creature to 0 生命值 with a 近战 attack on its turn, the [MON] can take a 附赠动作 to move up to half its 速度 and make a ??? attack."
 		},
 		{
 			"name": "Reactive",
-			"desc": "The [MON] can take one reaction on every turn in combat."
+			"desc": "The [MON] can take one 反应 on every turn in 战斗."
 		},
 		{
 			"name": "Read Thoughts (Action)",
 			"realname": "Read Thoughts",
-			"desc": "The [MON] magically reads the surface thoughts of one creature within ??? ft. of it. The effect can penetrate barriers, but 3 ft. of wood or dirt, 2 ft. of stone, 2 inches of metal, or a thin sheet of lead blocks it. While the target is in range, the [MON] can continue reading its thoughts, as long as the [MON]'s concentration isn't broken (as if concentrating on a spell). While reading the target's mind, the [MON] has advantage on Wisdom (Insight) and Charisma (Deception, Intimidation, and Persuasion) checks against the target."
+			"desc": "The [MON] magically reads the surface thoughts of one creature within ??? ft. of it. The effect can penetrate barriers, but 3 ft. of wood or dirt, 2 ft. of stone, 2 inches of metal, or a thin sheet of lead blocks it. While the target is in range, the [MON] can continue reading its thoughts, as long as the [MON]'s 专注 isn't broken (as if concentrating on a spell). While reading the target's mind, the [MON] has 优势 on 感知 (洞悉) and 魅力 (欺瞒, 威吓, and 游说) checks against the target."
 		},
 		{
 			"name": "Reckless",
-			"desc": "At the start of its turn, the [MON] can gain advantage on all melee weapon attack rolls it makes during that turn, but attack rolls against it have advantage until the start of its next turn."
+			"desc": "At the 星辰t of its turn, the [MON] can gain 优势 on all 近战武器攻击 rolls it makes during that turn, but 攻击检定s against it have 优势 until the 星辰t of its next turn."
 		},
 		{
 			"name": "Regeneration",
-			"desc": "The [MON] regains ??? hit points at the start of its turn if it has at least 1 hit point."
+			"desc": "The [MON] regains ??? 生命值 at the 星辰t of its turn if it has at least 1 hit point."
 		},
 		{
 			"name": "Regeneration (Troll)",
 			"realname": "Regeneration",
-			"desc": "The [MON] regains ??? hit points at the start of its turn. If the [MON] takes acid or fire damage, this trait doesn't function at the start of the [MON]'s next turn. The [MON] dies only if it starts its turn with 0 hit points and doesn't regenerate."
+			"desc": "The [MON] regains ??? 生命值 at the 星辰t of its turn. If the [MON] takes acid or fire 伤害, this trait doesn't function at the 星辰t of the [MON]'s next turn. The [MON] dies only if it 星辰ts its turn with 0 生命值 and doesn't regenerate."
 		},
 		{
 			"name": "Relentless",
 			"realname": "Relentless (Recharges after a Short or Long Rest)",
-			"desc": "If the [MON] takes ??? damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead."
+			"desc": "If the [MON] takes ??? 伤害 or less that would reduce it to 0 生命值, it is reduced to 1 hit point instead."
 		},
 		{
 			"name": "Rust Metal",
-			"desc": "Any nonmagical weapon made of metal that hits the [MON] corrodes. After dealing damage, the weapon takes a permanent and cumulative -1 penalty to damage rolls. If its penalty drops to -5, the weapon is destroyed. Non magical ammunition made of metal that hits the [MON] is destroyed after dealing damage."
+			"desc": "Any nonmagical weapon made of metal that hits the [MON] corrodes. After dealing 伤害, the weapon takes a permanent and cumulative -1 penalty to 伤害 rolls. If its penalty 拖放s to -5, the weapon is destroyed. Non magical ammunition made of metal that hits the [MON] is destroyed after dealing 伤害."
 		},
 		{
-			"name": "Savage Attacks",
-			"desc": "When the [MON] scores a critical hit with a melee weapon attack, it can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit."
+			"name": "凶蛮攻击",
+			"desc": "When the [MON] scores a critical hit with a 近战武器攻击, it can roll one of the weapon’s 伤害 dice one additional time and add it to the extra 伤害 of the critical hit."
 		},
 		{
 			"name": "Sense Magic",
-			"desc": "The [MON] senses magic within 120 feet of it at will. This trait otherwise works like the detect magic spell but isn't itself magical."
+			"desc": "The [MON] 感官 magic within 120 feet of it at will. This trait otherwise works like the detect magic spell but isn't its精灵 magical."
 		},
 		{
-			"name": "Shadow Stealth",
-			"desc": "While in dim light or darkness, the [MON] can take the Hide action as a bonus action."
+			"name": "Shadow 隐匿",
+			"desc": "While in dim light or 黑暗, the [MON] can take the 皮甲 action as a 附赠动作."
 		},
 		{
-			"name": "Shapechanger",
-			"desc": "The [MON] can use its action to polymorph into a ???, or back into its true form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+			"name": "变形生物",
+			"desc": "The [MON] can use its action to polymorph into a ???, or back into its true form. Its statistics, other than its 体型, are the same in each form. Any 装备 it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
 		},
 		{
-			"name": "Shapechanger (Lycanthrope)",
+			"name": "变形生物 (Lycanthrope)",
 			"realname": "Shapechanger",
-			"desc": "The [MON] can use its action to polymorph into a ???-humanoid hybrid or into a ???, or back into its true form, which is humanoid. Its statistics, other than its AC, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+			"desc": "The [MON] can use its action to polymorph into a ???-类人生物 hybrid or into a ???, or back into its true form, which is 类人生物. Its statistics, other than its AC, are the same in each form. Any 装备 it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
 		},
 		{
 			"name": "Shielded Mind",
-			"desc": "The [MON] is immune to scrying and to any effect that would sense its emotions, read its thoughts, or detect its location."
+			"desc": "The [MON] is 免疫 to scrying and to any effect that would sense its emotions, read its thoughts, or detect its location."
 		},
 		{
-			"name": "Siege Monster",
-			"desc": "The [MON] deals double damage to objects and structures."
+			"name": "Siege 怪物",
+			"desc": "The [MON] deals double 伤害 to objects and structures."
 		},
 		{
 			"name": "Sneak Attack",
 			"realname": "Sneak Attack (1/Turn)",
-			"desc": "The [MON] deals an extra [???D???] damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 ft. of an ally of the [MON] that isn't incapacitated and the [MON] doesn't have disadvantage on the attack roll."
+			"desc": "The [MON] deals an extra [???D???] 伤害 when it hits a target with a weapon attack and has 优势 on the 攻击检定, or when the target is within 5 ft. of an ally of the [MON] that isn't 失能 and the [MON] doesn't have 劣势 on the 攻击检定."
 		},
 		{
-			"name": "Speak With Plants and Beasts",
-			"desc": "The [MON] can communicate with beasts and plants as if they shared a language."
+			"name": "Speak With 计划ts and Beasts",
+			"desc": "The [MON] can communicate with beasts and 计划ts as if they shared a 语言."
 		},
 		{
-			"name": "Spider Climb",
-			"desc": "The [MON] can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+			"name": "蛛行术",
+			"desc": "The [MON] can climb difficult surfaces, including upside down on ceilings, without needing to make an 属性检定."
 		},
 		{
-			"name": "Split (Reaction)",
+			"name": "Split (反应)",
 			"realname": "Split",
-			"desc": "When a [MON] that is Medium or larger is subjected to lightning or slashing damage, it splits into two new [MON] if it has at least 10 hit points. Each new [MON] has hit points equal to half the original [MON]'s, rounded down. New [MON] are one size smaller than the original [MON]."
+			"desc": "When a [MON] that is 中型 or 大型r is subjected to 闪电 or 挥砍 伤害, it splits into two new [MON] if it has at least 10 生命值. Each new [MON] has 生命值 equal to half the original [MON]'s, rounded down. New [MON] are one 体型 小型er than the original [MON]."
 		},
 		{
-			"name": "Standing Leap",
-			"desc": "The [MON]'s long jump is up to ??? ft. and its high jump is up to ??? ft., with or without a running start."
+			"name": "立定跳远",
+			"desc": "The [MON]'s long jump is up to ??? ft. and its high jump is up to ??? ft., with or without a running 星辰t."
 		},
 		{
 			"name": "Steadfast",
-			"desc": "The [MON] can't be frightened while it can see an allied creature within 30 feet of it."
+			"desc": "The [MON] can't be 恐慌 while it can see an allied creature within 30 feet of it."
 		},
 		{
-			"name": "Sunlight Sensitivity",
-			"desc": "While in sunlight, the [MON] has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+			"name": "日照敏感",
+			"desc": "While in 太阳light, the [MON] has 劣势 on 攻击检定s, as well as on 感知 (察觉) checks that rely on sight."
 		},
 		{
 			"name": "Sure-Footed",
-			"desc": "The [MON] has advantage on Strength and Dexterity saving throws made against effects that would knock it prone."
+			"desc": "The [MON] has 优势 on 力量 and 敏捷 豁免 made against effects that would knock it 倒地."
 		},
 		{
-			"name": "Surprise Attack",
-			"desc": "If the [MON] surprises a creature and hits it with an attack during the first round of combat, the target takes an extra [???D???] damage from the attack."
+			"name": "突袭攻击",
+			"desc": "If the [MON] 出其不意s a creature and hits it with an attack during the first round of 战斗, the target takes an extra [???D???] 伤害 from the attack."
 		},
 		{
 			"name": "Swarm",
-			"desc": "The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a ???. The swarm can't regain hit points or gain temporary hit points."
+			"desc": "The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening 大型 enough for a ???. The swarm can't regain 生命值 or gain temporary 生命值."
 		},
 		{
 			"name": "Teleport (Action or Legendary Action)",
 			"realname": "Teleport",
-			"desc": "The [MON] magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see."
+			"desc": "The [MON] magically teleports, along with any 装备 it is wearing or carrying, up to 120 feet to an unoccupied space it can see."
 		},
 		{
-			"name": "Trampling Charge",
-			"desc": "If the [MON] moves at least ??? ft. straight toward a target and then hits it with a ??? attack on the same turn, the target takes an extra [???D???] ??? damage. If the target is a creature, it must succeed on a DC ??? Strength saving throw or be knocked prone. If the target is prone, the [MON] can make another ??? attack against it as a bonus action."
+			"name": "T攻城槌pling 冲锋",
+			"desc": "If the [MON] moves at least ??? ft. straight toward a target and then hits it with a ??? attack on the same turn, the target takes an extra [???D???] ??? 伤害. If the target is a creature, it must succeed on a DC ??? 力量 豁免 or be knocked 倒地. If the target is 倒地, the [MON] can make another ??? attack against it as a 附赠动作."
 		},
 		{
 			"name": "Tunneler",
-			"desc": "The [MON] can burrow through solid rock at half its burrow speed and leaves a ???-foot-diameter tunnel in its wake."
+			"desc": "The [MON] can burrow through solid rock at half its burrow 速度 and leaves a ???-foot-diameter tunnel in its wake."
 		},
 		{
 			"name": "Turn Resistance",
-			"desc": "The [MON] has advantage on saving throws against any effect that turns undead."
+			"desc": "The [MON] has 优势 on 豁免 against any effect that turns 亡灵."
 		},
 		{
 			"name": "Two-Headed",
-			"desc": "The [MON] has advantage on Wisdom (Perception) checks and on saving throws against being blinded, charmed, deafened, frightened, stunned, and knocked unconscious."
+			"desc": "The [MON] has 优势 on 感知 (察觉) checks and on 豁免 against being 目盲, 魅惑, 耳聋, 恐慌, 震慑, and knocked 昏迷."
 		},
 		{
-			"name": "Undead Fortitude",
-			"desc": "If damage reduces the [MON] to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the [MON] drops to 1 hit point instead."
+			"name": "不死坚韧",
+			"desc": "If 伤害 reduces the [MON] to 0 生命值, it must make a 体质 豁免 with a DC of 5 + the 伤害 taken, unless the 伤害 is 光耀 or from a critical hit. On a success, the [MON] 拖放s to 1 hit point instead."
 		},
 		{
 			"name": "Water Breathing",
@@ -1079,7 +1079,7 @@
 		{
 			"name": "Wing Attack (Legendary Action)",
 			"realname": "Wing Attack (Costs 2 Actions)",
-			"desc": "The [MON] beats its wings. Each creature within ??? ft. of the [MON] must succeed on a DC ??? Dexterity saving throw or take [STR ???D???] bludgeoning damage and be knocked prone. The [MON] can then fly up to half its flying speed."
+			"desc": "The [MON] beats its wings. Each creature within ??? ft. of the [MON] must succeed on a DC ??? 敏捷 豁免 or take [STR ???D???] 钝击 伤害 and be knocked 倒地. The [MON] can then fly up to half its flying 速度."
 		},
 		{
 			"name": "",
@@ -1087,191 +1087,191 @@
 		},
 		{
 			"name": "Battleaxe",
-			"desc": "_Melee Weapon Attack:_ [STR ATK] to hit, reach 5 ft., one target. _Hit:_ [STR 1D8] slashing damage, or [STR 1D10] slashing damage if used with two hands."
+			"desc": "_近战武器攻击:_ [STR ATK] to hit, reach 5 ft., one target. _Hit:_ [STR 1D8] 挥砍 伤害, or [STR 1D10] 挥砍 伤害 if used with two hands."
 		},
 		{
 			"name": "Blowgun",
-			"desc": "_Ranged Weapon Attack:_ [DEX ATK] to hit, range 25/100 ft., one target. _Hit:_ [DEX 1] piercing damage."
+			"desc": "_远程武器攻击:_ [DEX ATK] to hit, range 25/100 ft., one target. _Hit:_ [DEX 1] 穿刺 伤害."
 		},
 		{
 			"name": "Club",
-			"desc": "_Melee Weapon Attack:_ [STR ATK] to hit, reach 5 ft., one target. _Hit:_ [STR 1D4] bludgeoning damage."
+			"desc": "_近战武器攻击:_ [STR ATK] to hit, reach 5 ft., one target. _Hit:_ [STR 1D4] 钝击 伤害."
 		},
 		{
 			"name": "Dagger (STR)",
 			"realname": "Dagger",
-			"desc": "_Melee or Ranged Weapon Attack:_ [STR ATK] to hit, reach 5 ft. or range 20/60 ft., one target. _Hit:_ [STR 1D4] piercing damage."
+			"desc": "_近战或远程武器攻击:_ [STR ATK] to hit, reach 5 ft. or range 20/60 ft., one target. _Hit:_ [STR 1D4] 穿刺 伤害."
 		},
 		{
 			"name": "Dagger (DEX)",
 			"realname": "Dagger",
-			"desc": "_Melee or Ranged Weapon Attack:_ [DEX ATK] to hit, reach 5 ft. or range 20/60 ft., one target. _Hit:_ [DEX 1D4] piercing damage."
+			"desc": "_近战或远程武器攻击:_ [DEX ATK] to hit, reach 5 ft. or range 20/60 ft., one target. _Hit:_ [DEX 1D4] 穿刺 伤害."
 		},
 		{
 			"name": "Dart (STR)",
 			"realname": "Dart",
-			"desc": "_Ranged Weapon Attack:_ [STR ATK] to hit, range 20/60 ft., one target. _Hit:_ [STR 1D4] piercing damage."
+			"desc": "_远程武器攻击:_ [STR ATK] to hit, range 20/60 ft., one target. _Hit:_ [STR 1D4] 穿刺 伤害."
 		},
 		{
 			"name": "Dart (DEX)",
 			"realname": "Dart",
-			"desc": "_Ranged Weapon Attack:_ [DEX ATK] to hit, range 20/60 ft., one target. _Hit:_ [DEX 1D4] piercing damage."
+			"desc": "_远程武器攻击:_ [DEX ATK] to hit, range 20/60 ft., one target. _Hit:_ [DEX 1D4] 穿刺 伤害."
 		},
 		{
 			"name": "Flail",
-			"desc": "_Melee Weapon Attack:_ [STR ATK] to hit, reach 5 ft., one target. _Hit:_ [STR 1D8] bludgeoning damage."
+			"desc": "_近战武器攻击:_ [STR ATK] to hit, reach 5 ft., one target. _Hit:_ [STR 1D8] 钝击 伤害."
 		},
 		{
 			"name": "Glaive",
-			"desc": "_Melee Weapon Attack:_ [STR ATK] to hit, reach 10 ft., one target. _Hit:_ [STR 1D10] slashing damage."
+			"desc": "_近战武器攻击:_ [STR ATK] to hit, reach 10 ft., one target. _Hit:_ [STR 1D10] 挥砍 伤害."
 		},
 		{
 			"name": "Greataxe",
-			"desc": "_Melee Weapon Attack:_ [STR ATK] to hit, reach 5 ft., one target. _Hit:_ [STR 1D12] slashing damage."
+			"desc": "_近战武器攻击:_ [STR ATK] to hit, reach 5 ft., one target. _Hit:_ [STR 1D12] 挥砍 伤害."
 		},
 		{
 			"name": "Greatclub",
-			"desc": "_Melee Weapon Attack:_ [STR ATK] to hit, reach 5 ft., one target. _Hit:_ [STR 1D8] bludgeoning damage."
+			"desc": "_近战武器攻击:_ [STR ATK] to hit, reach 5 ft., one target. _Hit:_ [STR 1D8] 钝击 伤害."
 		},
 		{
 			"name": "Greatsword",
-			"desc": "_Melee Weapon Attack:_ [STR ATK] to hit, reach 5 ft., one target. _Hit:_ [STR 2D6] slashing damage."
+			"desc": "_近战武器攻击:_ [STR ATK] to hit, reach 5 ft., one target. _Hit:_ [STR 2D6] 挥砍 伤害."
 		},
 		{
 			"name": "Halberd",
-			"desc": "_Melee Weapon Attack:_ [STR ATK] to hit, reach 10 ft., one target. _Hit:_ [STR 1D10] slashing damage."
+			"desc": "_近战武器攻击:_ [STR ATK] to hit, reach 10 ft., one target. _Hit:_ [STR 1D10] 挥砍 伤害."
 		},
 		{
 			"name": "Handaxe",
-			"desc": "_Melee or Ranged Weapon Attack:_ [STR ATK] to hit, reach 5 ft. or range 20/60 ft., one target. _Hit:_ [STR 1D6] slashing damage."
+			"desc": "_近战或远程武器攻击:_ [STR ATK] to hit, reach 5 ft. or range 20/60 ft., one target. _Hit:_ [STR 1D6] 挥砍 伤害."
 		},
 		{
 			"name": "Hand Crossbow",
-			"desc": "_Ranged Weapon Attack:_ [DEX ATK] to hit, range 30/120 ft., one target. _Hit:_ [DEX 1D6] piercing damage."
+			"desc": "_远程武器攻击:_ [DEX ATK] to hit, range 30/120 ft., one target. _Hit:_ [DEX 1D6] 穿刺 伤害."
 		},
 		{
 			"name": "Heavy Crossbow",
-			"desc": "_Ranged Weapon Attack:_ [DEX ATK] to hit, range 100/400 ft., one target. _Hit:_ [DEX 1D10] piercing damage."
+			"desc": "_远程武器攻击:_ [DEX ATK] to hit, range 100/400 ft., one target. _Hit:_ [DEX 1D10] 穿刺 伤害."
 		},
 		{
 			"name": "Javelin",
-			"desc": "_Melee or Ranged Weapon Attack:_ [STR ATK] to hit, reach 5 ft. or range 30/120 ft., one target. _Hit:_ [STR 1D6] piercing damage."
+			"desc": "_近战或远程武器攻击:_ [STR ATK] to hit, reach 5 ft. or range 30/120 ft., one target. _Hit:_ [STR 1D6] 穿刺 伤害."
 		},
 		{
 			"name": "Lance",
-			"desc": "_Melee Weapon Attack:_ [STR ATK] to hit, reach 10 ft., one target. _Hit:_ [STR 1D12] piercing damage."
+			"desc": "_近战武器攻击:_ [STR ATK] to hit, reach 10 ft., one target. _Hit:_ [STR 1D12] 穿刺 伤害."
 		},
 		{
 			"name": "Light Crossbow",
-			"desc": "_Ranged Weapon Attack:_ [DEX ATK] to hit, range 80/320 ft., one target. _Hit:_ [DEX 1D8] piercing damage."
+			"desc": "_远程武器攻击:_ [DEX ATK] to hit, range 80/320 ft., one target. _Hit:_ [DEX 1D8] 穿刺 伤害."
 		},
 		{
 			"name": "Light Hammer",
-			"desc": "_Melee or Ranged Weapon Attack:_ [STR ATK] to hit, reach 5 ft. or range 20/60 ft., one target. _Hit:_ [STR 1D4] bludgeoning damage."
+			"desc": "_近战或远程武器攻击:_ [STR ATK] to hit, reach 5 ft. or range 20/60 ft., one target. _Hit:_ [STR 1D4] 钝击 伤害."
 		},
 		{
 			"name": "Longbow",
-			"desc": "_Ranged Weapon Attack:_ [DEX ATK] to hit, range 150/600 ft., one target. _Hit:_ [DEX 1D8] piercing damage."
+			"desc": "_远程武器攻击:_ [DEX ATK] to hit, range 150/600 ft., one target. _Hit:_ [DEX 1D8] 穿刺 伤害."
 		},
 		{
 			"name": "Longsword",
-			"desc": "_Melee Weapon Attack:_ [STR ATK] to hit, reach 5 ft., one target. _Hit:_ [STR 1D8] slashing damage, or [STR 1D10] slashing damage if used with two hands."
+			"desc": "_近战武器攻击:_ [STR ATK] to hit, reach 5 ft., one target. _Hit:_ [STR 1D8] 挥砍 伤害, or [STR 1D10] 挥砍 伤害 if used with two hands."
 		},
 		{
 			"name": "Mace",
-			"desc": "_Melee Weapon Attack:_ [STR ATK] to hit, reach 5 ft., one target. _Hit:_ [STR 1D6] bludgeoning damage."
+			"desc": "_近战武器攻击:_ [STR ATK] to hit, reach 5 ft., one target. _Hit:_ [STR 1D6] 钝击 伤害."
 		},
 		{
 			"name": "Maul",
-			"desc": "_Melee Weapon Attack:_ [STR ATK] to hit, reach 5 ft., one target. _Hit:_ [STR 2D6] bludgeoning damage."
+			"desc": "_近战武器攻击:_ [STR ATK] to hit, reach 5 ft., one target. _Hit:_ [STR 2D6] 钝击 伤害."
 		},
 		{
-			"name": "Morningstar",
-			"desc": "_Melee Weapon Attack:_ [STR ATK] to hit, reach 5 ft., one target. _Hit:_ [STR 1D8] piercing damage."
+			"name": "Morning星辰",
+			"desc": "_近战武器攻击:_ [STR ATK] to hit, reach 5 ft., one target. _Hit:_ [STR 1D8] 穿刺 伤害."
 		},
 		{
 			"name": "Net",
-			"desc": "_Ranged Weapon Attack:_ [DEX ATK] to hit, range 5/15 ft., one Large or smaller creature. _Hit:_ The target is restrained. A creature can use its action to make a DC 10 Strength check to free itself or another creature in a net, ending the effect on a success. Dealing 5 slashing damage to the net (AC 10) frees the target without harming it and destroys the net."
+			"desc": "_远程武器攻击:_ [DEX ATK] to hit, range 5/15 ft., one 大型 or 小型er creature. _Hit:_ The target is 束缚. A creature can use its action to make a DC 10 力量 check to free its精灵 or another creature in a net, ending the effect on a success. Dealing 5 挥砍 伤害 to the net (AC 10) frees the target without harming it and destroys the net."
 		},
 		{
 			"name": "Pike",
-			"desc": "_Melee Weapon Attack:_ [STR ATK] to hit, reach 10 ft., one target. _Hit:_ [STR 1D10] piercing damage."
+			"desc": "_近战武器攻击:_ [STR ATK] to hit, reach 10 ft., one target. _Hit:_ [STR 1D10] 穿刺 伤害."
 		},
 		{
 			"name": "Quarterstaff",
-			"desc": "_Melee Weapon Attack:_ [STR ATK] to hit, reach 5 ft., one target. _Hit:_ [STR 1D6] bludgeoning damage, or [STR 1D8] bludgeoning damage if used with two hands."
+			"desc": "_近战武器攻击:_ [STR ATK] to hit, reach 5 ft., one target. _Hit:_ [STR 1D6] 钝击 伤害, or [STR 1D8] 钝击 伤害 if used with two hands."
 		},
 		{
 			"name": "Rapier (STR)",
 			"realname": "Rapier",
-			"desc": "_Melee Weapon Attack:_ [STR ATK] to hit, reach 5 ft., one target. _Hit:_ [STR 1D8] piercing damage."
+			"desc": "_近战武器攻击:_ [STR ATK] to hit, reach 5 ft., one target. _Hit:_ [STR 1D8] 穿刺 伤害."
 		},
 		{
 			"name": "Rapier (DEX)",
 			"realname": "Rapier",
-			"desc": "_Melee Weapon Attack:_ [DEX ATK] to hit, reach 5 ft., one target. _Hit:_ [DEX 1D8] piercing damage."
+			"desc": "_近战武器攻击:_ [DEX ATK] to hit, reach 5 ft., one target. _Hit:_ [DEX 1D8] 穿刺 伤害."
 		},
 		{
 			"name": "Scimitar (STR)",
 			"realname": "Scimitar",
-			"desc": "_Melee Weapon Attack:_ [STR ATK] to hit, reach 5 ft., one target. _Hit:_ [STR 1D6] slashing damage."
+			"desc": "_近战武器攻击:_ [STR ATK] to hit, reach 5 ft., one target. _Hit:_ [STR 1D6] 挥砍 伤害."
 		},
 		{
 			"name": "Scimitar (DEX)",
 			"realname": "Scimitar",
-			"desc": "_Melee Weapon Attack:_ [DEX ATK] to hit, reach 5 ft., one target. _Hit:_ [DEX 1D6] slashing damage."
+			"desc": "_近战武器攻击:_ [DEX ATK] to hit, reach 5 ft., one target. _Hit:_ [DEX 1D6] 挥砍 伤害."
 		},
 		{
 			"name": "Shortbow",
-			"desc": "_Ranged Weapon Attack:_ [DEX ATK] to hit, range 80/320 ft., one target. _Hit:_ [DEX 1D6] piercing damage."
+			"desc": "_远程武器攻击:_ [DEX ATK] to hit, range 80/320 ft., one target. _Hit:_ [DEX 1D6] 穿刺 伤害."
 		},
 		{
 			"name": "Shortsword (STR)",
 			"realname": "Shortsword",
-			"desc": "_Melee Weapon Attack:_ [STR ATK] to hit, reach 5 ft., one target. _Hit:_ [STR 1D6] piercing damage."
+			"desc": "_近战武器攻击:_ [STR ATK] to hit, reach 5 ft., one target. _Hit:_ [STR 1D6] 穿刺 伤害."
 		},
 		{
 			"name": "Shortsword (DEX)",
 			"realname": "Shortsword",
-			"desc": "_Melee Weapon Attack:_ [DEX ATK] to hit, reach 5 ft., one target. _Hit:_ [DEX 1D6] piercing damage."
+			"desc": "_近战武器攻击:_ [DEX ATK] to hit, reach 5 ft., one target. _Hit:_ [DEX 1D6] 穿刺 伤害."
 		},
 		{
 			"name": "Sickle",
-			"desc": "_Melee Weapon Attack:_ [STR ATK] to hit, reach 5 ft., one target. _Hit:_ [STR 1D4] slashing damage."
+			"desc": "_近战武器攻击:_ [STR ATK] to hit, reach 5 ft., one target. _Hit:_ [STR 1D4] 挥砍 伤害."
 		},
 		{
 			"name": "Sling",
-			"desc": "_Ranged Weapon Attack:_ [DEX ATK] to hit, range 30/120 ft., one target. _Hit:_ [DEX 1D4] bludgeoning damage."
+			"desc": "_远程武器攻击:_ [DEX ATK] to hit, range 30/120 ft., one target. _Hit:_ [DEX 1D4] 钝击 伤害."
 		},
 		{
 			"name": "Spear",
-			"desc": "_Melee or Ranged Weapon Attack:_ [STR ATK] to hit, reach 5 ft. or range 20/60 ft., one target. _Hit:_ [STR 1D6] piercing damage, or [STR 1D8] piercing damage if used with two hands to make a melee attack."
+			"desc": "_近战或远程武器攻击:_ [STR ATK] to hit, reach 5 ft. or range 20/60 ft., one target. _Hit:_ [STR 1D6] 穿刺 伤害, or [STR 1D8] 穿刺 伤害 if used with two hands to make a 近战 attack."
 		},
 		{
 			"name": "Trident",
-			"desc": "_Melee or Ranged Weapon Attack:_ [STR ATK] to hit, reach 5 ft. or range 20/60 ft., one target. _Hit:_ [STR 1D6] piercing damage, or [STR 1D8] piercing damage if used with two hands to make a melee attack."
+			"desc": "_近战或远程武器攻击:_ [STR ATK] to hit, reach 5 ft. or range 20/60 ft., one target. _Hit:_ [STR 1D6] 穿刺 伤害, or [STR 1D8] 穿刺 伤害 if used with two hands to make a 近战 attack."
 		},
 		{
 			"name": "Unarmed Strike",
-			"desc": "_Melee Weapon Attack:_ [STR ATK] to hit, reach 5 ft., one target. _Hit:_ [STR 1] bludgeoning damage."
+			"desc": "_近战武器攻击:_ [STR ATK] to hit, reach 5 ft., one target. _Hit:_ [STR 1] 钝击 伤害."
 		},
 		{
 			"name": "Warhammer",
-			"desc": "_Melee Weapon Attack:_ [STR ATK] to hit, reach 5 ft., one target. _Hit:_ [STR 1D8] bludgeoning damage, or [STR 1D10] bludgeoning damage if used with two hands."
+			"desc": "_近战武器攻击:_ [STR ATK] to hit, reach 5 ft., one target. _Hit:_ [STR 1D8] 钝击 伤害, or [STR 1D10] 钝击 伤害 if used with two hands."
 		},
 		{
 			"name": "War Pick",
-			"desc": "_Melee Weapon Attack:_ [STR ATK] to hit, reach 5 ft., one target. _Hit:_ [STR 1D8] piercing damage."
+			"desc": "_近战武器攻击:_ [STR ATK] to hit, reach 5 ft., one target. _Hit:_ [STR 1D8] 穿刺 伤害."
 		},
 		{
 			"name": "Whip (STR)",
 			"realname": "Whip",
-			"desc": "_Melee Weapon Attack:_ [STR ATK] to hit, reach 10 ft., one target. _Hit:_ [STR 1D4] slashing damage."
+			"desc": "_近战武器攻击:_ [STR ATK] to hit, reach 10 ft., one target. _Hit:_ [STR 1D4] 挥砍 伤害."
 		},
 		{
 			"name": "Whip (DEX)",
 			"realname": "Whip",
-			"desc": "_Melee Weapon Attack:_ [DEX ATK] to hit, reach 10 ft., one target. _Hit:_ [DEX 1D4] slashing damage."
+			"desc": "_近战武器攻击:_ [DEX ATK] to hit, reach 10 ft., one target. _Hit:_ [DEX 1D4] 挥砍 伤害."
 		}
 	]
 }

@@ -1,6 +1,6 @@
 {
 	"Cypher": {
-		"Discovery": [
+		"探索": [
 			{
 				"name": "Adhesion clamps",
 				"page": 276,
@@ -386,7 +386,7 @@
 				"minimumCraftingLevel": 1
 			},
 			{
-				"name": "Machine control implant",
+				"name": "Machine control im计划t",
 				"page": 282,
 				"weight": 1,
 				"levelDie": 6,
@@ -682,7 +682,7 @@
 				"minimumCraftingLevel": 7
 			},
 			{
-				"name": "Telepathy implant",
+				"name": "Telepathy im计划t",
 				"page": 287,
 				"weight": 1,
 				"levelDie": 6,
@@ -1075,7 +1075,7 @@
 				"levelBonus": 6
 			},
 			{
-				"name": "Sustenance implant",
+				"name": "Sustenance im计划t",
 				"page": 185,
 				"weight": 3,
 				"levelDie": 6,
@@ -1463,7 +1463,7 @@
 		]
 	},
 	"Artifact": {
-		"Discovery": [
+		"探索": [
 			{
 				"name": "Amber casement",
 				"page": 292,
@@ -1849,7 +1849,7 @@
 				"minimumCraftingLevel": 1
 			},
 			{
-				"name": "Plant jar",
+				"name": "计划t jar",
 				"page": 299,
 				"weight": 1,
 				"levelDie": 6,
@@ -1857,7 +1857,7 @@
 				"minimumCraftingLevel": 1
 			},
 			{
-				"name": "Poison brain implant",
+				"name": "Poison brain im计划t",
 				"page": 299,
 				"weight": 1,
 				"levelDie": 6,
@@ -2671,7 +2671,7 @@
 		]
 	},
 	"Oddity": {
-		"Discovery": [
+		"探索": [
 			"Crystal that shatters easily but then instantly reforms",
 			"Egg-shaped metallic bauble that occasionally spins and speaks in a language no one knows",
 			"Aerosol can that sprays sparkling paint that hangs in the air",
@@ -2739,7 +2739,7 @@
 			"Two 5-inch (12.7 cm) metal and glass disks that hover around your wrists",
 			"Six small, clear synth bags that can be sealed and are very durable",
 			"Glass orb that always drips perfumed water very slowly",
-			"Jar of sixteen seeds; when planted, each seed grows into a daffodil made of gold in six months",
+			"Jar of sixteen seeds; when 计划ted, each seed grows into a daffodil made of gold in six months",
 			"Rose made of nigh-indestructible glass",
 			"Octagon-shaped amulet that is black during the day and sky blue at night",
 			"Mummified fish with feathered wings in a wooden box",
@@ -3977,7 +3977,7 @@
 				"minimumCraftingLevel": 3
 			},
 			{
-				"name": "Planetary escape pod",
+				"name": "计划etary escape pod",
 				"page": 176,
 				"weight": 3,
 				"minimumCraftingLevel": 5
@@ -4361,7 +4361,7 @@
 				"minimumCraftingLevel": 4
 			},
 			{
-				"name": "Mindspeaking implant",
+				"name": "Mindspeaking im计划t",
 				"page": 41,
 				"weight": 2,
 				"minimumCraftingLevel": 3

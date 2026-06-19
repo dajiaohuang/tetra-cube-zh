@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+translate_dict.json
+result.json
+result2.json
+result3.json
+/tmp/

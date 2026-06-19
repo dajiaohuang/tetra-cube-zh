@@ -1,8 +1,8 @@
 tetrasList = {
-    "appearance": [],
+    "外表": [],
     "aspect": [],
     "quirk": [],
-    "usedBy": [],
+    "适用对象": [],
     "utility": []
 };
 tetrasData = [], bookData = [], items = [];
@@ -28,7 +28,7 @@ function MakeList(arr) {
 $(function () {
     $.getJSON("JSON/tetras-data.json", function (tetrasJson) {
         tetrasData = tetrasJson;
-        tetrasList.appearance = MakeList(tetrasData.appearance);
+        tetrasList.外表 = MakeList(tetrasData.外表);
         tetrasList.aspect = MakeList(tetrasData.aspect);
         tetrasList.quirk = MakeList(tetrasData.quirk);
         tetrasList.usedBy = MakeList(tetrasData.usedBy);
@@ -45,17 +45,17 @@ function GetBooks(arr) {
     let books = [];
     arr.forEach(book => {
         switch (book) {
-            case "Discovery":
-                if ($("#discovery-book").prop("checked"))
-                    books.push("Discovery");
+            case "发现":
+                if ($("#探索-book").prop("checked"))
+                    books.push("发现");
                 break;
-            case "Destiny":
-                if ($("#destiny-book").prop("checked"))
-                    books.push("Destiny");
+            case "描述/微型":
+                if ($("#des微型-book").prop("checked"))
+                    books.push("描述/微型");
                 break;
-            case "Building Tomorrow":
+            case ""构建明天"":
                 if ($("#building-tomorrow-book").prop("checked"))
-                    books.push("Building Tomorrow");
+                    books.push(""构建明天"");
                 break;
         }
     });
@@ -66,60 +66,54 @@ function GenerateTetras() {
     let htmlItem =
         `<div><b>Aspect:</b> ${RandomFromArray(tetrasList.aspect)}</div>
         <div><b>Utility:</b> ${RandomFromArray(tetrasList.utility)}</div>
-        <div><b>Appearance:</b> ${RandomFromArray(tetrasList.appearance)}</div>
+        <div><b>外表:</b> ${RandomFromArray(tetrasList.外表)}</div>
         <div><b>Used by:</b> ${RandomFromArray(tetrasList.usedBy)}</div>
-        <div><b>Quirk:</b> ${RandomFromArray(tetrasList.quirk)}</div>`
+        <div><b>怪癖:</b> ${RandomFromArray(tetrasList.quirk)}</div>`
     AddItem(htmlItem);
 }
 
-function GenerateCypherArtifact(type, isPlan = false) {
-    let books = GetBooks(["Discovery", "Discovery", "Destiny", "Building Tomorrow"]),
+function GenerateCypherArtifact(type, is计划 = false) {
+    let books = GetBooks(["发现", "发现", "描述/微型", ""构建明天""]),
         book = RandomFromArray(books),
         item = RandomFromArray(bookData[type][book]),
         htmlItem =
-            `<div><b>${item.name}${isPlan ? " (plan)" : ""}</b></div>`
+            `<div><b>${item.name}${is计划 ? "（计划）" : ""}</b></div>`
             + (item.levelDie > 0 ?
                 (`<div>Level ${RandomNumber(item.levelDie) + item.levelBonus + 1} ${type} (` +
                     (item.levelBonus > 0 ?
                         `d${item.levelDie} + ${item.levelBonus})</div>` :
                         `d${item.levelDie})`)) :
-                `<div>Level ${item.levelBonus} ${type} (${item.levelBonus})</div>`)
-            + `<div>Minimum Crafting Level: ${item.minimumCraftingLevel}</div>
-                <div>${book} (pg. ${item.page})</div>`;
+                `<div>等级 ${item.levelBonus} ${type} (${item.levelBonus})</div>`)
+            + `<div>最低制作等级：${item.minimumCraftingLevel}</div>`;
     AddItem(htmlItem);
 }
 
 function GenerateOddity() {
-    let htmlItem = `<div><b>${RandomFromArray(bookData["Oddity"]["Discovery"])}</b></div><div>Oddity</div>`;
-    AddItem(htmlItem);
+    let htmlItem = `<div><b>${RandomFromArray(bookData["Oddity"]["探索"])}</b></div><div>奇物</div>`em(htmlItem);
 }
 
-function GenerateOther(type, isPlan = false) {
-    let book = (type == "Biological" || type == "Otherspace") ? "Building Tomorrow" : 
-        RandomFromArray(GetBooks(["Destiny", "Building Tomorrow"]));
+function GenerateOther(type, is计划 = false) {
+    let book = (type == "生物" || type == "异空间") ? ""构建明天"" : 
+        RandomFromArray(GetBooks(["描述/微型", ""构建明天""]));
         item = RandomFromArray(bookData[type][book]),
         htmlItem =
-            `<div><b>${item.name}${isPlan ? " (plan)" : ""}</b></div>
-            <div>${type}</div>
-            <div>Minimum Crafting Level: ${item.minimumCraftingLevel}</div>
-            <div>${book} (pg. ${item.page})</div>`
-    AddItem(htmlItem);
+            `<div><b>${item.name}${is计划 ? " (设计图)" : ""}</b></div>`  AddItem(htmlItem);
 }
 
-function GeneratePlan() {
-    let books = GetBooks(["Discovery", "Discovery", "Destiny", "Building Tomorrow"]),
+function Generate计划() {
+    let books = GetBooks(["发现", "发现", "描述/微型", ""构建明天""]),
         randomArr = [];
-    if(books.includes("Discovery"))
-        randomArr.push("Cypher", "Cypher", "Cypher", "Artifact", "Artifact")
-    if(books.includes("Destiny") || books.includes("Building Tomorrow"))
-        randomArr.push("Cypher", "Cypher", "Cypher", "Artifact", "Artifact",
-            "Installation", "Installation", "Installation", "Installation", "Installation",
-            "Automaton", "Automaton", "Automaton", "Vehicle", "Vehicle");
-    if(books.includes("Building Tomorrow"))
-        randomArr.push("Biological", "Biological", "Otherspace", "Otherspace")
+    if(books.includes("发现"))
+        randomArr.push("密码", "密码", "密码", "神器", "神器")
+    if(books.includes("描述/微型") || books.includes(""构建明天""))
+        randomArr.push("密码", "密码", "密码", "神器", "神器",
+            "设施", "设施", "设施", "设施", "设施",
+            "构装体", "构装体", "构装体", "载具", "载具");
+    if(books.includes(""构建明天""))
+        randomArr.push("生物", "生物", "异空间", "异空间")
     
     let type = RandomFromArray(randomArr);
-    if (type == "Cypher" || type == "Artifact")
+    if (type == "密码" || type == "神器")
         GenerateCypherArtifact(type, true);
     else
         GenerateOther(type, true);
@@ -134,11 +128,11 @@ function AddItem(htmlItem) {
 
 function OnCheck() {
     if ($("input:checkbox:checked").length > 0) {
-        $("#generate-cypher, #generate-artifact, #generate-plan").prop("disabled", false)
+        $("#generate-cypher, #generate-artifact, #generate-计划").prop("disabled", false)
         $("#generate-oddity").prop("disabled",
-            !$("#discovery-book").prop("checked"));
+            !$("#探索-book").prop("checked"));
         $("#generate-installation, #generate-automaton, #generate-vehicle").prop("disabled", 
-            !($("#destiny-book").prop("checked") || $("#building-tomorrow-book").prop("checked")));
+            !($("#des微型-book").prop("checked") || $("#building-tomorrow-book").prop("checked")));
         $("#generate-biological, #generate-otherspace").prop("disabled",
             !$("#building-tomorrow-book").prop("checked"));
     }

@@ -1,79 +1,74 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <title>Statblock printer</title>
-    <link rel="shortcut icon" type="image/x-icon" href="dndimages/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/statblock-style.css">
-    <link rel="stylesheet" type="text/css" href="css/statblock-page-style.css">
-    <link rel="stylesheet" type="text/css" href="css/statblock-print-style.css">
-    <link rel="stylesheet" type="text/css" href="css/dnd-style.css">
-    <link rel="stylesheet" type="text/css" href="css/libre-baskerville.css">
-    <link rel="stylesheet" type="text/css" href="css/noto-sans.css">
-    <link rel="stylesheet" type="text/css" href="css/all.min.css"> <!-- Font Awesome 5.9.0 -->
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/FileSaver.min.js"></script>
-    <script src="js/statblock-script.js"></script>
-    <script src="js/statblock-print-script.js"></script>
+<meta charset="utf-8"/>
+<title>属性块打印机</title>
+<link href="dndimages/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="css/statblock-style.css" rel="stylesheet" type="text/css"/>
+<link href="css/statblock-page-style.css" rel="stylesheet" type="text/css"/>
+<link href="css/statblock-print-style.css" rel="stylesheet" type="text/css"/>
+<link href="css/dnd-style.css" rel="stylesheet" type="text/css"/>
+<link href="css/libre-baskerville.css" rel="stylesheet" type="text/css"/>
+<link href="css/noto-sans.css" rel="stylesheet" type="text/css"/>
+<link href="css/all.min.css" rel="stylesheet" type="text/css"/> <!-- Font Awesome 5.9.0 -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/FileSaver.min.js"></script>
+<script src="js/statblock-script.js"></script>
+<script src="js/statblock-print-script.js"></script>
 </head>
-
 <body id="stat-block-body" style="min-width: 1000px;">
-    <div id="dragndrop-overlay" class="hidden">
-        <div>
-            <span class="fa fa-sign-in-alt fa-rotate-90"></span><br>
-            Drop here
+<div class="hidden" id="dragn拖放-overlay">
+<div>
+<span class="fa fa-sign-in-alt fa-rotate-90"></span><br/>
+            拖拽到这里
         </div>
-    </div>
-    <div class="container" style="text-align: center;">
-        <div class="content">
-            <a href="dnd-statblock.html"><img class="statblock-image" src="dndimages/edit-icon.png">&nbsp;Back to the
+</div>
+<div class="container" style="text-align: center;">
+<div class="content">
+<a href="dnd-statblock.html"><img class="statblock-image" src="dndimages/edit-icon.png"/> Back to the
                 Statblock editor</a>
-            <h1>Statblock printer</h1>
-            <p>Print multiple statblocks on one sheet of paper.</p>
-
-            <button onclick="$('#file-upload').click()">Load Statblock(s)...</button> or drag & drop
-            <input id="file-upload" type="file" onChange="addStatblock()" hidden multiple/>
-            <div id="monster-select-form">SRD/Tome of Beasts statblocks: 
-                <select id="monster-select">
-                    <option value="">-Select-</option>
-                </select> 
-                <button type="button" id="monster-select-button" onclick="loadPreset()">Add</button>
-            </div>
-            <div style="text-align: left; padding-bottom: 25px;">
-                <h3>Included statblocks:</h3>
-                <ul id="statblocks-list"></ul>
-            </div>
-            <h3>Preview</h3>
-            <p><b><i>Note:</i></b> This preview doesn't depict the scale or page layout of the actual print result. Use the
+<h1>属性块打印机</h1>
+<p>在一张纸上打印多个属性块。</p>
+<button onclick="$('#file-upload').click()">加载属性块...</button> 或拖放
+            <input hidden="" id="file-upload" multiple="" onchange="addStatblock()" type="file"/>
+<div id="怪物-选择-form">SRD/百兽之书 属性块： 
+                <select id="怪物-select">
+<option value="">-选择-</option>
+</select>
+<button id="怪物-选择-button" onclick="loadPreset()" type="button">Add</button>
+</div>
+<div style="text-align: left; padding-bottom: 25px;">
+<h3>包含的属性块：</h3>
+<ul id="statblocks-list"></ul>
+</div>
+<h3>Preview</h3>
+<p><b><i>Note:</i></b> 此预览不代表实际打印结果的缩放比例或页面布局。 Use the
                 scale option of your browser's print dialog after pressing "Print".</p>
-            <p><b><i>Hint:</i></b> You can toggle the background graphics of the statblocks in your browser's print dialog.
+<p><b><i>Hint:</i></b> 您可以在浏览器的打印对话框中切换属性块的背景图形。
             </p>
-            <div id="print-options">
-                <input id="monochrome-print-input" type="checkbox" onchange="refresh()">
-                <label for="monochrome-print-input">Monochrome statblocks</label>
-                <br>
-                <input id="save-paper-input" type="checkbox" checked onchange="refresh()">
-                <label for="save-paper-input">Align two adjacent single-column statblocks next to each other</label>
-                <br>
-                <input id="print-margin-check-input" type="checkbox" checked onchange="refresh()">
-                <label for="print-margin-check-input">Margin between the statblocks: </label>
-                <input id="print-margin-input" type="text" value="0.2in" onchange="refresh()">
-                <span class="tooltip">?<span class="tooltiptext">All CSS units like "cm", "mm", "in", "pt", "px"... are supported.<br>See <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/length#absolute_length_units" target="_blank">mdn web docs <span class="fa fa-external-link-alt fa-sm"></span></a> for full reference.</span></span>
-                <br>
-                <button onclick="printBlocks()">Print</button>
-            </div>
-            <div id="print-preview-page">
-                <div id="print-preview">
-                    
-                </div>
-            </div>
-        </div>
-        <div class="footer"><a href="https://github.com/Tetra-cube/Tetra-cube.github.io">GitHub Repo</a></div>
-    </div>
-    </div>
+<div id="print-options">
+<input id="monochrome-print-input" onchange="refresh()" type="checkbox"/>
+<label for="monochrome-print-input">单色属性块</label>
+<br/>
+<input checked="" id="save-paper-input" onchange="refresh()" type="checkbox"/>
+<label for="save-paper-input">对齐两个相邻的单列属性块，使它们并排显示</label>
+<br/>
+<input checked="" id="print-margin-check-input" onchange="refresh()" type="checkbox"/>
+<label for="print-margin-check-input">属性块之间的边距： </label>
+<input id="print-margin-input" onchange="refresh()" type="text" value="0.2in"/>
+<span class="tooltip">?<span class="tooltiptext">所有 CSS 单位如 "cm"、"mm"、"in"、"pt"、"px"... 都被支持。<br/>See <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/length#absolute_length_units" target="_blank">mdn web 文档 <span class="fa fa-external-link-alt fa-sm"></span></a> 以获取完整参考。</span></span>
+<br/>
+<button onclick="printBlocks()">Print</button>
+</div>
+<div id="print-preview-page">
+<div id="print-preview">
+</div>
+</div>
+</div>
+<div class="footer"><a href="https://github.com/Tetra-cube/Tetra-cube.github.io">GitHub 仓库</a></div>
+</div>
 </body>
-
 </html>

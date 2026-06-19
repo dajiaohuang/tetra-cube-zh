@@ -16,16 +16,16 @@ var backgrounds, books, cardsources, classes, life, names, npcs, other, races,
         "all": ["name", "traits", "occupation", "gender", "race", "class", "background", "life"]
     };
 
-// Populate the dropdowns with material from the selected books
-var Dropdowns = {
+// Populate the 拖放downs with material from the selected books
+var 拖放downs = {
     Update: function () {
         BookFunctions.Get();
-        $("#racemenu").html(this.GetDropdownOptions(races));
-        $("#classmenu").html(this.GetDropdownOptions(classes));
-        $("#backgroundmenu").html(this.GetDropdownOptions(backgrounds));
+        $("#racemenu").html(this.Get拖放downOptions(races));
+        $("#classmenu").html(this.Get拖放downOptions(classes));
+        $("#backgroundmenu").html(this.Get拖放downOptions(backgrounds));
     },
 
-    GetDropdownOptions: function (list) {
+    Get拖放downOptions: function (list) {
         let optionsArray = ["<option value=\"Random\">Random</option>"];
         for (let propertyName in list) {
             let item = list[propertyName];
@@ -289,11 +289,11 @@ var Content = {
     },
 
     // Get a random property from an initial object
-    GetRandom: function (item, dropdownVal = "Random") {
-        if (dropdownVal != "Random")
+    GetRandom: function (item, 拖放downVal = "Random") {
+        if (拖放downVal != "Random")
             return {
-                "name": dropdownVal,
-                "content": this.Special(item[dropdownVal])
+                "name": 拖放downVal,
+                "content": this.Special(item[拖放downVal])
             };
         let propsArr = [],
             randomProp;
@@ -329,10 +329,7 @@ var Content = {
         let splitSpecial = special.split("-");
 
         switch (splitSpecial[0]) {
-            case "book": // Remove this item if we don't have the necessary book
-                return BookFunctions.CheckString(splitSpecial[1]) ? specialItem : null;
-
-            case "booksort": // Take a bunch of arrays and make a composite array, discarding data from books we don't have. Then pick randomly from it.
+            case "book": // Remove this item if we don''t have the necessary book't have. Then pick randomly from it.
                 return this.BookSort(specialItem);
 
             case "characteristics": // Output height, weight, appearance, etc
@@ -393,7 +390,7 @@ var Content = {
                     return null;
                 return Random.Array(specialItem._array);
 
-            case "monstrousorigin": // Monster origins
+            case "monstrousorigin": // 怪物 origins
                 return Random.Array(other.monstrousOrigins);
 
             case "backgroundtraits": // For the SCAG backgrounds where the writers were lazy and used personalities from the PHB 
@@ -426,17 +423,17 @@ var Content = {
             case "dimircontacts": // Ravnica Backgrounds, House Dimir is a special case
                 let dimirContacts = {}, secondaryGuild = Random.Array(specialItem._guilds),
                     otherGuildContacts = backgrounds[secondaryGuild.background]["Contacts"]["_guild"];
-                dimirContacts["Dimir Ally"] = Random.Array(specialItem["_dimircontact"]);
-                dimirContacts["Secondary Guild"] = secondaryGuild.name;
-                dimirContacts["Secondary Guild Ally"] = Random.Array(otherGuildContacts);
-                dimirContacts["Secondary Guild Rival"] = Random.Array(otherGuildContacts);
+                dimirContacts[""Dimir盟友""] = Random.Array(specialItem["_dimircontact"]);
+                dimirContacts[""次级公会""] = secondaryGuild.name;
+                dimirContacts[""次要公会盟友""] = Random.Array(otherGuildContacts);
+                dimirContacts[""次要公会对手""] = Random.Array(otherGuildContacts);
                 return dimirContacts;
-            //"Roll an additional Azorius contact; you can decide if the contact is an ally or a rival.",
+            //"“额外掷一次阿佐里乌斯联系人的骰子；你可以决定这个联系人是盟友还是对手。”",
         }
         return specialItem;
     },
 
-    // Remove every array that's non-applicable because we don't have the book, then merge the remaining arrays and pick randomly from them
+    // Remove every array that'不适用，因为我们没有't have the book, then merge the remaining arrays and pick randomly from them
     BookSort: function (specialItem) {
         if (specialItem.hasOwnProperty("_special"))
             delete specialItem._special;
@@ -492,7 +489,7 @@ var Random = {
         return returnArray.join(", ");
     },
 
-    // Roll dice based on a string (eg. '2d6')
+    // Roll dice 基于 a string (eg. '2d6')
     DiceRoll: function (roll) {
         numbers = roll.split("d");
         if (numbers.length == 1)
@@ -700,7 +697,7 @@ var Names = {
         }
     },
 
-    // Return a gendered first name and a last name based on race
+    // Return a gendered first name and a last name 基于 race
     FirstnameLastname: function (names, lastnameType, gender) {
         return this.GetGendered(names, gender) + " " + Random.Array(names[lastnameType]);
     },
@@ -733,7 +730,7 @@ var Names = {
     GetHumanEthnicity: () => (mcEthnicity == "Unknown" ? RandomEthnicity.Get() : mcEthnicity),
 }
 
-// Determine race based on weighted probabilities (ie. more common races are more likely to come up)
+// Determine race 基于 weighted probabilities (ie. more common races are more likely to come up)
 var RaceWeighted = {
     Get: function (pow = 1) {
         let raceWeightList = [], totalWeight = 0;
@@ -878,19 +875,19 @@ var Life = {
                         spouseRace = character.Race.name;
                     else
                         spouseRace = RaceWeighted.Get();
-                    newEvent = "You fell in love or got married to a(n) " + spouseRace.toLowerCase() + " " + Occupation.Get(true).toLowerCase() + ".";
+                    newEvent = ""你爱上或嫁给了一个(n)"" + spouseRace.toLowerCase() + " " + Occupation.Get(true).toLowerCase() + ".";
                     break;
                 case "Friend":
-                    newEvent = "You made a friend of a(n) " + RaceWeighted.Get().toLowerCase() + " " + this.ClassWeighted().toLowerCase() + ".";
+                    newEvent = ""你和一个(n)成为了朋友"" + RaceWeighted.Get().toLowerCase() + " " + this.ClassWeighted().toLowerCase() + ".";
                     break;
                 case "Enemy":
-                    newEvent = "You made an enemy of a(n) " + RaceWeighted.Get().toLowerCase() + " " + this.ClassWeighted().toLowerCase() + ". Roll a d6. An odd number indicates you are to blame for the rift, and an even number indicates you are blameless.";
+                    newEvent = ""你与一名(n)结下了仇怨"" + RaceWeighted.Get().toLowerCase() + " " + this.ClassWeighted().toLowerCase() + "". 投掷一枚d6。奇数表示你对裂痕负有责任，偶数则表示你是无辜的。"";
                     break;
                 case "Job":
-                    newEvent = "You spent time working in a job related to your background. Start the game with an extra 2d6 gp.";
+                    newEvent = ""你在与你的背景相关的工作中度过了一段时间。游戏开始时额外获得2d6金币。"";
                     break;
                 case "Someone Important":
-                    newEvent = "You met an important " + RaceWeighted.Get().toLowerCase() + ", who is " + this.Relationship().toLowerCase() + " towards you.";
+                    newEvent = ""你遇到了一个重要的"" + RaceWeighted.Get().toLowerCase() + "", 是"" + this.Relationship().toLowerCase() + "向你移动。";
                     break;
                 case "Adventure":
                     let rand = Random.Num(100);
@@ -948,27 +945,27 @@ var Life = {
     {
         switch (character.Race.name) {
             case "Half-Elf":
-                return parents == "One parent was an elf and the other was a half-elf." ?
+                return parents == "“其中一个父母是精灵，另一个是半精灵。”" ?
                     Random.Array(["Elf", "Half-Elf"]) :
-                    parents == "One parent was a human and the other was a half-elf." ?
+                    parents == "“一位父母是人类，另一位是半精灵。”" ?
                         Random.Array(["Human", "Half-Elf"]) : "Half-Elf";
             case "Half-Orc":
-                return parents == "One parent was an orc and the other was a half-orc." ?
+                return parents == ""一个父母是兽人，另一个是半兽人。"" ?
                     Random.Array(["Orc", "Half-Orc"]) :
-                    parents == "One parent was an human and the other was a half-orc." ?
+                    parents == "“一个父母是人类，另一个是半兽人。”" ?
                         Random.Array(["Human", "Half-Orc"]) : "Half-Orc";
             case "Tiefling":
-                return parents == "Both parents were humans, their infernal heritage dormant until you came along." ?
+                return parents == ""两人都为人类，他们的恶魔血统在你出现之前一直沉睡着。"" ?
                     Random.Array(["Human", "Human", "Human", "Tiefling"]) :
-                    parents == "One parent was a tiefling and the other was a human." ?
+                    parents == "“一个父母是 Tiefling，另一个是人类。”" ?
                         Random.Array(["Human", "Tiefling"]) : "Tiefling";
             case "Genasi":
-                return parents == "One parent was a genasi and the other was a human." ?
+                return parents == "“一个父母是基因精种，另一个是人类。”" ?
                     Random.Array(["Human", "Genasi"]) :
-                    parents == "Both parents were humans, their elemental heritage dormant until you came along." ?
+                    parents == "“父母都是人类，他们的元素血统在你出现之前一直沉睡。”" ?
                         Random.Array(["Human", "Human", "Human", "Genasi"]) : "Genasi";
             case "Aasimar":
-                return parents == "Both parents were humans, their celestial heritage dormant until you came along." ?
+                return parents == ""双方父母都是人类，他们的天界血统在你出生时才显现。"" ?
                     "Human" : Random.Array(["Human", "Aasimar"]);
         }
         return character.Race.name;
@@ -1022,36 +1019,36 @@ var Life = {
 
     Status: function () {
         let roll = Random.DiceRoll("3d6");
-        return roll < 4 ? "Dead (roll on the Cause of Death table)" :
-            roll < 6 ? "Missing or unknown" :
-                roll < 9 ? "Alive, but doing poorly due to injury, financial trouble, or relationship difficulties" :
-                    roll < 13 ? "Alive and well" :
-                        roll < 16 ? "Alive and quite successful" :
-                            roll < 18 ? "Alive and infamous" :
-                                "Alive and famous";
+        return roll < 4 ? "“死亡（在导致死亡的原因表上掷骰）”" :
+            roll < 6 ? ""缺失或未知"" :
+                roll < 9 ? "“活着，但由于受伤、财务困难或关系问题而表现不佳”" :
+                    roll < 13 ? ""活着且健康"" :
+                        roll < 16 ? "" 生存且非常成功"" :
+                            roll < 18 ? ""活着且臭名昭著"" :
+                                ""活着并且出名了"";
     },
 
     RaisedBy: function () {
         let rand = Random.Num(100);
         return rand < 1 ? "Nobody" :
-            rand < 2 ? "Institution, such as an asylum" :
+            rand < 2 ? ""机构，如精神病院"" :
                 rand < 3 ? "Temple" :
                     rand < 5 ? "Orphanage" :
                         rand < 7 ? "Guardian" :
-                            rand < 15 ? "Paternal or maternal aunt, uncle, or both : or extended family such as a tribe or clan" :
-                                rand < 25 ? "Paternal or maternal grandparent(s)" :
-                                    rand < 35 ? "Adoptive family (same or different race)" :
-                                        rand < 55 ? "Single father or stepfather" :
-                                            rand < 75 ? "Single mother or stepmother" :
+                            rand < 15 ? "“父亲或母亲的姑妈、叔叔或其他亲属：或者部落或氏族等大家庭成员”" :
+                                rand < 25 ? "“父系或母系祖父母”" :
+                                    rand < 35 ? ""收养家庭（同种族或不同种族）"" :
+                                        rand < 55 ? ""单身父亲或继父"" :
+                                            rand < 75 ? ""单身母亲或继母"" :
                                                 "Mother and father";
     },
 
     AbsentParent: function () {
         let rand = Random.Num(4);
-        return rand < 1 ? "Your parent(s) died" :
-            rand < 2 ? "Your parent(s) was/were imprisoned, enslaved, or otherwise taken away" :
-                rand < 3 ? "Your parent(s) abandoned you" :
-                    "Your parent(s) disappeared to an unknown fate";
+        return rand < 1 ? ""你的父母死了"" :
+            rand < 2 ? ""你的父母被监禁、奴役或以其他方式带走"" :
+                rand < 3 ? ""你的父母抛弃了你"" :
+                    ""你的父母失踪了，下落不明"";
     },
 
     Lifestyle: function () {
@@ -1066,26 +1063,26 @@ var Life = {
 
     Home: function (lifeMod) {
         let rand = Random.Num(100) + lifeMod;
-        return rand < 0 ? "On the streets" :
-            rand < 20 ? "Rundown shack" :
-                rand < 30 ? "No permanent residence, you moved around a lot" :
-                    rand < 40 ? "Encampment of village in the wilderness" :
-                        rand < 50 ? "Apartment in a rundown neighborhood" :
+        return rand < 0 ? ""街头流浪"" :
+            rand < 20 ? ""破旧的小屋"" :
+                rand < 30 ? ""没有固定居所，你经常搬家"" :
+                    rand < 40 ? "“野外村庄的营地”" :
+                        rand < 50 ? "“破败街区中的公寓”" :
                             rand < 70 ? "Small house" :
                                 rand < 90 ? "Large house" :
                                     rand < 110 ? "Mansion" :
-                                        "Palace or Castle";
+                                        "“宫殿或城堡”";
     },
 
     Memories: function () {
         let roll = Random.DiceRoll("3d6") + Random.Num(5) - 1;
-        return roll < 4 ? "I am still haunted by my childhood, when I was treated badly by my peers" :
-            roll < 6 ? "I spent most of my childhood alone, with no close friends" :
-                roll < 9 ? "Others saw me as being different or strange, and so I had few companions" :
-                    roll < 13 ? "I had a few close friends and lived an ordinary childhood." :
-                        roll < 16 ? "I had several friends, and my childhood was generally a happy one." :
-                            roll < 18 ? "I always found it easy to make friends, and I loved being around people." :
-                                "Everyone knew who I was, and I had friends everywhere I went.";
+        return roll < 4 ? ""我仍然受到童年时期的困扰，那时我被同龄人欺负得很惨"" :
+            roll < 6 ? ""我大部分童年都是独自一人，没有亲密的朋友"" :
+                roll < 9 ? ""别人认为我与众不同或奇怪，所以我很少有同伴"" :
+                    roll < 13 ? ""我有几个好朋友，并且度过了平凡的童年。"" :
+                        roll < 16 ? ""我有几个朋友，我的童年总体上是快乐的。"" :
+                            roll < 18 ? ""我总是觉得交朋友很容易，我喜欢和人在一起。"" :
+                                "“每个人都知道我是谁，我在哪里都有朋友。”";
     },
 
     Relationship: function () {
@@ -1126,7 +1123,7 @@ $(function () {
             calls--;
             if (calls <= 0) {
                 CharacterType.GetNoCard();
-                Dropdowns.Update();
+                拖放downs.Update();
                 if (generateNew)
                     Generate.All();
                 else {
@@ -1163,7 +1160,7 @@ let Characters = {
         prevCharacters.unshift(Object.assign({}, character));
         if (prevCharacters.length > 25)
             prevCharacters.pop();
-        this.SetDropdown();
+        this.Set拖放down();
     },
     SaveToStorage: function () {
         localStorage.setItem("SavedCharacterData", JSON.stringify(character));
@@ -1175,18 +1172,18 @@ let Characters = {
         SetHTML();
         this.SaveToStorage();
     },
-    SetDropdown: function () {
+    Set拖放down: function () {
         if (prevCharacters.length < 2) return;
-        let options = ["<option value=''>-Select-</option>"];
+        let options = ["<option value=''>-选择-</option>"];
         for (let index = 0; index < prevCharacters.length; index++) {
             let prevCharacter = prevCharacters[index];
             options.push("<option value='" + index + "'>" + prevCharacter.ShortName + ", " + prevCharacter.Race.name + " " + (prevCharacter.type == "npc" ? prevCharacter.Occupation : prevCharacter.Class.name) + "</option>");
         }
-        $("#recent-characters-dropdown").html(options.join(""));
+        $("#recent-characters-拖放down").html(options.join(""));
         $("#recent-characters").show();
     },
-    LoadFromDropdown: function () {
-        let num = $("#recent-characters-dropdown").val();
+    LoadFrom拖放down: function () {
+        let num = $("#recent-characters-拖放down").val();
         if (num != "")
             this.LoadCharacter(prevCharacters[num]);
     }
