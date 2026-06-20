@@ -492,7 +492,7 @@ var Random = {
         return returnArray.join(", ");
     },
 
-    // Roll dice based on a string (eg. '2d6')
+    // Roll dice 基于 a string (eg. '2d6')
     DiceRoll: function (roll) {
         numbers = roll.split("d");
         if (numbers.length == 1)
@@ -700,7 +700,7 @@ var Names = {
         }
     },
 
-    // Return a gendered first name and a last name based on race
+    // Return a gendered first name and a last name 基于 race
     FirstnameLastname: function (names, lastnameType, gender) {
         return this.GetGendered(names, gender) + " " + Random.Array(names[lastnameType]);
     },
@@ -733,7 +733,7 @@ var Names = {
     GetHumanEthnicity: () => (mcEthnicity == "Unknown" ? RandomEthnicity.Get() : mcEthnicity),
 }
 
-// Determine race based on weighted probabilities (ie. more common races are more likely to come up)
+// Determine race 基于 weighted probabilities (ie. more common races are more likely to come up)
 var RaceWeighted = {
     Get: function (pow = 1) {
         let raceWeightList = [], totalWeight = 0;

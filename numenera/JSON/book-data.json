@@ -1,6 +1,6 @@
 {
 	"Cypher": {
-		"Discovery": [
+		"探索": [
 			{
 				"name": "Adhesion clamps",
 				"page": 276,
@@ -786,7 +786,7 @@
 				"minimumCraftingLevel": 5
 			}
 		],
-		"Destiny" : [
+		"命运" : [
 			{
 				"name": "Ablative thrower",
 				"page": 180,
@@ -828,7 +828,7 @@
 				"minimumCraftingLevel": 2
 			},
 			{
-				"name": "Destiny nodule",
+				"name": "命运 nodule",
 				"page": 181,
 				"weight": 4,
 				"levelDie": 6,
@@ -1463,7 +1463,7 @@
 		]
 	},
 	"Artifact": {
-		"Discovery": [
+		"探索": [
 			{
 				"name": "Amber casement",
 				"page": 292,
@@ -2065,7 +2065,7 @@
 				"minimumCraftingLevel": 2
 			}
 		],
-		"Destiny": [
+		"命运": [
 			{
 				"name": "Abhuman lure",
 				"page": 186,
@@ -2671,7 +2671,7 @@
 		]
 	},
 	"Oddity": {
-		"Discovery": [
+		"探索": [
 			"Crystal that shatters easily but then instantly reforms",
 			"Egg-shaped metallic bauble that occasionally spins and speaks in a language no one knows",
 			"Aerosol can that sprays sparkling paint that hangs in the air",
@@ -2775,7 +2775,7 @@
 		]
 	},
 	"Installation": {
-		"Destiny": [
+		"命运": [
 			{
 				"name": "Alarm tower",
 				"page": 154,
@@ -3603,7 +3603,7 @@
 		]
 	},
 	"Automaton": {
-		"Destiny": [
+		"命运": [
 			{
 				"name": "Alarm mech",
 				"page": 148,
@@ -3855,7 +3855,7 @@
 		]
 	},
 	"Vehicle": {
-		"Destiny": [
+		"命运": [
 			{
 				"name": "Battle cart",
 				"page": 170,

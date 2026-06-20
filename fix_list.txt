@@ -1,6 +1,20 @@
 # Fix list - safe patterns only (multi-word or context-specific)
 # NO single-word replacements (they break HTML IDs and JS code)
 
+# Statblock terminology fix
+特性块 -> 属性块
+特性块生成器 -> 属性块生成器
+D&amp;D 5e 特性块 -> D&amp;D 5e 属性块
+
+# Untranslated form labels (context-safe: appear in HTML content only)
+type, alignment -> 类型, 阵营
+体型, type, alignment -> 体型, 类型, 阵营
+, type,  -> , 类型,
+
+# Remaining English phrases
+See mdn web 文档 -> 详见 mdn web 文档
+与spritesheets上的图标配合使用 feaspritestuff -> 与 feaspritestuff 上的 spritesheets 配合使用
+
 # Book names (multi-line safe — fix_terms normalizes whitespace)
 Volo's Guide to Monsters -> 瓦罗怪物指南
 Volo's Guide Monstrous Races -> 瓦罗怪物指南（怪物种族）

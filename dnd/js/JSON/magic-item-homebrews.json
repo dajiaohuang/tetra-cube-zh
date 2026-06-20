@@ -37,7 +37,7 @@
 		},
 		{
 			"name": "元素生物 Water",
-			"desc": "The item was forged through the power of 元素生物 water by a 人鱼, 海精灵, marid, water 元素裔, 梭螺鱼人, powerful water 元素生物, or another resident of the plane of water. It is made of worked fish scales, shells, coral, or anything else that might be found under the sea. Its powers are based on water, liquid, mist, or rain, and may be able to summon creatures of 元素生物 water.",
+			"desc": "The item was forged through the power of 元素生物 water by a 人鱼, 海精灵, marid, water 元素裔, 梭螺鱼人, powerful water 元素生物, or another resident of the plane of water. It is made of worked fish scales, shells, coral, or anything else that might be found under the sea. Its powers are 基于 water, liquid, mist, or rain, and may be able to summon creatures of 元素生物 water.",
 			"weight": 8
 		},
 		{
@@ -67,7 +67,7 @@
 		},
 		{
 			"name": "仙灵",
-			"desc": "This item was crafted by 小型 fey creatures such as pixies, sprites, or 仙灵 dragons, likely as a gift. It is likely to be a 小型 item made from leaves, sticks, baubles, or perhaps silver or mithral. Its powers might be based on 隐匿, trickery, 妖精荒野, or the magic of the specific creatures that created it. It also might play tricks on its user or cause surges of wild magic.",
+			"desc": "This item was crafted by 小型 fey creatures such as pixies, sprites, or 仙灵 dragons, likely as a gift. It is likely to be a 小型 item made from leaves, sticks, baubles, or perhaps silver or mithral. Its powers might be 基于 隐匿, trickery, 妖精荒野, or the magic of the specific creatures that created it. It also might play tricks on its user or cause surges of wild magic.",
 			"weight": 4
 		},
 		{
@@ -207,52 +207,52 @@
 		},
 		{
 			"name": "Black 龙类",
-			"desc": "This item was created by a black dragon, for its精灵 or a minion. It may be made from the dragon's scales and 禽爪, precious metals and 宝石s from its hoard, 宝藏 looted from 废墟s and fallen civilizations, or bone and other remains. It might have powers based on acid, insects, or rot and decay, or powers that are especially brutal and painful.",
+			"desc": "This item was created by a black dragon, for its精灵 or a minion. It may be made from the dragon's scales and 禽爪, precious metals and 宝石s from its hoard, 宝藏 looted from 废墟s and fallen civilizations, or bone and other remains. It might have powers 基于 acid, insects, or rot and decay, or powers that are especially brutal and painful.",
 			"weight": 2
 		},
 		{
 			"name": "Blue 龙类",
-			"desc": "This item was created by a blue dragon, for its精灵 or a minion. It may be made from the dragon's scales and 禽爪, precious metals and 宝石s (especially sapphires) from its hoard, or reinf兽人ed glass. Its powers might be based on 闪电 and 雷鸣, or sand.",
+			"desc": "This item was created by a blue dragon, for its精灵 or a minion. It may be made from the dragon's scales and 禽爪, precious metals and 宝石s (especially sapphires) from its hoard, or reinf兽人ed glass. Its powers might be 基于 闪电 and 雷鸣, or sand.",
 			"weight": 2
 		},
 		{
 			"name": "Brass 龙类",
-			"desc": "This item was created by a brass dragon, for its精灵, for a minion, or as a gift. It may be made from the dragon's scales and 禽爪, precious metals (especially brass) and 宝石s from its hoard, or reinf兽人ed glass. Its powers might be based on fire, sand, or the dragon's sleep breath, and it may be hot to the touch. Brass dragon items are likely to be sentient, or contain bound creatures, to sate the dragon's desire for 小型 talk.",
+			"desc": "This item was created by a brass dragon, for its精灵, for a minion, or as a gift. It may be made from the dragon's scales and 禽爪, precious metals (especially brass) and 宝石s from its hoard, or reinf兽人ed glass. Its powers might be 基于 fire, sand, or the dragon's sleep breath, and it may be hot to the touch. Brass dragon items are likely to be sentient, or contain bound creatures, to sate the dragon's desire for 小型 talk.",
 			"weight": 2
 		},
 		{
 			"name": "Bronze 龙类",
-			"desc": "This item was created by a bronze dragon, for its精灵, for a minion, or as a gift. It may be made from the dragon's scales and 禽爪, precious metals (especially bronze) and 宝石s (especially pearls) from its hoard, or materials found under the sea, such as fish scale, coral, or whalebone. Its powers might be based on 闪电, 雷鸣, water, or the dragon's 斥力吐息. Bronze dragon items are most likely forged for warfare.",
+			"desc": "This item was created by a bronze dragon, for its精灵, for a minion, or as a gift. It may be made from the dragon's scales and 禽爪, precious metals (especially bronze) and 宝石s (especially pearls) from its hoard, or materials found under the sea, such as fish scale, coral, or whalebone. Its powers might be 基于 闪电, 雷鸣, water, or the dragon's 斥力吐息. Bronze dragon items are most likely forged for warfare.",
 			"weight": 2
 		},
 		{
 			"name": "Copper 龙类",
-			"desc": "This item was created by a copper dragon, for its精灵, for a minion, or as a gift. It may be made from the dragon's scales and 禽爪, precious metals (especially copper) and 宝石s from its hoard, or solid stone. Its powers might be based on acid, stone, mud, secrecy, or the dragon's slowing breath. An item made by a copper dragon is likely to incorporate music, stories, riddles, or pranks in some way, possibly at the expense of its user. Copper dragon items are often made for 吟游诗人s, as well.",
+			"desc": "This item was created by a copper dragon, for its精灵, for a minion, or as a gift. It may be made from the dragon's scales and 禽爪, precious metals (especially copper) and 宝石s from its hoard, or solid stone. Its powers might be 基于 acid, stone, mud, secrecy, or the dragon's slowing breath. An item made by a copper dragon is likely to incorporate music, stories, riddles, or pranks in some way, possibly at the expense of its user. Copper dragon items are often made for 吟游诗人s, as well.",
 			"weight": 2
 		},
 		{
 			"name": "Green 龙类",
-			"desc": "This item was created by a green dragon, for its精灵 or a minion. It may be made from the dragon's scales and 禽爪, or precious metals and 宝石s (especially emeralds) from its hoard, and may be adorned with carvings or sculptures made by its captives. Its powers might be based on poison, plant manipulation, or thick fog.",
+			"desc": "This item was created by a green dragon, for its精灵 or a minion. It may be made from the dragon's scales and 禽爪, or precious metals and 宝石s (especially emeralds) from its hoard, and may be adorned with carvings or sculptures made by its captives. Its powers might be 基于 poison, plant manipulation, or thick fog.",
 			"weight": 2
 		},
 		{
 			"name": "Gold 龙类",
-			"desc": "This item was created by a gold dragon, for its精灵, for a minion, or as a gift. It may be made from the dragon's scales and 禽爪, and it inevitably incorporates precious metals (especially gold) and 宝石s (especially pearls) from its hoard. Its powers might be based on fire, divination, dreams, wealth, or the dragon's weakening breath, and it may be hot to the touch. Gold dragon items are visibily expensive and may even require gold or items of value to be fed to them to work. Gold dragons can make more powerful items than any other dragon are well worth the cost.",
+			"desc": "This item was created by a gold dragon, for its精灵, for a minion, or as a gift. It may be made from the dragon's scales and 禽爪, and it inevitably incorporates precious metals (especially gold) and 宝石s (especially pearls) from its hoard. Its powers might be 基于 fire, divination, dreams, wealth, or the dragon's weakening breath, and it may be hot to the touch. Gold dragon items are visibily expensive and may even require gold or items of value to be fed to them to work. Gold dragons can make more powerful items than any other dragon are well worth the cost.",
 			"weight": 2
 		},
 		{
 			"name": "Red 龙类",
-			"desc": "This item was created by a red dragon, for its精灵 or a minion. It may be made from the dragon's scales and 禽爪, or precious metals and 宝石s (especially rubies) from its hoard. It is most likely hot to the touch, and its powers are based on fire, magma, or heat, and it may be able to cause fissures or quakes in the earth.",
+			"desc": "This item was created by a red dragon, for its精灵 or a minion. It may be made from the dragon's scales and 禽爪, or precious metals and 宝石s (especially rubies) from its hoard. It is most likely hot to the touch, and its powers are 基于 fire, magma, or heat, and it may be able to cause fissures or quakes in the earth.",
 			"weight": 2
 		},
 		{
 			"name": "Silver 龙类",
-			"desc": "This item was created by a silver dragon, for its精灵, for a minion, or as a gift. It may be made from the dragon's scales and 禽爪, precious metals (especially silver) and 宝石s from its hoard, or relics from 类人生物 civilizations. Its powers might be based on cold, fog, clouds, weather, or the dragon's paralyzing breath, and it may be cold to the touch. Silver dragon items are often made for 人类s or other short-lived races.",
+			"desc": "This item was created by a silver dragon, for its精灵, for a minion, or as a gift. It may be made from the dragon's scales and 禽爪, precious metals (especially silver) and 宝石s from its hoard, or relics from 类人生物 civilizations. Its powers might be 基于 cold, fog, clouds, weather, or the dragon's paralyzing breath, and it may be cold to the touch. Silver dragon items are often made for 人类s or other short-lived races.",
 			"weight": 2
 		},
 		{
 			"name": "White 龙类",
-			"desc": "This item was created by a white dragon, for its精灵 or a minion. It may be made from the dragon's scales and 禽爪, precious metals and 宝石s (especially diamonds) from its hoard, ivory, whalebone, rare furs, unmelting ice, or anything else the dragon can find in its arctic domain. It is most likely cold to the touch, and its powers are based on snow, ice, frigid water or fog, or cold.",
+			"desc": "This item was created by a white dragon, for its精灵 or a minion. It may be made from the dragon's scales and 禽爪, precious metals and 宝石s (especially diamonds) from its hoard, ivory, whalebone, rare furs, unmelting ice, or anything else the dragon can find in its arctic domain. It is most likely cold to the touch, and its powers are 基于 snow, ice, frigid water or fog, or cold.",
 			"weight": 2
 		},
 		{
@@ -282,7 +282,7 @@
 		},
 		{
 			"name": "龙类 Turtle",
-			"desc": "This item was created by a dragon turtle, for its精灵, for a minion, or as a gift. It may be made from parts of the dragon turtle's shell or 爪击, precious metals and 宝石s from its hoard, or materials found under the sea, such as fish scale, coral, or whalebone. Its powers might be based on water, steam, or the dragon turtle's protective shell. If made for a non-aquatic creature, it has 游泳 or water breathing powers.",
+			"desc": "This item was created by a dragon turtle, for its精灵, for a minion, or as a gift. It may be made from parts of the dragon turtle's shell or 爪击, precious metals and 宝石s from its hoard, or materials found under the sea, such as fish scale, coral, or whalebone. Its powers might be 基于 water, steam, or the dragon turtle's protective shell. If made for a non-aquatic creature, it has 游泳 or water breathing powers.",
 			"weight": 1
 		},
 		{
@@ -347,7 +347,7 @@
 		},
 		{
 			"name": "Shadow 龙类",
-			"desc": "This item was created by a shadow dragon, for its精灵, for a minion, or as a gift. It may be made from the dragon's scales and 禽爪, precious metals and 宝石s from its hoard, bones or flesh from dead creatures, or solid 黑暗. Its powers are based on 黑暗, 隐匿, the dragon's 吐息武器, or the shadowfell its精灵. A shadow dragon item may gain power in the dark, or lose it in the light, and its user risks falling victim to shadowfell despair or worse.",
+			"desc": "This item was created by a shadow dragon, for its精灵, for a minion, or as a gift. It may be made from the dragon's scales and 禽爪, precious metals and 宝石s from its hoard, bones or flesh from dead creatures, or solid 黑暗. Its powers are 基于 黑暗, 隐匿, the dragon's 吐息武器, or the shadowfell its精灵. A shadow dragon item may gain power in the dark, or lose it in the light, and its user risks falling victim to shadowfell despair or worse.",
 			"weight": 1
 		},
 		{

@@ -46,11 +46,11 @@ function GetBooks(arr) {
     arr.forEach(book => {
         switch (book) {
             case "发现":
-                if ($("#discovery-book").prop("checked"))
+                if ($("#探索-book").prop("checked"))
                     books.push("发现");
                 break;
             case "命运":
-                if ($("#destiny-book").prop("checked"))
+                if ($("#命运-book").prop("checked"))
                     books.push("命运");
                 break;
             case "创造未来":
@@ -134,11 +134,11 @@ function AddItem(htmlItem) {
 
 function OnCheck() {
     if ($("input:checkbox:checked").length > 0) {
-        $("#generate-cypher, #generate-artifact, #generate-plan").prop("disabled", false)
+        $("#generate-cypher, #generate-artifact, #generate-计划").prop("disabled", false)
         $("#generate-oddity").prop("disabled",
-            !$("#discovery-book").prop("checked"));
+            !$("#探索-book").prop("checked"));
         $("#generate-installation, #generate-automaton, #generate-vehicle").prop("disabled", 
-            !($("#destiny-book").prop("checked") || $("#building-tomorrow-book").prop("checked")));
+            !($("#命运-book").prop("checked") || $("#building-tomorrow-book").prop("checked")));
         $("#generate-biological, #generate-otherspace").prop("disabled",
             !$("#building-tomorrow-book").prop("checked"));
     }

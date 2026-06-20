@@ -89,7 +89,8 @@ def apply_fixes_to_file(filepath, fixes, dry_run=False):
             pattern = r'\b' + re.escape(wrong) + r'\b'
         # Multi-word: normalize whitespace for cross-line matching
         else:
-            pattern = re.sub(r'\s+', r'\\s+', re.escape(wrong))
+            pattern = re.escape(wrong)
+            pattern = pattern.replace(r'\ ', r'\s+')  # escaped spaces → \s+
         pat = re.compile(pattern, re.IGNORECASE)
         new_result, n = pat.subn(correct, result)
         if n > 0:

@@ -99,7 +99,7 @@ function TryPrint() {
     printWindow.document.write('</div></body></html>');
 }
 
-// Print multiple function
+// 批量打印 function
 
 function PrintMultiple() {
     window.location = "dnd-statblock-print.html";
@@ -177,7 +177,7 @@ function UpdateStatblock(moveSeparationPoint, monOverride) {
     // Save Before Continuing - generator only
     if(monOverride == undefined) SavedData.SaveToLocalStorage();
 
-    // One column or two columns
+    // 单栏 or 双栏
     let statBlock = $("#stat-block");
     mon.doubleColumns ? statBlock.addClass('wide') : statBlock.removeClass('wide');
 
@@ -251,7 +251,7 @@ function UpdateStatblock(moveSeparationPoint, monOverride) {
         traitsHTML.push("</ul>" + StringFunctions.FormatString(ReplaceTags(StringFunctions.RemoveHtmlTags(mon.regionalDescriptionEnd))));
     }
 
-    // Add traits, taking into account the width of the block (one column or two columns)
+    // Add traits, taking into account the width of the block (单栏 or 双栏)
     let leftTraitsArr = [],
         rightTraitsArr = [],
         separationCounter = 0;
@@ -783,7 +783,7 @@ var FormFunctions = {
         $("#" + stat + "bonus").html(StringFunctions.RemoveHtmlTags(StringFunctions.BonusFormat(MathFunctions.PointsToBonus($("#" + stat + "-input").val()))));
     },
 
-    // Set the proficiency bonus based on the monster's CR
+    // Set the proficiency bonus 基于 the monster's CR
     ChangeCRForm: function () {
         if (mon.cr == "*") {
             $("#prof-bonus").hide();
@@ -798,7 +798,7 @@ var FormFunctions = {
         }
     },
 
-    // For setting the column radio buttons based on saved data
+    // For setting the column radio buttons 基于 saved data
     ChangeColumnRadioButtons: function () {
         $("#1col-input").prop("checked", !mon.doubleColumns);
         $("#2col-input").prop("checked", mon.doubleColumns);
@@ -992,7 +992,7 @@ var InputFunctions = {
         FormFunctions.MakeDisplayList("languages", false);
     },
 
-    // Change CR based on input dropdown
+    // Change CR 基于 input dropdown
     InputCR: function () {
         mon.cr = $("#cr-input").val();
         mon.customCr = $("#custom-cr-input").val();
@@ -1114,7 +1114,7 @@ var GetVariablesFunctions = {
         mon.customCr = $("#custom-cr-input").val();
         mon.customProf = parseInt($("#custom-prof-input").val());
 
-        // Shortened Name
+        // 简称
         mon.shortName = $("#short-name-input").val();
         mon.pluralName = $("#plural-name-input").val();
 
@@ -1142,7 +1142,7 @@ var GetVariablesFunctions = {
             mon.regionalDescriptionEnd = $("#regional-end-descsection-input").val().trim();
         }
 
-        // One or two columns ?
+        // One or 双栏 ?
         mon.doubleColumns = $("#2col-input").prop("checked");
     },
 
@@ -1257,7 +1257,7 @@ var GetVariablesFunctions = {
             mon.speedDesc = StringFunctions.GetSpeed();
         }
 
-        // Saving Throws
+        // 豁免
         mon.sthrows = [];
         if (preset.strength_save)
             this.AddSthrow("str");
@@ -1729,7 +1729,7 @@ var StringFunctions = {
             resistantDisplayString = "",
             immuneDisplayString = "";
 
-        // Saving Throws
+        // 豁免
         for (let index = 0; index < mon.sthrows.length; index++)
             sthrowsDisplayArr.push(StringFunctions.StringCapitalize(mon.sthrows[index].name) + " " +
                 StringFunctions.BonusFormat((MathFunctions.PointsToBonus(mon[mon.sthrows[index].name + "Points"]) + CrFunctions.GetProf())));
@@ -1913,7 +1913,7 @@ var StringFunctions = {
 var MathFunctions = {
     Clamp: (num, min, max) => Math.min(Math.max(num, min), max),
 
-    // Compute ability bonuses based on ability scores
+    // Compute ability bonuses 基于 ability scores
     PointsToBonus: (points) => Math.floor(points / 2) - 5,
 
     // Compute 护甲等级
@@ -2004,11 +2004,11 @@ $(function () {
             })
         })
             .fail(function () {
-                $("#monster-select-form").html("Unable to load Tome of Beasts monster presets.")
+                $("#monster-select-form").html("Unable to load Tome of Beasts 怪物预设.")
             });
     })
         .fail(function () {
-            $("#monster-select-form").html("Unable to load monster presets.")
+            $("#monster-select-form").html("Unable to load 怪物预设.")
         });
         
     if(window.location.toString().slice(-25) == "/dnd-statblock-print.html") return; // This script is also used by other pages -> execute the following only for the statblock generator page

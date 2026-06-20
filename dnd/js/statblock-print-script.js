@@ -8,7 +8,7 @@ const BLOCKTEMPLATE = `<div class="stat-block-container"> <!-- id="stat-block-wr
     <div class="section-left">
         <div class="creature-heading">
             <h1 id="monster-name">Monster</h1>
-            <h2 id="monster-type">Size, type, alignment</h2>
+            <h2 id="monster-type">Size, 类型, 阵营</h2>
         </div> <!-- creature heading -->
         <svg height="5" width="100%" class="tapered-rule">
             <polyline points="0,0 400,2.5 0,5"></polyline>
@@ -231,7 +231,7 @@ function refresh() {
 
 // Document ready function
 $(() => {
-    // Load statblock from cache
+    // 加载属性块 from cache
     let savedData = localStorage.getItem("SavedData");
     if (savedData != undefined)
         statblocks.push(JSON.parse(savedData));

@@ -55,7 +55,7 @@
 			"When l arrive at a ew settlement for the first time, l must learn all its customs. "
 		],
 		"Ideal": [
-			"Discovery. I want to be the first person to discover a lost culture. (Any)",
+			"探索. I want to be the first person to discover a lost culture. (Any)",
 			"Distance. One must not interfere with the affairs of another culture- even one in need of aid. (Lawful)",
 			"Knowledge. By understanding other races and cultures, we learn to understand ours精灵. (Any)",
 			"Power. Common people crave strong leadership, and I do my utmost to provide it. (Lawful)",
@@ -106,8 +106,8 @@
 			"Greed. I won't risk my life for nothing. I expect some kind of payment. (Any)",
 			"Death Wish. Nothing is more exhilarating than a narrow escape from the jaws of death. (Chaotic)",
 			"Dignity. The dead and their belongings deserve to be treated with respect. (Lawful)",
-			"Immortality. All my exploring is part of a plan to find the secret of 永固不朽 life. (Any)",
-			"Danger. With every great discovery comes grave danger. The two walk hand in hand. (Any) "
+			"Immortality. All my exploring is part of a 计划 to find the secret of 永固不朽 life. (Any)",
+			"Danger. With every great 探索 comes grave danger. The two walk hand in hand. (Any) "
 		],
 		"Bond": [
 			"Ever since I was a child, I've heard stories about a lost city. I aim to find it, learn its secrets, and earn my place in the history books.",
@@ -420,7 +420,7 @@
 	"Criminal": {
 		"_special": "book-PHB",
 		"Trait": [
-			"I always have a plan for what to do when things go wrong.",
+			"I always have a 计划 for what to do when things go wrong.",
 			"I am always calm, no matter what the situation. I never raise my voice or let emotions control me.",
 			"The first thing I do in a new place is note the locations of everything valuable- or where such things could be hidden.",
 			"I would rather make a new friend than a new enemy.",
@@ -448,7 +448,7 @@
 		"Flaw": [
 			"When I see something valuable, I can't think about anything but how to steal it.",
 			"When faced with a choice between money and my friends, I usually choose the money.",
-			"If there's a plan, I'll forget it. If I don't forget it, I'll ignore it.",
+			"If there's a 计划, I'll forget it. If I don't forget it, I'll ignore it.",
 			"I have a \"tell\" that reveals when I'm lying.",
 			"I turn tail and run when things look bad.",
 			"An innocent person is in prison for a crime that I committed. I'm okay with that."
@@ -491,7 +491,7 @@
 			"Someone has discovered my true identity."
 		],
 		"Flaw": [
-			"I like secrets so much that I'm reluctant to share details of a plan even with those who need to know.",
+			"I like secrets so much that I'm reluctant to share details of a 计划 even with those who need to know.",
 			"I would let my friends die rather than reveal my true identity.",
 			"I have trouble trusting anyone but mys精灵.",
 			"I have a particular vice that puts all my secrets at risk if I'm not careful.",
@@ -872,7 +872,7 @@
 	"Gambler": {
 		"_special": "book-AI",
 		"Trait": [
-			"I plan for every contingency. Leave nothing to chance!",
+			"I 计划 for every contingency. Leave nothing to chance!",
 			"Every copper wants to be a silver. Each bet is an opportunity.",
 			"I'm one of Lady 幸运's favored. Anything I try is destined to succeed.",
 			"I've lost so much to gambling that I refuse to spend money on anything anymore.",
@@ -1207,7 +1207,7 @@
 			"The leader of my community had something wise to say on every topic, and I am e年龄r to share that 感知.",
 			"I feel tremendous empathy for all who suffer.",
 			"I'm oblivious to etiquette and social expectations.",
-			"I connect everything that happens to me to a grand, cosmic plan.",
+			"I connect everything that happens to me to a grand, cosmic 计划.",
 			"I often get lost in my own thoughts and contemplation, becoming oblivious to my surroundings.",
 			"I am working on a grand philosophical theory and love sharing my ideas."
 		],
@@ -1224,7 +1224,7 @@
 			"I entered seclusion to 皮甲 from the ones who might still be hunting me. I must someday confront them.",
 			"I'm still seeking the enlightenment I pursued in my seclusion, and it still eludes me.",
 			"I entered seclusion because I loved someone I could not have.",
-			"Should my discovery come to light, it could bring 废墟 to the world.",
+			"Should my 探索 come to light, it could bring 废墟 to the world.",
 			"My isolation gave me great 洞悉 into a great evil that only I can destroy."
 		],
 		"Flaw": [
@@ -1294,7 +1294,7 @@
 			"Tradition. I uphold traditions of my house and bring honor to my family. (Lawful)",
 			"Innovation. Abandon old traditions and find better ways to do things. (Chaotic)",
 			"Power. I want to ensure the prosperity of my house and wield its power mys精灵. (Evil)",
-			"Discovery. I want to learn all I can, both for my house and for my own curiosity. (Any)",
+			"探索. I want to learn all I can, both for my house and for my own curiosity. (Any)",
 			"Comfort. I want to ensure that me and mine enjoy the best things in life. (Any)"
 		],
 		"Bond": [
@@ -1345,7 +1345,7 @@
 		"Ideal": [
 			"Guild. My guild is all that really matters. (Any)",
 			"Creativity. Half the world's troubles come from stodgy thinking, stuck in the past. We need innovative solutions. (Chaotic)",
-			"Discovery. Every experiment has the potential to reveal more secrets of 多重宇宙. (Any)",
+			"探索. Every experiment has the potential to reveal more secrets of 多重宇宙. (Any)",
 			"Science. A rigorous application of logical principles and protocols will lead us toward progress more surely than any belief system. (Lawful)",
 			"Fun. I love my 工作! De恶意 the dangerous working 状态, there's nothing I'd rather do. (Chaotic)",
 			"Power. Someday I'll find or create the magic that will make me the most powerful being in Ravnica. (Evil)"
@@ -1359,7 +1359,7 @@
 			"I would do anything the guildmaster told me to do."
 		],
 		"Flaw": [
-			"If there's a plan, I'll probably forget it. If I don't forget it, I'll probably ignore it.",
+			"If there's a 计划, I'll probably forget it. If I don't forget it, I'll probably ignore it.",
 			"I get bored easily, and if nothing is happening I'll make something happen.",
 			"Nothing is ever simple, and if it seems simple, I'll find a way to make it complicated.",
 			"I tend to ignore sleep for days when I'm conducting research, often at the expense of my own health and safety.",
@@ -1746,7 +1746,7 @@
 			"It's only a matter of time before I'll be upper man年龄ment. I just have to kiss up to my superiors and kick down those beneath me."
 		],
 		"Ideal": [
-			"Advancement. Money and power can be gained more easily within an organization. I plan to gain as much as possible. (Evil)",
+			"Advancement. Money and power can be gained more easily within an organization. I 计划 to gain as much as possible. (Evil)",
 			"Structure. Life goes much more smoothly when you follow the rules and work within a system. (Lawful)",
 			"Uncertainty. The more chaos that swirls around me, the more opportunities I can find to profit. (Chaotic)",
 			"Justice. I can't stand people being treated unjustly. I do whatever it takes to stop injustice and those who flout the law. (Lawful)",
