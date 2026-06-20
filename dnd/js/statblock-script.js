@@ -503,7 +503,7 @@ function PrintMarkdownProperty(isV3Markdown, name, value) {
 
 function AddMarkdownAttributesTable(markdown) {
     markdown.push(
-        `|STR|DEX|CON|INT|WIS|CHA|`,
+        `|力量|敏捷|体质|智力|感知|魅力|`,
         `|:---:|:---:|:---:|:---:|:---:|:---:|`,
         `|${builtLines.join("")} (${builtLines.join("")})|` +
         `${builtLines.join("")} (${builtLines.join("")})|` +
