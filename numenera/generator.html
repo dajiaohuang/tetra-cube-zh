@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<title>Numenera 生产工具</title>
+<title>Numenera 生成器</title>
 <link href="generator.css" rel="stylesheet" type="text/css"/>
 <script src="jquery-3.6.1.min.js"></script>
 <script src="generator-book-data.js"></script>
@@ -21,23 +21,23 @@
 </head>
 <body>
 
-<h1>Numenera 生产工具</h1>
+<h1>Numenera 生成器</h1>
 <br/>
 <div id="options">
 <div>
 <b>允许的书籍： </b>
-<label>发现 <input checked="" id="探索-book" onclick="OnCheck()" type="checkbox"/></label><label>命运 <input checked="" id="命运-book" onclick="OnCheck()" type="checkbox"/></label><label>创造未来 <input id="building-tomorrow-book" onclick="OnCheck()" type="checkbox"/></label>
+<label>探索 <input checked="" id="探索-book" onclick="OnCheck()" type="checkbox"/></label><label>命运 <input checked="" id="命运-book" onclick="OnCheck()" type="checkbox"/></label><label>构筑明天 <input id="building-tomorrow-book" onclick="OnCheck()" type="checkbox"/></label>
 </div>
 <br/>
 <div>
-<button id="generate-tetras" onclick="GenerateTetras()">启发（泰特拉物品）</button>
-<button id="generate-cypher" onclick="GenerateCypherArtifact('Cypher')">密码</button>
-<button id="generate-artifact" onclick="GenerateCypherArtifact('Artifact')">遗物</button>
+<button id="generate-tetras" onclick="GenerateTetras()">灵感（Tetra 的物品）</button>
+<button id="generate-cypher" onclick="GenerateCypherArtifact('Cypher')">密器</button>
+<button id="generate-artifact" onclick="GenerateCypherArtifact('Artifact')">神器</button>
 <button id="generate-oddity" onclick="GenerateOddity()">奇物</button>
-<button id="generate-installation" onclick="GenerateOther('Installation')">安装</button>
+<button id="generate-installation" onclick="GenerateOther('Installation')">设施</button>
 <br/>
-<button id="generate-automaton" onclick="GenerateOther('Automaton')">机械人</button>
-<button id="generate-vehicle" onclick="GenerateOther('Vehicle')">车辆</button>
+<button id="generate-automaton" onclick="GenerateOther('Automaton')">自动机</button>
+<button id="generate-vehicle" onclick="GenerateOther('Vehicle')">载具</button>
 <button id="generate-biological" onclick="GenerateOther('Biological')">生物</button>
 <button id="generate-otherspace" onclick="GenerateOther('Otherspace')">异界空间</button>
 <button id="generate-计划" onclick="GeneratePlan()">计划</button>

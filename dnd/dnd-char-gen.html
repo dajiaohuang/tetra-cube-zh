@@ -95,14 +95,14 @@
 </div>
 <div class="col-12 col-sm-6 col-lg-3">
 <b>角色类型：</b>
-<div><label><input checked="" id="either-radio" name="character-type-button" onclick="CharacterType.Get()" type="radio"/> 或者 </label></div>
+<div><label><input checked="" id="either-radio" name="character-type-button" onclick="CharacterType.Get()" type="radio"/> 任意 </label></div>
 <div><label><input id="pc-radio" name="character-type-button" onclick="CharacterType.Get()" type="radio"/> 冒险者 </label></div>
 <div><label><input id="npc-radio" name="character-type-button" onclick="CharacterType.Get()" type="radio"/> 平民 </label></div>
 <br/>
 </div>
 <div class="col-12 col-sm-6 col-lg-3">
-<b>种族随机生成器：</b>
-<div><label><input checked="" id="normal-radio" name="race-randomizer-button" type="radio"/> 正常
+<b>种族随机方式：</b>
+<div><label><input checked="" id="normal-radio" name="race-randomizer-button" type="radio"/> 标准
                         </label></div>
 <div><label><input id="weighted-radio" name="race-randomizer-button" type="radio"/> 加权 </label>
 </div>
@@ -113,7 +113,7 @@
 <br/>
 </div>
 <div class="col-12 col-sm-6 col-lg-3">
-<b>人类 Ethnicities:</b>
+<b>人类族裔：</b>
 <div><label><input checked="" id="standard-radio" name="ethnicity-button" type="radio"/> 标准
                         </label></div>
 <div><label><input id="real-radio" name="ethnicity-button" type="radio"/> 真实 </label></div>
@@ -123,8 +123,8 @@
 </div>
 <hr/>
 <div style="text-align: center;">
-<button class="lock-button" id="all-lock-button" onclick="LockFunctions.TryLockAll()" style="width: 4rem;"><i class="fas fa-lock"></i> All</button>
-<button class="lock-button" id="none-lock-button" onclick="LockFunctions.TryUnlockAll()" style="width: 4rem;"><i class="fas fa-lock-open"></i> All</button>
+<button class="lock-button" id="all-lock-button" onclick="LockFunctions.TryLockAll()" style="width: 4rem;"><i class="fas fa-lock"></i> 全部锁定</button>
+<button class="lock-button" id="none-lock-button" onclick="LockFunctions.TryUnlockAll()" style="width: 4rem;"><i class="fas fa-lock-open"></i> 全部解锁</button>
 <br/>
 <button onclick="Generate.All()" type="button">生成角色</button>
 </div>
@@ -156,7 +156,7 @@
 <div>
 <br class="small-only-br"/>
 <div style="width: 100%">
-<label for="name-input"><b>名称： </b></label><input id="name-input" placeholder="Random" style="max-width: 20rem;" type="text"/>
+<label for="name-input"><b>名称： </b></label><input id="name-input" placeholder="随机" style="max-width: 20rem;" type="text"/>
 <button onclick="Generate.NameInput()" type="button">生成</button>
 </div>
 <br class="small-only-br"/>
@@ -229,7 +229,7 @@
 <button onclick="Generate.LifeInput()" type="button">生成</button><br/><br/>
 <ul id="lifesection" style="min-height: 45rem;"></ul>
 <br/>
-<sub>Refer to 珊娜萨的万事指南 (starting on page 61) for supplementary tables.</sub>
+<sub>请参阅《珊娜萨的万事指南》（第61页起）的补充表格。</sub>
 </div>
 <div class="footer"><a href="https://github.com/Tetra-cube/Tetra-cube.github.io">GitHub 仓库</a></div>
 </div>
