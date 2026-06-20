@@ -7,21 +7,21 @@ const padding = 20,
     labelFont = "bold 16px Tahoma",
     descriptionFont = "16px Tahoma",
     subclassesCard = {
-        "野蛮人": "原初道途",
-        "吟游诗人": "吟游诗人学院",
-        "牧师": "神圣领域",
-        "德鲁伊": "德鲁伊结社",
-        "战士": "武术范型",
-        "武僧": "宗派传统",
-        "圣武士": "圣誓",
-        "游侠": "游侠范型",
-        "游荡者": "游荡者范型",
-        "术士": "术法起源",
-        "邪术师": "异界宗主",
-        "法师": "奥法传承",
-        "奇械师": "奇械师专精",
-        "灵能师": "灵能宗派",
-        "血猎人": "血猎人宗派"
+        "Barbarian": "Primal Path",
+        "Bard": "Bard College",
+        "Cleric": "Divine Domain",
+        "Druid": "Druid Circle",
+        "Fighter": "Martial Archetype",
+        "Monk": "Monastic Tradition",
+        "Paladin": "Sacred Oath",
+        "Ranger": "Ranger Archetype",
+        "Rogue": "Roguish Archetype",
+        "Sorcerer": "Sorcerous Origin",
+        "Warlock": "Otherworldly Patron",
+        "Wizard": "Arcane Tradition",
+        "Artificer": "Artificer Specialty",
+        "Mystic": "Mystic Order",
+        "Blood Hunter": "Blood Hunter Order"
     };
 
 var backgroundImage, characterImage, bgDrawn = false, charReady = false;
@@ -67,8 +67,8 @@ var Card = {
     ImageFileName: function (raceName) {
         let classNm = this.FileNameFormat(character.Class.name);
         let gender = character.Gender;
-        if (gender == "非二元性别或未知")
-            gender = Random.Array(["男性", "女性"]);
+        if (gender == "Nonbinary or Unknown")
+            gender = Random.Array(["Male", "Female"]);
         gender = this.FileNameFormat(gender);
         switch (raceName) {
             case "dwarf":
@@ -90,7 +90,7 @@ var Card = {
             case "kobold":
                 return classNm;
             case "genasi":
-                return this.FileNameFormat(this.FindTraitByName(this.FindTraitByName(character.Race.content, "子种族与变体"), "子种族") + "-" + gender);
+                return this.FileNameFormat(this.FindTraitByName(this.FindTraitByName(character.Race.content, "Subraces and Variants"), "Subrace") + "-" + gender);
             case "bugbear":
             case "hobgoblin":
             case "yuan-ti-pureblood":
@@ -176,14 +176,14 @@ var Card = {
 
         // Description line 2
         stringBuffer = [];
-        let genderText = (character.Race.name == "战俑" ? "" : character.Gender),
-            physChar = this.FindTraitByName(character.Race.content, "身体特征");
+        let genderText = (character.Race.name == "Warforged" ? "" : character.Gender),
+            physChar = this.FindTraitByName(character.Race.content, "Physical Characteristics");
 
         stringBuffer.push(this.VariantTraits(), genderText);
         if (physChar) {
             if (genderText.length > 0)
                 stringBuffer.push(" - ");
-            stringBuffer.push(this.FindTraitByName(physChar, "年龄"));
+            stringBuffer.push(this.FindTraitByName(physChar, "Age"));
         }
 
         ctx.fillText(stringBuffer.join(""), canvas.width / 2, yPos);
@@ -203,26 +203,26 @@ var Card = {
     },
 
     RaceName: function () {
-        let subvar = this.FindTraitByName(character.Race.content, "子种族与变体");
+        let subvar = this.FindTraitByName(character.Race.content, "Subraces and Variants");
         if (subvar != null) {
-            let subrace = this.FindTraitByName(subvar, "子种族");
+            let subrace = this.FindTraitByName(subvar, "Subrace");
             if (subrace != null) {
                 switch (character.Race.name) {
-                    case "提夫林":
-                        if (subrace == "Asmodeous 提夫林")
-                            return "提夫林";
+                    case "Tiefling":
+                        if (subrace == "Asmodeous Tiefling")
+                            return "Tiefling";
                         else break;
-                    case "化兽者":
-                        return subrace + " 化兽者";
-                    case "战俑":
-                        return "战俑 " + subrace;
+                    case "Shifter":
+                        return subrace + " Shifter";
+                    case "Warforged":
+                        return "Warforged " + subrace;
                 }
                 return subrace;
             }
-            if (character.Race.name == "龙裔" && usedBooks.includes("EGtW")) {     // Technically a variant but it's more of a subrace
+            if (character.Race.name == "Dragonborn" && usedBooks.includes("EGtW")) {     // Technically a variant but it's more of a subrace
                 let variant = this.FindTraitByName(subvar, "Variant");
                 if (variant != null)
-                    return variant + " 龙裔";
+                    return variant + " Dragonborn";
             }
         }
         return character.Race.name;
@@ -245,19 +245,19 @@ var Card = {
 
     // Add racial traits for certain special races
     VariantTraits: function () {
-        const variantRaces = ["龙裔", "半精灵", "人类", "提夫林"];
+        const variantRaces = ["Dragonborn", "Half-Elf", "Human", "Tiefling"];
         if (variantRaces.includes(character.Race.name)) {
-            let subvar = this.FindTraitByName(character.Race.content, "子种族与变体");
+            let subvar = this.FindTraitByName(character.Race.content, "Subraces and Variants");
             switch (character.Race.name) {
-                case "龙裔":
-                    return this.FindTraitByName(subvar, "龙族血统") + " 龙类 Ancestry - ";
-                case "半精灵":
+                case "Dragonborn":
+                    return this.FindTraitByName(subvar, "Draconic Ancestry") + " Dragon Ancestry - ";
+                case "Half-Elf":
                     if (!usedBooks.includes("SCAG"))
                         return "";
                     return this.FindTraitByName(subvar, "Elven Ancestry") + " Ancestry - ";
-                case "人类":
+                case "Human":
                     return this.FindTraitByName(subvar, "Ethnicity") + " - ";
-                case "提夫林":
+                case "Tiefling":
                     if (!usedBooks.includes("SCAG"))
                         return null;
                     let variant = this.FindTraitByName(subvar, "Variant");
@@ -329,21 +329,21 @@ var Card = {
                     allTraits.push(trait);
             }
         }
-        if (character.Race.name == "阿斯莫") {
-            let content = this.FindTraitByName(raceArr, "向导姓名") + " (" + this.FindTraitByName(raceArr, "向导性格") + ")";
+        if (character.Race.name == "Aasimar") {
+            let content = this.FindTraitByName(raceArr, "Guide Name") + " (" + this.FindTraitByName(raceArr, "Guide Nature") + ")";
             allTraits.push({
-                "name": "向导",
+                "name": "Guide",
                 "content": content
             });
         } else {
             for (let index = 0; index < raceArr.length; index++) {
                 let trait = raceArr[index];
-                if (trait.name != "name" && trait.name != "子种族与变体" && trait.name != "种族特性" && trait.name != "身体特征")
+                if (trait.name != "name" && trait.name != "Subraces and Variants" && trait.name != "Racial Traits" && trait.name != "Physical Characteristics")
                     allTraits.push(trait);
             }
         }
         if (characterType != "npc") {
-            classPersonalityArr = this.FindTraitByName(character.Class.content, "个性");
+            classPersonalityArr = this.FindTraitByName(character.Class.content, "Personality");
             if (classPersonalityArr) {
                 for (let index = 0; index < classPersonalityArr.length; index++) {
                     let trait = classPersonalityArr[index];
@@ -359,8 +359,8 @@ var Card = {
             }
         }
         allTraits.push({
-            "name": "饰品",
-            "content": this.FindTraitByName(lifeArr, "饰品")
+            "name": "Trinket",
+            "content": this.FindTraitByName(lifeArr, "Trinket")
         });
         return allTraits;
     },
@@ -373,7 +373,7 @@ var Card = {
     // Get the data we need for a characteristics-type card
     CharacteristicsCardData: function () {
         let allTraits = [];
-        let physChar = this.FindTraitByName(character.Race.content, "身体特征");
+        let physChar = this.FindTraitByName(character.Race.content, "Physical Characteristics");
         for (let index = 0; index < physChar.length; index++) {
             let trait = physChar[index];
             if (trait != null)
@@ -496,7 +496,7 @@ var CardType = {
             "name": "Description",
             "content": character.NPCTraits.content
         });
-        if (character.Race.name == "战俑")
+        if (character.Race.name == "Warforged")
             description.splice(3, 1);
 
         stringBuffer.push(
