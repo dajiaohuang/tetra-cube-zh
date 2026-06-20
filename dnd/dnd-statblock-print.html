@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<title>统计块打印</title>
+<title>属性块打印</title>
 <link href="dndimages/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 <link href="css/statblock-style.css" rel="stylesheet" type="text/css"/>
@@ -29,9 +29,9 @@
 <div class="container" style="text-align: center;">
 <div class="content">
 <a href="dnd-statblock.html"><img class="statblock-image" src="dndimages/edit-icon.png"/> 返回属性栏编辑器</a>
-<h1>统计块打印</h1>
+<h1>属性块打印</h1>
 <p>在一张纸上打印多个角色统计信息块。</p>
-<button onclick="$('#file-upload').click()">加载统计块...</button> 或拖放
+<button onclick="$('#file-upload').click()">加载属性块...</button> 或拖放
             <input hidden="" id="file-upload" multiple="" onchange="ZZEVENT934ZZ" type="file"/>
 <div id="monster-select-form">SRD/百兽之书 属性块： 
                 <select id="monster-select">
@@ -45,11 +45,11 @@
 </div>
 <h3>预览</h3>
 <p><b><i>注意：</i></b> 此预览未显示实际打印结果的比例和页面布局。按下“打印”后，请使用浏览器打印对话框中的比例选项。</p>
-<p><b><i>提示：</i></b> 您可以在浏览器的打印对话框中切换战力条的背景图形。
+<p><b><i>提示：</i></b> 您可以在浏览器的打印对话框中切换属性块的背景图形。
             </p>
 <div id="print-options">
 <input id="monochrome-print-input" onchange="refresh()" type="checkbox"/>
-<label for="monochrome-print-input">单色统计块：</label>
+<label for="monochrome-print-input">单色属性块：</label>
 <br/>
 <input checked="" id="save-paper-input" onchange="refresh()" type="checkbox"/>
 <label for="save-paper-input">将两个相邻的单列统计栏并排排列</label>
