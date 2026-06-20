@@ -46,13 +46,13 @@ function GenerateHomebrew() {
 
 function GetItemType() {
     let type = RandomFromArray(itemTypes);
-    if (type == "armor")
+    if (type == "护甲")
         return "<b>护甲 (" + RandomFromArray(armorTypes) + ")</b>";
-    if (type == "weapon")
+    if (type == "武器")
         return "<b>武器 (" + RandomFromArray(weaponTypes) + ")</b>";
-    if (type == "other")
+    if (type == "其他")
         return "<b>" + RandomFromArray(otherTypes) + "</b>";
-    return "<b>Wondrous Item</b>";
+    return "<b>奇物</b>";
 }
 
 function GetSecondProperty(table, firstprop) {
@@ -103,7 +103,7 @@ function GetTable(arr) {
     return newArr;
 }
 
-const itemTypes = ["armor", "weapon", "weapon", "奇物", "奇物", "other"],
-    armorTypes = ["镶钉皮甲", "breastplate", "半身板甲", "链甲", "splint", "plate"],
-    weaponTypes = ["dagger", "greatclub", "handaxe", "javelin", "light hammer", "mace", "quarterstaff", "sickle", "spear", "light crossbow", "shortbow", "battleaxe", "flail", "glaive", "greataxe", "greatsword", "halberd", "lance", "longsword", "maul", "morningstar", "pike", "rapier", "scimitar", "trident", "war pick", "warhammer", "whip", "hand crossbow", "heavy crossbow", "longbow", "net"],
-    otherTypes = ["Instrument", "Ring", "Rod", "Staff", "Wand"]
+const itemTypes = ["护甲", "武器", "武器", "奇物", "奇物", "其他"],
+    armorTypes = ["镶钉皮甲", "胸甲", "半身板甲", "链甲", "板条甲", "全身板甲"],
+    weaponTypes = ["匕首", "巨棒", "手斧", "标枪", "轻锤", "钉头锤", "木棍", "镰刀", "长矛", "轻弩", "短弓", "战斧", "连枷", "长柄刀", "巨斧", "巨剑", "长戟", "骑枪", "长剑", "重锤", "钉头锤", "长矛", "刺剑", "弯刀", "三叉戟", "战镐", "战锤", "长鞭", "手弩", "重弩", "长弓", "捕网"],
+    otherTypes = ["乐器", "戒指", "权杖", "法杖", "魔杖"]
