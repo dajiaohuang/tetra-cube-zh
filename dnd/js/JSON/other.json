@@ -1,16 +1,16 @@
 {
 	"genders": [
-		"男性",
-		"男性",
-		"男性",
-		"男性",
-		"男性",
-		"女性",
-		"女性",
-		"女性",
-		"女性",
-		"女性",
-		"非二元性别或未知"
+		"Male",
+		"Male",
+		"Male",
+		"Male",
+		"Male",
+		"Female",
+		"Female",
+		"Female",
+		"Female",
+		"Female",
+		"Nonbinary or Unknown"
 	],
 	"raceWeights": {
 		"Dragonborn": 3,
@@ -25,11 +25,11 @@
 	},
 	"monstrousOrigins": [
 		"You are a spy sent to undermine your enemies from within.",
-		"You are the victim of a 诅咒 or polymorph spell.",
-		"You were raised by 人类s, 精灵, or dwarves and have adopted their culture.",
-		"At a young 年龄, you adopted a 人类 宗教 and now serve it faithfully.",
-		"You received divine 洞悉 that sent you on your path, and occasionally receive new visions that 向导 you.",
-		"Your sworn enemy is an ally of your people, f兽人ing you to leave your tribe to gain vengeance.",
+		"You are the victim of a curse or polymorph spell.",
+		"You were raised by humans, elves, or dwarves and have adopted their culture.",
+		"At a young age, you adopted a human religion and now serve it faithfully.",
+		"You received divine insight that sent you on your path, and occasionally receive new visions that guide you.",
+		"Your sworn enemy is an ally of your people, forcing you to leave your tribe to gain vengeance.",
 		"An evil entity corrupted your people's society.",
 		"An injury or strange event caused you to lose all memory of your past, but occasional flashes of it return to you."
 	]

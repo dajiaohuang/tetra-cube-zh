@@ -1,83 +1,83 @@
 {
 	"creator": [
 		{
-			"name": "异怪",
-			"desc": "The item was created by 异怪s in ancient times, possibly for the use of favored 类人生物 thralls. When seen from the corner of the eye, the item seems to be moving.",
+			"name": "Aberration",
+			"desc": "The item was created by aberrations in ancient times, possibly for the use of favored humanoid thralls. When seen from the corner of the eye, the item seems to be moving.",
 			"weight": 1
 		},
 		{
-			"name": "人类",
-			"desc": "The item was created during the heyday of a fallen 人类 kingdom, or it is tied to a 人类 of legend. It might hold writing in a forgotten tongue or symbols whose significance is lost to the 年龄s.",
+			"name": "Human",
+			"desc": "The item was created during the heyday of a fallen human kingdom, or it is tied to a human of legend. It might hold writing in a forgotten tongue or symbols whose significance is lost to the ages.",
 			"weight": 3
 		},
 		{
-			"name": "天界生物",
-			"desc": "The weapon is half the normal weight and in抄写员d with 专长hered wings, 太阳s, and other symbols of good. 魔族s find the item’s presence repulsive.",
+			"name": "Celestial",
+			"desc": "The weapon is half the normal weight and inscribed with feathered wings, suns, and other symbols of good. Fiends find the item’s presence repulsive.",
 			"weight": 1
 		},
 		{
-			"name": "龙类",
-			"desc": "This item is made from scales and 禽爪 shed by a dragon. Perhaps it incorporates precious metals and 宝石s from the dragon’s hoard. It grows slightly warm when within 120 feet of a dragon.",
+			"name": "Dragon",
+			"desc": "This item is made from scales and talons shed by a dragon. Perhaps it incorporates precious metals and gems from the dragon’s hoard. It grows slightly warm when within 120 feet of a dragon.",
 			"weight": 1
 		},
 		{
-			"name": "卓尔",
-			"desc": "The item is half the normal weight. It is black and in抄写员d with spiders and webs in honor of Lolth. It might function poorly, or disintegrate, if exposed to 太阳light for 1 minute or more.",
+			"name": "Drow",
+			"desc": "The item is half the normal weight. It is black and inscribed with spiders and webs in honor of Lolth. It might function poorly, or disintegrate, if exposed to sunlight for 1 minute or more.",
 			"weight": 1
 		},
 		{
-			"name": "矮人",
+			"name": "Dwarf",
 			"desc": "The item is durable and has Dwarven runes worked into its design. It might be associated with a clan that would like to see it returned to their ancestral halls.",
 			"weight": 2
 		},
 		{
-			"name": "元素生物 Air",
+			"name": "Elemental Air",
 			"desc": "The item is half the normal weight and feels hollow. If it’s made of fabric, it is diaphanous.",
 			"weight": 1
 		},
 		{
-			"name": "元素生物 Earth",
-			"desc": "This item might be crafted from stone. Any cloth or 皮甲 elements are studded with finely polished rock.",
+			"name": "Elemental Earth",
+			"desc": "This item might be crafted from stone. Any cloth or leather elements are studded with finely polished rock.",
 			"weight": 1
 		},
 		{
-			"name": "元素生物 火焰",
-			"desc": "This item is warm to the touch, and any metal parts are crafted from black iron. 印记城s of 喷火 cover its surface. Shades of red and orange are the prominent colors.",
+			"name": "Elemental Fire",
+			"desc": "This item is warm to the touch, and any metal parts are crafted from black iron. Sigils of flames cover its surface. Shades of red and orange are the prominent colors.",
 			"weight": 1
 		},
 		{
-			"name": "元素生物 Water",
-			"desc": "Lustrous fish scales replace 皮甲 or cloth on this item, and metal portions are instead crafted from seashells and worked coral as hard as any metal.",
+			"name": "Elemental Water",
+			"desc": "Lustrous fish scales replace leather or cloth on this item, and metal portions are instead crafted from seashells and worked coral as hard as any metal.",
 			"weight": 1
 		},
 		{
-			"name": "精灵",
-			"desc": "The item is half the normal weight. It is adorned with symbols of 自然: leaves, vines, 星辰s, and the like.",
+			"name": "Elf",
+			"desc": "The item is half the normal weight. It is adorned with symbols of nature: leaves, vines, stars, and the like.",
 			"weight": 2
 		},
 		{
-			"name": "精类",
-			"desc": "The item is exquisitely crafted from the finest materials and glows with a pale radiance in 月亮light, shedding dim light in a 5-foot radius. Any metal in the item is silver or mithral, rather than iron or steel.",
+			"name": "Fey",
+			"desc": "The item is exquisitely crafted from the finest materials and glows with a pale radiance in moonlight, shedding dim light in a 5-foot radius. Any metal in the item is silver or mithral, rather than iron or steel.",
 			"weight": 1
 		},
 		{
-			"name": "魔族",
-			"desc": "The item is made of black iron or horn in抄写员d with runes, and any cloth or 皮甲 components are crafted from the 皮甲 of 魔族s. It is warm to the touch and 专长ures leering faces or vile runes engraved on its surface. 天界生物s find the item’s presence repulsive.",
+			"name": "Fiend",
+			"desc": "The item is made of black iron or horn inscribed with runes, and any cloth or leather components are crafted from the hide of fiends. It is warm to the touch and features leering faces or vile runes engraved on its surface. Celestials find the item’s presence repulsive.",
 			"weight": 1
 		},
 		{
-			"name": "巨人",
-			"desc": "The item is 大型r than normal and was crafted by giants for use by their 小型er allies.",
+			"name": "Giant",
+			"desc": "The item is larger than normal and was crafted by giants for use by their smaller allies.",
 			"weight": 1
 		},
 		{
-			"name": "侏儒",
+			"name": "Gnome",
 			"desc": "The item is crafted to appear ordinary, and it might look worn. It could also incorporate gears and mechanical components, even if these aren’t essential to the item’s function.",
 			"weight": 1
 		},
 		{
-			"name": "亡灵",
-			"desc": "The item incorporates im年龄ry of death, such as bones and 骷髅s, and it might be crafted from parts of corpses. It feels cold to the touch.",
+			"name": "Undead",
+			"desc": "The item incorporates imagery of death, such as bones and skulls, and it might be crafted from parts of corpses. It feels cold to the touch.",
 			"weight": 1
 		}
 	],
@@ -99,17 +99,17 @@
 		},
 		{
 			"name": "Ornament",
-			"desc": "The item was created to honor a special occasion. Inset 宝石stones, gold or platinum inlays, and gold or silver filigree adorn its surface.",
+			"desc": "The item was created to honor a special occasion. Inset gemstones, gold or platinum inlays, and gold or silver filigree adorn its surface.",
 			"weight": 1
 		},
 		{
 			"name": "Prophecy",
-			"desc": "The item 专长ures in a prophecy: its bearer is destined to play a 钥匙 职能 in future events. Someone else who wants to play that 职能 might try to steal the item, or someone who wants to prevent the prophecy from being fulfilled might try to kill the item’s bearer.",
+			"desc": "The item features in a prophecy: its bearer is destined to play a key role in future events. Someone else who wants to play that role might try to steal the item, or someone who wants to prevent the prophecy from being fulfilled might try to kill the item’s bearer.",
 			"weight": 1
 		},
 		{
 			"name": "Religious",
-			"desc": "This item was used in religious ceremonies dedicated to a particular deity. It has holy symbols worked into it. The god’s followers might try to persuade its owner to donate it to a temple, steal the item for thems精灵, or celebrate its use by a 牧师 or 圣武士 of the same deity.",
+			"desc": "This item was used in religious ceremonies dedicated to a particular deity. It has holy symbols worked into it. The god’s followers might try to persuade its owner to donate it to a temple, steal the item for themselves, or celebrate its use by a cleric or paladin of the same deity.",
 			"weight": 1
 		},
 		{
@@ -119,14 +119,14 @@
 		},
 		{
 			"name": "Symbol of Power",
-			"desc": "This item was once used as part of royal regalia or as a badge of high office. Its former owner or that person’s descendants might desire it, or someone might mistakenly assume its new owner is the item’s legitimate 继承人.",
+			"desc": "This item was once used as part of royal regalia or as a badge of high office. Its former owner or that person’s descendants might desire it, or someone might mistakenly assume its new owner is the item’s legitimate inheritor.",
 			"weight": 1
 		}
 	],
 	"property": [
 		{
 			"name": "Beacon",
-			"desc": "The bearer can use a 附赠动作 to cause the item to shed bright light in a 10-foot radius and dim light for an additional 10 feet, or to extinguish the light.",
+			"desc": "The bearer can use a bonus action to cause the item to shed bright light in a 10-foot radius and dim light for an additional 10 feet, or to extinguish the light.",
 			"weight": 1
 		},
 		{
@@ -136,12 +136,12 @@
 		},
 		{
 			"name": "Conscientious",
-			"desc": "When the bearer of this item contem全身板甲s or undertakes a malevolent act, the item enhances pangs of conscience.",
+			"desc": "When the bearer of this item contemplates or undertakes a malevolent act, the item enhances pangs of conscience.",
 			"weight": 1
 		},
 		{
 			"name": "Delver",
-			"desc": "While underground, the bearer of this item always knows the item’s depth below the surface and the direction to the nearest staircase, 攻城槌p, or other path leading upward.",
+			"desc": "While underground, the bearer of this item always knows the item’s depth below the surface and the direction to the nearest staircase, ramp, or other path leading upward.",
 			"weight": 1
 		},
 		{
@@ -150,8 +150,8 @@
 			"weight": 1
 		},
 		{
-			"name": "警卫ian",
-			"desc": "The item whispers warnings to its bearer, granting a +2 bonus to initiative if the bearer isn’t 失能.",
+			"name": "Guardian",
+			"desc": "The item whispers warnings to its bearer, granting a +2 bonus to initiative if the bearer isn’t incapacitated.",
 			"weight": 1
 		},
 		{
@@ -160,23 +160,23 @@
 			"weight": 1
 		},
 		{
-			"name": "Hidden Mes智者",
-			"desc": "A mes智者 is hidden somewhere on the item. It might be visible only at a certain time of the year, under the light of one phase of the 月亮, or in a specific location.",
+			"name": "Hidden Message",
+			"desc": "A message is hidden somewhere on the item. It might be visible only at a certain time of the year, under the light of one phase of the moon, or in a specific location.",
 			"weight": 1
 		},
 		{
-			"name": "钥匙",
+			"name": "Key",
 			"desc": "The item is used to unlock a container, chamber, vault, or other entryway.",
 			"weight": 1
 		},
 		{
-			"name": "语言",
-			"desc": "The bearer can speak and understand a 语言 of the DM’s choice while the item is on the bearer’s person.",
+			"name": "Language",
+			"desc": "The bearer can speak and understand a language of the DM’s choice while the item is on the bearer’s person.",
 			"weight": 1
 		},
 		{
 			"name": "Sentinel",
-			"desc": "Choose a kind of creature that is an enemy of the item’s 创造者. This item glows faintly when such creatures are within 120 feet of it.",
+			"desc": "Choose a kind of creature that is an enemy of the item’s creator. This item glows faintly when such creatures are within 120 feet of it.",
 			"weight": 1
 		},
 		{
@@ -206,17 +206,17 @@
 		},
 		{
 			"name": "Waterborne",
-			"desc": "This item floats on water and other liquids. Its bearer has 优势 on 力量 (运动) checks to swim.",
+			"desc": "This item floats on water and other liquids. Its bearer has advantage on Strength (Athletics) checks to swim.",
 			"weight": 1
 		},
 		{
 			"name": "Wicked",
-			"desc": "When the bearer is presented with an opportunity to act in a s精灵ish or malevolent way, the item heightens the bearer’s urge to do so.",
+			"desc": "When the bearer is presented with an opportunity to act in a selfish or malevolent way, the item heightens the bearer’s urge to do so.",
 			"weight": 1
 		},
 		{
 			"name": "Illusion",
-			"desc": "The item is imbued with illusion magic, allowing its bearer to alter the item’s 外表 in minor ways. Such alterations don’t change how the item is worn, carried, or wielded, and they have no effect on its other magical properties. For example, the wearer could make a red robe appear blue, or make a gold ring look like it’s made of ivory. The item reverts to its true 外表 when no one is carrying or wearing it.",
+			"desc": "The item is imbued with illusion magic, allowing its bearer to alter the item’s appearance in minor ways. Such alterations don’t change how the item is worn, carried, or wielded, and they have no effect on its other magical properties. For example, the wearer could make a red robe appear blue, or make a gold ring look like it’s made of ivory. The item reverts to its true appearance when no one is carrying or wearing it.",
 			"weight": 1
 		}
 	],
@@ -228,7 +228,7 @@
 		},
 		{
 			"name": "Confident",
-			"desc": "The item helps its bearer feel s精灵-assured.",
+			"desc": "The item helps its bearer feel self-assured.",
 			"weight": 1
 		},
 		{
@@ -243,7 +243,7 @@
 		},
 		{
 			"name": "Hungry",
-			"desc": "This item’s magical properties function only if fresh blood from a 类人生物 has been applied to it within the past 24 hours. It needs only a drop to activate.",
+			"desc": "This item’s magical properties function only if fresh blood from a humanoid has been applied to it within the past 24 hours. It needs only a drop to activate.",
 			"weight": 1
 		},
 		{
@@ -253,7 +253,7 @@
 		},
 		{
 			"name": "Metamorphic",
-			"desc": "The item periodically and randomly alters its 外表 in slight ways. The bearer has no control over these minor alterations, which have no effect on the item’s use.",
+			"desc": "The item periodically and randomly alters its appearance in slight ways. The bearer has no control over these minor alterations, which have no effect on the item’s use.",
 			"weight": 1
 		},
 		{
@@ -278,7 +278,7 @@
 		},
 		{
 			"name": "Slothful",
-			"desc": "The bearer of this item feels slothful and lethargic. While attuned to the item, the bearer requires 10 hours to finish a 长休.",
+			"desc": "The bearer of this item feels slothful and lethargic. While attuned to the item, the bearer requires 10 hours to finish a long rest.",
 			"weight": 1
 		}
 	]

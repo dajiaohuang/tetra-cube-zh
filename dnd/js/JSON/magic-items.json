@@ -162,7 +162,7 @@
 			"weight": "10"
 		},
 		{
-			"name": "Potion of 攀爬",
+			"name": "Potion of climbing",
 			"weight": "10"
 		},
 		{
@@ -208,7 +208,7 @@
 			"weight": "5"
 		},
 		{
-			"name": "Potion of hill giant 力量",
+			"name": "Potion of hill giant strength",
 			"weight": "5"
 		},
 		{
@@ -240,7 +240,7 @@
 			"weight": "3"
 		},
 		{
-			"name": "Dust of dis外表",
+			"name": "Dust of disappearance",
 			"weight": "2"
 		},
 		{
@@ -252,7 +252,7 @@
 			"weight": "2"
 		},
 		{
-			"name": "元素生物 宝石",
+			"name": "Elemental gem",
 			"weight": "2"
 		},
 		{
@@ -280,11 +280,11 @@
 			"weight": "1"
 		},
 		{
-			"name": "Helm of comprehending 语言",
+			"name": "Helm of comprehending languages",
 			"weight": "1"
 		},
 		{
-			"name": "Im带动 rod",
+			"name": "Immovable rod",
 			"weight": "1"
 		},
 		{
@@ -292,7 +292,7 @@
 			"weight": "1"
 		},
 		{
-			"name": "水手r's armor",
+			"name": "Mariner's armor",
 			"weight": "1"
 		},
 		{
@@ -304,7 +304,7 @@
 			"weight": "1"
 		},
 		{
-			"name": "Ring of 游泳",
+			"name": "Ring of swimming",
 			"weight": "1"
 		},
 		{
@@ -312,7 +312,7 @@
 			"weight": "1"
 		},
 		{
-			"name": "Rope of 攀爬",
+			"name": "Rope of climbing",
 			"weight": "1"
 		},
 		{
@@ -354,11 +354,11 @@
 			"weight": "5"
 		},
 		{
-			"name": "Potion of frost giant 力量",
+			"name": "Potion of frost giant strength",
 			"weight": "5"
 		},
 		{
-			"name": "Potion of stone giant 力量",
+			"name": "Potion of stone giant strength",
 			"weight": "5"
 		},
 		{
@@ -386,11 +386,11 @@
 			"weight": "3"
 		},
 		{
-			"name": "Potion of fire giant 力量",
+			"name": "Potion of fire giant strength",
 			"weight": "3"
 		},
 		{
-			"name": "Quaal's 专长her token",
+			"name": "Quaal's feather token",
 			"weight": "3"
 		},
 		{
@@ -402,7 +402,7 @@
 			"weight": "2"
 		},
 		{
-			"name": "Bead of f兽人e",
+			"name": "Bead of force",
 			"weight": "2"
 		},
 		{
@@ -426,7 +426,7 @@
 			"weight": "1"
 		},
 		{
-			"name": "Horseshoes of 速度",
+			"name": "Horseshoes of speed",
 			"weight": "1"
 		},
 		{
@@ -448,11 +448,11 @@
 			"weight": "20"
 		},
 		{
-			"name": "Potion of 隐形",
+			"name": "Potion of invisibility",
 			"weight": "10"
 		},
 		{
-			"name": "Potion of 速度",
+			"name": "Potion of speed",
 			"weight": "10"
 		},
 		{
@@ -476,11 +476,11 @@
 			"weight": "5"
 		},
 		{
-			"name": "Potion of cloud giant 力量",
+			"name": "Potion of cloud giant strength",
 			"weight": "5"
 		},
 		{
-			"name": "Potion of 青春永驻",
+			"name": "Potion of longevity",
 			"weight": "5"
 		},
 		{
@@ -514,7 +514,7 @@
 			"weight": "30"
 		},
 		{
-			"name": "Potion of storm giant 力量",
+			"name": "Potion of storm giant strength",
 			"weight": "25"
 		},
 		{
@@ -540,11 +540,11 @@
 	],
 	"tableF": [
 		{
-			"name": "武器, +1",
+			"name": "Weapon, +1",
 			"weight": "15"
 		},
 		{
-			"name": "盾牌, +1",
+			"name": "Shield, +1",
 			"weight": "3"
 		},
 		{
@@ -560,7 +560,7 @@
 			"weight": "2"
 		},
 		{
-			"name": "Boots of striding and 春ing",
+			"name": "Boots of striding and springing",
 			"weight": "2"
 		},
 		{
@@ -592,7 +592,7 @@
 			"weight": "2"
 		},
 		{
-			"name": "Javelin of 闪电",
+			"name": "Javelin of lightning",
 			"weight": "2"
 		},
 		{
@@ -604,7 +604,7 @@
 			"weight": "2"
 		},
 		{
-			"name": "Slippers of 蛛行术ing",
+			"name": "Slippers of spider climbing",
 			"weight": "2"
 		},
 		{
@@ -628,7 +628,7 @@
 			"weight": "2"
 		},
 		{
-			"name": "Wand of the war m年龄, + 1",
+			"name": "Wand of the war mage, + 1",
 			"weight": "2"
 		},
 		{
@@ -636,19 +636,19 @@
 			"weight": "2"
 		},
 		{
-			"name": "武器 of warning",
+			"name": "Weapon of warning",
 			"weight": "2"
 		},
 		{
-			"name": "Adamantine armor (链甲)",
+			"name": "Adamantine armor (chain mail)",
 			"weight": "1"
 		},
 		{
-			"name": "Adamantine armor (链甲衫)",
+			"name": "Adamantine armor (chain shirt)",
 			"weight": "1"
 		},
 		{
-			"name": "Adamantine armor (鳞甲)",
+			"name": "Adamantine armor (scale mail)",
 			"weight": "1"
 		},
 		{
@@ -664,7 +664,7 @@
 			"weight": "1"
 		},
 		{
-			"name": "Boots of the 冬lands",
+			"name": "Boots of the winterlands",
 			"weight": "1"
 		},
 		{
@@ -688,11 +688,11 @@
 			"weight": "1"
 		},
 		{
-			"name": "Figurine of wondrous power (silver r艾文)",
+			"name": "Figurine of wondrous power (silver raven)",
 			"weight": "1"
 		},
 		{
-			"name": "宝石 of brightness",
+			"name": "Gem of brightness",
 			"weight": "1"
 		},
 		{
@@ -700,7 +700,7 @@
 			"weight": "1"
 		},
 		{
-			"name": "Gloves of 游泳 and 攀爬",
+			"name": "Gloves of swimming and climbing",
 			"weight": "1"
 		},
 		{
@@ -716,15 +716,15 @@
 			"weight": "1"
 		},
 		{
-			"name": "Instrument of the 吟游诗人s (Doss lute)",
+			"name": "Instrument of the bards (Doss lute)",
 			"weight": "1"
 		},
 		{
-			"name": "Instrument of the 吟游诗人s (Fochlucan bandore)",
+			"name": "Instrument of the bards (Fochlucan bandore)",
 			"weight": "1"
 		},
 		{
-			"name": "Instrument of the 吟游诗人s (Mac-Fuimidh cittern)",
+			"name": "Instrument of the bards (Mac-Fuimidh cittern)",
 			"weight": "1"
 		},
 		{
@@ -768,7 +768,7 @@
 			"weight": "1"
 		},
 		{
-			"name": "Stone of good 幸运",
+			"name": "Stone of good luck",
 			"weight": "1"
 		},
 		{
@@ -782,7 +782,7 @@
 	],
 	"tableG": [
 		{
-			"name": "武器, +2",
+			"name": "Weapon, +2",
 			"weight": "11"
 		},
 		{
@@ -814,11 +814,11 @@
 			"weight": "1/4"
 		},
 		{
-			"name": "Adamantine armor (胸甲)",
+			"name": "Adamantine armor (breastplate)",
 			"weight": "1"
 		},
 		{
-			"name": "Adamantine armor (板条甲)",
+			"name": "Adamantine armor (splint)",
 			"weight": "1"
 		},
 		{
@@ -826,7 +826,7 @@
 			"weight": "1"
 		},
 		{
-			"name": "护甲 of vulnerability",
+			"name": "Armor of vulnerability",
 			"weight": "1"
 		},
 		{
@@ -838,7 +838,7 @@
 			"weight": "1"
 		},
 		{
-			"name": "Belt of hill giant 力量",
+			"name": "Belt of hill giant strength",
 			"weight": "1"
 		},
 		{
@@ -850,11 +850,11 @@
 			"weight": "1"
 		},
 		{
-			"name": "Boots of 速度",
+			"name": "Boots of speed",
 			"weight": "1"
 		},
 		{
-			"name": "Bowl of commanding water 元素生物s",
+			"name": "Bowl of commanding water elementals",
 			"weight": "1"
 		},
 		{
@@ -862,7 +862,7 @@
 			"weight": "1"
 		},
 		{
-			"name": "Brazier of commanding fire 元素生物s",
+			"name": "Brazier of commanding fire elementals",
 			"weight": "1"
 		},
 		{
@@ -870,23 +870,23 @@
 			"weight": "1"
 		},
 		{
-			"name": "Censer of controlling air 元素生物s",
+			"name": "Censer of controlling air elementals",
 			"weight": "1"
 		},
 		{
-			"name": "护甲, +1 链甲",
+			"name": "Armor, +1 chain mail",
 			"weight": "1"
 		},
 		{
-			"name": "护甲 of resistance (链甲)",
+			"name": "Armor of resistance (chain mail)",
 			"weight": "1"
 		},
 		{
-			"name": "护甲 of resistance (链甲衫)",
+			"name": "Armor of resistance (chain shirt)",
 			"weight": "1"
 		},
 		{
-			"name": "护甲, +1 链甲衫",
+			"name": "Armor, +1 chain shirt",
 			"weight": "1"
 		},
 		{
@@ -898,7 +898,7 @@
 			"weight": "1"
 		},
 		{
-			"name": "Cube of f兽人e",
+			"name": "Cube of force",
 			"weight": "1"
 		},
 		{
@@ -914,7 +914,7 @@
 			"weight": "1"
 		},
 		{
-			"name": "龙类 slayer",
+			"name": "Dragon slayer",
 			"weight": "1"
 		},
 		{
@@ -926,15 +926,15 @@
 			"weight": "1"
 		},
 		{
-			"name": "宝石 of seeing",
+			"name": "Gem of seeing",
 			"weight": "1"
 		},
 		{
-			"name": "巨人 slayer",
+			"name": "Giant slayer",
 			"weight": "1"
 		},
 		{
-			"name": "Glamoured 镶钉皮甲",
+			"name": "Glamoured studded leather",
 			"weight": "1"
 		},
 		{
@@ -950,11 +950,11 @@
 			"weight": "1"
 		},
 		{
-			"name": "Instrument of the 吟游诗人s (Canaithmandolin)",
+			"name": "Instrument of the bards (Canaithmandolin)",
 			"weight": "1"
 		},
 		{
-			"name": "Instrument ofthe 吟游诗人s (Cii lyre)",
+			"name": "Instrument ofthe bards (Cii lyre)",
 			"weight": "1"
 		},
 		{
@@ -978,11 +978,11 @@
 			"weight": "1"
 		},
 		{
-			"name": "护甲, +1 皮甲",
+			"name": "Armor, +1 leather",
 			"weight": "1"
 		},
 		{
-			"name": "护甲 of resistance (皮甲)",
+			"name": "Armor of resistance (leather)",
 			"weight": "1"
 		},
 		{
@@ -1018,7 +1018,7 @@
 			"weight": "1"
 		},
 		{
-			"name": "Ring of 专长her falling",
+			"name": "Ring of feather falling",
 			"weight": "1"
 		},
 		{
@@ -1038,7 +1038,7 @@
 			"weight": "1"
 		},
 		{
-			"name": "Ring of the 攻城槌",
+			"name": "Ring of the ram",
 			"weight": "1"
 		},
 		{
@@ -1062,19 +1062,19 @@
 			"weight": "1"
 		},
 		{
-			"name": "护甲, +1 鳞甲",
+			"name": "Armor, +1 scale mail",
 			"weight": "1"
 		},
 		{
-			"name": "护甲 of resistance (鳞甲)",
+			"name": "Armor of resistance (scale mail)",
 			"weight": "1"
 		},
 		{
-			"name": "盾牌, +2",
+			"name": "Shield, +2",
 			"weight": "1"
 		},
 		{
-			"name": "盾牌 of missile attraction",
+			"name": "Shield of missile attraction",
 			"weight": "1"
 		},
 		{
@@ -1098,11 +1098,11 @@
 			"weight": "1"
 		},
 		{
-			"name": "Stone of controlling earth 元素生物s",
+			"name": "Stone of controlling earth elementals",
 			"weight": "1"
 		},
 		{
-			"name": "太阳 blade",
+			"name": "Sun blade",
 			"weight": "1"
 		},
 		{
@@ -1138,7 +1138,7 @@
 			"weight": "1"
 		},
 		{
-			"name": "Wand of 闪电 bolts",
+			"name": "Wand of lightning bolts",
 			"weight": "1"
 		},
 		{
@@ -1146,7 +1146,7 @@
 			"weight": "1"
 		},
 		{
-			"name": "Wand of the war m年龄, +2",
+			"name": "Wand of the war mage, +2",
 			"weight": "1"
 		},
 		{
@@ -1160,7 +1160,7 @@
 	],
 	"tableH": [
 		{
-			"name": "武器, +3",
+			"name": "Weapon, +3",
 			"weight": "10"
 		},
 		{
@@ -1180,7 +1180,7 @@
 			"weight": "2"
 		},
 		{
-			"name": "Ring of shooting 星辰s",
+			"name": "Ring of shooting stars",
 			"weight": "2"
 		},
 		{
@@ -1192,7 +1192,7 @@
 			"weight": "2"
 		},
 		{
-			"name": "Robe of 星辰s",
+			"name": "Robe of stars",
 			"weight": "2"
 		},
 		{
@@ -1212,11 +1212,11 @@
 			"weight": "2"
 		},
 		{
-			"name": "Scimitar of 速度",
+			"name": "Scimitar of speed",
 			"weight": "2"
 		},
 		{
-			"name": "盾牌, +3",
+			"name": "Shield, +3",
 			"weight": "2"
 		},
 		{
@@ -1236,7 +1236,7 @@
 			"weight": "2"
 		},
 		{
-			"name": "Staff of 雷鸣 and 闪电",
+			"name": "Staff of thunder and lightning",
 			"weight": "2"
 		},
 		{
@@ -1248,15 +1248,15 @@
 			"weight": "2"
 		},
 		{
-			"name": "Wand of the war m年龄, + 3",
+			"name": "Wand of the war mage, + 3",
 			"weight": "2"
 		},
 		{
-			"name": "Adamantine armor (半身板甲)",
+			"name": "Adamantine armor (half plate)",
 			"weight": "1"
 		},
 		{
-			"name": "Adamantine armor (全身板甲)",
+			"name": "Adamantine armor (plate)",
 			"weight": "1"
 		},
 		{
@@ -1264,19 +1264,19 @@
 			"weight": "1"
 		},
 		{
-			"name": "Belt of fire giant 力量",
+			"name": "Belt of fire giant strength",
 			"weight": "1"
 		},
 		{
-			"name": "Belt of frost (or stone) giant 力量",
+			"name": "Belt of frost (or stone) giant strength",
 			"weight": "1"
 		},
 		{
-			"name": "护甲, +1 胸甲",
+			"name": "Armor, +1 breastplate",
 			"weight": "1"
 		},
 		{
-			"name": "护甲 of resistance (胸甲)",
+			"name": "Armor of resistance (breastplate)",
 			"weight": "1"
 		},
 		{
@@ -1284,11 +1284,11 @@
 			"weight": "1"
 		},
 		{
-			"name": "护甲, +2 链甲",
+			"name": "Armor, +2 chain mail",
 			"weight": "1"
 		},
 		{
-			"name": "护甲, +2 链甲衫",
+			"name": "Armor, +2 chain shirt",
 			"weight": "1"
 		},
 		{
@@ -1304,11 +1304,11 @@
 			"weight": "1"
 		},
 		{
-			"name": "龙类 鳞甲",
+			"name": "Dragon scale mail",
 			"weight": "1"
 		},
 		{
-			"name": "Dwarven 全身板甲",
+			"name": "Dwarven plate",
 			"weight": "1"
 		},
 		{
@@ -1336,7 +1336,7 @@
 			"weight": "1"
 		},
 		{
-			"name": "Instrument of the 吟游诗人s (Anstruth harp)",
+			"name": "Instrument of the bards (Anstruth harp)",
 			"weight": "1"
 		},
 		{
@@ -1352,7 +1352,7 @@
 			"weight": "1"
 		},
 		{
-			"name": "Ioun stone (洞悉)",
+			"name": "Ioun stone (insight)",
 			"weight": "1"
 		},
 		{
@@ -1364,11 +1364,11 @@
 			"weight": "1"
 		},
 		{
-			"name": "Ioun stone (力量)",
+			"name": "Ioun stone (strength)",
 			"weight": "1"
 		},
 		{
-			"name": "护甲, +2 皮甲",
+			"name": "Armor, +2 leather",
 			"weight": "1"
 		},
 		{
@@ -1400,27 +1400,27 @@
 			"weight": "1"
 		},
 		{
-			"name": "护甲, +2 鳞甲",
+			"name": "Armor, +2 scale mail",
 			"weight": "1"
 		},
 		{
-			"name": "Spell警卫 shield",
+			"name": "Spellguard shield",
 			"weight": "1"
 		},
 		{
-			"name": "护甲, +1 板条甲",
+			"name": "Armor, +1 splint",
 			"weight": "1"
 		},
 		{
-			"name": "护甲 of resistance (板条甲)",
+			"name": "Armor of resistance (splint)",
 			"weight": "1"
 		},
 		{
-			"name": "护甲, +1 镶钉皮甲",
+			"name": "Armor, +1 studded leather",
 			"weight": "1"
 		},
 		{
-			"name": "护甲 of resistance (镶钉皮甲)",
+			"name": "Armor of resistance (studded leather)",
 			"weight": "1"
 		},
 		{
@@ -1442,11 +1442,11 @@
 			"weight": "5"
 		},
 		{
-			"name": "Hammer of 雷鸣bolts",
+			"name": "Hammer of thunderbolts",
 			"weight": "5"
 		},
 		{
-			"name": "幸运 blade",
+			"name": "Luck blade",
 			"weight": "5"
 		},
 		{
@@ -1454,7 +1454,7 @@
 			"weight": "5"
 		},
 		{
-			"name": "Holy 艾文ger",
+			"name": "Holy avenger",
 			"weight": "3"
 		},
 		{
@@ -1462,7 +1462,7 @@
 			"weight": "3"
 		},
 		{
-			"name": "Ring of 隐形",
+			"name": "Ring of invisibility",
 			"weight": "3"
 		},
 		{
@@ -1482,23 +1482,23 @@
 			"weight": "3"
 		},
 		{
-			"name": "Belt of cloud giant 力量",
+			"name": "Belt of cloud giant strength",
 			"weight": "3"
 		},
 		{
-			"name": "护甲, +2 胸甲",
+			"name": "Armor, +2 breastplate",
 			"weight": "2"
 		},
 		{
-			"name": "护甲, +3 链甲",
+			"name": "Armor, +3 chain mail",
 			"weight": "2"
 		},
 		{
-			"name": "护甲, +3 链甲衫",
+			"name": "Armor, +3 chain shirt",
 			"weight": "2"
 		},
 		{
-			"name": "Cloak of 隐形",
+			"name": "Cloak of invisibility",
 			"weight": "2"
 		},
 		{
@@ -1506,7 +1506,7 @@
 			"weight": "2"
 		},
 		{
-			"name": "护甲, +1 半身板甲",
+			"name": "Armor, +1 half plate",
 			"weight": "2"
 		},
 		{
@@ -1514,11 +1514,11 @@
 			"weight": "2"
 		},
 		{
-			"name": "护甲, +3 皮甲",
+			"name": "Armor, +3 leather",
 			"weight": "2"
 		},
 		{
-			"name": "护甲, +1 全身板甲",
+			"name": "Armor, +1 plate",
 			"weight": "2"
 		},
 		{
@@ -1530,7 +1530,7 @@
 			"weight": "2"
 		},
 		{
-			"name": "护甲, +1 鳞甲",
+			"name": "Armor, +1 scale mail",
 			"weight": "2"
 		},
 		{
@@ -1538,11 +1538,11 @@
 			"weight": "2"
 		},
 		{
-			"name": "护甲, +2 板条甲",
+			"name": "Armor, +2 splint",
 			"weight": "2"
 		},
 		{
-			"name": "护甲, +2 镶钉皮甲",
+			"name": "Armor, +2 studded leather",
 			"weight": "2"
 		},
 		{
@@ -1550,31 +1550,31 @@
 			"weight": "2"
 		},
 		{
-			"name": "护甲, +2 半身板甲",
+			"name": "Armor, +2 half plate",
 			"weight": "1/6"
 		},
 		{
-			"name": "护甲, +2 全身板甲",
+			"name": "Armor, +2 plate",
 			"weight": "1/6"
 		},
 		{
-			"name": "护甲, +3 镶钉皮甲",
+			"name": "Armor, +3 studded leather",
 			"weight": "1/6"
 		},
 		{
-			"name": "护甲, +3 胸甲",
+			"name": "Armor, +3 breastplate",
 			"weight": "1/6"
 		},
 		{
-			"name": "护甲, +3 板条甲",
+			"name": "Armor, +3 splint",
 			"weight": "1/6"
 		},
 		{
-			"name": "护甲, +3 半身板甲",
+			"name": "Armor, +3 half plate",
 			"weight": "1/12"
 		},
 		{
-			"name": "护甲, +3 全身板甲",
+			"name": "Armor, +3 plate",
 			"weight": "1/12"
 		},
 		{
@@ -1582,11 +1582,11 @@
 			"weight": "1"
 		},
 		{
-			"name": "护甲 of invulnerability",
+			"name": "Armor of invulnerability",
 			"weight": "1"
 		},
 		{
-			"name": "Belt of storm giant 力量",
+			"name": "Belt of storm giant strength",
 			"weight": "1"
 		},
 		{
@@ -1602,7 +1602,7 @@
 			"weight": "1"
 		},
 		{
-			"name": "护甲 of resistance (半身板甲)",
+			"name": "Armor of resistance (half plate)",
 			"weight": "1"
 		},
 		{
@@ -1610,7 +1610,7 @@
 			"weight": "1"
 		},
 		{
-			"name": "Instrument of the 吟游诗人s (Ollamh harp)",
+			"name": "Instrument of the bards (Ollamh harp)",
 			"weight": "1"
 		},
 		{
@@ -1626,23 +1626,23 @@
 			"weight": "1"
 		},
 		{
-			"name": "全身板甲 of etherealness",
+			"name": "Plate armor of etherealness",
 			"weight": "1"
 		},
 		{
-			"name": "全身板甲 of resistance",
+			"name": "Plate armor of resistance",
 			"weight": "1"
 		},
 		{
-			"name": "Ring of air 元素生物 command",
+			"name": "Ring of air elemental command",
 			"weight": "1"
 		},
 		{
-			"name": "Ring of earth元素生物 command",
+			"name": "Ring of earthelemental command",
 			"weight": "1"
 		},
 		{
-			"name": "Ring of fire 元素生物 command",
+			"name": "Ring of fire elemental command",
 			"weight": "1"
 		},
 		{
@@ -1650,7 +1650,7 @@
 			"weight": "1"
 		},
 		{
-			"name": "Ring of water 元素生物 command",
+			"name": "Ring of water elemental command",
 			"weight": "1"
 		},
 		{
@@ -1676,7 +1676,7 @@
 	],
 	"tableX": [
 		{
-			"name": "护甲 of gleaming",
+			"name": "Armor of gleaming",
 			"weight": "1"
 		},
 		{
@@ -1700,7 +1700,7 @@
 			"weight": "1"
 		},
 		{
-			"name": "骗子’s die",
+			"name": "Charlatan’s die",
 			"weight": "1"
 		},
 		{
@@ -1744,7 +1744,7 @@
 			"weight": "1"
 		},
 		{
-			"name": "Hat of 法师ry",
+			"name": "Hat of wizardry",
 			"weight": "1"
 		},
 		{
@@ -1768,11 +1768,11 @@
 			"weight": "1"
 		},
 		{
-			"name": "月亮-touched sword",
+			"name": "Moon-touched sword",
 			"weight": "1"
 		},
 		{
-			"name": "Mystery 钥匙",
+			"name": "Mystery key",
 			"weight": "1"
 		},
 		{
@@ -1804,7 +1804,7 @@
 			"weight": "1"
 		},
 		{
-			"name": "Potion of 攀爬",
+			"name": "Potion of climbing",
 			"weight": "1"
 		},
 		{
@@ -1816,15 +1816,15 @@
 			"weight": "1"
 		},
 		{
-			"name": "Ruby of the war m年龄",
+			"name": "Ruby of the war mage",
 			"weight": "1"
 		},
 		{
-			"name": "盾牌 of expression",
+			"name": "Shield of expression",
 			"weight": "1"
 		},
 		{
-			"name": "Sm年长ing armor",
+			"name": "Smoldering armor",
 			"weight": "1"
 		},
 		{
